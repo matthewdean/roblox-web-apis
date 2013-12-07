@@ -1,6 +1,7 @@
 ROBLOX Websites
 =
 
+
 Domains
 -
 * roblox.com
@@ -25,7 +26,8 @@ tip: prepend `m.` or `setup.`
 * [gametest(1-5).robloxlabs.com](http://gametest1.robloxlabs.com)
 
 ####Content Delivery Sites
-* [imagesak.roblox.com](http://imagesak.roblox.com)
+* [jsak.roblox.com](http://jsak.roblox.com) - stands for "JavaScript akamai"
+* [imagesak.roblox.com](http://imagesak.roblox.com) - stands for "images akamai"
 * [images.rbxcdn.com](http://images.rbxcdn.com)
 * [css.rbxcdn.com](http://css.rbxcdn.com)
 * [js.rbxcdn.com](http://js.rbxcdn.com)
