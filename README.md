@@ -1,6 +1,10 @@
 ROBLOX Websites
 =
-
+Tips
+-
+* Google `site:example.org` to find pages on that website
+* Append `/js` or `/jsdebug` to .asmx pages
+* Most sites have a `/robots.txt`
 
 Domains
 -
@@ -14,6 +18,17 @@ Sites
 
 ####Main Site
 * [www.roblox.com](http://www.roblox.com)
+ * [/userads/(1-4)](http://www.roblox.com/userads/1)
+ * [/Asset/BodyColors.ashx](http://www.roblox.com/Asset/BodyColors.ashx?userId=261)
+ * [/Asset/CharacterFetch.ashx](http://www.roblox.com/Asset/CharacterFetch.ashx?userId=261)
+ * [/Game/Join.ashx](http://www.roblox.com/Game/Join.ashx?placeId=1818)
+ * [/Game/Visit.ashx](http://www.roblox.com/Game/Visit.ashx?placeId=1818)
+ * [/Game/GameServer.ashx](http://www.roblox.com/Game/GameServer.ashx)
+ * [/Game/KeepAlivePinger.ashx](http://www.roblox.com/Game/KeepAlivePinger.ashx)
+ * [/Game/MachineConfiguration.ashx](http://www.roblox.com/Game/MachineConfiguration.ashx)
+ * [/Game/LoadPlaceInfo.ashx](http://www.roblox.com/Game/LoadPlaceInfo.ashx?placeId=1818)
+ * [/Game/BuildActionPermissionCheck.ashx](http://www.roblox.com/Game/BuildActionPermissionCheck.ashx?assetId=1818&userId=261&isSolo=true)
+ * [/Game/PlaceSpecificScript.ashx](http://www.roblox.com/Game/PlaceSpecificScript.ashx?placeId=1818)
 * [web.roblox.com](http://web.roblox.com)
 * [de.roblox.com](http://de.roblox.com) - for german users
 
@@ -32,7 +47,8 @@ tip: prepend `m.` or `setup.`
 * [css.rbxcdn.com](http://css.rbxcdn.com)
 * [js.rbxcdn.com](http://js.rbxcdn.com)
 * [t(0-7).rbxcdn.com](http://t0.rbxcdn.com) - for textures
-* [c(0-7).rbxcdn.com](http://c0.rbxcdn.com) - for content (sounds)
+* [c(0-7)(-cf).rbxcdn.com](http://c0.rbxcdn.com) - for content (sounds)
+ *  [/Bloxmas-card.pdf](http://c0.rbxcdn.com/Bloxmas-card.pdf)
 
 ####Game Client
 * [setup.roblox.com](http://setup.roblox.com)
