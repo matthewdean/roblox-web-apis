@@ -113,9 +113,10 @@ tip: prepend `m.` or `setup.`
  * [/Game/GetAllowedExperimentalFeatures](http://api.roblox.com/Game/GetAllowedExperimentalFeatures?placeId=1818)
 * [ephemeralcounters.api.roblox.com](http://ephemeralcounters.api.roblox.com)
 * [clientsettings.api.roblox.com](http://clientsettings.api.roblox.com)
- * [/Setting/QuietGet/ClientAppSettings](http://clientsettings.api.roblox.com/Setting/QuietGet/ClientAppSettings/?apiKey=D6925E56-BFB9-4908-AAA2-A5B1EC4B2D79)
- * [/Setting/QuietGet/ClientSharedSettings](http://clientsettings.api.roblox.com/Setting/QuietGet/ClientSharedSettings/?apiKey=D6925E56-BFB9-4908-AAA2-A5B1EC4B2D79)
- * [/Setting/QuietGet/WindowsStudioBootstrapperSettings](http://clientsettings.api.roblox.com/Setting/QuietGet/WindowsStudioBootstrapperSettings/?apiKey=76E5A40C-3AE1-4028-9F10-7C62520BD94F)
+ * [/Setting/QuietGet/ClientAppSettings](http://clientsettings.api.roblox.com/Setting/QuietGet/ClientAppSettings?apiKey=D6925E56-BFB9-4908-AAA2-A5B1EC4B2D79)
+ * [/Setting/QuietGet/ClientSharedSettings](http://clientsettings.api.roblox.com/Setting/QuietGet/ClientSharedSettings?apiKey=D6925E56-BFB9-4908-AAA2-A5B1EC4B2D79)
+ * [/Setting/QuietGet/iOSAppSettings](http://clientsettings.api.roblox.com/Setting/QuietGet/iOSAppSettings?apiKey=D6925E56-BFB9-4908-AAA2-A5B1EC4B2D79)
+ * [/Setting/QuietGet/WindowsStudioBootstrapperSettings](http://clientsettings.api.roblox.com/Setting/QuietGet/WindowsStudioBootstrapperSettings?apiKey=76E5A40C-3AE1-4028-9F10-7C62520BD94F)
 * [logging.service.roblox.com](http://logging.service.roblox.com) - for StatsService
  * [/GameScript](http://logging.service.roblox.com/GameScript)
 
