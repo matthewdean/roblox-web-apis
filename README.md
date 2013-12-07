@@ -30,6 +30,7 @@ Sites
  * [/Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRole&playerid=261&groupid=57](http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRole&playerid=261&groupid=57)
  * [/Game/GamePass/GamePassHandler.ashx?action=HasPass&userId=1&passId=1818](http://www.roblox.com/Game/GamePass/GamePassHandler.ashx?action=HasPass&userId=1&passId=1818)
  * [/Game/Badge/IsBadgeDisabled.ashx?badgeId=%d&placeId=%d&access](http://www.roblox.com/Game/Badge/IsBadgeDisabled.ashx?badgeId=%d&placeId=%d&access)
+ * [/Game/Tools/ThumbnailAsset.ashx?fmt=png&wd=420&ht=420&aid=1818](http://www.roblox.com/Game/Tools/ThumbnailAsset.ashx?fmt=png&wd=420&ht=420&aid=1818)
  * [/Game/Tools/InsertAsset.ashx?nsets=20&type=user&userid=1](http://www.roblox.com/Game/Tools/InsertAsset.ashx?nsets=20&type=user&userid=1)
  * [/Game/Tools/InsertAsset.ashx?nsets=10&type=base](http://www.roblox.com/Game/Tools/InsertAsset.ashx?nsets=10&type=base)
  * [/Game/Tools/InsertAsset.ashx?sid=%d](http://www.roblox.com/Game/Tools/InsertAsset.ashx?sid=2)
