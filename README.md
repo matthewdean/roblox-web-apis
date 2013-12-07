@@ -118,7 +118,7 @@ tip: prepend `m.` or `setup.`
 * [polls.roblox.com](http://polls.roblox.com)
 * [api.roblox.com](http://api.roblox.com/docs)
  * [/Marketplace/ProductInfo?assetId=20573078](http://api.roblox.com/Marketplace/ProductInfo?assetId=20573078)
- * [/Marketplace/ProductDetails?productId=3446731](http://api.roblox.com/Marketplace/ProductDetails?productId=3446731)
+ * [/Marketplace/ProductDetails?productId=18026036](http://api.roblox.com/Marketplace/ProductDetails?productId=18026036)
  * [/Users/1](http://api.roblox.com/Users/1)
  * [/Ownership/HasAsset?userId=1&assetId=1818](http://api.roblox.com/Ownership/HasAsset?userId=1&assetId=1818)
  * [/Game/GetAllowedExperimentalFeatures?placeId=1818](http://api.roblox.com/Game/GetAllowedExperimentalFeatures?placeId=1818)
