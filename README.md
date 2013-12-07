@@ -20,7 +20,7 @@ Sites
 * [m.roblox.com](http://m.roblox.com) - for mobile devices
 
 ####Test Sites
-prepend `m.` or `setup.`
+tip: prepend `m.` or `setup.`
 * [sitetest(1-3).robloxlabs.com](http://sitetest1.robloxlabs.com)
 * [gametest(1-5).robloxlabs.com](http://gametest1.robloxlabs.com)
 
@@ -34,6 +34,13 @@ prepend `m.` or `setup.`
 
 ####Game Client
 * [setup.roblox.com](http://setup.roblox.com)
+  * [/cdn.txt](http://setup.roblox.com/cdn.txt)
+  *	[/version(.txt)](http://setup.roblox.com/version)
+  *	[/versionStudio](http://setup.roblox.com/versionStudio)
+  *	[/versionQTStudio](http://setup.roblox.com/versionQTStudio)
+  *	[/mac/version](http://setup.roblox.com/mac/version)
+  *	[/mac/versionStudio](http://setup.roblox.com/mac/versionStudio)
+  *	[/mac/RobloxStudio.dmg](http://setup.roblox.com/mac/RobloxStudio.dmg)
 * [setup-gametest.roblox.com](http://setup-gametest.roblox.com)
 
 ####Promotional Sites
