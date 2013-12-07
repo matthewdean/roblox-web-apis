@@ -34,9 +34,11 @@ tip: prepend `m.` or `setup.`
 
 ####Game Client
 * [setup.roblox.com](http://setup.roblox.com)
+  * [/RobloxStudioLauncher.exe](http://setup.roblox.com/RobloxStudioLauncher.exe)
+  * [/RobloxStudioLauncherBeta.exe](http://setup.roblox.com/RobloxStudioLauncherBeta.exe)
   * [/cdn.txt](http://setup.roblox.com/cdn.txt)
   *	[/version(.txt)](http://setup.roblox.com/version)
-  *	[/versionStudio](http://setup.roblox.com/versionStudio)
+  *	[/versionStudio(.txt)](http://setup.roblox.com/versionStudio)
   *	[/versionQTStudio](http://setup.roblox.com/versionQTStudio)
   *	[/mac/version](http://setup.roblox.com/mac/version)
   *	[/mac/versionStudio](http://setup.roblox.com/mac/versionStudio)
