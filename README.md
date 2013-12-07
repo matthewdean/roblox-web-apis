@@ -21,6 +21,7 @@ Sites
 * [www.roblox.com](http://www.roblox.com)
  * [/Game/PlaySolo.ashx](http://www.roblox.com/Game/PlaySolo.ashx)
  * [/Install/Service.asmx](http://www.roblox.com/Install/Service.asmx)
+ * [/Ads/](http://www.roblox.com/Ads/)
  * [/Game/Badge/AwardBadge.ashx?userId=%d&badgeId=%d&placeId=%d&access](http://www.roblox.com/Game/Badge/AwardBadge.ashx?userId=261&badgeId=83094935&PlaceID=%d&access)
  * [/Game/ChatFilter.ashx](http://www.roblox.com/Game/ChatFilter.ashx)
  * [/Game/Badge/HasBadge.ashx?userId=%d&badgeId=%d&access](http://www.roblox.com/Game/Badge/HasBadge.ashx?userId=%d&badgeId=%d&access)
