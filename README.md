@@ -3,7 +3,7 @@ ROBLOX Websites
 Tips
 -
 * Google `site:example.org` to find pages on that website
-* Append `/js` or `/jsdebug` to .asmx pages
+* Append `?WSDL`, `/js`, or `/jsdebug` to .asmx pages
 * Most sites have a `/robots.txt`
 
 Domains
@@ -19,11 +19,13 @@ Sites
 
 ####Main Site
 * [www.roblox.com](http://www.roblox.com)
+ * [/Game/PlaySolo.ashx](http://www.roblox.com/Game/PlaySolo.ashx)
+ * [/Install/Service.asmx](http://www.roblox.com/Install/Service.asmx)
  * [/Game/Badge/AwardBadge.ashx?userId=%d&badgeId=%d&placeId=%d&access](http://www.roblox.com/Game/Badge/AwardBadge.ashx?userId=261&badgeId=83094935&PlaceID=%d&access)
  * [/Game/ChatFilter.ashx](http://www.roblox.com/Game/ChatFilter.ashx)
  * [/Game/Badge/HasBadge.ashx?userId=%d&badgeId=%d&access](http://www.roblox.com/Game/Badge/HasBadge.ashx?userId=%d&badgeId=%d&access)
  * [/Game/Badge/IsBadgeDisabled.ashx?badgeId=%d&placeId=%d&access](http://www.roblox.com/Game/Badge/IsBadgeDisabled.ashx?badgeId=%d&placeId=%d&access)
- * [/Game/AreFriends?userId=%d](http://www.roblox.com/Game/AreFriends?userId=%d)
+ * [/Game/AreFriends?userId=261](http://www.roblox.com/Game/AreFriends?userId=261)
  * [/AbuseReport/InGameChatHandler.ashx](http://www.roblox.com/AbuseReport/InGameChatHandler.ashx)
  * [/Game/Knockouts.ashx?userId=%d&access](http://www.roblox.com/Game/Knockouts.ashx?userId=261&access)
  * [/Game/Join.ashx](http://www.roblox.com/Game/Join.ashx?placeId=1818)
@@ -35,10 +37,10 @@ Sites
  * [/Game/BuildActionPermissionCheck.ashx](http://www.roblox.com/Game/BuildActionPermissionCheck.ashx?assetId=1818&userId=261&isSolo=true)
  * [/Game/PlaceSpecificScript.ashx?placeId=1818](http://www.roblox.com/Game/PlaceSpecificScript.ashx?placeId=1818)
  * [/Asset/GetScriptState.ashx?scriptHash=&accurateResults=true](http://www.roblox.com/Asset/GetScriptState.ashx?ScriptHash=53356c47685f350134c7e30efb66bf0&AccurateResults=true)
- * [/Contests/Leaders.aspx](http://www.roblox.com/Contests/Leaders.aspx?id=42)
- * [/Contests/Default.aspx](http://www.roblox.com/Contests/Default.aspx?id=42)
+ * [/Contests/Leaders.aspx?id=42](http://www.roblox.com/Contests/Leaders.aspx?id=42)
+ * [/Contests/Default.aspx?id=42](http://www.roblox.com/Contests/Default.aspx?id=42)
  * [/MobileAPI/UserInfo](http://www.roblox.com/mobileapi/userinfo)
- * [/Contests/Prizes.aspx](http://www.roblox.com/Contests/Prizes.aspx?id=42)
+ * [/Contests/Prizes.aspx?id=42](http://www.roblox.com/Contests/Prizes.aspx?id=42)
  * [/My/Share/ReferralLeaderboards.aspx](http://www.roblox.com/My/Share/ReferralLeaderboards.aspx)
  * [/My/Share/PleaseUpgradeMe.aspx](http://www.roblox.com/My/Share/PleaseUpgradeMe.aspx)
  * [/roblox.xsd](http://www.roblox.com/roblox.xsd)
@@ -46,16 +48,16 @@ Sites
  * [/Analytics/GamePerfMonitor.ashx](http://www.roblox.com/Analytics/GamePerfMonitor.ashx)
  * [/Marketplace/EconomyServices.asmx](http://www.roblox.com/Marketplace/EconomyServices.asmx)
  * [/IDE/ClientToolbox.aspx](http://www.roblox.com/IDE/ClientToolbox.aspx)
- * [/Thumbs/BCOverlay.ashx](http://www.roblox.com/Thumbs/BCOverlay.ashx?username=Shedletsky)
+ * [/Thumbs/BCOverlay.ashx?username=Shedletsky](http://www.roblox.com/Thumbs/BCOverlay.ashx?username=Shedletsky)
  * [/Thumbs/Asset.asmx](http://www.roblox.com/Thumbs/Asset.asmx)
  * [/Empty.ashx](http://www.roblox.com/Empty.aspx)
  * [/Thumbs/Avatar.asmx](http://www.roblox.com/Thumbs/Avatar.asmx)
  * [/Thumbs/Avatar.ashx](http://www.roblox.com/Thumbs/Avatar.ashx?x=64&y=64&format=png&username=Shedletsky)
  * [/PaymentSystemUnavailable.aspx](http://www.roblox.com/PaymentSystemUnavailable.aspx)
- * [/Groups/GetPrimaryGroupInfo.ashx](http://www.roblox.com/Groups/GetPrimaryGroupInfo.ashx?Users=Shedletsky)
+ * [/Groups/GetPrimaryGroupInfo.ashx?Users=ostrichSized,Shedletsky](http://www.roblox.com/Groups/GetPrimaryGroupInfo.ashx?Users=ostrichSized,Shedletsky)
  * [/userads/(1-4)](http://www.roblox.com/userads/1)
- * [/Asset/BodyColors.ashx](http://www.roblox.com/Asset/BodyColors.ashx?userId=261)
- * [/Asset/CharacterFetch.ashx](http://www.roblox.com/Asset/CharacterFetch.ashx?userId=261)
+ * [/Asset/BodyColors.ashx?userId=261](http://www.roblox.com/Asset/BodyColors.ashx?userId=261)
+ * [/Asset/CharacterFetch.ashx?userId=261](http://www.roblox.com/Asset/CharacterFetch.ashx?userId=261)
 * [web.roblox.com](http://web.roblox.com)
 * [de.roblox.com](http://de.roblox.com) - for german users
 
@@ -73,7 +75,7 @@ tip: prepend `m.` or `setup.`
 * [images.rbxcdn.com](http://images.rbxcdn.com)
 * [css.rbxcdn.com](http://css.rbxcdn.com)
 * [js.rbxcdn.com](http://js.rbxcdn.com)
-* [t(0-7).rbxcdn.com](http://t0.rbxcdn.com) - for textures
+* [t(0-7)(-cf).rbxcdn.com](http://t0.rbxcdn.com) - for textures
 * [c(0-7)(-cf).rbxcdn.com](http://c0.rbxcdn.com) - for content (sounds)
  *  [/Bloxmas-card.pdf](http://c0.rbxcdn.com/Bloxmas-card.pdf)
 
@@ -95,6 +97,7 @@ tip: prepend `m.` or `setup.`
 * [shop.roblox.com](http://shop.roblox.com)
 * [jobs.roblox.com](http://jobs.roblox.com)
 * [corp.roblox.com](http://corp.roblox.com)
+* [sandbox.corp.roblox.com](http://sandbox.corp.roblox.com)
 * [blog.roblox.com](http://blog.roblox.com)
 * [sandbox.blog.roblox.com](http://sandbox.blog.roblox.com)
 * [techblog.roblox.com](http://techblog.roblox.com)
@@ -110,7 +113,7 @@ tip: prepend `m.` or `setup.`
 ####Miscellaneous
 * [polls.roblox.com](http://polls.roblox.com)
 * [api.roblox.com](http://api.roblox.com/docs)
- * [/Game/GetAllowedExperimentalFeatures](http://api.roblox.com/Game/GetAllowedExperimentalFeatures?placeId=1818)
+ * [/Game/GetAllowedExperimentalFeatures?placeId=1818](http://api.roblox.com/Game/GetAllowedExperimentalFeatures?placeId=1818)
 * [ephemeralcounters.api.roblox.com](http://ephemeralcounters.api.roblox.com)
 * [clientsettings.api.roblox.com](http://clientsettings.api.roblox.com)
  * [/Setting/QuietGet/ClientAppSettings](http://clientsettings.api.roblox.com/Setting/QuietGet/ClientAppSettings?apiKey=D6925E56-BFB9-4908-AAA2-A5B1EC4B2D79)
@@ -121,6 +124,8 @@ tip: prepend `m.` or `setup.`
  * [/GameScript](http://logging.service.roblox.com/GameScript)
 
 ####Unused
+* [logging.sitetest.roblox.com](http://logging.sitetest.roblox.com)
+* [setup-staging.roblox.com](http://setup-staging.roblox.com/version.txt)
 * [content.roblox.com](http://content.roblox.com)
 * [blogs.roblox.com](http://blogs.roblox.com)
 * [job.roblox.com](http://job.roblox.com)
