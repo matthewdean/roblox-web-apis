@@ -12,12 +12,29 @@ Domains
 * rbxcdn.com
 * rbxdev.com
 * robloxlabs.com
+* goblox.com
 
 Sites
 -
 
 ####Main Site
 * [www.roblox.com](http://www.roblox.com)
+ * [/Game/Badge/AwardBadge.ashx?userId=%d&badgeId=%d&placeId=%d&access](http://www.roblox.com/Game/Badge/AwardBadge.ashx?userId=261&badgeId=83094935&PlaceID=%d&access)
+ * [/Game/ChatFilter.ashx](http://www.roblox.com/Game/ChatFilter.ashx)
+ * [/Game/Badge/HasBadge.ashx?userId=%d&badgeId=%d&access](http://www.roblox.com/Game/Badge/HasBadge.ashx?userId=%d&badgeId=%d&access)
+ * [/Game/Badge/IsBadgeDisabled.ashx?badgeId=%d&placeId=%d&access](http://www.roblox.com/Game/Badge/IsBadgeDisabled.ashx?badgeId=%d&placeId=%d&access)
+ * [/Game/AreFriends?userId=%d](http://www.roblox.com/Game/AreFriends?userId=%d)
+ * [/AbuseReport/InGameChatHandler.ashx](http://www.roblox.com/AbuseReport/InGameChatHandler.ashx)
+ * [/Game/Knockouts.ashx?userId=%d&access](http://www.roblox.com/Game/Knockouts.ashx?userId=261&access)
+ * [/Game/Join.ashx](http://www.roblox.com/Game/Join.ashx?placeId=1818)
+ * [/Game/Visit.ashx](http://www.roblox.com/Game/Visit.ashx?placeId=1818)
+ * [/Game/GameServer.ashx](http://www.roblox.com/Game/GameServer.ashx)
+ * [/Game/KeepAlivePinger.ashx](http://www.roblox.com/Game/KeepAlivePinger.ashx)
+ * [/Game/MachineConfiguration.ashx](http://www.roblox.com/Game/MachineConfiguration.ashx)
+ * [/Game/LoadPlaceInfo.ashx?placeId=1818](http://www.roblox.com/Game/LoadPlaceInfo.ashx?placeId=1818)
+ * [/Game/BuildActionPermissionCheck.ashx](http://www.roblox.com/Game/BuildActionPermissionCheck.ashx?assetId=1818&userId=261&isSolo=true)
+ * [/Game/PlaceSpecificScript.ashx?placeId=1818](http://www.roblox.com/Game/PlaceSpecificScript.ashx?placeId=1818)
+ * [/Asset/GetScriptState.ashx?scriptHash=&accurateResults=true](http://www.roblox.com/Asset/GetScriptState.ashx?ScriptHash=53356c47685f350134c7e30efb66bf0&AccurateResults=true)
  * [/Contests/Leaders.aspx](http://www.roblox.com/Contests/Leaders.aspx?id=42)
  * [/Contests/Default.aspx](http://www.roblox.com/Contests/Default.aspx?id=42)
  * [/MobileAPI/UserInfo](http://www.roblox.com/mobileapi/userinfo)
@@ -39,14 +56,6 @@ Sites
  * [/userads/(1-4)](http://www.roblox.com/userads/1)
  * [/Asset/BodyColors.ashx](http://www.roblox.com/Asset/BodyColors.ashx?userId=261)
  * [/Asset/CharacterFetch.ashx](http://www.roblox.com/Asset/CharacterFetch.ashx?userId=261)
- * [/Game/Join.ashx](http://www.roblox.com/Game/Join.ashx?placeId=1818)
- * [/Game/Visit.ashx](http://www.roblox.com/Game/Visit.ashx?placeId=1818)
- * [/Game/GameServer.ashx](http://www.roblox.com/Game/GameServer.ashx)
- * [/Game/KeepAlivePinger.ashx](http://www.roblox.com/Game/KeepAlivePinger.ashx)
- * [/Game/MachineConfiguration.ashx](http://www.roblox.com/Game/MachineConfiguration.ashx)
- * [/Game/LoadPlaceInfo.ashx](http://www.roblox.com/Game/LoadPlaceInfo.ashx?placeId=1818)
- * [/Game/BuildActionPermissionCheck.ashx](http://www.roblox.com/Game/BuildActionPermissionCheck.ashx?assetId=1818&userId=261&isSolo=true)
- * [/Game/PlaceSpecificScript.ashx](http://www.roblox.com/Game/PlaceSpecificScript.ashx?placeId=1818)
 * [web.roblox.com](http://web.roblox.com)
 * [de.roblox.com](http://de.roblox.com) - for german users
 
