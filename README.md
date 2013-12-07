@@ -52,7 +52,7 @@ Sites
  * [/Contests/Prizes.aspx?id=42](http://www.roblox.com/Contests/Prizes.aspx?id=42)
  * [/My/Share/ReferralLeaderboards.aspx](http://www.roblox.com/My/Share/ReferralLeaderboards.aspx)
  * [/My/Share/PleaseUpgradeMe.aspx](http://www.roblox.com/My/Share/PleaseUpgradeMe.aspx)
- * [/roblox.xsd](http://www.roblox.com/roblox.xsd)
+ * [/Roblox.xsd](http://www.roblox.com/roblox.xsd)
  * [/Micropay](http://www.roblox.com/Micropay/)
  * [/Analytics/GamePerfMonitor.ashx](http://www.roblox.com/Analytics/GamePerfMonitor.ashx)
  * [/Marketplace/EconomyServices.asmx](http://www.roblox.com/Marketplace/EconomyServices.asmx)
