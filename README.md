@@ -19,6 +19,7 @@ Sites
 ####Main Site
 * [www.roblox.com](http://www.roblox.com)
  * [/Contests/Leaders.aspx](http://www.roblox.com/Contests/Leaders.aspx?id=42)
+ * [/MobileAPI/UserInfo](http://www.roblox.com/mobileapi/userinfo)
  * [/Contests/Prizes.aspx](http://www.roblox.com/Contests/Prizes.aspx?id=42)
  * [/My/Share/ReferralLeaderboards.aspx](http://www.roblox.com/My/Share/ReferralLeaderboards.aspx)
  * [/My/Share/PleaseUpgradeMe.aspx](http://www.roblox.com/My/Share/PleaseUpgradeMe.aspx)
