@@ -29,8 +29,8 @@ tip: prepend `m.` or `setup.`
 * [images.rbxcdn.com](http://images.rbxcdn.com)
 * [css.rbxcdn.com](http://css.rbxcdn.com)
 * [js.rbxcdn.com](http://js.rbxcdn.com)
-* [t(0-7).rbxcdn.com](http://t0.rbxcdn.com)
-* [c(0-7).rbxcdn.com](http://c0.rbxcdn.com)
+* [t(0-7).rbxcdn.com](http://t0.rbxcdn.com) - for textures
+* [c(0-7).rbxcdn.com](http://c0.rbxcdn.com) - for content (sounds)
 
 ####Game Client
 * [setup.roblox.com](http://setup.roblox.com)
@@ -65,11 +65,17 @@ tip: prepend `m.` or `setup.`
 ####Miscellaneous
 * [polls.roblox.com](http://polls.roblox.com)
 * [api.roblox.com](http://api.roblox.com/docs)
+ * [/Game/GetAllowedExperimentalFeatures](http://api.roblox.com/Game/GetAllowedExperimentalFeatures?placeId=1818)
 * [ephemeralcounters.api.roblox.com](http://ephemeralcounters.api.roblox.com)
 * [clientsettings.api.roblox.com](http://clientsettings.api.roblox.com)
-* [logging.service.roblox.com](http://logging.service.roblox.com)
+ * [/Setting/QuietGet/ClientAppSettings](http://clientsettings.api.roblox.com/Setting/QuietGet/ClientAppSettings/?apiKey=D6925E56-BFB9-4908-AAA2-A5B1EC4B2D79)
+ * [/Setting/QuietGet/ClientSharedSettings](http://clientsettings.api.roblox.com/Setting/QuietGet/ClientSharedSettings/?apiKey=D6925E56-BFB9-4908-AAA2-A5B1EC4B2D79)
+ * [/Setting/QuietGet/WindowsStudioBootstrapperSettings](http://clientsettings.api.roblox.com/Setting/QuietGet/WindowsStudioBootstrapperSettings/?apiKey=76E5A40C-3AE1-4028-9F10-7C62520BD94F)
+* [logging.service.roblox.com](http://logging.service.roblox.com) - for StatsService
+ * [/GameScript](http://logging.service.roblox.com/GameScript)
 
 ####Unused
+* [content.roblox.com](http://content.roblox.com)
 * [blogs.roblox.com](http://blogs.roblox.com)
 * [job.roblox.com](http://job.roblox.com)
 * [community.roblox.com](http://community.roblox.com)
