@@ -20,7 +20,7 @@ Sites
 ####Main Site
 * [www.roblox.com](http://www.roblox.com)
  * [/AbuseReport/InGameChatHandler.ashx](http://www.roblox.com/AbuseReport/InGameChatHandler.ashx)
- * [/Ads/](http://www.roblox.com/Ads/)
+ * [/Ads/Default.aspx](http://www.roblox.com/Ads/Default.aspx)
  * [/Analytics/GamePerfMonitor.ashx](http://www.roblox.com/Analytics/GamePerfMonitor.ashx)
  * [/Asset/BodyColors.ashx?userId=261](http://www.roblox.com/Asset/BodyColors.ashx?userId=261)
  * [/Asset/CharacterFetch.ashx?userId=261](http://www.roblox.com/Asset/CharacterFetch.ashx?userId=261)
@@ -71,7 +71,7 @@ Sites
  * [/Login/FufillConstraint.aspx](http://www.roblox.com/Login/FulfillConstraint.aspx)
  * [/Login/ResetPasswordRequest.aspx](http://www.roblox.com/Login/ResetPasswordRequest.aspx)
  * [/Marketplace/EconomyServices.asmx](http://www.roblox.com/Marketplace/EconomyServices.asmx)
- * [/Micropay/](http://www.roblox.com/Micropay/)
+ * [/Micropay/Default.aspx](http://www.roblox.com/Micropay/Default.aspx)
  * [/MobileAPI/Check-App-Version?appVersion=AppiOSV2.112.35972](http://www.roblox.com/mobileapi/check-app-version?appVersion=AppiOSV2.112.35972)
  * [/MobileAPI/UserInfo](http://www.roblox.com/mobileapi/userinfo)
  * [/My/Share/PleaseUpgradeMe.aspx](http://www.roblox.com/My/Share/PleaseUpgradeMe.aspx)
