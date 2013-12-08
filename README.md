@@ -28,7 +28,7 @@ Sites
  * [/Asset/Default.ashx?assetVersionId=1](http://www.roblox.com/Asset/Default.ashx?assetVersionId=1)
  * [/Asset/GetScriptState.ashx?scriptHash=%s&accurateResults=true](http://www.roblox.com/Asset/GetScriptState.ashx?ScriptHash=53356c47685f350134c7e30efb66bf0&AccurateResults=true)
  * [/Contests/Default.aspx?id=(1-51)](http://www.roblox.com/Contests/Default.aspx?id=1)
- * [/Contests/History.aspx](http://www.roblox.com/Contests/History.aspx)
+ * [/Contests/History.aspx?p=1](http://www.roblox.com/Contests/History.aspx?p=1)
  * [/Contests/Leaders.aspx?id=(1-51)](http://www.roblox.com/Contests/Leaders.aspx?id=1)
  * [/Contests/Prizes.aspx?id=(1-51)](http://www.roblox.com/Contests/Prizes.aspx?id=1)
  * [/Empty.ashx](http://www.roblox.com/Empty.aspx)
