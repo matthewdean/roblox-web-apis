@@ -53,6 +53,7 @@ Sites
  * [/Game/LuaWebService/HandleSocialRequest.ashx?method=IsFriendsWith&userid=261](http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=IsFriendsWith&userid=261)
  * [/Game/LuaWebService/HandleSocialRequest.ashx?method=IsInGroup&playerId=%d&groupId=%d](http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=IsInGroup&playerid=261&groupid=57)
  * [/Game/MachineConfiguration.ashx](http://www.roblox.com/Game/MachineConfiguration.ashx)
+ * [/Game/PlaceLauncher.ashx?request=RequestGame&placeId=1818](http://www.roblox.com/Game/PlaceLauncher.ashx?request=RequestGame&placeId=1818)
  * [/Game/PlaceSpecificScript.ashx?placeId=1818](http://www.roblox.com/Game/PlaceSpecificScript.ashx?placeId=1818)
  * [/Game/PlaceVisit.ashx?userId=261&associatedPlaceId=1818&access](http://www.roblox.com/Game/PlaceVisit.ashx?userId=261&associatedPlaceId=1818&access)
  * [/Game/PlaySolo.ashx](http://www.roblox.com/Game/PlaySolo.ashx)
