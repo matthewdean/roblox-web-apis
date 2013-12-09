@@ -92,6 +92,7 @@ Sites
  * [/Thumbs/ItemImage.ashx?params=\[{"assetId":"1818"}\]&jsoncallback=jsonp](http://www.roblox.com/Thumbs/ItemImage.ashx?params=%5B%7B%22assetId%22:%221818%22%7D%5D&jsoncallback=jsonp)
  * [/Thumbs/RawAsset.ashx?width=60&height=62&imageFormat=png&assetId=1818](http://www.roblox.com/Thumbs/RawAsset.ashx?width=60&height=62&imageFormat=png&assetId=1818)
  * [/userads/(1-4)](http://www.roblox.com/userads/1)
+ * [/UserCheck/CheckIfInvalidUsernameForSignup?username=Shedletsky](http://www.roblox.com/UserCheck/CheckIfInvalidUsernameForSignup?username=Shedletsky)
  * [/UserCheck/DoesUsernameExist?username=Shedletsky](http://www.roblox.com/UserCheck/DoesUsernameExist?username=Shedletsky)
 * [web.roblox.com](http://web.roblox.com)
 * [de.roblox.com](http://de.roblox.com) - for german users
@@ -148,6 +149,9 @@ tip: prepend `m.` or `setup.`
 ####Miscellaneous
 * [polls.roblox.com](http://polls.roblox.com)
 * [api.roblox.com](http://api.roblox.com/docs)
+ * [/Auth/Invalidate](http://api.roblox.com/Auth/Invalidate)
+ * [/Auth/Negotiate?suggest=](http://api.roblox.com/Auth/Negotiate?suggest=)
+ * [/Auth/Renew](http://api.roblox.com/Auth/Renew)
  * [/Marketplace/ProductInfo?assetId=20573078](http://api.roblox.com/Marketplace/ProductInfo?assetId=20573078)
  * [/Marketplace/ProductDetails?productId=18026036](http://api.roblox.com/Marketplace/ProductDetails?productId=18026036)
  * [/Users/1](http://api.roblox.com/Users/1)
