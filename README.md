@@ -161,7 +161,6 @@ tip: prepend `m.` or `setup.`
  * [/Setting/QuietGet/WindowsStudioBootstrapperSettings](http://clientsettings.api.roblox.com/Setting/QuietGet/WindowsStudioBootstrapperSettings?apiKey=76E5A40C-3AE1-4028-9F10-7C62520BD94F)
 * [logging.service.roblox.com](http://logging.service.roblox.com) - for StatsService
  * [/GameScript](http://logging.service.roblox.com/GameScript)
- * [/Gatherer/LogEntryP](http://logging.service.roblox.com/Gatherer/LogEntryP)
 
 ####Unused
 * [logging.sitetest.roblox.com](http://logging.sitetest.roblox.com)
