@@ -1,8 +1,15 @@
 ROBLOX Web APIs
 =
+
+Rules
+-
+* Pascal-case path, camel-case for query string
+* Don't include pages which are just redirects (e.g. www.roblox.com/drivers)
+* Use 261 for userIds, 1818 for placeIds, Shedletsky for username, etc
+
 Tips
 -
-* Google `site:example.org` to find pages on that website
+* Google `site:api.roblox.com` to find pages for that subdomain
 * Append `?WSDL`, `/js`, or `/jsdebug` to .asmx pages
 * Most sites have a `/robots.txt`
 
