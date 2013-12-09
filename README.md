@@ -62,6 +62,7 @@ Sites
  * [/Game/Tools/InsertAsset.ashx?sid=%d](http://www.roblox.com/Game/Tools/InsertAsset.ashx?sid=2)
  * [/Game/Tools/InsertAsset.ashx?type=user&userId=261&nsets=20](http://www.roblox.com/Game/Tools/InsertAsset.ashx?nsets=20&type=user&userid=1)
  * [/Game/Tools/ThumbnailAsset.ashx?fmt=png&wd=420&ht=420&aid=1818](http://www.roblox.com/Game/Tools/ThumbnailAsset.ashx?fmt=png&wd=420&ht=420&aid=1818)
+ * [/Game/Upload.aspx](http://www.roblox.com/Game/Upload.aspx)
  * [/Game/Visit.ashx](http://www.roblox.com/Game/Visit.ashx?placeId=1818)
  * [/Game/Wipeouts.ashx?userId=261&access](http://www.roblox.com/Game/Wipeouts.ashx?userId=261&access)
  * [/Groups/GetPrimaryGroupInfo.ashx?users=ostrichSized,Shedletsky](http://www.roblox.com/Groups/GetPrimaryGroupInfo.ashx?users=ostrichSized,Shedletsky)
@@ -159,6 +160,7 @@ tip: prepend `m.` or `setup.`
  * [/Setting/QuietGet/WindowsStudioBootstrapperSettings](http://clientsettings.api.roblox.com/Setting/QuietGet/WindowsStudioBootstrapperSettings?apiKey=76E5A40C-3AE1-4028-9F10-7C62520BD94F)
 * [logging.service.roblox.com](http://logging.service.roblox.com) - for StatsService
  * [/GameScript](http://logging.service.roblox.com/GameScript)
+ * [/Gatherer/LogEntryP](http://logging.service.roblox.com/Gatherer/LogEntryP)
 
 ####Unused
 * [logging.sitetest.roblox.com](http://logging.sitetest.roblox.com)
