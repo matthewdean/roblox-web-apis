@@ -23,7 +23,7 @@ Sites
  * [/Ads/Default.aspx](http://www.roblox.com/Ads/Default.aspx)
  * [/Analytics/GamePerfMonitor.ashx](http://www.roblox.com/Analytics/GamePerfMonitor.ashx)
  * [/Asset/BodyColors.ashx?userId=261](http://www.roblox.com/Asset/BodyColors.ashx?userId=261)
- * [/Asset/CharacterFetch.ashx?userId=261](http://www.roblox.com/Asset/CharacterFetch.ashx?userId=261)
+ * [/Asset/CharacterFetch.ashx?userId=261&placeId=1818](http://www.roblox.com/Asset/CharacterFetch.ashx?userId=261&placeId=1818)
  * [/Asset/Default.ashx?id=1818&version=1&serverPlaceId=0&access](http://www.roblox.com/Asset/Default.ashx?id=1818&access) - User-Agent must be 'Roblox/WinINet'
  * [/Asset/Default.ashx?assetVersionId=1](http://www.roblox.com/Asset/Default.ashx?assetVersionId=1)
  * [/Asset/GetScriptState.ashx?scriptHash=%s&accurateResults=true](http://www.roblox.com/Asset/GetScriptState.ashx?ScriptHash=53356c47685f350134c7e30efb66bf0&AccurateResults=true)
@@ -62,6 +62,7 @@ Sites
  * [/Game/Tools/InsertAsset.ashx?sid=%d](http://www.roblox.com/Game/Tools/InsertAsset.ashx?sid=2)
  * [/Game/Tools/InsertAsset.ashx?type=user&userId=261&nsets=20](http://www.roblox.com/Game/Tools/InsertAsset.ashx?nsets=20&type=user&userid=1)
  * [/Game/Tools/ThumbnailAsset.ashx?fmt=png&wd=420&ht=420&aid=1818](http://www.roblox.com/Game/Tools/ThumbnailAsset.ashx?fmt=png&wd=420&ht=420&aid=1818)
+ * [/Game/TreasureHunt.ashx?userId=261&eggnum=1&key=themusessing](http://www.roblox.com/Game/TreasureHunt.ashx?userId=261&eggnum=7&key=themusessing)
  * [/Game/Upload.aspx](http://www.roblox.com/Game/Upload.aspx)
  * [/Game/Visit.ashx](http://www.roblox.com/Game/Visit.ashx?placeId=1818)
  * [/Game/Wipeouts.ashx?userId=261&access](http://www.roblox.com/Game/Wipeouts.ashx?userId=261&access)
