@@ -26,8 +26,6 @@ Sites
 
 ####Main Site
 * [www.roblox.com](http://www.roblox.com)
- * [/AbuseReport/InGameChatHandler.ashx](http://www.roblox.com/AbuseReport/InGameChatHandler.ashx)
- * [/Analytics/GamePerfMonitor.ashx](http://www.roblox.com/Analytics/GamePerfMonitor.ashx)
  * [/Asset/BodyColors.ashx?userId=261](http://www.roblox.com/Asset/BodyColors.ashx?userId=261)
  * [/Asset/CharacterFetch.ashx?userId=261&placeId=1818](http://www.roblox.com/Asset/CharacterFetch.ashx?userId=261&placeId=1818)
  * [/Asset/Default.ashx?id=1818&version=1&serverPlaceId=0&access](http://www.roblox.com/Asset/Default.ashx?id=1818&access) - User-Agent must be 'Roblox/WinINet'
@@ -185,3 +183,5 @@ tip: prepend `m.` or `setup.`
  * [/Login/FufillConstraint.aspx](http://www.roblox.com/Login/FulfillConstraint.aspx)
  * [/Game/Upload.aspx](http://www.roblox.com/Game/Upload.aspx)
  * [/userads/(1-4)](http://www.roblox.com/userads/1)
+ * [/AbuseReport/InGameChatHandler.ashx](http://www.roblox.com/AbuseReport/InGameChatHandler.ashx)
+ * [/Analytics/GamePerfMonitor.ashx](http://www.roblox.com/Analytics/GamePerfMonitor.ashx)
