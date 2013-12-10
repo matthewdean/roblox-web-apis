@@ -100,12 +100,37 @@ Content-Type: application/json
 {"userName":"","password":"","isCaptchaOn":false,"challenge":"","captchaResponse":""}
  ```
 
+####How to download an asset
+```http
+GET /Asset/?id=1818 HTTP/1.1
+Host: www.roblox.com
+User-Agent: Roblox
+```
+
+You can also download a specific version of an asset. Note that if version isn't specified, it will default to the latest version.
+
+```http
+GET /Asset/?id=1818&version=1 HTTP/1.1
+Host: www.roblox.com
+User-Agent: Roblox
+```
+
+And if you have a specific assetVersionId you can use that as well:
+```http
+GET /Asset/?assetVersionId=1 HTTP/1.1
+Host: www.roblox.com
+User-Agent: Roblox
+```
+
+The equivalent on the website is http://www.roblox.com/Item.aspx?avid=1
+
+There's another parameter, serverPlaceId, which will deny the request if the owner of that place doesn't own it and it's not owned by roblox.
+
+
 ####Main Site
 * [www.roblox.com](http://www.roblox.com)
  * [/Asset/BodyColors.ashx?userId=261](http://www.roblox.com/Asset/BodyColors.ashx?userId=261)
  * [/Asset/CharacterFetch.ashx?userId=261&placeId=1818](http://www.roblox.com/Asset/CharacterFetch.ashx?userId=261&placeId=1818)
- * [/Asset/Default.ashx?id=1818&version=1&serverPlaceId=0&access](http://www.roblox.com/Asset/Default.ashx?id=1818&access) - User-Agent must be 'Roblox/WinINet'
- * [/Asset/Default.ashx?assetVersionId=1](http://www.roblox.com/Asset/Default.ashx?assetVersionId=1)
  * [/Asset/GetScriptState.ashx?scriptHash=%s&accurateResults=true](http://www.roblox.com/Asset/GetScriptState.ashx?ScriptHash=53356c47685f350134c7e30efb66bf0&AccurateResults=true)
  * [/Game/BuildActionPermissionCheck.ashx?assetId=1818&userId=261&isSolo=true](http://www.roblox.com/Game/BuildActionPermissionCheck.ashx?assetId=1818&userId=261&isSolo=true)
  * [/Game/GamePass/GamePassHandler.ashx?action=HasPass&userId=261&passId=%d](http://www.roblox.com/Game/GamePass/GamePassHandler.ashx?action=HasPass&userId=1&passId=1818)
