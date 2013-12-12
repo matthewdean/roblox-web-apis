@@ -57,6 +57,23 @@ Domains
  * [/Thumbs/AvatarImage.ashx?params=\[{"userId":"261"}\]&jsoncallback=jsonp](http://www.roblox.com/Thumbs/AvatarImage.ashx?params=%5B%7B%22userId%22:%22261%22%7D%5D&jsoncallback=jsonp)
  * [/Thumbs/BCOverlay.ashx?username=Shedletsky](http://www.roblox.com/Thumbs/BCOverlay.ashx?username=Shedletsky)
  * [/Thumbs/ItemImage.ashx?params=\[{"assetId":"1818"}\]&jsoncallback=jsonp](http://www.roblox.com/Thumbs/ItemImage.ashx?params=%5B%7B%22assetId%22:%221818%22%7D%5D&jsoncallback=jsonp)
+ ```javascript
+ var params = [{
+    assetId: 1818
+ }];
+ $.ajax({
+    url: 'http://www.roblox.com/Thumbs/ItemImage.ashx',
+   	data: { params: JSON.stringify(params) },
+   	dataType: 'jsonp',
+   	jsonp: 'jsoncallback',
+   	success: function(json) {
+       $.each(json, function(i, asset) {
+          console.log(asset.id, asset.name);
+       });
+   	}
+ });
+ ```
+
  * [/Thumbs/RawAsset.ashx?width=60&height=62&imageFormat=png&assetId=1818](http://www.roblox.com/Thumbs/RawAsset.ashx?width=60&height=62&imageFormat=png&assetId=1818)
  * [/Thumbs/Asset.asmx](http://www.roblox.com/Thumbs/Asset.asmx)
 
