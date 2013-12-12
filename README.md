@@ -58,9 +58,7 @@ Domains
  * [/Thumbs/BCOverlay.ashx?username=Shedletsky](http://www.roblox.com/Thumbs/BCOverlay.ashx?username=Shedletsky)
  * [/Thumbs/ItemImage.ashx?params=\[{"assetId":"1818"}\]&jsoncallback=jsonp](http://www.roblox.com/Thumbs/ItemImage.ashx?params=%5B%7B%22assetId%22:%221818%22%7D%5D&jsoncallback=jsonp)
  ```javascript
- var params = [{
-    assetId: 1818
- }];
+ var params = [{ assetId: 1818 }];
  $.ajax({
     url: 'http://www.roblox.com/Thumbs/ItemImage.ashx',
    	data: { params: JSON.stringify(params) },
