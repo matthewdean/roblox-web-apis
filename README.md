@@ -119,7 +119,7 @@ Content-Type: application/json
 
 ####How to download an asset
 ```http
-GET /Asset/?id=1818 HTTP/1.1
+GET http://www.roblox.com/Asset/?id=1818 HTTP/1.1
 Host: www.roblox.com
 User-Agent: Roblox
 ```
@@ -127,17 +127,18 @@ User-Agent: Roblox
 You can also download a specific version of an asset. Note that if version isn't specified, it will default to the latest version.
 
 ```http
-GET /Asset/?id=1818&version=1 HTTP/1.1
+GET http://www.roblox.com/Asset/?id=1818&version=1 HTTP/1.1
 Host: www.roblox.com
 User-Agent: Roblox
 ```
 
-And if you have a specific assetVersionId you can use that as well:
+And if you have a specific versionId you can use that as well:
 ```http
-GET /Asset/?assetVersionId=1 HTTP/1.1
+GET http://www.roblox.com/Asset/?versionId=1 HTTP/1.1
 Host: www.roblox.com
 User-Agent: Roblox
 ```
+Note: for some reason assetVersionId also works in the query string
 
 The equivalent on the website is http://www.roblox.com/Item.aspx?avid=1
 
