@@ -83,6 +83,22 @@ Domains
 ####Login APIs
 
  ```http
+POST https://www.roblox.com/MobileAPI/Signup HTTP/1.1
+Host: www.roblox.com
+Content-Type: application/json
+Content-Length: 72
+
+{"username":"Shedletsky","password":"hunter2","gender":"Male","dateOfBirth":"6/18/87"}
+ ```
+ ```http
+HTTP/1.1 200 OK
+Set-Cookie: .ROBLOSECURITY=*
+Content-Length: 210
+Content-Type: application/json
+
+{"Status":"OK","UserInfo":{"UserID":261,"UserName":"Shedletsky","RobuxBalance":0,"TicketsBalance":0,"ThumbnailUrl":"http://t3.rbxcdn.com/1768c4f3c0d7c30d978c9dce68aa786c","IsAnyBuildersClubMember":false}}
+ ```
+ ```http
 POST https://www.roblox.com/NewLogin HTTP/1.1
 Host: m.roblox.com
 Content-Length: 29
@@ -174,6 +190,17 @@ There's another parameter, serverPlaceId, which will deny the request if the own
  * [/Roblox.xsd](http://www.roblox.com/roblox.xsd)
  * [/UserCheck/CheckIfInvalidUsernameForSignup?username=Shedletsky](http://www.roblox.com/UserCheck/CheckIfInvalidUsernameForSignup?username=Shedletsky)
  * [/UserCheck/DoesUsernameExist?username=Shedletsky](http://www.roblox.com/UserCheck/DoesUsernameExist?username=Shedletsky)
+ * [/UserCheck/GetRecommendedUsername?usernameToTry=Shedletsky](http://www.roblox.com/UserCheck/GetRecommendedUsername?usernameToTry=Shedletsky)
+
+```http
+POST https://www.roblox.com/UserCheck/validatepasswordforsignup HTTP/1.1
+Host: www.roblox.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 36
+
+username=Shedletsky&password=hunter2
+```
+
 * [web.roblox.com](http://web.roblox.com)
 * [de.roblox.com](http://de.roblox.com) - for german users
 ####Mobile Site
@@ -256,6 +283,8 @@ tip: prepend `m.` or `setup.`
 * [community.roblox.com](http://community.roblox.com)
 
 ####Non-API URLs
+ * [/Games/List](http://www.roblox.com/games/list)
+ * [/Info/Terms-Of-Service](http://www.roblox.com/Info/Terms-Of-Service)
  * [/PaymentSystemUnavailable.aspx](http://www.roblox.com/PaymentSystemUnavailable.aspx)
  * [/Bloxmas-card.pdf](http://c0.rbxcdn.com/Bloxmas-card.pdf)
  * [/My/Share/PleaseUpgradeMe.aspx](http://www.roblox.com/My/Share/PleaseUpgradeMe.aspx)
