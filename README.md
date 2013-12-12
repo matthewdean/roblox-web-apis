@@ -171,6 +171,7 @@ tip: prepend `m.` or `setup.`
 
 ####Game Client
 * [setup.roblox.com](http://setup.roblox.com)
+  * [/Roblox.exe](http://setup.roblox.com/Roblox.exe)
   * [/RobloxStudioLauncher.exe](http://setup.roblox.com/RobloxStudioLauncher.exe)
   * [/RobloxStudioLauncherBeta.exe](http://setup.roblox.com/RobloxStudioLauncherBeta.exe)
   * [/cdn.txt](http://setup.roblox.com/cdn.txt)
