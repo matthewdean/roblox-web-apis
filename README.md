@@ -114,6 +114,14 @@ Content-Type: application/json
 
 {"userName":"","password":"","isCaptchaOn":false,"challenge":"","captchaResponse":""}
  ```
+ 
+ This page clears the browser's cookies. It doesn't invalidate the session:
+ ```http
+POST https://www.roblox.com/MobileAPI/Logout HTTP/1.1
+Host: www.roblox.com
+Cookie: .ROBLOSECURITY=*
+Content-Length: 0
+ ```
 
 ####How to download an asset
 ```http
