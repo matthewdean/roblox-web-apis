@@ -70,9 +70,15 @@ Ownership APIs
 
  * [/Users/1](http://api.roblox.com/Users/1)
 
-####User APIs
+User APIs
+----
+
  * [/Asset/BodyColors.ashx?userId=261](http://www.roblox.com/Asset/BodyColors.ashx?userId=261)
+
+#####Get the assets a user is wearing
  * [/Asset/CharacterFetch.ashx?userId=261&placeId=1818](http://www.roblox.com/Asset/CharacterFetch.ashx?userId=261&placeId=1818)
+
+#####Check if a username has been taken
  * [/UserCheck/DoesUsernameExist?username=Shedletsky](http://www.roblox.com/UserCheck/DoesUsernameExist?username=Shedletsky)
  * [/Thumbs/RawAsset.ashx?width=60&height=62&imageFormat=png&assetId=1818](http://www.roblox.com/Thumbs/RawAsset.ashx?width=60&height=62&imageFormat=png&assetId=1818)
  * [/Thumbs/Asset.asmx](http://www.roblox.com/Thumbs/Asset.asmx)
