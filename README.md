@@ -1,14 +1,26 @@
-ROBLOX Web APIs
-=
-
-####Thumbnail APIs
+Thumbnail APIs
+----
+#####Get an asset's thumbnail URL
  * [/Asset-Thumbnail/Json?assetId=1818&width=160&height=100&format=jpeg](http://www.roblox.com/asset-thumbnail/json?assetId=1818&width=160&height=100&format=jpeg)
+
+#####Get an asset's thumbnail
  * [/Game/Tools/ThumbnailAsset.ashx?fmt=png&wd=420&ht=420&aid=1818](http://www.roblox.com/Game/Tools/ThumbnailAsset.ashx?fmt=png&wd=420&ht=420&aid=1818)
+
+#####Get an outfit's thumbnail URL
  * [/Outfit-Thumbnail/Json?userOutfitId=2](http://www.roblox.com/Outfit-Thumbnail/Json?userOutfitId=2&width=352&height=352&format=png)
- * [/Thumbs/Avatar.ashx?x=64&y=64&format=png&username=Shedletsky](http://www.roblox.com/Thumbs/Avatar.ashx?x=64&y=64&format=png&username=ROBLOX)
- * [/Thumbs/Avatar.asmx](http://www.roblox.com/Thumbs/Avatar.asmx)
- * [/Thumbs/AvatarImage.ashx?params=\[{"userId":"261"}\]&jsoncallback=jsonp](http://www.roblox.com/Thumbs/AvatarImage.ashx?params=%5B%7B%22userId%22:%22261%22%7D%5D&jsoncallback=jsonp)
+
+#####Get a user's thumbnail
+ * [/Thumbs/Avatar.ashx?x=64&y=64&format=png&username=Shedletsky](http://www.roblox.com/Thumbs/Avatar.ashx?x=64&y=64&format=png&username=Shedletsky)
+
+#####Get a user's BC thumbnail
  * [/Thumbs/BCOverlay.ashx?username=Shedletsky](http://www.roblox.com/Thumbs/BCOverlay.ashx?username=Shedletsky)
+
+ * [/Thumbs/Avatar.asmx](http://www.roblox.com/Thumbs/Avatar.asmx)
+
+#####Get multiple asset's thumbnail URLs
+ * [/Thumbs/AvatarImage.ashx?params=\[{"userId":"261"}\]&jsoncallback=jsonp](http://www.roblox.com/Thumbs/AvatarImage.ashx?params=%5B%7B%22userId%22:%22261%22%7D%5D&jsoncallback=jsonp)
+
+#####Get multiple user's thumbnail URLs
  * [/Thumbs/ItemImage.ashx?params=\[{"assetId":"1818"}\]&jsoncallback=jsonp](http://www.roblox.com/Thumbs/ItemImage.ashx?params=%5B%7B%22assetId%22:%221818%22%7D%5D&jsoncallback=jsonp)
  ```javascript
  var params = [{ assetId: 1818 }];
@@ -25,21 +37,38 @@ ROBLOX Web APIs
  });
  ```
 
-####Friend APIs
- * [/Game/LuaWebService/HandleSocialRequest.ashx?method=IsFriendsWith&userid=261](http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=IsFriendsWith&userid=261)
+Group APIs
+----
 
-####Ownership APIs
- * [/Game/GamePass/GamePassHandler.ashx?action=HasPass&userId=261&passId=%d](http://www.roblox.com/Game/GamePass/GamePassHandler.ashx?action=HasPass&userId=1&passId=1818)
+#####Check if a player is in a group
+ * [/Game/LuaWebService/HandleSocialRequest.ashx?method=IsInGroup&playerId=261&groupId=57](http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=IsInGroup&playerid=261&groupid=57)
+
+#####Get a player's rank number
+ * [/Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRank&playerId=261&groupId=57](http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRank&playerid=261&groupid=57)
+
+#####Get a player's rank name
+ * [/Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRole&playerId=261&groupId=57](http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRole&playerid=261&groupid=57)
+
+####Get the primary groups of multiple users
+ * [/Groups/GetPrimaryGroupInfo.ashx?users=Shedletsky,builderman](http://www.roblox.com/Groups/GetPrimaryGroupInfo.ashx?users=Shedletsky,builderman)
+
+Friend APIs
+----
+#####Check if two users are friends
+ * [/Game/LuaWebService/HandleSocialRequest.ashx?method=IsFriendsWith&playerId=261&userId=156](http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=IsFriendsWith&playerId=261&userId=156)
+
+Ownership APIs
+----
+#####Check if a user owns an asset
+ * [/Ownership/HasAsset?userId=261&assetId=1818](http://api.roblox.com/Ownership/HasAsset?userId=261&assetId=1818)
+ * [/Game/GamePass/GamePassHandler.ashx?action=HasPass&userId=261&passId=1818](http://www.roblox.com/Game/GamePass/GamePassHandler.ashx?action=HasPass&userId=261&passId=1818)
+
+#####Get information about an asset
  * [/Marketplace/ProductInfo?assetId=20573078](http://api.roblox.com/Marketplace/ProductInfo?assetId=20573078)
  * [/Marketplace/ProductDetails?productId=18026036](http://api.roblox.com/Marketplace/ProductDetails?productId=18026036)
- * [/Users/1](http://api.roblox.com/Users/1)
- * [/Ownership/HasAsset?userId=1&assetId=1818](http://api.roblox.com/Ownership/HasAsset?userId=1&assetId=1818)
 
-####Group APIs
- * [/Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRank&playerId=%d&groupId=%d](http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRank&playerid=261&groupid=57)
- * [/Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRole&playerId=%d&groupId=%d](http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRole&playerid=261&groupid=57)
- * [/Game/LuaWebService/HandleSocialRequest.ashx?method=IsInGroup&playerId=%d&groupId=%d](http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=IsInGroup&playerid=261&groupid=57)
- * [/Groups/GetPrimaryGroupInfo.ashx?users=ostrichSized,Shedletsky](http://www.roblox.com/Groups/GetPrimaryGroupInfo.ashx?users=ostrichSized,Shedletsky)
+
+ * [/Users/1](http://api.roblox.com/Users/1)
 
 ####User APIs
  * [/Asset/BodyColors.ashx?userId=261](http://www.roblox.com/Asset/BodyColors.ashx?userId=261)
