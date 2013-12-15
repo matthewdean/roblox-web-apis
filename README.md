@@ -1,10 +1,10 @@
 Thumbnail APIs
 ----
-#####Get an asset's thumbnail URL
- * [/Asset-Thumbnail/Json?assetId=1818&width=160&height=100&format=jpeg](http://www.roblox.com/asset-thumbnail/json?assetId=1818&width=160&height=100&format=jpeg)
-
 #####Get an asset's thumbnail
  * [/Game/Tools/ThumbnailAsset.ashx?fmt=png&wd=420&ht=420&aid=1818](http://www.roblox.com/Game/Tools/ThumbnailAsset.ashx?fmt=png&wd=420&ht=420&aid=1818)
+
+#####Get an asset's thumbnail URL
+ * [/Asset-Thumbnail/Json?assetId=1818&width=160&height=100&format=jpeg](http://www.roblox.com/asset-thumbnail/json?assetId=1818&width=160&height=100&format=jpeg)
 
 #####Get an outfit's thumbnail URL
  * [/Outfit-Thumbnail/Json?userOutfitId=2](http://www.roblox.com/Outfit-Thumbnail/Json?userOutfitId=2&width=352&height=352&format=png)
@@ -15,13 +15,12 @@ Thumbnail APIs
 #####Get a user's BC thumbnail
  * [/Thumbs/BCOverlay.ashx?username=Shedletsky](http://www.roblox.com/Thumbs/BCOverlay.ashx?username=Shedletsky)
 
- * [/Thumbs/Avatar.asmx](http://www.roblox.com/Thumbs/Avatar.asmx)
-
-#####Get multiple asset's thumbnail URLs
+#####Get multiple user thumbnail URLs
  * [/Thumbs/AvatarImage.ashx?params=\[{"userId":"261"}\]&jsoncallback=jsonp](http://www.roblox.com/Thumbs/AvatarImage.ashx?params=%5B%7B%22userId%22:%22261%22%7D%5D&jsoncallback=jsonp)
 
-#####Get multiple user's thumbnail URLs
+#####Get multiple asset thumbnail URLs
  * [/Thumbs/ItemImage.ashx?params=\[{"assetId":"1818"}\]&jsoncallback=jsonp](http://www.roblox.com/Thumbs/ItemImage.ashx?params=%5B%7B%22assetId%22:%221818%22%7D%5D&jsoncallback=jsonp)
+
  ```javascript
  var params = [{ assetId: 1818 }];
  $.ajax({
@@ -41,38 +40,88 @@ Group APIs
 ----
 
 #####Check if a player is in a group
- * [/Game/LuaWebService/HandleSocialRequest.ashx?method=IsInGroup&playerId=261&groupId=57](http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=IsInGroup&playerid=261&groupid=57)
+```http
+GET /Game/LuaWebService/HandleSocialRequest.ashx?method=IsInGroup&playerid=261&groupid=57 HTTP/1.1
+Host: www.roblox.com
+```
+```http
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 35
+
+<Value Type="boolean">false</Value>
+```
 
 #####Get a player's rank number
- * [/Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRank&playerId=261&groupId=57](http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRank&playerid=261&groupid=57)
+```http
+GET /Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRank&playerid=261&groupid=57 HTTP/1.1
+Host: www.roblox.com
+```
+```http
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 31
+
+<Value Type="integer">0</Value>
+```
 
 #####Get a player's rank name
- * [/Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRole&playerId=261&groupId=57](http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRole&playerid=261&groupid=57)
+```http
+GET /Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRole&playerid=261&groupid=57 HTTP/1.1
+Host: www.roblox.com
+```
+```http
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 5
 
+Guest
+```
 ####Get the primary groups of multiple users
- * [/Groups/GetPrimaryGroupInfo.ashx?users=Shedletsky,builderman](http://www.roblox.com/Groups/GetPrimaryGroupInfo.ashx?users=Shedletsky,builderman)
+```http
+GET http://www.roblox.com/Groups/GetPrimaryGroupInfo.ashx?users=Shedletsky,builderman HTTP/1.1
+Host: www.roblox.com
+```
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 121
+
+{
+    "Shedletsky": {
+        "GroupId": 685397,
+        "GroupName": "The IronNoob Forums",
+        "RoleSetName": "Forum Owner",
+        "RoleSetRank": 254
+    }
+}
+```
 
 Friend APIs
 ----
 #####Check if two users are friends
- * [/Game/LuaWebService/HandleSocialRequest.ashx?method=IsFriendsWith&playerId=261&userId=156](http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=IsFriendsWith&playerId=261&userId=156)
+```http
+GET /Game/LuaWebService/HandleSocialRequest.ashx?method=IsFriendsWith&playerId=261&userId=156 HTTP/1.1
+Host: www.roblox.com
+```
+```http
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 34
 
-Ownership APIs
-----
-#####Check if a user owns an asset
- * [/Ownership/HasAsset?userId=261&assetId=1818](http://api.roblox.com/Ownership/HasAsset?userId=261&assetId=1818)
- * [/Game/GamePass/GamePassHandler.ashx?action=HasPass&userId=261&passId=1818](http://www.roblox.com/Game/GamePass/GamePassHandler.ashx?action=HasPass&userId=261&passId=1818)
+<Value Type="boolean">true</Value>
+```
 
-#####Get information about an asset
- * [/Marketplace/ProductInfo?assetId=20573078](http://api.roblox.com/Marketplace/ProductInfo?assetId=20573078)
+#####Get information about a developer product
  * [/Marketplace/ProductDetails?productId=18026036](http://api.roblox.com/Marketplace/ProductDetails?productId=18026036)
 
 
- * [/Users/1](http://api.roblox.com/Users/1)
-
 User APIs
 ----
+#####Get username from user id
+ * [/Users/1](http://api.roblox.com/Users/1)
 
+#####Get what body colors a user has
  * [/Asset/BodyColors.ashx?userId=261](http://www.roblox.com/Asset/BodyColors.ashx?userId=261)
 
 #####Get the assets a user is wearing
@@ -80,13 +129,116 @@ User APIs
 
 #####Check if a username has been taken
  * [/UserCheck/DoesUsernameExist?username=Shedletsky](http://www.roblox.com/UserCheck/DoesUsernameExist?username=Shedletsky)
- * [/Thumbs/RawAsset.ashx?width=60&height=62&imageFormat=png&assetId=1818](http://www.roblox.com/Thumbs/RawAsset.ashx?width=60&height=62&imageFormat=png&assetId=1818)
- * [/Thumbs/Asset.asmx](http://www.roblox.com/Thumbs/Asset.asmx)
+
+Asset APIs
+----
+
+#####Check if a user owns an asset
+```http
+GET http://api.roblox.com/Ownership/HasAsset?userId=261&assetId=1818 HTTP/1.1
+Host: api.roblox.com
+```
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 5
+
+false
+```
+
+#####Get information about an asset
+```http
+GET http://api.roblox.com/Marketplace/ProductInfo?assetId=1818 HTTP/1.1
+Host: api.roblox.com
+```
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 468
+
+{
+    "AssetId": 1818,
+    "ProductId": 1305046,
+    "Name": "Crossroads",
+    "Description": "The classic ROBLOX level is back!",
+    "AssetTypeId": 9,
+    "Creator": {
+        "Id": 1,
+        "Name": "ROBLOX"
+    },
+    "IconImageAssetId": 0,
+    "Created": "2007-05-01T01:07:04.78Z",
+    "Updated": "2013-07-01T16:40:24.527Z",
+    "PriceInRobux": null,
+    "PriceInTickets": null,
+    "Sales": 0,
+    "IsNew": false,
+    "IsForSale": false,
+    "IsPublicDomain": false,
+    "IsLimited": false,
+    "IsLimitedUnique": false,
+    "Remaining": null,
+    "MinimumMembershipLevel": 0,
+    "ContentRatingTypeId": 0
+}
+```
+
+#####Download the latest version of an asset
+```http
+GET http://www.roblox.com/Asset/?id=1818 HTTP/1.1
+Host: www.roblox.com
+User-Agent: Roblox
+```
+
+#####Download a specific version of an asset
+
+```http
+GET http://www.roblox.com/Asset/?id=1818&version=1 HTTP/1.1
+Host: www.roblox.com
+User-Agent: Roblox
+```
+ 
+```http
+GET http://www.roblox.com/Asset/?versionId=1 HTTP/1.1
+Host: www.roblox.com
+User-Agent: Roblox
+```
+
+#####Upload an asset
+```http
+POST /Data/Upload.ashx?assetid=1818 HTTP/1.1
+Host: www.roblox.com
+Cookie: .ROBLOSECURITY=*
+Content-Type: application/xml; charset=utf-8
+Content-Length: 17
+
+<roblox></roblox>
+```
+```http
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 9
+
+ASSETVERSIONID_GOES_HERE
+```
+
+#####Log in
+```http
+POST https://www.roblox.com/NewLogin HTTP/1.1
+Host: www.roblox.com
+Content-Length: 29
+Content-Type: application/json
+
+{"username":"Shedletsky","password":"hunter2"}
+```
+
+#####Create an account
+
+
+#####ROBLOX Client/Studio APIs
+
 
 Rules
--
-* Pascal-case path, camel-case for query string
-* Don't include pages which are just redirects (e.g. www.roblox.com/drivers)
 * Use 261 for userIds, 1818 for placeIds, Shedletsky for username, hunter2 for password, etc.
 * User-Agent: ROBLOX iOS
 
@@ -148,14 +300,7 @@ Content-Type: application/json
 
 {"Status":"OK","UserInfo":{"UserID":261,"UserName":"Shedletsky","RobuxBalance":0,"TicketsBalance":0,"ThumbnailUrl":"http://t3.rbxcdn.com/1768c4f3c0d7c30d978c9dce68aa786c","IsAnyBuildersClubMember":false}}
  ```
- ```http
-POST https://www.roblox.com/NewLogin HTTP/1.1
-Host: m.roblox.com
-Content-Length: 29
-Content-Type: application/json
 
-{"username":"","password":""}
- ```
  ```http
 POST https://m.roblox.com/Login HTTP/1.1
 Host: m.roblox.com
@@ -188,29 +333,6 @@ Host: www.roblox.com
 Cookie: .ROBLOSECURITY=*
 Content-Length: 0
  ```
-
-####How to download an asset
-```http
-GET http://www.roblox.com/Asset/?id=1818 HTTP/1.1
-Host: www.roblox.com
-User-Agent: Roblox
-```
-
-You can also download a specific version of an asset. Note that if version isn't specified, it will default to the latest version.
-
-```http
-GET http://www.roblox.com/Asset/?id=1818&version=1 HTTP/1.1
-Host: www.roblox.com
-User-Agent: Roblox
-```
-
-And if you have a specific versionId you can use that as well:
-```http
-GET http://www.roblox.com/Asset/?versionId=1 HTTP/1.1
-Host: www.roblox.com
-User-Agent: Roblox
-```
-Note: for some reason assetVersionId also works in the query string
 
 The equivalent on the website is http://www.roblox.com/Item.aspx?avid=1
 
