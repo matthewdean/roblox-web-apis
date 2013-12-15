@@ -1,19 +1,31 @@
 Thumbnail APIs
 ----
 #####Get an asset's thumbnail
- * [/Game/Tools/ThumbnailAsset.ashx?fmt=png&wd=420&ht=420&aid=1818](http://www.roblox.com/Game/Tools/ThumbnailAsset.ashx?fmt=png&wd=420&ht=420&aid=1818)
+http://www.roblox.com/Game/Tools/ThumbnailAsset.ashx?fmt=png&wd=420&ht=420&aid=1818
 
 #####Get an asset's thumbnail URL
- * [/Asset-Thumbnail/Json?assetId=1818&width=160&height=100&format=jpeg](http://www.roblox.com/asset-thumbnail/json?assetId=1818&width=160&height=100&format=jpeg)
+http://www.roblox.com/Asset-Thumbnail/Json?assetId=1818&width=160&height=100&format=jpeg
+```json
+{
+    "Url": "http://t2.rbxcdn.com/622729f930283b57f6172be41b8fe2fa",
+    "Final": true
+}
+```
 
 #####Get an outfit's thumbnail URL
- * [/Outfit-Thumbnail/Json?userOutfitId=2](http://www.roblox.com/Outfit-Thumbnail/Json?userOutfitId=2&width=352&height=352&format=png)
+http://www.roblox.com/Outfit-Thumbnail/Json?userOutfitId=2&width=352&height=352&format=png
+```json
+{
+    "Url": "http://t7.rbxcdn.com/56abbdd66ad9847c7d801fa57dd7a249",
+    "Final": true
+}
+```
 
 #####Get a user's thumbnail
- * [/Thumbs/Avatar.ashx?x=64&y=64&format=png&username=Shedletsky](http://www.roblox.com/Thumbs/Avatar.ashx?x=64&y=64&format=png&username=Shedletsky)
+http://www.roblox.com/Thumbs/Avatar.ashx?x=64&y=64&format=png&username=Shedletsky
 
 #####Get a user's BC thumbnail
- * [/Thumbs/BCOverlay.ashx?username=Shedletsky](http://www.roblox.com/Thumbs/BCOverlay.ashx?username=Shedletsky)
+http://www.roblox.com/Thumbs/BCOverlay.ashx?username=Shedletsky
 
 #####Get multiple user thumbnail URLs
  * [/Thumbs/AvatarImage.ashx?params=\[{"userId":"261"}\]&jsoncallback=jsonp](http://www.roblox.com/Thumbs/AvatarImage.ashx?params=%5B%7B%22userId%22:%22261%22%7D%5D&jsoncallback=jsonp)
@@ -40,53 +52,26 @@ Group APIs
 ----
 
 #####Check if a player is in a group
-```http
-GET /Game/LuaWebService/HandleSocialRequest.ashx?method=IsInGroup&playerid=261&groupid=57 HTTP/1.1
-Host: www.roblox.com
-```
-```http
-HTTP/1.1 200 OK
-Content-Type: text/html
-Content-Length: 35
-
+http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=IsInGroup&playerid=261&groupid=57
+```xml
 <Value Type="boolean">false</Value>
 ```
 
 #####Get a player's rank number
-```http
-GET /Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRank&playerid=261&groupid=57 HTTP/1.1
-Host: www.roblox.com
-```
-```http
-HTTP/1.1 200 OK
-Content-Type: text/html
-Content-Length: 31
-
+http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRank&playerid=261&groupid=57
+```xml
 <Value Type="integer">0</Value>
 ```
 
 #####Get a player's rank name
-```http
-GET /Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRole&playerid=261&groupid=57 HTTP/1.1
-Host: www.roblox.com
-```
-```http
-HTTP/1.1 200 OK
-Content-Type: text/html
-Content-Length: 5
-
+http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRole&playerid=261&groupid=
+```xml
 Guest
 ```
-####Get the primary groups of multiple users
-```http
-GET http://www.roblox.com/Groups/GetPrimaryGroupInfo.ashx?users=Shedletsky,builderman HTTP/1.1
-Host: www.roblox.com
-```
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 121
 
+#####Get the primary groups of multiple users
+http://www.roblox.com/Groups/GetPrimaryGroupInfo.ashx?users=Shedletsky,builderman
+```json
 {
     "Shedletsky": {
         "GroupId": 685397,
@@ -100,28 +85,22 @@ Content-Length: 121
 Friend APIs
 ----
 #####Check if two users are friends
-```http
-GET /Game/LuaWebService/HandleSocialRequest.ashx?method=IsFriendsWith&playerId=261&userId=156 HTTP/1.1
-Host: www.roblox.com
-```
-```http
-HTTP/1.1 200 OK
-Content-Type: text/html
-Content-Length: 34
-
+http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=IsFriendsWith&playerId=261&userId=156
+```xml
 <Value Type="boolean">true</Value>
 ```
 
-#####Get information about a developer product
-```http
-GET http://api.roblox.com/Marketplace/ProductDetails?productId=18026036 HTTP/1.1
-Host: api.roblox.com
-```
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 433
+#####Check if a user is best friends with another user
+http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=IsBestFriendsWith&playerId=261&userId=156
 
+```xml
+<Value Type="boolean">false</Value>
+```
+
+#####Get information about a developer product
+http://api.roblox.com/Marketplace/ProductDetails?productId=18026036
+
+```json
 {
     "AssetId": 0,
     "ProductId": 18026036,
@@ -152,28 +131,17 @@ Content-Length: 433
 User APIs
 ----
 #####Get username from user id
-```http
-GET http://api.roblox.com/Users/261 HTTP/1.1
-Host: api.roblox.com
-```
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 28
-
-{"Id":261,"Username":"Shedletsky"}
+http://api.roblox.com/Users/261
+```json
+{
+    "Id": 261,
+    "Username": "Shedletsky"
+}
 ```
 
 #####Get what body colors a user has
-```http
-GET http://www.roblox.com/Asset/BodyColors.ashx?userId=261 HTTP/1.1
-Host: www.roblox.com
-```
-```http
-HTTP/1.1 200 OK
-Content-Type: binary/octet-stream
-Content-Length: 615
-
+http://www.roblox.com/Asset/BodyColors.ashx?userId=261
+```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
     <External>null</External>
@@ -194,57 +162,31 @@ Content-Length: 615
 ```
 
 #####Get the assets a user is wearing
-```http
-GET http://www.roblox.com/Asset/CharacterFetch.ashx?userId=261&placeId=1818 HTTP/1.1
-Host: www.roblox.com
-```
-```http
-HTTP/1.1 200 OK
-Content-Type: text/html
-Content-Length: 248
-
+http://www.roblox.com/Asset/CharacterFetch.ashx?userId=261&placeId=1818
+```html
 http://www.roblox.com/Asset/BodyColors.ashx?userId=261;http://www.roblox.com/Asset/?versionid=25379590;http://www.roblox.com/Asset/?versionid=77449723;http://www.roblox.com/Asset/?versionid=100748238;http://www.roblox.com/Asset/?versionid=197094072
 ```
 
 #####Check if a username has been taken
-```http
-GET http://www.roblox.com/UserCheck/DoesUsernameExist?username=Shedletsky HTTP/1.1
-Host: www.roblox.com
-```
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 16
-
-{"success":true}
+http://www.roblox.com/UserCheck/DoesUsernameExist?username=Shedletsky
+```json
+{
+    "success" :true
+}
 ```
 
 Asset APIs
 ----
 
 #####Check if a user owns an asset
-```http
-GET http://api.roblox.com/Ownership/HasAsset?userId=261&assetId=1818 HTTP/1.1
-Host: api.roblox.com
-```
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 5
-
+http://api.roblox.com/Ownership/HasAsset?userId=261&assetId=1818
+```json
 false
 ```
 
 #####Get information about an asset
-```http
-GET http://api.roblox.com/Marketplace/ProductInfo?assetId=1818 HTTP/1.1
-Host: api.roblox.com
-```
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 468
-
+http://api.roblox.com/Marketplace/ProductInfo?assetId=1818
+```json
 {
     "AssetId": 1818,
     "ProductId": 1305046,
