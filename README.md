@@ -113,22 +113,111 @@ Content-Length: 34
 ```
 
 #####Get information about a developer product
- * [/Marketplace/ProductDetails?productId=18026036](http://api.roblox.com/Marketplace/ProductDetails?productId=18026036)
+```http
+GET http://api.roblox.com/Marketplace/ProductDetails?productId=18026036 HTTP/1.1
+Host: api.roblox.com
+```
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 433
 
+{
+    "AssetId": 0,
+    "ProductId": 18026036,
+    "Name": "85 Candies Pack",
+    "Description": null,
+    "AssetTypeId": 0,
+    "Creator": {
+        "Id": 0,
+        "Name": null
+    },
+    "IconImageAssetId": 0,
+    "Created": "2013-10-16T00:37:38.517Z",
+    "Updated": "2013-10-16T00:37:38.517Z",
+    "PriceInRobux": 50,
+    "PriceInTickets": 625,
+    "Sales": 0,
+    "IsNew": false,
+    "IsForSale": true,
+    "IsPublicDomain": false,
+    "IsLimited": false,
+    "IsLimitedUnique": false,
+    "Remaining": null,
+    "MinimumMembershipLevel": 0,
+    "ContentRatingTypeId": 0
+}
+```
 
 User APIs
 ----
 #####Get username from user id
- * [/Users/1](http://api.roblox.com/Users/1)
+```http
+GET http://api.roblox.com/Users/261 HTTP/1.1
+Host: api.roblox.com
+```
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 28
+
+{"Id":261,"Username":"Shedletsky"}
+```
 
 #####Get what body colors a user has
- * [/Asset/BodyColors.ashx?userId=261](http://www.roblox.com/Asset/BodyColors.ashx?userId=261)
+```http
+GET http://www.roblox.com/Asset/BodyColors.ashx?userId=261 HTTP/1.1
+Host: www.roblox.com
+```
+```http
+HTTP/1.1 200 OK
+Content-Type: binary/octet-stream
+Content-Length: 615
+
+<?xml version="1.0" encoding="utf-8" ?>
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+    <External>null</External>
+    <External>nil</External>
+    <Item class="BodyColors">
+        <Properties>
+            <int name="HeadColor">24</int>
+            <int name="LeftArmColor">24</int>
+            <int name="LeftLegColor">24</int>
+            <string name="Name">Body Colors</string>
+            <int name="RightArmColor">24</int>
+            <int name="RightLegColor">24</int>
+            <int name="TorsoColor">1003</int>
+            <bool name="archivable">true</bool>
+        </Properties>
+    </Item>
+</roblox>
+```
 
 #####Get the assets a user is wearing
- * [/Asset/CharacterFetch.ashx?userId=261&placeId=1818](http://www.roblox.com/Asset/CharacterFetch.ashx?userId=261&placeId=1818)
+```http
+GET http://www.roblox.com/Asset/CharacterFetch.ashx?userId=261&placeId=1818 HTTP/1.1
+Host: www.roblox.com
+```
+```http
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 248
+
+http://www.roblox.com/Asset/BodyColors.ashx?userId=261;http://www.roblox.com/Asset/?versionid=25379590;http://www.roblox.com/Asset/?versionid=77449723;http://www.roblox.com/Asset/?versionid=100748238;http://www.roblox.com/Asset/?versionid=197094072
+```
 
 #####Check if a username has been taken
- * [/UserCheck/DoesUsernameExist?username=Shedletsky](http://www.roblox.com/UserCheck/DoesUsernameExist?username=Shedletsky)
+```http
+GET http://www.roblox.com/UserCheck/DoesUsernameExist?username=Shedletsky HTTP/1.1
+Host: www.roblox.com
+```
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 16
+
+{"success":true}
+```
 
 Asset APIs
 ----
