@@ -1,31 +1,33 @@
 Thumbnail APIs
 ----
 #####Get an asset's thumbnail
-http://www.roblox.com/Game/Tools/ThumbnailAsset.ashx?fmt=png&wd=420&ht=420&aid=1818
+ * http://www.roblox.com/Game/Tools/ThumbnailAsset.ashx?fmt=png&wd=420&ht=420&aid=1818
 
 #####Get an asset's thumbnail URL
-http://www.roblox.com/Asset-Thumbnail/Json?assetId=1818&width=160&height=100&format=jpeg
-```json
-{
-    "Url": "http://t2.rbxcdn.com/622729f930283b57f6172be41b8fe2fa",
-    "Final": true
-}
-```
+ * http://www.roblox.com/Asset-Thumbnail/Json?assetId=1818&width=160&height=100&format=jpeg
+
+    ```json
+    {
+        "Url": "http://t2.rbxcdn.com/622729f930283b57f6172be41b8fe2fa",
+        "Final": true
+    }
+    ```
 
 #####Get an outfit's thumbnail URL
-http://www.roblox.com/Outfit-Thumbnail/Json?userOutfitId=2&width=352&height=352&format=png
-```json
-{
-    "Url": "http://t7.rbxcdn.com/56abbdd66ad9847c7d801fa57dd7a249",
-    "Final": true
-}
-```
+ * http://www.roblox.com/Outfit-Thumbnail/Json?userOutfitId=2&width=352&height=352&format=png
+    
+    ```json
+    {
+        "Url": "http://t7.rbxcdn.com/56abbdd66ad9847c7d801fa57dd7a249",
+        "Final": true
+    }
+   ```
 
 #####Get a user's thumbnail
-http://www.roblox.com/Thumbs/Avatar.ashx?x=64&y=64&format=png&username=Shedletsky
+ * http://www.roblox.com/Thumbs/Avatar.ashx?x=64&y=64&format=png&username=Shedletsky
 
 #####Get a user's BC thumbnail
-http://www.roblox.com/Thumbs/BCOverlay.ashx?username=Shedletsky
+ * http://www.roblox.com/Thumbs/BCOverlay.ashx?username=Shedletsky
 
 #####Get multiple user thumbnail URLs
  * [/Thumbs/AvatarImage.ashx?params=\[{"userId":"261"}\]&jsoncallback=jsonp](http://www.roblox.com/Thumbs/AvatarImage.ashx?params=%5B%7B%22userId%22:%22261%22%7D%5D&jsoncallback=jsonp)
@@ -33,186 +35,197 @@ http://www.roblox.com/Thumbs/BCOverlay.ashx?username=Shedletsky
 #####Get multiple asset thumbnail URLs
  * [/Thumbs/ItemImage.ashx?params=\[{"assetId":"1818"}\]&jsoncallback=jsonp](http://www.roblox.com/Thumbs/ItemImage.ashx?params=%5B%7B%22assetId%22:%221818%22%7D%5D&jsoncallback=jsonp)
 
- ```javascript
- var params = [{ assetId: 1818 }];
- $.ajax({
+    ```javascript
+    var params = [{ assetId: 1818 }];
+    $.ajax({
     url: 'http://www.roblox.com/Thumbs/ItemImage.ashx',
-   	data: { params: JSON.stringify(params) },
-   	dataType: 'jsonp',
-   	jsonp: 'jsoncallback',
-   	success: function(json) {
+       data: { params: JSON.stringify(params) },
+       dataType: 'jsonp',
+       jsonp: 'jsoncallback',
+       success: function(json) {
        $.each(json, function(i, asset) {
           console.log(asset.id, asset.name);
        });
-   	}
- });
- ```
+       }
+    });
+    ```
 
 Group APIs
 ----
 
 #####Check if a player is in a group
-http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=IsInGroup&playerid=261&groupid=57
-```xml
-<Value Type="boolean">false</Value>
-```
+ * http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=IsInGroup&playerid=261&groupid=57
+
+    ```xml
+    <Value Type="boolean">false</Value>
+    ```
 
 #####Get a player's rank number
-http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRank&playerid=261&groupid=57
-```xml
-<Value Type="integer">0</Value>
-```
+ * http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRank&playerid=261&groupid=57
+
+    ```xml
+    <Value Type="integer">0</Value>
+    ```
 
 #####Get a player's rank name
-http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRole&playerid=261&groupid=
-```xml
-Guest
-```
+ * http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRole&playerid=261&groupid=57
+
+    ```xml
+    Guest
+    ```
 
 #####Get the primary groups of multiple users
-http://www.roblox.com/Groups/GetPrimaryGroupInfo.ashx?users=Shedletsky,builderman
-```json
-{
-    "Shedletsky": {
-        "GroupId": 685397,
-        "GroupName": "The IronNoob Forums",
-        "RoleSetName": "Forum Owner",
-        "RoleSetRank": 254
+ * http://www.roblox.com/Groups/GetPrimaryGroupInfo.ashx?users=Shedletsky,builderman
+
+    ```json
+    {
+        "Shedletsky": {
+            "GroupId": 685397,
+            "GroupName": "The IronNoob Forums",
+            "RoleSetName": "Forum Owner",
+            "RoleSetRank": 254
+        }
     }
-}
-```
+    ```
 
 Friend APIs
 ----
 #####Check if two users are friends
-http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=IsFriendsWith&playerId=261&userId=156
-```xml
-<Value Type="boolean">true</Value>
-```
+ * http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=IsFriendsWith&playerId=261&userId=156
+
+    ```xml
+    <Value Type="boolean">true</Value>
+    ```
 
 #####Check if a user is best friends with another user
-http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=IsBestFriendsWith&playerId=261&userId=156
+ * http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=IsBestFriendsWith&playerId=261&userId=156
 
-```xml
-<Value Type="boolean">false</Value>
-```
+    ```xml
+    <Value Type="boolean">false</Value>
+    ```
 
 #####Get information about a developer product
-http://api.roblox.com/Marketplace/ProductDetails?productId=18026036
+ * http://api.roblox.com/Marketplace/ProductDetails?productId=18026036
 
-```json
-{
-    "AssetId": 0,
-    "ProductId": 18026036,
-    "Name": "85 Candies Pack",
-    "Description": null,
-    "AssetTypeId": 0,
-    "Creator": {
-        "Id": 0,
-        "Name": null
-    },
-    "IconImageAssetId": 0,
-    "Created": "2013-10-16T00:37:38.517Z",
-    "Updated": "2013-10-16T00:37:38.517Z",
-    "PriceInRobux": 50,
-    "PriceInTickets": 625,
-    "Sales": 0,
-    "IsNew": false,
-    "IsForSale": true,
-    "IsPublicDomain": false,
-    "IsLimited": false,
-    "IsLimitedUnique": false,
-    "Remaining": null,
-    "MinimumMembershipLevel": 0,
-    "ContentRatingTypeId": 0
-}
-```
+    ```json
+    {
+        "AssetId": 0,
+        "ProductId": 18026036,
+        "Name": "85 Candies Pack",
+        "Description": null,
+        "AssetTypeId": 0,
+        "Creator": {
+            "Id": 0,
+            "Name": null
+        },
+        "IconImageAssetId": 0,
+        "Created": "2013-10-16T00:37:38.517Z",
+        "Updated": "2013-10-16T00:37:38.517Z",
+        "PriceInRobux": 50,
+        "PriceInTickets": 625,
+        "Sales": 0,
+        "IsNew": false,
+        "IsForSale": true,
+        "IsPublicDomain": false,
+        "IsLimited": false,
+        "IsLimitedUnique": false,
+        "Remaining": null,
+        "MinimumMembershipLevel": 0,
+        "ContentRatingTypeId": 0
+    }
+    ```
 
 User APIs
 ----
-#####Get username from user id
-http://api.roblox.com/Users/261
-```json
-{
-    "Id": 261,
-    "Username": "Shedletsky"
-}
-```
+#####Get username from ID
+ * http://api.roblox.com/Users/261
 
-#####Get what body colors a user has
-http://www.roblox.com/Asset/BodyColors.ashx?userId=261
-```xml
-<?xml version="1.0" encoding="utf-8" ?>
-<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
-    <External>null</External>
-    <External>nil</External>
-    <Item class="BodyColors">
-        <Properties>
-            <int name="HeadColor">24</int>
-            <int name="LeftArmColor">24</int>
-            <int name="LeftLegColor">24</int>
-            <string name="Name">Body Colors</string>
-            <int name="RightArmColor">24</int>
-            <int name="RightLegColor">24</int>
-            <int name="TorsoColor">1003</int>
-            <bool name="archivable">true</bool>
-        </Properties>
-    </Item>
-</roblox>
-```
+    ```json
+    {
+        "Id": 261,
+        "Username": "Shedletsky"
+    }
+    ```
 
-#####Get the assets a user is wearing
-http://www.roblox.com/Asset/CharacterFetch.ashx?userId=261&placeId=1818
-```html
-http://www.roblox.com/Asset/BodyColors.ashx?userId=261;http://www.roblox.com/Asset/?versionid=25379590;http://www.roblox.com/Asset/?versionid=77449723;http://www.roblox.com/Asset/?versionid=100748238;http://www.roblox.com/Asset/?versionid=197094072
-```
+#####Get a user's body part colors
+ * http://www.roblox.com/Asset/BodyColors.ashx?userId=261
+
+    ```xml
+    <?xml version="1.0" encoding="utf-8" ?>
+    <roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+        <External>null</External>
+        <External>nil</External>
+        <Item class="BodyColors">
+            <Properties>
+                <int name="HeadColor">24</int>
+                <int name="LeftArmColor">24</int>
+                <int name="LeftLegColor">24</int>
+                <string name="Name">Body Colors</string>
+                <int name="RightArmColor">24</int>
+                <int name="RightLegColor">24</int>
+                <int name="TorsoColor">1003</int>
+                <bool name="archivable">true</bool>
+            </Properties>
+        </Item>
+    </roblox>
+    ```
+
+#####Get assets worn by a user
+ * http://www.roblox.com/Asset/CharacterFetch.ashx?userId=261&placeId=1818
+
+    ```html
+    http://www.roblox.com/Asset/BodyColors.ashx?userId=261;http://www.roblox.com/Asset/?versionid=25379590;http://www.roblox.com/Asset/?versionid=77449723;http://www.roblox.com/Asset/?versionid=100748238;http://www.roblox.com/Asset/?versionid=197094072
+    ```
 
 #####Check if a username has been taken
-http://www.roblox.com/UserCheck/DoesUsernameExist?username=Shedletsky
-```json
-{
-    "success" :true
-}
-```
+    * http://www.roblox.com/UserCheck/DoesUsernameExist?username=Shedletsky
+    
+    ```json
+    {
+        "success" :true
+    }
+    ```
 
 Asset APIs
 ----
 
 #####Check if a user owns an asset
-http://api.roblox.com/Ownership/HasAsset?userId=261&assetId=1818
-```json
-false
-```
+ * http://api.roblox.com/Ownership/HasAsset?userId=261&assetId=1818
+
+    ```json
+    false
+    ```
 
 #####Get information about an asset
-http://api.roblox.com/Marketplace/ProductInfo?assetId=1818
-```json
-{
-    "AssetId": 1818,
-    "ProductId": 1305046,
-    "Name": "Crossroads",
-    "Description": "The classic ROBLOX level is back!",
-    "AssetTypeId": 9,
-    "Creator": {
-        "Id": 1,
-        "Name": "ROBLOX"
-    },
-    "IconImageAssetId": 0,
-    "Created": "2007-05-01T01:07:04.78Z",
-    "Updated": "2013-07-01T16:40:24.527Z",
-    "PriceInRobux": null,
-    "PriceInTickets": null,
-    "Sales": 0,
-    "IsNew": false,
-    "IsForSale": false,
-    "IsPublicDomain": false,
-    "IsLimited": false,
-    "IsLimitedUnique": false,
-    "Remaining": null,
-    "MinimumMembershipLevel": 0,
-    "ContentRatingTypeId": 0
-}
-```
+ * http://api.roblox.com/Marketplace/ProductInfo?assetId=1818
+
+    ```json
+    {
+        "AssetId": 1818,
+        "ProductId": 1305046,
+        "Name": "Crossroads",
+        "Description": "The classic ROBLOX level is back!",
+        "AssetTypeId": 9,
+        "Creator": {
+            "Id": 1,
+            "Name": "ROBLOX"
+        },
+        "IconImageAssetId": 0,
+        "Created": "2007-05-01T01:07:04.78Z",
+        "Updated": "2013-07-01T16:40:24.527Z",
+        "PriceInRobux": null,
+        "PriceInTickets": null,
+        "Sales": 0,
+        "IsNew": false,
+        "IsForSale": false,
+        "IsPublicDomain": false,
+        "IsLimited": false,
+        "IsLimitedUnique": false,
+        "Remaining": null,
+        "MinimumMembershipLevel": 0,
+        "ContentRatingTypeId": 0
+    }
+    ```
 
 #####Download the latest version of an asset
 ```http
