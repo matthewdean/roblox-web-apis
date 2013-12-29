@@ -178,7 +178,7 @@ User APIs
     ```
 
 #####Check if a username has been taken
-    * http://www.roblox.com/UserCheck/DoesUsernameExist?username=Shedletsky
+ * http://www.roblox.com/UserCheck/DoesUsernameExist?username=Shedletsky
     
     ```json
     {
