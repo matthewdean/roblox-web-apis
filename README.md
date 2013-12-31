@@ -1,8 +1,8 @@
 Economy APIs
 ----
- * [/Marketplace/EconomyServices.asmx](http://www.roblox.com/Marketplace/EconomyServices.asmx)
 
-You can use JSON:
+#####Get the currency exchange rates
+ * [/Marketplace/EconomyServices.asmx](http://www.roblox.com/Marketplace/EconomyServices.asmx)
 
 ```http
 POST /Marketplace/EconomyServices.asmx/GetEstimatedTradeReturnForRobux HTTP/1.1
@@ -24,8 +24,6 @@ Content-Length: 11
     "d": 15858
 }
 ```
-
-Or you can use XML:
 
 ```http
 POST /Marketplace/EconomyServices.asmx HTTP/1.1
