@@ -1,9 +1,28 @@
 Thumbnail APIs
 ----
-#####Get an asset's thumbnail
+
+#####Valid thumbnail sizes
+
+| Width | Height |
+| -----:|:------ |
+| 48    | 48     |
+| 60    | 62     |
+| 75    | 75     |
+| 100   | 100    |
+| 110   | 110    |
+| 160   | 100    |
+| 250   | 250    |
+| 352   | 352    |
+| 420   | 230    |
+| 420   | 420    |
+
+#####Get an asset thumbnail
  * http://www.roblox.com/Game/Tools/ThumbnailAsset.ashx?fmt=png&wd=420&ht=420&aid=1818
 
-#####Get an asset's thumbnail URL
+#####Get a pixelated asset thumbnail
+ * http://www.roblox.com/Thumbs/Pixelated.ashx?id=1818&x=250&y=250&format=Png&tfid=114
+
+#####Get an asset thumbnail URL
  * http://www.roblox.com/Asset-Thumbnail/Json?assetId=1818&width=160&height=100&format=jpeg
 
     ```json
@@ -522,3 +541,4 @@ tip: prepend `m.` or `setup.`
  * [/Analytics/GamePerfMonitor.ashx](http://www.roblox.com/Analytics/GamePerfMonitor.ashx)
  * [/Browse.aspx?name=Shedletsky](http://www.roblox.com/Browse.aspx?name=Shedletsky)
 
+#####Contributors: ArceusInator, oxcool1, Seranok
