@@ -1,3 +1,63 @@
+Economy APIs
+----
+ * [/Marketplace/EconomyServices.asmx](http://www.roblox.com/Marketplace/EconomyServices.asmx)
+
+You can use JSON:
+
+```http
+POST /Marketplace/EconomyServices.asmx/GetEstimatedTradeReturnForRobux HTTP/1.1
+Host: www.roblox.com
+Content-Type: application/json
+Content-Length: 26
+
+{
+    "robuxToTrade": 1000
+}
+```
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 11
+
+{
+    "d": 15858
+}
+```
+
+Or you can use XML:
+
+```http
+POST /Marketplace/EconomyServices.asmx HTTP/1.1
+Host: www.roblox.com
+Content-Type: application/soap+xml
+Content-Length: 421
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
+    <soap12:Body>
+        <GetEstimatedTradeReturnForTickets xmlns="http://roblox.com/">
+            <ticketsToTrade>1000</ticketsToTrade>
+        </GetEstimatedTradeReturnForTickets>
+    </soap12:Body>
+</soap12:Envelope>
+```
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/soap+xml
+Content-Length: 443
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+        <GetEstimatedTradeReturnForTicketsResponse xmlns="http://roblox.com/">
+            <GetEstimatedTradeReturnForTicketsResult>62</GetEstimatedTradeReturnForTicketsResult>
+        </GetEstimatedTradeReturnForTicketsResponse>
+    </soap:Body>
+</soap:Envelope>
+```
+
 Thumbnail APIs
 ----
 
@@ -421,7 +481,6 @@ There's another parameter, serverPlaceId, which will deny the request if the own
  * [/Outfits/Fetch?displayedUserId=261&pageNum=1](http://www.roblox.com/Outfits/Fetch?displayedUserId=261&pageNum=1)
  * [/Install/Service.asmx](http://www.roblox.com/Install/Service.asmx)
  * [/Login/Negotiate.ashx?suggest=%s](http://www.roblox.com/Login/Negotiate.ashx?suggest=)
- * [/Marketplace/EconomyServices.asmx](http://www.roblox.com/Marketplace/EconomyServices.asmx)
  * [/MobileAPI/Check-App-Version?appVersion=AppiOSV2.112.35972](http://www.roblox.com/mobileapi/check-app-version?appVersion=AppiOSV2.112.35972)
  * [/Roblox.xsd](http://www.roblox.com/roblox.xsd)
  * [/UserCheck/CheckIfInvalidUsernameForSignup?username=Shedletsky](http://www.roblox.com/UserCheck/CheckIfInvalidUsernameForSignup?username=Shedletsky)
