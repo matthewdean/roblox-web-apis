@@ -4,6 +4,26 @@ Economy APIs
 #####Get the currency exchange rates
  * [/Marketplace/EconomyServices.asmx](http://www.roblox.com/Marketplace/EconomyServices.asmx)
 
+```php
+// php
+$client = new SoapClient("http://www.roblox.com/Marketplace/EconomyServices.asmx?WSDL");
+$response = $client->GetEstimatedTradeReturnForTickets(array("ticketsToTrade" => 1000));
+echo $response->GetEstimatedTradeReturnForTicketsResult;
+```
+
+```javascript
+// node.js
+var request = require('request')
+
+request({
+    method: 'POST',
+    url: 'http://www.roblox.com/Marketplace/EconomyServices.asmx/GetEstimatedTradeReturnForRobux',
+    json: { robuxToTrade: 1000 }
+}, function(err, res, json) {
+    console.log(json.d)
+})
+```
+
 ```http
 POST /Marketplace/EconomyServices.asmx/GetEstimatedTradeReturnForRobux HTTP/1.1
 Host: www.roblox.com
@@ -23,37 +43,6 @@ Content-Length: 11
 {
     "d": 15858
 }
-```
-
-```http
-POST /Marketplace/EconomyServices.asmx HTTP/1.1
-Host: www.roblox.com
-Content-Type: application/soap+xml
-Content-Length: 421
-
-<?xml version="1.0" encoding="utf-8"?>
-<soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
-    <soap12:Body>
-        <GetEstimatedTradeReturnForTickets xmlns="http://roblox.com/">
-            <ticketsToTrade>1000</ticketsToTrade>
-        </GetEstimatedTradeReturnForTickets>
-    </soap12:Body>
-</soap12:Envelope>
-```
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/soap+xml
-Content-Length: 443
-
-<?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <soap:Body>
-        <GetEstimatedTradeReturnForTicketsResponse xmlns="http://roblox.com/">
-            <GetEstimatedTradeReturnForTicketsResult>62</GetEstimatedTradeReturnForTicketsResult>
-        </GetEstimatedTradeReturnForTicketsResponse>
-    </soap:Body>
-</soap:Envelope>
 ```
 
 Thumbnail APIs
