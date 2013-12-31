@@ -248,6 +248,12 @@ Host: www.roblox.com
 User-Agent: Roblox
 ```
 
+```http
+GET http://www.roblox.com/Asset/?hash=b3c6b23ff18f48557b823ef5b72a0508  HTTP/1.1
+Host: www.roblox.com
+User-Agent: Roblox
+```
+
 #####Upload an asset
 ```http
 POST /Data/Upload.ashx?assetid=1818 HTTP/1.1
@@ -478,6 +484,7 @@ tip: prepend `m.` or `setup.`
  * [/Setting/QuietGet/WindowsBootstrapperSettings](http://clientsettings.api.roblox.com/Setting/QuietGet/WindowsBootstrapperSettings?apiKey=76E5A40C-3AE1-4028-9F10-7C62520BD94F)
  * [/Setting/QuietGet/WindowsStudioBootstrapperSettings](http://clientsettings.api.roblox.com/Setting/QuietGet/WindowsStudioBootstrapperSettings?apiKey=76E5A40C-3AE1-4028-9F10-7C62520BD94F)
 * [logging.service.roblox.com](http://logging.service.roblox.com) - for StatsService
+* [/Game/ClientVersion.ashx](http://www.roblox.com/Game/ClientVersion.ashx)
 
 ####Unused
 * [logging.sitetest.roblox.com](http://logging.sitetest.roblox.com)
