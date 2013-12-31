@@ -5,7 +5,7 @@ Economy APIs
  * [/Marketplace/EconomyServices.asmx](http://www.roblox.com/Marketplace/EconomyServices.asmx)
 
 ```php
-// php >= 5.x
+// PHP 5+
 $client = new SoapClient("http://www.roblox.com/Marketplace/EconomyServices.asmx?WSDL");
 $response = $client->GetEstimatedTradeReturnForTickets(array("ticketsToTrade" => 1000));
 echo $response->GetEstimatedTradeReturnForTicketsResult;
