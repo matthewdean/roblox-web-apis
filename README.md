@@ -13,15 +13,18 @@ echo $response->GetEstimatedTradeReturnForTicketsResult;
 
 ```javascript
 // node.js
-var request = require('request')
+var request = require('request');
 
-request({
+var options = {
     method: 'POST',
-    url: 'http://www.roblox.com/Marketplace/EconomyServices.asmx/GetEstimatedTradeReturnForRobux',
-    json: { robuxToTrade: 1000 }
-}, function(err, res, json) {
-    console.log(json.d)
-})
+       url: 'http://www.roblox.com/Marketplace/EconomyServices.asmx/GetEstimatedTradeReturnForRobux',
+      json: { robuxToTrade: 1000 }
+};
+
+request(options, function(err, res, json) {
+    var tixAmount = json.d
+    console.log(tixAmount)
+});
 ```
 
 ```http
