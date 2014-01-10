@@ -123,6 +123,10 @@ As of now the HttpService JSON methods have many bugs and you should really use 
 
 TODO node.js and PHP server code examples
 
+The request will automatically be reissued on failure (retry policy) at least once.
+
+An error may be put in output but it doesn't stop your Lua
+
 ####FAQ
 
 #####Why do I get this error: "trust check failed for [url]"?
