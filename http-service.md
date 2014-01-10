@@ -110,10 +110,18 @@ Pinging roblox.com [209.15.211.168] with 32 bytes of data:
 ...
 ```
 
+If you get an IP for roblox.com and try to send a request there, you will get a 403 and:
+
 ```lua
 print(httpService:GetAsync("http://209.15.211.168"))
 --> HttpService is not allowed to access ROBLOX resources
 ```
+
+keep in mind that studio will have Roblox/WinInet user-agent because it's using WinInet and game servers will have Roblox/WinHttp because that is what they are using. Have yet to test MACs
+
+As of now the HttpService JSON methods have many bugs and you should really use LoadLibrary("RbxUtility").DecodeJSON and EncodeJSON. Hopefully this will be fixed soon.
+
+TODO node.js and PHP server code examples
 
 ####FAQ
 
