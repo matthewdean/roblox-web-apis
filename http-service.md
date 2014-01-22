@@ -67,8 +67,17 @@ either GetAsync or PostAsync:
 if not game:GetService("HttpService").HttpEnabled then
   error("Http requests are not enabled", 2)
 end
+
 if not game:FindService("NetworkServer") then
   error("Http requests can only be executed by game server", 2)
+end
+
+if url == "" then
+  error("Empty URL", 2)
+end
+
+if requestsInLastMinute > 500 then
+  error("Number of requests exceeded limit", 2)
 end
 ```
 
