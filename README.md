@@ -379,7 +379,7 @@ Domains
 * [/GameScript](http://logging.service.roblox.com/GameScript)
 * [/Game/GameServer.ashx](http://www.roblox.com/Game/GameServer.ashx)
 * [/Game/Join.ashx](http://www.roblox.com/Game/Join.ashx?placeId=1818)
-* [/Game/LoadPlaceInfo.ashx?placeId=261](http://www.roblox.com/Game/LoadPlaceInfo.ashx?placeId=1818)
+* [/Game/LoadPlaceInfo.ashx?placeId=1818](http://www.roblox.com/Game/LoadPlaceInfo.ashx?placeId=1818)
 * [/Game/PlaceSpecificScript.ashx?placeId=1818](http://www.roblox.com/Game/PlaceSpecificScript.ashx?placeId=1818)
 * [/Game/PlaySolo.ashx](http://www.roblox.com/Game/PlaySolo.ashx)
 * [/Game/Studio.ashx](http://www.roblox.com/Game/Studio.ashx)
