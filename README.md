@@ -531,6 +531,7 @@ tip: prepend `m.` or `setup.`
 * [rbxdev.com](http://rbxdev.com)
 
 ####Documentation
+* [wikiblog.roblox.com](http://wikiblog.roblox.com)
 * [wiki.roblox.com](http://wiki.roblox.com)
 * [sandbox.wiki.roblox.com](http://sandbox.wiki.roblox.com)
 * [en.help.roblox.com](http://en.help.roblox.com)
