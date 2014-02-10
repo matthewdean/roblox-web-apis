@@ -295,6 +295,13 @@ Asset APIs
         "ContentRatingTypeId": 0
     }
     ```
+    
+#####Get `AssetId` from `AssetVersionId`:
+```bash
+curl http://www.roblox.com/--item?avid=1 -i
+HTTP/1.1 302 Found
+Location: /ArrowCursor-png-item?id=1000000
+```
 
 #####Download the latest version of an asset
 ```http
