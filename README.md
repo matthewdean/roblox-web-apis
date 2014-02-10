@@ -296,38 +296,28 @@ Asset APIs
     }
     ```
     
-#####Get `AssetId` from `AssetVersionId`:
-```bash
-curl http://www.roblox.com/--item?avid=1 -i
-HTTP/1.1 302 Found
-Location: /ArrowCursor-png-item?id=1000000
+#####Get the assetId of an assetVersionId:
+```bat
+curl http://www.roblox.com/redirect-item?avid=1 --head
 ```
 
 #####Download the latest version of an asset
-```http
-GET http://www.roblox.com/Asset/?id=1818 HTTP/1.1
-Host: www.roblox.com
-User-Agent: Roblox
+```bat
+curl http://www.roblox.com/Asset/?id=1818 --user-agent Roblox
 ```
 
 #####Download a specific version of an asset
 
-```http
-GET http://www.roblox.com/Asset/?id=1818&version=1 HTTP/1.1
-Host: www.roblox.com
-User-Agent: Roblox
-```
- 
-```http
-GET http://www.roblox.com/Asset/?versionId=1 HTTP/1.1
-Host: www.roblox.com
-User-Agent: Roblox
+```bat
+curl http://www.roblox.com/Asset/?id=1818&version=1 --user-agent Roblox
 ```
 
-```http
-GET http://www.roblox.com/Asset/?hash=b3c6b23ff18f48557b823ef5b72a0508  HTTP/1.1
-Host: www.roblox.com
-User-Agent: Roblox
+```bat
+curl http://www.roblox.com/Asset/?versionId=1 --user-agent Roblox
+```
+
+```bat
+curl http://www.roblox.com/Asset/?hash=b3c6b23ff18f48557b823ef5b72a0508 --user-agent Roblox
 ```
 
 #####Upload an asset
