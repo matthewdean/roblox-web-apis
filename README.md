@@ -143,6 +143,41 @@ Group APIs
     Guest
     ```
 
+#####Get a group's rolesets
+
+```http
+POST http://www.roblox.com/Services/GroupService.asmx/GetRoleSetsForGroup HTTP/1.1
+Content-Type: application/json
+
+{ "groupId": 1 }
+```
+
+```json
+{
+    "d": [{
+        "ID": 169,
+        "Name": "Member",
+        "Rank": 1
+    }, {
+        "ID": 143227,
+        "Name": "Dude",
+        "Rank": 180
+    }, {
+        "ID": 143226,
+        "Name": "Hunk",
+        "Rank": 200
+    }, {
+        "ID": 94,
+        "Name": "Admin",
+        "Rank": 254
+    }, {
+        "ID": 28,
+        "Name": "Owner",
+        "Rank": 255
+    }]
+}
+```
+
 #####Get the primary groups of multiple users
  * http://www.roblox.com/Groups/GetPrimaryGroupInfo.ashx?users=Shedletsky,builderman
 
