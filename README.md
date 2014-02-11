@@ -602,4 +602,8 @@ Content-Type: application/json
  * [/Browse.aspx?name=Shedletsky](http://www.roblox.com/Browse.aspx?name=Shedletsky)
  * http://t0.roblox.com/Maintenance_Page
 
+Down:
+app1.gg.roblox.com 173.1.50.251
+test.roblox.com 173.1.50.250
+
 #####Contributors: Mark Otaris, ArceusInator, oxcool1, Seranok
