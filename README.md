@@ -601,9 +601,28 @@ Content-Type: application/json
  * [/Analytics/GamePerfMonitor.ashx](http://www.roblox.com/Analytics/GamePerfMonitor.ashx)
  * [/Browse.aspx?name=Shedletsky](http://www.roblox.com/Browse.aspx?name=Shedletsky)
  * http://t0.roblox.com/Maintenance_Page
+ * 
+Name servers:
+ns1.p07.dynect.net
+ns3.p07.dynect.net
+ns2.p07.dynect.net
+ns4.p07.dynect.net
 
 Down:
 app1.gg.roblox.com 173.1.50.251
 test.roblox.com 173.1.50.250
+
+wiki.roblox.com,69.172.200.194
+www.roblox.com,209.15.15.253
+blog.roblox.com,69.172.200.194
+en.help.roblox.com,192.161.149.155
+bloxcon.roblox.com,69.172.200.194
+m.roblox.com,209.15.196.7
+corp.roblox.com,69.172.200.194
+roblox.com,209.15.211.168
+t0.roblox.com,176.32.99.194
+de.roblox.com,174.129.13.55
+web.roblox.com,209.15.211.170
+api.roblox.com,209.15.196.23
 
 #####Contributors: Mark Otaris, ArceusInator, oxcool1, Seranok
