@@ -137,6 +137,8 @@ The request will automatically be reissued on failure (retry policy) at least on
 An error may be put in output but it doesn't stop your Lua
 
 If the post body > 256 bytes, it's Content-Type: gzip
+
+TODO give PHP code and node.js code for handling gzip
 ####FAQ
 
 #####Why do I get this error: "trust check failed for [url]"?
