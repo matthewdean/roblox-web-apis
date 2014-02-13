@@ -1,2043 +1,2272 @@
---[===[
-	
-	
-	    Roblox Website Directory
-	          <levi998234>
-	
-	
-	Notes: 
-	  - Any item marked with an X in front in it is a file or folder that existed, but no longer exists.
-      - More pages are still being added to the list. Expect updates.
-	
-	TODO:
-	  - Add method(s) for obtaining each file. (GET, POST, PUT, DELETE, etc.)
-	  - Add more files to the list.
-   
-http://www.roblox.com
-  -File FreeGames.aspx
-  -File Games.aspx
-  -File GamesNew.aspx
-  -File LandingGames.aspx
-  -File LandingSignup.aspx
-  -File Roblox.xsd
-  -File RobloxOld.css
-  -File RobloxVerify.aspx
-  -File Robots.txt
-  -File FbChannel.aspx
-  -Folder /AbuseReport/
-    -File Asset.aspx
-    -File AssetSet.aspx
-    -File Chat.aspx
-    -File Comment.aspx
-    -File Feed.aspx
-    -File ForumPost.aspx
-    -File Group.aspx
-    -File GroupRoleSet.aspx
-    -File GroupStatus.aspx
-    -File GroupWallPost.aspx
-    -File InGameChatHandler.ashx
-    -File Message.aspx
-    -File PartyChat.aspx
-    -File UserProfile.aspx
-  -Folder /Account/
-    -File /SignUpRedir?month=&day=&year=
-  -Folder /Accounts/
-    -File /Verify?Mode=emailOnly&Ticket=
-  -Folder /Admi/
-    -Folder /Economy/
-      -File NewProduct.aspx
-      -File RobuxAdjustment.aspx
-    -Folder /Grid/
-      -File Job.aspx
-      -File Jobs.aspx
-      -File JobTest.aspx
-      -File Server.aspx
-      -File Servers.aspx
-    -Folder /Moderation/
-      -File AbuseReports.aspx
-      -File AssetReview.aspx
-    -Folder /Users/
-      -File ModerateUser.aspx
-    -Folder /UserScripts/
-      -File ScriptApproval.ashx
-    -File AbuseReports.aspx
-    -File Accounts.aspx
-    -File AssetReview.aspx
-    -File DeletePost.aspx
-    -File Dmp.aspx
-    -File GameServers.aspx
-    -File ImageServer.aspx
-    -File LoadScript.ashx
-    -File Moderation.aspx
-    -File Toolboxes.aspx
-    -File User.aspx
-  -Folder /Ads/
-    -File IFrameAdContent.aspx
-    -File IFrameUserAdContent.aspx
-    -File UserAdContent.aspx
-    -File ReportAd.aspx
-  -Folder /Analytics/
-    -File BadHtmlImage.ashx
-    -File CdnTester.ashx
-    -File ContentProvider.ashx
-    -File GamePerfMonitor.ashx
-    -File LogFile.ashx
-    -File Measurement.ashx
-  -Folder /Api/
-    -Folder /Groups/
-      -Folder /{GroupId}/
-        -Folder /RoleSets/
-          -File {RoleSetId}
-    -File Comments.ashx
-    -File Item.ashx
-  -Folder /App_Themes/
-  -Folder /Apps/
-    -Folder /Thumbnails/
-      -File /Add-Image/
-      -File /Add-Video/
-      -File /Remove/
-  -Folder /Asset/
-    -File CharacterFetch.ashx
-  -Folder /Asset-Thumbnail/
-    -File /json/
-  -Folder /Authentication/
-    -File Logout
-    -File SignOutFromAllSessionsAndReauthenticate
-  -Folder /Build/
-    -File Default.aspx
-    -File /Set-Place-State/
-  -Folder /Catalog/
-    -File Browse.aspx
-    -File Default.aspx
-    -File html
-    -File json
-    -File Lists.aspx
-  -Folder /Chat/
-    -Folder /CSS/
-      -File party_leader.css
-    -File FriendHandler.ashx
-    -File Party.ashx
-    -File Send.ashx
-    -File Utility.ashx
-  -Folder /Content/
-  -Folder /Contests/
-    -Folder /Handlers/
-      -File CanVote.ashx
-      -File Showcases.ashx
-      -File Submission.ashx
-    -File Default.aspx
-    -File History.aspx
-    -File Leaders.aspx
-    -File Prizes.aspx
-    -File Rate.aspx
-    -File Vote.aspx
-  -Folder /CSS/
-    -Folder /Base/
-      -Folder /CSS/
-        -File AccountBalance.css
-        -File AdFormatClasses.css
-        -File Ads.css
-        -File AgeUpEmailVerifyPage.css
-        -File Asset.css
-        -File Badges.css
-        -File BCModal.css
-        -File Billing.css
-        -File carouselpager.css
-        -File Catalog.css
-        -File CharacterCustomization.css
-        -File CharacterSelectAndInstallInstructions.css
-        -File CommonForms.css
-        -File ContentAdapters.css
-        -File ContentBuilder.css
-        -File Contest.css
-        -File CreditCardExpireModal.css
-        -File CuratedGames.css
-        -File CurrencyExchange.css
-        -File DarkGradientBox.css
-        -File FetchCSS
-        -File Games.css
-        -File GenericModal.css
-        -File GroupRoleSetMembersPane.css
-        -File Groups.css
-        -File Help.css
-        -File iFrameHeader.css
-        -File iFrameLogin.css
-        -File Inbox.css
-        -File Info.css
-        -File Install.css
-        -File Item.css
-        -File LandingGames.css
-        -File Language.css
-        -File ManageAccount.css
-        -File Membership.css
-        -File MenuRedesign.css
-        -File Message.css
-        -File MyAccount.css
-        -File MyItem.css
-        -File MyMoney.css
-        -File NewToolBox.css
-        -File Parents.css
-        -File Party.css
-        -File PersonalServerAccessPrivilegesRoleSet.css
-        -File Place.css
-        -File PlaceItem.css
-        -File PlaceLauncher.css
-        -File Profile.css
-        -File Q.css
-        -File RBXCommon.css
-        -File RevisedCharacterSelectModal.css
-        -File Roblox.css
-        -File Sets.css
-        -File ShadowedStandardBox.css
-        -File ShareRoblox.css
-        -File Signup.css
-        -File StyleGuide.css
-        -File tipsy.css
-        -File Toolbox.css
-        -File Trade.css
-        -File UnifiedModal.css
-        -File Upgrades.css
-        -File Upload.css
-        -File User.css
-        -File Utility.css
-        -File VideoPreRoll.css
-    -Folder /M/
-      -File main___c379d45f96882e5bc9d065ae104ca7c9_m.css
-      -File page___8976a52280d235f6ee652b82bc6a7924_m.css
-    -Folder /My/
-      -File BestFriends.css
-      -File MyItem.css
-    -Folder /Pages/
-      -Folder /Build/
-        -File BuildPage.css
-        -File DropDownMenus.css
-      -Folder /Gamecards/
-        -File Index.css
-      -Folder /Home/
-        -File Home.css
-        -File RobloxFeed.css
-      -Folder /Signup/
-        -File Signup.css
-      -Folder /Upgrades/
-        -File BuildersClubPanel.css
-        -File BuyRobux.css
-      -Folder /UserAd/
-        -File NewUserAd.css
-      -File Catalog.css
-      -File Friends.css
-      -File GamePage.css
-      -File LandingSignUp.css
-      -File RobloxUI.css
-      -File VotingPanel.css
-    -Folder /Parents/
-      -Folder /Images/
-        -File robloxparentedition.png
-    -Folder /PartialViews/
-      -File Navigation.css
-    -Folder /RBX2/
-      -Folder /CSS/
-        -File BuildersClub.css
-        -File Catalog.css
-        -File DarkGradientBox.css
-        -File Games.css
-        -File Inbox.css
-        -File Item.css
-        -File MyRoblox.css
-        -File Roblox.css
-        -File Upgrades.css
-        -File Utility.css
-    -Folder /Takeovers/
-      -Folder /CSS/
-        -File HeroFactory.css
-        -File KreoBattleship.css
-    -File YUIReset.css
-  -Folder /Data/
-    -File Upload.ashx
-  -Folder /Download/
-  -Folder /Drivers/
-    -File FindVideoCard.aspx
-  -Folder /Error/
-    -File Dmp.ashx
-    -File DoesntExist.aspx
-    -File Lua.ashx
-    -File Report.aspx
-    -File UnsafeInput.aspx
-  -Folder /Facebook/
-    -File Authorize
-    -File Share-Character
-    -File SignIn
-  -Folder /Forum/
-    -Folder /Moderate/
-      -File DeletePost.aspx
-      -File EditPost.aspx
-      -File MovePost.aspx
-    -Folder /Msgs/
-      -File Default.aspx
-    -Folder /Search/
-      -File Default.aspx
-    -Folder /Skins/
-      -Folder /Default/
-        -Folder /Images/
-          -File forum_status.gif
-          -File icon_mini_home.gif
-          -File icon_mini_memberlist.gif
-          -File icon_mini_myforums.gif
-          -File icon_mini_profile.gif
-          -File icon_mini_register.gif
-          -File icon_mini_search.gif
-          -File icon_mini_topic.gif
-          -File newpost.gif
-          -File newtopic.gif
-          -File title.gif
-          -File topic.gif
-          -File topic-locked.gif
-          -File topic-locked_notread.gif
-          -File topic_notread.gif
-          -File topic-pinned&locked_notread.gif
-          -File topic-pinned_notread.gif
-          -File topic-popular.gif
-          -File user_IsOffline.gif
-          -File user_IsOnline.gif
-          -File users_moderator.gif
-          -File users_top100.gif
-          -File users_top25.gif
-          -File users_top50.gif
-        -Folder /Style/
-          -File Default.css
-    -Folder /User/
-      -File CreateUser.aspx
-      -File MyForums.aspx
-      -File ShowAllUsers.aspx
-      -File UserProfile.aspx
-    -File ShowForum.aspx
-    -File ShowForumGroup.aspx
-    -File ShowPost.aspx
-  -Folder /Feedifications/
-    -File get
-  -Folder /Feeds/
-    -File GetUserFeed
-  -Folder /Friends/
-  -Folder /Game/
-    -Folder /Badges/
-      -File AwardBadge.ashx
-      -File HasBadge.ashx
-      -File IsBadgeDisabled.ashx
-    -Folder /GamePass/
-      -File GamePassHandler.ashx
-    -Folder /LuaWebService/
-      -File HandleSocialRequest.ashx
-    -Folder /Tools/
-      -File InsertAsset.ashx
-      -File ThumbnailAsset.ashx
-    -File AreFriends
-    -File BreakFriend
-    -File BuildActionPermissionCheck.ashx
-    -File Cdn.ashx
-    -File ChatFilter.ashx
-    -File ClientPresence.ashx
-    -File CreateFriend
-    -File EventTracker.ashx
-    -File GameServer.ashx
-    -File GetAuthTicket
-    -File GetCurrentUser.ashx
-    -File GetScriptState.ashx
-    -File GetUserToolBuildSet.ashx
-    -File Help.aspx
-    -File Join.ashx
-    -File Join.lua
-    -File JoinRate.ashx
-    -File KeepAlivePinger.ashx
-    -File Knockouts.ashx
-    -File LoadPlaceInfo.ashx
-    -File /Login/
-    -File Logout.aspx
-    -File MachineConfiguration.ashx
-    -File PlaceLauncher.ashx
-    -File PlaceSpecificScript.ashx
-    -File PlaceVisit.ashx
-    -File Statistics.ashx
-    -File TreasureHunt.ashx
-    -File Upload.aspx
-    -File Visit.ashx
-    -File Wipeouts.ashx
-  -Folder /Games/
-    -File /List/
-    -Folder /New/
-      -File Default.aspx
-      -File /MoreResults/
-    -File /Search/
-    -File /Start/
-  -Folder /Gamecard/
-    -File Default.aspx
-    -File InCommHandler.ashx
-  -Folder /Gamecards/
-    -File Default.aspx
-    -File Items.aspx
-  -Folder /Groups/
-    -File Audit.aspx
-    -File CreatePlace.aspx
-    -File GetPrimaryGroupInfo.ashx
-    -File Group.aspx
-    -File RoleSetUpdater.ashx
-    -File Search.aspx
-  -Folder /Help/
-    -File Builderman.aspx
-  -Folder /IDE/
-    -Folder /GoToWebsite/
-      -File /{UserId}?ReturnURL=http://www.roblox.com
-    -Folder /Publish/
-    -Folder /PublishAs/
-    -File ClientToolbox.aspx
-    -File Landing.aspx
-    -File /login/
-    -File /logout/
-    -File Upload.aspx
-    -File /Welcome/
-  -Folder /Images/
-    -Folder /Accounts/
-      -File btn_blue_ok_l.png
-      -File btn-buyrobux-gray-m.png
-      -File btn-gray-cancel-m.png
-      -File btn-joinbuildersclub-green-m.png
-      -File btn-update-blue-m.png
-      -File btn-upgradebc-green-m.png
-      -File img-verified.png
-    -Folder /Ads/
-      -File AdBannerTemplate.png
-      -File AdPending.png
-      -File AdRectangleTemplate.png
-      -File AdRejected.png
-      -File AdRunning.png
-      -File AdSkyscraperTemplate.png
-      -File AdStopped.png
-      -File AdSuppressionBullet.png
-      -File BuildersClubAd-300x250v4.jpg
-      -File BuildersClubAd-728x90v4.jpg
-    -Folder /Arena/
-      -File play.png
-      -File screen1.png
-      -File screen1v2.png
-      -File screen2.png
-      -File screen3.png
-    -Folder /AssetIcons/
-      -File Deadline.png
-      -File Limited.png
-      -File LimitedUnique.png
-    -Folder /Badges/
-      -File Administrator-75x75.png
-      -File Ambassador-75x75.png
-      -File badge_instructions.png
-      -File Bloxxer-75x75.jpg
-      -File Bloxxer-75x75.png
-      -File Bricksmith-54x75.jpg
-      -File Bricksmith-54x75.png
-      -File BuildersClub-125x125.png
-      -File CombatInitiation-75x75.jpg
-      -File CombatInitiation-75x75.png
-      -File ForumModerator-75x75.png
-      -File Friendship-75x75.jpg
-      -File Friendship-75x75.png
-      -File Homestead-70x75.jpg
-      -File Homestead-70x75.png
-      -File ImageModerator-75x75.png
-      -File Inviter-75x75.png
-      -File obcbadge128x128.png
-      -File obcbadge75x75.png
-      -File SuperModerators-75x75.jpg
-      -File TurboBuildersClub-150x150.png
-      -File TurboBuildersClub-32x32.png
-      -File TurboBuildersClub-75x75.png
-      -File Veteran-75x75.png
-      -File Warrior-75x75.jpg
-      -File Warrior-75x75.png
-    -Folder /BuildersClubBenefitsGrid/
-      -File paid-access.png
-    -Folder /BuildPage/
-      -File btn-gear_sprite_27px.png
-      -File img-instructions.png
-    -Folder /Buttons/
-      -Folder /Arrows/
-        -File btn-silver-left-27.png
-        -File btn-silver-right-27.png
-      -Folder /StyleGuide/
-        -File bg-btn-blue.png
-        -File bg-btn-green.png
-        -File bg-lg-green-play.png
-      -File AB-female_character.jpg
-      -File AB-male_character.jpg
-      -File bg-btn-blue.png
-      -File bg-btn-blue-arrow-md.png
-      -File bg-btn-gray.png
-      -File bg-btn-gray-arrow-md.png
-      -File bg-btn-green.png
-      -File bg-drop_down_arrow.png
-      -File bg-drop_down_btn.png
-      -File bg-form_btn_lg-tile.png
-      -File bg-lg-green-play.png
-      -File bg-rbx_btn_60.png
-      -File blue_no.png
-      -File blue_yes2.png
-      -File btn_25px_blue.png
-      -File btn-add_to_game-lg.png
-      -File btn-add_to_game-sm.png
-      -File btn-blue-download_m.png
-      -File btn_blue_ok_l.png
-      -File btn-borrow.png
-      -File btn-buy_robux.png
-      -File btn-buynow.png
-      -File btn-buynow-2.png
-      -File btn-buynow_grn_m.png
-      -File btn-buynow_grn_m_v2.png
-      -File btn-buynow_grn_sm.png
-      -File btn-buynow_grn_sm_v2.png
-      -File btn-buyrobux-lg-green.png
-      -File btn-cancel.png
-      -File btn-continue_shopping.png
-      -File btn-create_account.png
-      -File btn-expand_arrow.png
-      -File btn-get_gift_card.jpg
-      -File btn-gray-cancel_l.png
-      -File btn-green-buynow_l.png
-      -File btn-green-upload.png
-      -File btn-learn_more.png
-      -File btn-make_trade.png
-      -File btn-ok-gray.png
-      -File btn-play_as_boy_AB.png
-      -File btn-play_as_girl_AB.png
-      -File btn-playnow_small.png
-      -File btn-playnow_big.png
-      -File btn-playnow_big2.png
-      -File btn-purchase_another.png
-      -File btn_red_40h_t1.png
-      -File btn_red_40h_t2.png
-      -File btn-rent-small.png
-      -File btn-sell_now.png
-      -File btn-signup.png
-      -File btn-sign_up-blue-lg.png
-      -File btn-small_silver_tile.png
-      -File btn-take_one.png
-      -File btn-take_one_v2.png
-      -File btn-take_one_v2_2.png
-      -File btn-trade_currency.png
-      -File btn-upgrade_now.png
-      -File btn-updatenow.png
-      -File btn-upgrade_now.png
-      -File btn-x.png
-      -File btn-x-sm.png
-      -File buildNow01.png
-      -File cancel-blue2.png
-      -File closeBtnCircle_35h.png
-      -File CollapseButton.jpg
-      -File download.png
-      -File ExpandButton.jpg
-      -File followme_19h.png
-      -File followme_19h-gray.png
-      -File GetAFreeAccount.png
-      -File gray_arrow.png
-      -File grey_no2.png
-      -File grey_yes.png
-      -File img-trade_icon_green_small.png
-      -File img-trade_icon_red_small.png
-      -File ManageAccountButton.png
-      -File ManageAccountButtonMouseOver.png
-      -File NoThanks.png
-      -File ok.png
-      -File playAsGuest.png
-      -File playNow01.png
-      -File playRoblox01.png
-      -File questionmark-12x12.png
-      -File questionmark-25x25.png
-      -File Register-blue.png
-      -File sendTrade2.png
-      -File sign_up_small.png
-      -File SwitchNow.png
-      -File tradeItems.png
-      -File yes-gray2.png
-    -Folder /BuyBC/
-      -File bc_12months.png
-      -File bc_6months.png
-      -File bc_lifetime.png
-      -File bc_lifetime_obc_lifetime_discount.png
-      -File bc_lifetime_tbc_lifetime_discount.png
-      -File bc_monthly.png
-      -File bc_sprites_math_disabled.png
-      -File bc_sprites_math_enabled.png
-      -File obc_12months.png
-      -File obc_6months.png
-      -File obc_lifetime.png
-      -File obc_monthly.png
-      -File obctip.png
-      -File tbc_12months.png
-      -File tbc_6months.png
-      -File tbc_lifetime.png
-      -File tbc_lifetime_obc_lifetime_discount.png
-      -File tbc_monthly.png
-    -Folder /CategoryIcons/
-      -File CategorySprite.png
-    -Folder /ChaosCanyon/
-      -File ChaosCanyonLarge.png
-      -File ChaosCanyonSmall1.png
-      -File ChaosCanyonSmall2.png
-      -File btn_black21h_l.png
-      -File btn_black21h_over_l.png
-      -File btn_black21h_over_r.png
-      -File btn_black21h_r.png
-      -File btn_green21h_l.png
-      -File btn_green21h_over_l.png
-      -File btn_green21h_over_r.png
-      -File btn_green21h_r.png
-      -File btn_red21h_l.png
-      -File btn_red21h_over_l.png
-      -File btn_red21h_over_r.png
-      -File btn_red21h_r.png
-      -File HeaderBarRepeat1x1.jpg
-      -File HeaderBarRepeat1x1_orange.jpg
-      -File tab_blue21h_r.png
-    -Folder /CommunityConstruction/
-      -File BuildingRoomLarge.png
-      -File BuildingRoomSmall1.png
-      -File BuildingRoomSmall2.png
-    -Folder /Contests/
-      -Folder /HeroFactory/
-        -File Background2.png
-        -File btn_play.png
-        -File btn_prizes.png
-      -Folder /KreoBattleship/
-        -File btn-call-to-action.png
-        -File bg-main4.jpg
-        -File btn-play.png
-        -File btn-prizes.png
-        -File btn-stuff.png
-      -File ad1.png
-      -File ad2.png
-      -File ad3.png
-      -File ad4.png
-      -File bike2.png
-      -File checked_box.png
-      -File contestback.png
-      -File contestbutton.png
-      -File disney_enter_r1.png
-      -File disney_enter_r1_over.png
-      -File disney_leaders.png
-      -File disney_leaders_over.png
-      -File disney_prizes.png
-      -File disney_prizes_over.png
-      -File disney_stuff.png
-      -File disney_stuff_over.png
-      -File disney_vote_r1.png
-      -File disney_vote_r1_ver.png
-      -File disneyprizesummary.png
-      -File not_checked_box.png
-      -File PlaySkateParks.png
-    -Folder /CSSSpecific/
-      -Folder /rbx2/
-        -File abuse.png
-        -File bg-statbar-left.png
-        -File bg-statbar-left-28h.png
-        -File bg-statbar-right.png
-        -File bg-statbar-right-28h.png
-        -File bkg.jpg
-        -File btn_blue18h.png
-        -File btn_play_54h.png
-        -File button_vote.jpg
-        -File containerBkg_01.png
-        -File favoriteStar_20h.png
-        -File head_02.jpg
-        -File head_03.jpg
-        -File head_bkg_t1.png
-        -File head_bkg_t2.png
-        -File head_infobox_icons.png
-        -File head_sign.png
-        -File icon_gear.png
-        -File icon_locked.png
-        -File icon_public.png
-        -File img-robloxlogo.png
-        -File standardBox_01_bkg.png
-        -File tab_black_33h_t1.png
-        -File tab_black_33h_t2.png
-        -File tab_gray_33h_t1.png
-        -File tab_gray_33h_t2.png
-        -File tab_white_26h_t1.png
-        -File tab_white_26h_t2.png
-        -File tab_white_31h_t1.png
-        -File tab_white_31h_t2.png
-        -File topNav_blue.png
-        -File topNav_rss.png
+###DNS Records
+
+test sites
+--------------------------------------
+
+##### Test Sites
+
+sitetest1.robloxlabs.com            CNAME web105.p1t.roblox.com
+sitetest2.robloxlabs.com            CNAME web108.p1t.roblox.com
+sitetest3.robloxlabs.com            CNAME web111.p1t.roblox.com
+
+m.sitetest1.robloxlabs.com          CNAME web105.p1t.roblox.com
+m.sitetest2.robloxlabs.com          CNAME web108.p1t.robloxlabs.com
+m.sitetest3.robloxlabs.com          CNAME web111.p1t.roblox.com
+
+gametest1.robloxlabs.com            CNAME web114.p1t.roblox.com
+gametest2.robloxlabs.com            CNAME web117.p1t.roblox.com
+gametest3.robloxlabs.com            CNAME web120.p1t.roblox.com
+gametest4.robloxlabs.com            CNAME web123.p1t.roblox.com
+gametest5.robloxlabs.com            CNAME web102.p1t.roblox.com
+
+setup.sitetest1.robloxlabs.com      CNAME s3.amazonaws.com
+setup.sitetest2.robloxlabs.com      CNAME s3.amazonaws.com
+setup.sitetest3.robloxlabs.com      CNAME s3.amazonaws.com
+setup.gametest1.robloxlabs.com      CNAME s3.amazonaws.com
+setup.gametest2.robloxlabs.com      CNAME s3.amazonaws.com
+setup.gametest3.robloxlabs.com      CNAME s3.amazonaws.com
+setup.gametest4.robloxlabs.com      CNAME s3.amazonaws.com
+setup.gametest5.robloxlabs.com      CNAME s3.amazonaws.com
+
+api.sitetest1.robloxlabs.com        CNAME web107.p1t.roblox.com
+api.sitetest2.robloxlabs.com        CNAME web110.p1t.roblox.com
+api.sitetest3.robloxlabs.com        CNAME web113.p1t.roblox.com
+api.gametest1.robloxlabs.com        CNAME web116.p1t.roblox.com
+api.gametest2.robloxlabs.com        CNAME web119.p1t.robloxlabs.com
+api.gamtetest3.robloxlabs.com       CNAME web112.p1t.roblox.com
+api.gametest4.robloxlabs.com        CNAME web125.p1t.roblox.com
+api.gametest5.robloxlabs.com        CNAME web104.p1t.roblox.com
+
+de.sitetest1.robloxlabs.com         CNAME roblox.sl.smartling.com
+de.sitetest2.robloxlabs.com         CNAME roblox.sl.smartling.com
+de.sitetest3.robloxlabs.com         CNAME roblox.sl.smartling.com
+
+sandbox.corp.roblox.com             A     209.15.11.133
+sandbox.wiki.roblox.com             A     209.15.11.133
+sandbox.blog.roblox.com             A     209.15.11.133
+
+##### Main Site
+
+roblox.com                          A     209.15.211.168
+www.roblox.com                      A     209.15.211.170
+
+#### Translated Sites
+
+web.roblox.com                      CNAME www.roblox.com
+de.roblox.com                       CNAME roblox.sl.smartling.com
+nl.roblox.com                       CNAME roblox.sl.smartling.com
+
+api.roblox.com                      A     209.15.196.23
+
+##### RBXDevelopers
+rbxdev.com                          A     66.151.138.61
+developer.roblox.com                A     66.151.138.61
+
+##### Wiki
+wiki.roblox.com                     CNAME wikiblog.roblox.com
+wikiblog.roblox.com                 A     69.172.200.194
+
+##### Mobile Site
+m.roblox.com                        A     209.15.196.7
+
+##### Content Delivery Sites
+images.roblox.com                   CNAME s3.amazonaws.com
+images.rbxcdn.com                   CNAME images.roblox.com.edgesuite.net -> a259.g.akamai.net
+imagesak.roblox.com                 CNAME images.roblox.com.edgesuite.net -> a259.g.akamai.net
+
+css.roblox.com                      CNAME s3.amazonaws.com
+css.rbxcdn.com                      CNAME css.roblox.com.edgesuite.net -> a1859.g.akamai.net
+
+js.roblox.com                       CNAME s3.amazonaws.com
+js.rbxcdn.com                       CNAME js.roblox.com.edgesuite.net -> a1856.g.akamai.net
+jsak.roblox.com                     CNAME js.roblox.com.edgesuite.net -> a1856.g.akamai.net
+
+t[0-7].rbxcdn.com                   CNAME thumbs.roblox.com.edgesuite.net -> a1448.g.akamai.net
+t[0-7].roblox.com                   CNAME s3.amazonaws.com
+t[0-7]ak.roblox.com                 CNAME thumbs.roblox.com.edgesuite.net -> a1448.g.akamai.net
+t[0-7]bg.roblox.com                 CNAME roblox.vo.llnwd.net
+
+dmp.roblox.com                      CNAME s3.amazonaws.com
+
+t0-cf.roblox.com                    CNAME d308ote8gknwt2.cloudfront.net
+t1-cf.roblox.com                    CNAME d3avk0i1u2a97r.cloudfront.net
+t2-cf.roblox.com                    CNAME d2nkcwkauljzde.cloudfront.net
+t3-cf.roblox.com                    CNAME d3k2ovwlzr9dtm.cloudfront.net
+t4-cf.roblox.com                    CNAME de637m32tfzmh.cloudfront.net
+t5-cf.roblox.com                    CNAME d1rg8ifpsaoqpq.cloudfront.net
+t6-cf.roblox.com                    CNAME d1mcrq0wjirdd.cloudfront.net
+t7-cf.roblox.com                    CNAME d3j1jp7bfflqzx.cloudfront.net
+
+c[0-7].roblox.com                   CNAME s3.amazonaws.com
+c0-cf.roblox.com                    CNAME d23riyw2h8zdpu.cloudfront.net
+c1-cf.roblox.com                    CNAME d1ilizbt005tap.cloudfront.net
+c2-cf.roblox.com                    CNAME dldsyiaeovhqb.cloudfront.net
+c3-cf.roblox.com                    CNAME d1j3k294et6slk.cloudfront.net
+c4-cf.roblox.com                    CNAME d1t3mafze9oqjs.cloudfront.net
+c5-cf.roblox.com                    CNAME d1jy49f725fp3e.cloudfront.net
+c6-cf.roblox.com                    CNAME d2ys1fby0iz9an.cloudfront.net
+c7-cf.roblox.com                    CNAME d2q288g13su0l2.cloudfront.net
+c[0-7]ak.roblox.com                 CNAME assets.roblox.com.edgesuite.net
+c[0-7]bg.roblox.com                 CNAME roblox.vo.llnwd.net
+
+##### Promotional
+blog.roblox.com                     CNAME wikiblog.roblox.com
+news.roblox.com                     CNAME blog.roblox.com
+jobs.roblox.com                     CNAME wikiblog.roblox.com
+corp.roblox.com                     CNAME wikiblog.roblox.com
+blogs.roblox.com                    CNAME blog.roblox.com
+sales.roblox.com                    CNAME wikiblog.roblox.com
+job.roblox.com                      CNAME jobs.roblox.com
+careers.roblox.com                  CNAME jobs.roblox.com
+
+docs.roblox.com                     CNAME ghs.google.com
+calendar.roblox.com                 CNAME ghs.google.com
+start.roblox.com                    CNAME ghs.google.com
+mail.roblox.com                     CNAME ghs.googlehosted.com
+
+#### bad records
+gg.roblox.com                       A
+service.roblox.com                  A
+p1.roblox.com                       A
+splunk.roblox.com                   A     192.168.100.55
+test[1-4].roblox.com                CNAME test.roblox.com
+dev[1-4].roblox.com                 CNAME dev.roblox.com
+app[1-6].gg.roblox.com              A     173.1.50.251
+office.roblox.com                   A     63.198.222.174
+staging.roblox.com                  A     67.192.200.217
+gametest.roblox.com                 A     72.32.205.251
+dev.roblox.com                      A     72.32.144.27
+sitetest.roblox.com                 A     98.129.125.117
+test.roblox.com                     A     173.1.50.250
+web[1-266].p1.roblox.com            A     209.15.244.100 - 209.15.198.23
+appmail.gg.roblox.com               A     173.1.50.251
+appmail.roblox.com                  CNAME appmail.p1.roblox.com
+
+#### Presumably outdated
+setup-gametest.roblox.com           CNAME s3.amazonaws.com
+setup-staging.roblox.com            CNAME s3.amazonaws.com
+content.roblox.com                  A     209.15.215.174
+logging.sitetest.roblox.com         A     107.21.242.185
+logging.service.sitetest.roblox.com A     107.21.242.185
+logging.service.gametest.roblox.com A     23.21.192.244
+
+help.roblox.com                     CNAME roblox.zendesk.com
+en.help.roblox.com                  CNAME roblox.ssl.zendesk.com
+de.help.roblox.com                  CNAME help.roblox.sl.smartling.com
+
+#### setup
+setup.roblox.com                    CNAME s3.amazonaws.com
+
+clientsettings.api.roblox.com       A     209.15.209.8
+ephemeralcounters.api.roblox.com    A     209.15.209.10
+
+logging.service.roblox.com          CNAME s3.amazonaws.com 
+shop.roblox.com                     A     209.134.154.202
+bloxcon.roblox.com                  CNAME wikiblog.roblox.com
+polls.roblox.com                    CNAME polldaddy.com
+
+goblox.com
+www.roblox.net -> roblox.net -> 50.63.202.21
+rowblocks.com
+roblocks.com
+roeblocks
+rowblox
+goblocks.com
+gooblox.com
+roblox.cc
+roblox.jp
+roblox.la
+roblox.name
+roblox.ws
+roblox.us
+roblox.tw
+roblox.tv
+roblox.org
+roblox.net
+roblox.mobi
+roblox.me
+roblox.in
+roblox.eu
+roblox.co.kr
+roblox.biz
+roblox
+
+# mobile site
+m.roblox.com
+	/Account/
+		/FullfillConstraint/
+    /LogOff/
+    /SetStatus/
+    /SignUp/
+		GET /Catalog/?startRow=0&keyword=&filter=All|Featured|Collectibles|Clothing|BodyParts|Gear|Decals|Models
+    POST /VerifyTransfer?userAssetOptionId=1491599&expectedPrice=286&currencyType=1 [XsrfToken]
+    POST /WearOrRemoveItem?userAssetId=&wearing=true|false [XsrfToken]
+  /CSS/
+		/Base/
+			/CSS/
+        /FetchCSS/
+    /Images/
+               Ajax-Loader.gif
+      icons-18-white.png
+    2x.css
+    BuyBuildersClubPage.css
+    Catalog.css
+    GamesPage.css
+    Header.css
+    jquery.mobile.structure-1.1.1.min.css
+    Menu.css
+    Overlay.css
+    roblox.theme.css
+    Site.css
+    Validation.css
+    Wall.css
+  /Friends/
+		/FriendList/
+		/FriendRequests/
+    /RemoveFriend/
+      /{UserId}/
+    /RemoveFriendWork/
+    /SendFriendRequestWork/
+    /SetBestFriend/
+  /Games/
+    /List/
+    /Start/
+  /Group/
+    /DoSearch/
+    /GroupWallList/
+      {GroupId}/
+    /LeaveGroupModal/
+      /{GroupId}/
+    /LeaveGroupWork/
+      /{GroupId}/
+    /PostOnWall/
+      /{GroupId}/
+  /Groups/
+    /{GroupId}/
+  /Home/
+    /PageNotFound
+  /Images/
+    /Icons/
+      currency-robux.png
+      currency-robux-white.png
+      currency-ticket.png
+      currency-ticket-white.png
+      friendreqs-white.png
+      inbox-white.png
+      menu-white.png
+      offline18.png
+      online18.png
+    /Overlays/
+      catalog_new_54.png
+      overlay_bcOnly_big.png
+      overlay_tbcOnly_big.png
+      overlay_obcOnly_big.png
+      overlay_limitedUnique_big.png
+      overlay_new_200x200.png
+    /Upgrades/
+      img-bc.png
+      img-check.png
+      img-obc.png
+      img-tbc.png
+      Robux.png
+    Icon114x114v3.png
+    RobloxLogo.png
+  /Inventory/
+    /ListInventory/
+  /Items/
+    /{ItemId}/
+      /PrivateSales/
+      /PrivateSalesList/
+  /Js/
+    /JQuery/
+      jquery.jcountdown-1.4.2.js
+      jquery.validate-1.9.0-modified.js
+      jquery.validate.unobtrusive.js
+      jquery.waypoints-1.1.7.js
+    /Pages/
+      BasicListPages.js
+      CatalogSearch.js
+      GroupProfile.js
+      GroupSearch.js
+      Home.js
+      Inventory.js
+      ItemPage.js
+      Profile.js
+      PurchaseConfirmationModal.js
+      RemoveFriendModal.js
+      UserSearch.js
+    GoogleAnalytics.js
+    ListPage.js
+    Menu.js
+    Setup.js
+    Thumbnails.js
+  /Login/
+  /Messages/
+    /SendMessage/
+      /{MessageId}
+    /{MessageId}/
+  /MobileApi/
+    Check-App-Version
+    UserInfo
+  /People/
+  /Report/
+    /ReportMessageWork/
+  /Report-Message/
+  /User/
+    /DoSearch/
+    /Profile/
+      /{UserId}/
+    /Search/
+  /Users/
+    /{UserId}/
+  /Avatar-Thumbnail/
+  favicon.ico
+  /Group-Search/
+  /Inbox/
+  /My-Groups/
+
+# main site
+www.roblox.com
+ * [/Game/ClientVersion.ashx](http://www.roblox.com/Game/ClientVersion.ashx)
+ * [/Games/List](http://www.roblox.com/games/list)
+ * [/Info/Terms-Of-Service](http://www.roblox.com/Info/Terms-Of-Service)
+ * [/PaymentSystemUnavailable.aspx](http://www.roblox.com/PaymentSystemUnavailable.aspx)
+ * [/Bloxmas-card.pdf](http://c0.rbxcdn.com/Bloxmas-card.pdf)
+ * [/My/Share/PleaseUpgradeMe.aspx](http://www.roblox.com/My/Share/PleaseUpgradeMe.aspx)
+ * [/My/Share/ReferralLeaderboards.aspx](http://www.roblox.com/My/Share/ReferralLeaderboards.aspx)
+ * [/Micropay/Default.aspx](http://www.roblox.com/Micropay/Default.aspx)
+ * [/Contests/Default.aspx?id=(1-51)](http://www.roblox.com/Contests/Default.aspx?id=1)
+ * [/Contests/History.aspx?p=(1-2)](http://www.roblox.com/Contests/History.aspx?p=1)
+ * [/Contests/Leaders.aspx?id=(1-51)](http://www.roblox.com/Contests/Leaders.aspx?id=1)
+ * [/Contests/Prizes.aspx?id=(1-51)](http://www.roblox.com/Contests/Prizes.aspx?id=1)
+ * [/Empty.ashx](http://www.roblox.com/Empty.aspx)
+ * [/Ads/Default.aspx](http://www.roblox.com/Ads/Default.aspx)
+ * [/Game/Help.aspx](http://www.roblox.com/Game/Help.aspx)
+ * [/Item.aspx?id=1818](http://www.roblox.com/Item.aspx?id=1818)
+ * [/Item.aspx?avid=1](http://www.roblox.com/Item.aspx?avid=1)
+ * [/IDE/ClientToolbox.aspx](http://www.roblox.com/IDE/ClientToolbox.aspx)
+ * [/Login/ResetPasswordRequest.aspx](http://www.roblox.com/Login/ResetPasswordRequest.aspx)
+ * [/Game/MachineConfiguration.ashx](http://www.roblox.com/Game/MachineConfiguration.ashx)
+ * [/Install/Setup.ashx](http://www.roblox.com/Install/Setup.ashx)
+ * [/Login/FufillConstraint.aspx](http://www.roblox.com/Login/FulfillConstraint.aspx)
+ * [/Game/Upload.aspx](http://www.roblox.com/Game/Upload.aspx)
+ * [/userads/(1-4)](http://www.roblox.com/userads/1)
+ * [/AbuseReport/InGameChatHandler.ashx](http://www.roblox.com/AbuseReport/InGameChatHandler.ashx)
+ * [/Analytics/GamePerfMonitor.ashx](http://www.roblox.com/Analytics/GamePerfMonitor.ashx)
+ * [/Browse.aspx?name=Shedletsky](http://www.roblox.com/Browse.aspx?name=Shedletsky)
+ * [/Services/GroupService.asmx]
+   FreeGames.aspx
+  Games.aspx
+  GamesNew.aspx
+  LandingGames.aspx
+  LandingSignup.aspx
+  Roblox.xsd
+  RobloxOld.css
+  RobloxVerify.aspx
+  Robots.txt
+  FbChannel.aspx
+  /AbuseReport/
+             Asset.aspx
+             AssetSet.aspx
+    Chat.aspx
+    Comment.aspx
+    Feed.aspx
+    ForumPost.aspx
+    Group.aspx
+    GroupRoleSet.aspx
+    GroupStatus.aspx
+    GroupWallPost.aspx
+    InGameChatHandler.ashx
+    Message.aspx
+    PartyChat.aspx
+    UserProfile.aspx
+  /Account/
+    /SignUpRedir?month=&day=&year=
+  /Accounts/
+    /Verify?Mode=emailOnly&Ticket=
+  /Admi/
+    /Economy/
+      NewProduct.aspx
+      RobuxAdjustment.aspx
+    /Grid/
+      Job.aspx
+      Jobs.aspx
+      JobTest.aspx
+      Server.aspx
+      Servers.aspx
+    /Moderation/
+               AbuseReports.aspx
+               AssetReview.aspx
+    /Users/
+      ModerateUser.aspx
+    /UserScripts/
+      ScriptApproval.ashx
+             AbuseReports.aspx
+             Accounts.aspx
+             AssetReview.aspx
+    DeletePost.aspx
+    Dmp.aspx
+    GameServers.aspx
+    ImageServer.aspx
+    LoadScript.ashx
+    Moderation.aspx
+    Toolboxes.aspx
+    User.aspx
+  /Ads/
+    IFrameAdContent.aspx
+    IFrameUserAdContent.aspx
+    UserAdContent.aspx
+    ReportAd.aspx
+  /Analytics/
+    BadHtmlImage.ashx
+    CdnTester.ashx
+    ContentProvider.ashx
+    GamePerfMonitor.ashx
+    LogFile.ashx
+    Measurement.ashx
+  /Api/
+    /Groups/
+      /{GroupId}/
+        /RoleSets/
+          {RoleSetId}
+    Comments.ashx
+    Item.ashx
+  /App_Themes/
+  /Apps/
+    /Thumbnails/
+      /Add-Image/
+      /Add-Video/
+      /Remove/
+  /Asset/
+		/Default.ashx?id=125750544&serverplaceid=26838733&hash=&versionId=&assetVersionId=
+		/GetScriptState.ashx?ScriptHash=&AccurateResults=false
+    CharacterFetch.ashx
+  /Asset-Thumbnail/
+    /json/
+  /Authentication/
+    Logout
+    SignOutFromAllSessionsAndReauthenticate
+  /Build/
+    Default.aspx
+    /Set-Place-State/
+  /Catalog/
+    Browse.aspx
+    Default.aspx
+    html
+    json
+    Lists.aspx
+  /Chat/
+    /CSS/
+      party_leader.css
+    FriendHandler.ashx
+    Party.ashx
+    Send.ashx
+    Utility.ashx
+  /Content/
+  /Contests/
+    /Handlers/
+      CanVote.ashx
+      Showcases.ashx
+      Submission.ashx
+    Default.aspx
+    History.aspx
+    Leaders.aspx
+    Prizes.aspx
+    Rate.aspx
+    Vote.aspx
+  /CSS/
+    /Base/
+      /CSS/
+                 AccountBalance.css
+                 AdFormatClasses.css
+                 Ads.css
+                 AgeUpEmailVerifyPage.css
+                 Asset.css
+        Badges.css
+        BCModal.css
+        Billing.css
+        carouselpager.css
+        Catalog.css
+        CharacterCustomization.css
+        CharacterSelectAndInstallInstructions.css
+        CommonForms.css
+        ContentAdapters.css
+        ContentBuilder.css
+        Contest.css
+        CreditCardExpireModal.css
+        CuratedGames.css
+        CurrencyExchange.css
+        DarkGradientBox.css
+        FetchCSS
+        Games.css
+        GenericModal.css
+        GroupRoleSetMembersPane.css
+        Groups.css
+        Help.css
+        iFrameHeader.css
+        iFrameLogin.css
+        Inbox.css
+        Info.css
+        Install.css
+        Item.css
+        LandingGames.css
+        Language.css
+        ManageAccount.css
+        Membership.css
+        MenuRedesign.css
+        Message.css
+        MyAccount.css
+        MyItem.css
+        MyMoney.css
+        NewToolBox.css
+        Parents.css
+        Party.css
+        PersonalServerAccessPrivilegesRoleSet.css
+        Place.css
+        PlaceItem.css
+        PlaceLauncher.css
+        Profile.css
+        Q.css
+        RBXCommon.css
+        RevisedCharacterSelectModal.css
+        Roblox.css
+        Sets.css
+        ShadowedStandardBox.css
+        ShareRoblox.css
+        Signup.css
+        StyleGuide.css
+        tipsy.css
+        Toolbox.css
+        Trade.css
+        UnifiedModal.css
+        Upgrades.css
+        Upload.css
+        User.css
+        Utility.css
+        VideoPreRoll.css
+    /M/
+      main___c379d45f96882e5bc9d065ae104ca7c9_m.css
+      page___8976a52280d235f6ee652b82bc6a7924_m.css
+    /My/
+      BestFriends.css
+      MyItem.css
+    /Pages/
+      /Build/
+        BuildPage.css
+        DropDownMenus.css
+      /Gamecards/
+        Index.css
+      /Home/
+        Home.css
+        RobloxFeed.css
+      /Signup/
+        Signup.css
+      /Upgrades/
+        BuildersClubPanel.css
+        BuyRobux.css
+      /UserAd/
+        NewUserAd.css
+      Catalog.css
+      Friends.css
+      GamePage.css
+      LandingSignUp.css
+      RobloxUI.css
+      VotingPanel.css
+    /Parents/
+      /Images/
+        robloxparentedition.png
+    /PartialViews/
+      Navigation.css
+    /RBX2/
+      /CSS/
+        BuildersClub.css
+        Catalog.css
+        DarkGradientBox.css
+        Games.css
+        Inbox.css
+        Item.css
+        MyRoblox.css
+        Roblox.css
+        Upgrades.css
+        Utility.css
+    /Takeovers/
+      /CSS/
+        HeroFactory.css
+        KreoBattleship.css
+    YUIReset.css
+  /Data/
+    Upload.ashx
+  /Download/
+  /Drivers/
+    FindVideoCard.aspx
+  /Error/
+    Dmp.ashx
+    DoesntExist.aspx
+    Lua.ashx
+    Report.aspx
+    UnsafeInput.aspx
+  /Facebook/
+             Authorize
+    Share-Character
+    SignIn
+  /Forum/
+    /Moderate/
+      DeletePost.aspx
+      EditPost.aspx
+      MovePost.aspx
+    /Msgs/
+      Default.aspx
+    /Search/
+      Default.aspx
+    /Skins/
+      /Default/
+        /Images/
+          forum_status.gif
+          icon_mini_home.gif
+          icon_mini_memberlist.gif
+          icon_mini_myforums.gif
+          icon_mini_profile.gif
+          icon_mini_register.gif
+          icon_mini_search.gif
+          icon_mini_topic.gif
+          newpost.gif
+          newtopic.gif
+          title.gif
+          topic.gif
+          topic-locked.gif
+          topic-locked_notread.gif
+          topic_notread.gif
+          topic-pinned&locked_notread.gif
+          topic-pinned_notread.gif
+          topic-popular.gif
+          user_IsOffline.gif
+          user_IsOnline.gif
+          users_moderator.gif
+          users_top100.gif
+          users_top25.gif
+          users_top50.gif
+        /Style/
+          Default.css
+    /User/
+      CreateUser.aspx
+      MyForums.aspx
+      ShowAllUsers.aspx
+      UserProfile.aspx
+    ShowForum.aspx
+    ShowForumGroup.aspx
+    ShowPost.aspx
+  /Feedifications/
+    get
+  /Feeds/
+    GetUserFeed
+  /Friends/
+  /Game/
+    /Badges/
+               AwardBadge.ashx
+      HasBadge.ashx
+      IsBadgeDisabled.ashx
+    /GamePass/
+      GamePassHandler.ashx
+    /LuaWebService/
+      HandleSocialRequest.ashx
+    /Tools/
+      InsertAsset.ashx?type=fm&q=&sid={setId}&pg=1&rs=21
+      ThumbnailAsset.ashx
+             AreFriends
+    BreakFriend
+    BuildActionPermissionCheck.ashx
+    Cdn.ashx
+    ChatFilter.ashx
+    ClientPresence.ashx?version=old&PlaceID={PlaceId}&GameID={JobId}&UserID={UserId}
+    CreateFriend
+    EventTracker.ashx
+    GameServer.ashx
+    GetAuthTicket
+    GetCurrentUser.ashx
+    GetScriptState.ashx
+    GetUserToolBuildSet.ashx
+    Help.aspx
+    Join.ashx
+    Join.lua
+    JoinRate.ashx?st=43&i={UserId}&p={PlaceId}&c=GameConnect&r=Success&d=961&b=1.1718931390505e+019&ip={GameServerIp}&errorType=&platform=Win32
+    KeepAlivePinger.ashx
+    Knockouts.ashx
+    LoadPlaceInfo.ashx
+    /Login/
+    Logout.aspx
+    POST MachineConfiguration.ashx
+    PlaceLauncher.ashx
+    PlaceSpecificScript.ashx
+    PlaceVisit.ashx
+    Statistics.ashx
+		Studio.ashx
+    TreasureHunt.ashx
+    Upload.aspx
+    Visit.ashx
+    Wipeouts.ashx
+  /Games/
+    /List/
+    /New/
+      Default.aspx
+      /MoreResults/
+    /Search/
+    /Start/
+  /Gamecard/
+    Default.aspx
+    InCommHandler.ashx
+  /Gamecards/
+    Default.aspx
+    Items.aspx
+  /Groups/
+             Audit.aspx
+    CreatePlace.aspx
+    GetPrimaryGroupInfo.ashx
+    Group.aspx
+    RoleSetUpdater.ashx
+    Search.aspx
+  /Help/
+    Builderman.aspx
+  /IDE/
+    /GoToWebsite/
+      /{UserId}?ReturnURL=http://www.roblox.com
+    /Publish/
+    /PublishAs/
+    ClientToolbox.aspx
+    Landing.aspx
+    /login/
+    /logout/
+    Upload.aspx
+    /Welcome/
+  /Images/
+    /Accounts/
+      btn_blue_ok_l.png
+      btn-buyrobux-gray-m.png
+      btn-gray-cancel-m.png
+      btn-joinbuildersclub-green-m.png
+      btn-update-blue-m.png
+      btn-upgradebc-green-m.png
+      img-verified.png
+    /Ads/
+               AdBannerTemplate.png
+               AdPending.png
+               AdRectangleTemplate.png
+               AdRejected.png
+               AdRunning.png
+               AdSkyscraperTemplate.png
+               AdStopped.png
+               AdSuppressionBullet.png
+      BuildersClubAd-300x250v4.jpg
+      BuildersClubAd-728x90v4.jpg
+    /Arena/
+      play.png
+      screen1.png
+      screen1v2.png
+      screen2.png
+      screen3.png
+    /AssetIcons/
+      Deadline.png
+      Limited.png
+      LimitedUnique.png
+    /Badges/
+               Administrator-75x75.png
+               Ambassador-75x75.png
+      badge_instructions.png
+      Bloxxer-75x75.jpg
+      Bloxxer-75x75.png
+      Bricksmith-54x75.jpg
+      Bricksmith-54x75.png
+      BuildersClub-125x125.png
+      CombatInitiation-75x75.jpg
+      CombatInitiation-75x75.png
+      ForumModerator-75x75.png
+      Friendship-75x75.jpg
+      Friendship-75x75.png
+      Homestead-70x75.jpg
+      Homestead-70x75.png
+      ImageModerator-75x75.png
+      Inviter-75x75.png
+      obcbadge128x128.png
+      obcbadge75x75.png
+      SuperModerators-75x75.jpg
+      TurboBuildersClub-150x150.png
+      TurboBuildersClub-32x32.png
+      TurboBuildersClub-75x75.png
+      Veteran-75x75.png
+      Warrior-75x75.jpg
+      Warrior-75x75.png
+    /BuildersClubBenefitsGrid/
+      paid-access.png
+    /BuildPage/
+      btn-gear_sprite_27px.png
+      img-instructions.png
+    /Buttons/
+      /Arrows/
+        btn-silver-left-27.png
+        btn-silver-right-27.png
+      /StyleGuide/
+        bg-btn-blue.png
+        bg-btn-green.png
+        bg-lg-green-play.png
+               AB-female_character.jpg
+               AB-male_character.jpg
+      bg-btn-blue.png
+      bg-btn-blue-arrow-md.png
+      bg-btn-gray.png
+      bg-btn-gray-arrow-md.png
+      bg-btn-green.png
+      bg-drop_down_arrow.png
+      bg-drop_down_btn.png
+      bg-form_btn_lg-tile.png
+      bg-lg-green-play.png
+      bg-rbx_btn_60.png
+      blue_no.png
+      blue_yes2.png
+      btn_25px_blue.png
+      btn-add_to_game-lg.png
+      btn-add_to_game-sm.png
+      btn-blue-download_m.png
+      btn_blue_ok_l.png
+      btn-borrow.png
+      btn-buy_robux.png
+      btn-buynow.png
+      btn-buynow-2.png
+      btn-buynow_grn_m.png
+      btn-buynow_grn_m_v2.png
+      btn-buynow_grn_sm.png
+      btn-buynow_grn_sm_v2.png
+      btn-buyrobux-lg-green.png
+      btn-cancel.png
+      btn-continue_shopping.png
+      btn-create_account.png
+      btn-expand_arrow.png
+      btn-get_gift_card.jpg
+      btn-gray-cancel_l.png
+      btn-green-buynow_l.png
+      btn-green-upload.png
+      btn-learn_more.png
+      btn-make_trade.png
+      btn-ok-gray.png
+      btn-play_as_boy_AB.png
+      btn-play_as_girl_AB.png
+      btn-playnow_small.png
+      btn-playnow_big.png
+      btn-playnow_big2.png
+      btn-purchase_another.png
+      btn_red_40h_t1.png
+      btn_red_40h_t2.png
+      btn-rent-small.png
+      btn-sell_now.png
+      btn-signup.png
+      btn-sign_up-blue-lg.png
+      btn-small_silver_tile.png
+      btn-take_one.png
+      btn-take_one_v2.png
+      btn-take_one_v2_2.png
+      btn-trade_currency.png
+      btn-upgrade_now.png
+      btn-updatenow.png
+      btn-upgrade_now.png
+      btn-x.png
+      btn-x-sm.png
+      buildNow01.png
+      cancel-blue2.png
+      closeBtnCircle_35h.png
+      CollapseButton.jpg
+      download.png
+      ExpandButton.jpg
+      followme_19h.png
+      followme_19h-gray.png
+      GetAFreeAccount.png
+      gray_arrow.png
+      grey_no2.png
+      grey_yes.png
+      img-trade_icon_green_small.png
+      img-trade_icon_red_small.png
+      ManageAccountButton.png
+      ManageAccountButtonMouseOver.png
+      NoThanks.png
+      ok.png
+      playAsGuest.png
+      playNow01.png
+      playRoblox01.png
+      questionmark-12x12.png
+      questionmark-25x25.png
+      Register-blue.png
+      sendTrade2.png
+      sign_up_small.png
+      SwitchNow.png
+      tradeItems.png
+      yes-gray2.png
+    /BuyBC/
+      bc_12months.png
+      bc_6months.png
+      bc_lifetime.png
+      bc_lifetime_obc_lifetime_discount.png
+      bc_lifetime_tbc_lifetime_discount.png
+      bc_monthly.png
+      bc_sprites_math_disabled.png
+      bc_sprites_math_enabled.png
+      obc_12months.png
+      obc_6months.png
+      obc_lifetime.png
+      obc_monthly.png
+      obctip.png
+      tbc_12months.png
+      tbc_6months.png
+      tbc_lifetime.png
+      tbc_lifetime_obc_lifetime_discount.png
+      tbc_monthly.png
+    /CategoryIcons/
+      CategorySprite.png
+    /ChaosCanyon/
+      ChaosCanyonLarge.png
+      ChaosCanyonSmall1.png
+      ChaosCanyonSmall2.png
+      btn_black21h_l.png
+      btn_black21h_over_l.png
+      btn_black21h_over_r.png
+      btn_black21h_r.png
+      btn_green21h_l.png
+      btn_green21h_over_l.png
+      btn_green21h_over_r.png
+      btn_green21h_r.png
+      btn_red21h_l.png
+      btn_red21h_over_l.png
+      btn_red21h_over_r.png
+      btn_red21h_r.png
+      HeaderBarRepeat1x1.jpg
+      HeaderBarRepeat1x1_orange.jpg
+      tab_blue21h_r.png
+    /CommunityConstruction/
+      BuildingRoomLarge.png
+      BuildingRoomSmall1.png
+      BuildingRoomSmall2.png
+    /Contests/
+      /HeroFactory/
+        Background2.png
+        btn_play.png
+        btn_prizes.png
+      /KreoBattleship/
+        btn-call-to-action.png
+        bg-main4.jpg
+        btn-play.png
+        btn-prizes.png
+        btn-stuff.png
+      ad1.png
+      ad2.png
+      ad3.png
+      ad4.png
+      bike2.png
+      checked_box.png
+      contestback.png
+      contestbutton.png
+      disney_enter_r1.png
+      disney_enter_r1_over.png
+      disney_leaders.png
+      disney_leaders_over.png
+      disney_prizes.png
+      disney_prizes_over.png
+      disney_stuff.png
+      disney_stuff_over.png
+      disney_vote_r1.png
+      disney_vote_r1_ver.png
+      disneyprizesummary.png
+      not_checked_box.png
+      PlaySkateParks.png
+    /CSSSpecific/
+      /rbx2/
+        abuse.png
+        bg-statbar-left.png
+        bg-statbar-left-28h.png
+        bg-statbar-right.png
+        bg-statbar-right-28h.png
+        bkg.jpg
+        btn_blue18h.png
+        btn_play_54h.png
+        button_vote.jpg
+        containerBkg_01.png
+        favoriteStar_20h.png
+        head_02.jpg
+        head_03.jpg
+        head_bkg_t1.png
+        head_bkg_t2.png
+        head_infobox_icons.png
+        head_sign.png
+        icon_gear.png
+        icon_locked.png
+        icon_public.png
+        img-robloxlogo.png
+        standardBox_01_bkg.png
+        tab_black_33h_t1.png
+        tab_black_33h_t2.png
+        tab_gray_33h_t1.png
+        tab_gray_33h_t2.png
+        tab_white_26h_t1.png
+        tab_white_26h_t2.png
+        tab_white_31h_t1.png
+        tab_white_31h_t2.png
+        topNav_blue.png
+        topNav_rss.png
     Folder /CSSThemes/
-      -Folder /Base/
-        -File btn_blue.png
-        -File img-robloxlogo.png
-      -Folder /Classic/
-        -File ClassicBanner.png
-      -Folder /Disney/
-        -File DisneyBanner2.png
-        -File DisneyContest.png
-        -File zekback.jpg
-      -Folder /Outrageous/
-        -File carbon2.png
-        -File carbon3.png
-        -File carbon4.png
-        -File carbon5.png
-        -File carbon6.png
-        -File RobloxMidnight.png
-        -File standardboxback.png
-      -Folder /Outrageous2/
-        -File Bkg.jpg
-        -File head.png
-        -File head_02.jpg
-        -File img-robloxlogo-obc2.png
-        -File topNav_black.png
-      X-Folder /SpecialThemes/
-        -Folder /2012/
-          -Folder /Winter/
-            -File bg-holiday_banner_no_flash.jpg
-            -File bg-holiday_theme.png
-            -File holiday_banner_global_v3.swf
-            -File holiday_banner_home_v3.swf
-        -File bkg.jpg
-        -File header.jpg
-        -File logo.png
-        -File Roblox-Turkey-logo.png
-        -File Thanksgiving_BKG3.jpg
-        -File Thanksgiving_Header.jpg
-        -File Winter_bkg.jpg
-        -File Winter_Header2.jpg
-        -File winter-logo.png
-        -File winter-logo2.png
-    -Folder /Easter/
-      -File LogoRedWhiteEggSheet.png
-      -File LogoRedWhiteEggSheetBC.png
-    -Folder /Facebook/
-      -File bg-fblogin_middle.png
-      -File bg-fblogin_sides.png
-      -File btn-login_with_fb-big.png
-      -File fsignin.png
-    -Folder /feed-icons/
-      -File feed-icon-14x14.png
-    -Folder /FriendsBar/
-      -File friend_dropdownBtn20h.jpg
-      -File tab_blue19h_l.gif
-      -File tab_blue19h_r.gif
-      -File tab_white19h_l.gif
-      -File tab_white19h_l2.gif
-      -File tab_white19h_r.gif
-      -File tab_white19h_r2.gif
-    -Folder /Gamecards/
-      -File 660x168_cards.png
-    -Folder /GameCarousel/
-      -File img1.jpg
-      -File img1_thumb.jpg
-      -File img2.jpg
-      -File img2_thumb.jpg
-      -File img3.jpg
-      -File img3_thumb.jpg
-      -File img4.jpg
-      -File img4_thumb.jpg
-      -File img5.jpg
-      -File img5_thumb.jpg
-      -File Carousel_navButton-off.jpg
-      -File Carousel_navButton-on.jpg
-      -File Carousel_navButton-over.jpg
-      -File carousel_tooltip_tail.png
-    -Folder /Games/
-      -Folder /CuratedGames/
-        -File btn_25px_red.png
-        -File btn_25px_white.png
-        -File CuratedGames-playBtn.png
-        -File img-robloxlogo.png
-        -File navButton-off.jpg
-        -File navButton-on.jpg
-        -File navButton-over.jpg
-      -File buildBtn_off.png
-      -File buildBtn_on.png
-      -File gamesPage_bcHelmet.png
-      -File playBtn_off.png
-      -File playBtn_on.png
-      -File slow.png
-    -Folder /GamesPage/
-      -File arrow_left.png
-      -File arrow_right.png
-    -Folder /GenreIcons/
-      -File Adventure.png
-      -File Castle.png
-      -File City.png
-      -File Classic.png
-      -File Cthulu.png
-      -File FPS.png
-      -File Funny.png
-      -File GenreIconsSprite.png
-      -File ModernMilitary.png
-      -File Ninja.png
-      -File Pirate.png
-      -File RPG.png
-      -File Scary.png
-      -File Sci-Fi.png
-      -File SciFi.png
-      -File Skatepark.png
-      -File Sports.png
-      -File TownandCity.png
-      -File Tutorial.gif
-      -File Tutorial.png
-      -File War.png
-      -File WildWest.png
-    -Folder /GenreIconsInverted/
-      -File Adventure.png
-      -File Castle.png
-      -File City.png
-      -File Classic.png
-      -File Cthulu.png
-      -File LOL.png
-      -File ModernMilitary.png
-      -File Ninja.png
-      -File Pirate.png
-      -File SciFi.png
-      -File Skatepark.png
-      -File Sports.png
-      -File TownandCity.png
-      -File Tutorial.gif
-      -File Tutorial.png
-      -File War.png
-      -File WildWest.png
-    -Folder /Gifting/
-      -Folder /New/
-        -File gifting_anyAmount.jpg
-        -File gifting_bc.jpg
-        -File gifting_obc.jpg
-        -File gifting_tbc.jpg
-      -File bg-black-transparent.png
-      -File gifting_bc.jpg
-      -File gifting_obc.jpg
-      -File gifting_tbc.jpg
-      -File img-checked.png
-      -File img-checked-small.png
-      -File img-gifting160-1.jpg
-      -File img-gifting270_2.png
-      -File img-unchecked.png
-      -File theme-preview-christmas.png
-      -File theme-preview-classic.png
-      -File theme-preview-justforyou1.png
-      -File theme-preview-justforyou2.png
-      -File theme-thumb-christmas.png
-      -File theme-thumb-classic.png
-      -File theme-thumb-justforyou1.png
-      -File theme-thumb-justforyou2.png
-    -Folder /GlassHouses/
-      -File Large.png
-      -File Small1.png
-      -File Small2.png
-    -Folder /Groups/
-      -File bg-speech_bottom.png
-      -File bg-speech_top.png
-      -File blue_arrow_btns_12x12_sprite.png
-      -File btn-arrowsprite-up_down.png
-      -File groups_btn_join.png
-      -File groups_btn_joinpending.png
-    -Folder /HauntedMansion/
-      -File HauntedMansionLarge.png
-      -File HauntedMansionSmall1.png
-      -File HauntedMansionSmall2.png
-    -Folder /Home/
-    -Folder /Icons/
-      -File CategorySprite.png
-      -File exclamation.png
-      -File img-robux.png
-      -File ipadonly_ribbon.png
-      -File MyMoney_fakeborderbg2.png
-      -File overlay_bc_small.png
-      -File overlay_bcOnly.png
-      -File overlay_mega.png
-      -File overlay_mega_big.png
-      -File overlay_mega_small.png
-      -File overlay_obc_small.png
-      -File overlay_obcOnly.png
-      -File overlay_personal_big.png
-      -File overlay_personal_small.png
-      -File overlay_tbc_small.png
-      -File overlay_tbcOnly.png
-      -File personal_server.png
-      -File place-access-sprite.png
-      -File roblox_16x15.png
-      -File roblox-icon-round-tiny.jpg
-      -File thumbs_up.png
-      -File thumbsup.png
-      -File tradeicon.png
-    -Folder /IDE/
-      -File bg-header.png
-      -File bg-tab-active.png
-      -File bg-tab-inactive.png
-      -File bg-upload_progress.png
-      -File btn-search_glass.png
-      -File img-dropdown_arrow.png
-      -File img-studio_title.png
-    -Folder /Install/
-      -File ConfirmPrompt.PNG
-      -File DownloadPrompt.png
-      -File firefoxInstall_preview.png
-      -File noobFalling.jpg
-      -File warnLarge.gif
-    -Folder /IPadApp/
-      -File 099.png
-      -File 199.png
-      -File 299.png
-      -File 399.png
-      -File 499.png
-      -File 599.png
-      -File 699.png
-      -File 799.png
-      -File 899.png
-      -File 999.png
-      -File free.png
-    -Folder /Landing/
-      -File background_city.jpg
-      -File bluepixel.png
-      -File forground_city.png
-    -Folder /LandingGames/
-      -File crossroads.gif
-      -File loginArrow.png
-      -File login_btn.png
-      -File seeMoreGames.gif
-      -File swordfight.gif
-      -File video_bg.png
-    -Folder /LevelUp/
-      -File CTA.png
-      -File CTA_hover.png
-      -File Enter.png
-      -File Enter_hover.png
-      -File Leaders.png
-      -File Leaders_hover.png
-      -File LevelUp_BGc.png
-      -File Prizes.png
-      -File Prizes_hover.png
-      -File Stuff.png
-      -File Stuff_hover.png
-      -File Vote.png
-      -File Vote_hover.png
-    -Folder /Parents/
-      -File BuildersClub.png
-      -File BuildersClub-110x110.png
-      -File collapse_bg.jpg
-      -File FAQs.png
-      -File FAQs-110x110.png
-      -File KeepingKidsSafe.png
-      -File KeepingKidsSafe-110x112.png
-      -File RobloxAndLearning.png
-      -File RobloxAndLearning-110x110.png
-      X-File RobloxGuide.png
-      -File RobloxGuide-110x115.png
-      -File WhatParentsAreSaying.png
-      -File WhatParentsAreSaying-110x110.png
-    -Folder /PaymentMethods/
-      -File img-itunes_logo.png
-    -Folder /Promotions/
-      -File one-cent-BC.png
-    -Folder /RandomFactsIcons/
-      -File Admin.png
-      -File Bux.png
-      -File House.png
-      -File Pants.png
-      -File Shield.png
-      -File Shirt.png
-      -File ShoppingBag.png
-    -Folder /RevisedHeader/
-      -File bg-alerts-v2.png
-      -File bg-icon_sprites.png
-      -File bg-main_menu_hover.png
-      -File bg-obc_header.png
-      -File bg-rbx_header.png
-      -File bg-silver_bar.png
-      -File bg-sub_menu_hover.png
-      -File btn-obc_logo.png
-      -File btn-rbx_logo.png
-    -Folder /RobloxUI/
-      -File bg-silver_bar.png
-      -File ui-bg_flat_100_d6d6d6_40x100.png
-      -File ui-bg_flat_100_ffffff_40x100.png
-      -File ui-bg_gloss-wave_0_ffffff_500x100.png
-      -File ui-icons_222222_256x240.png
-      -File ui-icons_363636_256x240.png
-    -Folder /RocketArena/
-      -File Large.png
-      -File Small1.png
-      -File Small2.png
-    -Folder /SalesPitcher/
-      -File PlayNow.png
-      -File PlayNow2.png
-      -File PlayNow3.png
-    -Folder /SantasWinterStronghold/
-      -File SantasWinterStrongholdLarge.png
-      -File SantasWinterStrongholdSmall1.png
-      -File SantasWinterStrongholdSmall2.png
-    -Folder /Sets/
-      -File bg-drop_down_btn.png
-      -File blue_arrow_btns_sprite.png
-      -File btn-gear_sprite.png
-      -File img-update_available-left.png
-      -File sets_btn_create.png
-      -File sets_btn_find.png
-      -File setspop_footer.png
-      -File setspop_header.png
-      -File update_available.png
-      -File x_icon_red.png
-    -Folder /Signup/
-      -File bkg1.jpg
-      -File bkg2.jpg
-      -File bkg3.jpg
-      -File playNow.gif
-      -File progress1.gif
-      -File progress2.gif
-      -File progress3.gif
-      -File WoodBanner.png
-    -Folder /Spinners/
-      -File ajax_loader_blue_300.gif
-      -File Spinner16x16.gif
-      -File spinner100x100.gif
-    -Folder /StyleGuide/
-      -File bg-btn-blue.png
-      -File bg-btn-blue-arrow-md.png
-      -File bg-btn-gray.png
-      -File bg-btn-gray-arrow-md.png
-      -File bg-btn-green.png
-      -File bg-lg-green-play.png
-      -File bg-sub_menu_hover.png
-      -File btn-control-large-tile.png
-      -File btn-control-medium-tile.png
-      -File btn-control-small-tile.png
-      -File I18N_play_now.png
-    -Folder /UI/
-      -Folder /Catalog/
-        -File bg-27px_silver_btn.png
-        -File btn-browse_categories.png
-        -File dropdown.png
-        -File img-right_arrow.png
-        -File sprite-arrow.png
-      -Folder /Error/
-        -File btn-go_to_previous.png
-        -File btn-return_home.png
-      -File bg-bubble.png
-      -File bg-comments-compose.png
-      -File bg-comments-compose-v2.png
-      -File bg-comments-extra-long.png
-      -File bg-form_btn_lg-tile.png
-      -File btn-big_silver_tile.png
-      -File btn-login-gray-small.png
-      -File btn-login_with_fb.png
-      -File btn-play_this.png
-      -File btn-sign_up.png
-      -File btn-sign_up-mainpage.png
-      -File btn-submit.png
-      -File img-check.png
-      -File img-free_building_banner.jpg
-      -File img-or_divider.png
-      -File subMenuBackground.jpg
-    -Folder /Upgrades/
-    -Folder /VideoPreRoll/
-      -File btn-buildersclub.png
-    -File accept.png
-    -File AccountFlow.png
-    -File AdSuppressionBullet.png
-    -File AdventureAwaits.png
-    -File AllowanceBullet.png
-    -File AllowanceBullet2.png
-    -File arrow_36px_left.png
-    -File arrow_36px_right.png
-    -File arrow_skinny55h_left.png
-    -File arrow_skinny55h_right.png
-    -File arrow36px_leftOn.png
-    -File arrow36px_rightOn.png
-    -File BadgeBullet.png
-    -File banner.jpg
-    X-File Banner2.png
-    -File BannerPlay.png
-    -File BattleIcon.png
-    -File bbbseal1US.gif
-    -File bbbsealh1US.gif
-    -File bc_page_icon_sprites.png
-    -File bg-character.png
-    -File bg_clouds.jpg
-    -File bg-gutter.png
-    -File bg_gradient.jpg
-    -File bg-notifications.png
-    -File boku_logo.png
-    -File bskp.png
-    -File btn-download.png
-    -File btn_green_30h_t1.png
-    -File btn_green_30h_t2.png
-    -File btn_red_30h_t1.png
-    -File btn_red_30h_t2.png
-    -File btn-login.png
-    -File btn-login_dropdown.png
-    -File btn-logo.png
-    -File btn-play.png
-    -File btn_red_30h_t1.png
-    -File btn_red_30h_t2.png
-    -File btn_red_40h_t1.png
-    -File btn_red_40h_t2.png
-    -File btn-submit.png
-    -File BuildersClub-110x110.png
-    -File buildersclubad728x90.jpg
-    -File buildersClubPage_711Logo.png
-    -File buildersClubPage_bestBuyLogo.png
-    -File buildersClubPage_buyRobux_44px.png
-    -File buildersClubPage_gameStopLogo.png
-    -File buildersClubPage_paymoLogo.png
-    -File buildersClubPage_rixtyLogo.png
-    -File buildersClubPage_robloxCard.png
-    -File buildersClubPage_toysRUsLogo.png
-    -File buildersClubPage_wallieLogo.png
-    -File BuildIcon.png
-    -File BuildSolo2.png
-    -File bullet1.png
-    -File bullet2.png
-    -File bullet3.png
-    -File BulletPointArrow.png
-    -File BuyBC.png
-    -File BuyBC2.png
-    -File BuyBC3.png
-    -File Buyobcmonthly.png
-    -File BuyROBUX.png
-    -File BuyROBUX2.png
-    -File BuyROBUX3.png
-    -File catalog_options_back.png
-    -File ClickRun.png
-    -File comment-arrow.png
-    -File connecttofacebook.gif
-    -File COPPASeal-150x150.png
-    -File CopyLocked.png
-    -File ConstructionToolkitBullet.png
-    -File cross.png
-    -File DarkGradientW150.png
-    -File deleted_user_asset.png
-    -File dialog_avatar.png
-    -File disneyprizes.png
-    -File disneyskateboards.png
-    -File DownloadAndPlay.png
-    -File EditMode.png
-    -File EditMode2.png
-    -File Empty.png
-    -File errorPage.jpg
-    -File figure.png
-    -File FriendsIcon.png
-    -File FrontPage.png
-    -File FrontPage_Halloween.png
-    -File games_bullet.png
-    -File gamesPage_filterArrow.png
-    -File GenreSuitcase16x16.png
-    -File greenCheck2.png
-    -File GroupsBullet.png
-    -File GroupsSearchLogo.png
-    -File HardHatBullet.png
-    -File HardHatBullet2.png
-    -File HeaderGradientW800.png
-    -File help_gradient.png
-    -File Holiday_banner2.png
-    -File holiday_Logo_267_70.png
-    -File Holiday3Button.png
-    -File icon_success_50px.png
-    -File img-check.png
-    -File JoinBuildersClubNow.png
-    -File JoinBulletBadges.png
-    -File JoinBulletCreative.png
-    -File JoinBulletFriends.png
-    -File JoinBulletHappy.png
-    -File JoinBulletHouse.png
-    -File JoinBulletPencil.png
-    -File JoinBulletScript.png
-    -File JoinBulletShoppingBag.png
-    -File JoinBulletStar.png
-    -File JoinBulletStats.png
-    -File JoinBulletTreasure.png
-    -File JoinBulletWizardHat.png
-    -File LanguageChangeInstructions.jpg
-    -File loading.gif
-    -File locked.png
-    -File Logo_267_70.png
-    -File magnifying.png
-    -File master_page_image_sprites.png
-    -File MiniclipHeader_BG.PNG
-    -File missing_user_asset.png
-    -File Model.jpg
-    -File MultiplePlacesBullet.png
-    -File MultiplePlacesBullet2.png
-    -File NewFrontPageGuy.png
-    -File newmessage.png
-    -File NoSuitcase16x16.png
-    -File obcbadge32x32.png
-    -File obctip.png
-    -File offline.png
-    -File online.png
-    -File PantsTemplate.png
-    -File ParentAccount.png
-    -File PaymentUnavailable_Error.jpg
-    -File Play.png
-    -File PlayButton_Green.png
-    -File PlayButton_Orange.png
-    -File PlayButton_Red.png
-    -File PlayNowGreenFader.gif
-    -File PlayNowRedBlinker.gif
-    -File PlaySolo.png
-    -File PlaySolo2.png
-    -File PlayThis.png
-    -File ProgressIndicator2.gif
-    -File ProgressIndicator3.gif
-    -File ProgressIndicator4.gif
-    -File public.png
-    -File Ranger.png
-    -File roblox_logo.png
-    -File Roblox%20Logo%20Election%2008.png
-    -File roblox_R_logo.gif
-    -File RobloxCentralBank.png
-    -File RobloxViaStartMenu.png
-    -File SearchIcon.png
-    -File SellBullet.png
-    -File SellBullet2.png
-    -File ShadowAlpha.png
-    -File Shared.png
-    -File ShirtTemplate.png
-    -File SignupBanner.png
-    -File SmallMetallicButton.png
-    -File Speech Bubble 225.gif
-    -File star.png
-    -File step1.png
-    -File step2.png
-    -File step3.png
-    -File Suitcase16x16.png
-    -File SuperSafe32.png
-    -File SuperSafe128.png
-    -File tab.gif
-    -File tab-active.gif
-    -File tab-active-left.gif
-    -File tab-active-right.gif
-    -File tab-hover.gif
-    -File tab-hover-left.gif
-    -File tab-hover-right.gif
-    -File tab-left.gif
-    -File tab-line.gif
-    -File tabmiddle.png
-    -File tabmiddleselected.png
-    -File tab-right.gif
-    -File Tickets.png
-    -File titlepng.png
-    -File topNav_arrow_white.png
-    -File topNav_black.png
-    -File truste_seal_kids.gif
-    -File truste_seal_kids-110x37.gif
-    -File TrusteVertical.png
-    -File twitter.png
-    -File unlocked.png
-    -File waiting.gif
-    -File WoodBanner.png
-    -File zeklutherpic.png
-    -File zekeluthertransparent.png
-  -Folder /Info/
-    -File About.aspx
-    -File ContactUs.aspx
-    -File EULA.htm
-    -File Privacy.aspx
-    -File PrivacyMode.aspx
-    -File RelatedResources.aspx
-    -File /Terms-Of-Service/
-    -File TermsOfService.aspx
-  -Folder /Install/
-    -File Download.aspx
-    -File Service.asmx
-    -File Setup.ashx
-    -File VisitButtonHandler.ashx
-    -File Unsupported.aspx
-  -Folder /Js/
-    -Folder /Common/
-      -File Forms.js
-    -Folder /Extensions/
-      -File String.js
-      -File Thumbnails.js
-    -Folder /Facebook/
-      -File connect.js
-    -Folder /Flot/
-      -File excanvas.js
-      -File excanvas.min.js
-      -File jquery.flot.js
-    -Folder /Gamecards/
-      -File Index.js
-    -Folder /Games/
-      -File GamesDisplay.js
-      -File GamesDisplayShared.js
-      -File GamesList.js
-      -File GamesLists.js
-    -Folder /GoogleAnalytics/
-      -File GoogleAnalyticsEvents.js
-    -Folder /Groups/
-    -Folder /Home/
-      -File Home.js
-    -Folder /IDE/
-      -File AddOnsAndPromotions.js
-      -File BuildTemplates.js
-      -File Login.js
-      -File Publish.js
-      -File PublishAs.js
-      -File Update.js
-      -File Upload.js
-      -File Welcome.js
-    -Folder /jPlayer/
-      -Folder /1.2.0/
-        -File Jplayer.swf
-        -File jquery.jplayer.min.js
-    -Folder /jQuery/
-      -File jquery.address-1.4.min.js
-      -File jquery-ui-1.8.18.min.js
-      -File jquery-ui-1.9.2.min.js
-      -File jquery-1.7.2.min.js
-    -Folder /Landing/
-      -File AnimatedSignupFormValidator.js
-      -File Animation.js
-    -Folder /Login/
-      -File Login.js
-    -Folder /M/
-      -File base___4bd4fe3216951f92cf66cecab189f7ed_m.js
-      -File chat___0dae654cf69fb7f2d63be663ce2f6eac_m.js
-      -File clientinstaller___ba4eec0c4d283ec86ac515f6795cff2f_m.js
-      -File idenewgamepage___b5292a1510d483ddb267c22c15aac0e8_m.js
-      -File idewelcomepage___7c56eca68f1fb2f8e40da40fffb35bfb_m.js
-      -File jQuery___f96d183221b7e5fc88ce682603a50c3a_m.js
-      -File master___ebf9cccfb142b3fca6eced6616904287_m.js
-      -File page___01981ea3c68bf1cf0d499ce0a82ca745_m.js
-      -File page___0f837756dd94bc03cfe70dd8286c09ed_m.js
-      -File page___36c37de57eb38de265bc4855802c6778_m.js
-      -File page___4971a929aaadfd7bd43aa5be00b77267_m.js
-      -File page___58533f7e6857519e93b4c36d01d9e561_m.js
-      -File page___73f93984f11e7201f4e7566f297a79e8_m.js
-      -File page___75ca9573fc92f62cdfa5ac4265f83ef6_m.js
-      -File page___7795518d4e58f9abae75e8cb74218bf9_m.js
-      -File page___7c9bd4c32c1ce687eb9f8ccc00b5d909_m.js
-      -File page___7f2afc92bb4a1363cbdcb9e0c45bc76f_m.js
-      -File page___82eadb1fe4eeb8b7bba73057f7364edf_m.js
-      -File page___8cae821f0c1931679f04477366eef6e2_m.js
-      -File page___d3b69de975cd5b2f326678fe24b78489_m.js
-      -File page___f8da944d7214fffffc1b2d04b568531c_m.js
-      -File Pagelets___BestFriends___b5520cc9d4705238e8405c93a383ffa0_m.js
-      -File placelauncher___daf7800f88f7b1ade6de9ec024a39a65_m.js
-      -File nonLoggedIn___3b6c5c0583dff5fa7201f664ebf09b81_m.js
-      -File videopreroll___c85c870cc52e48db96f4bdac1a6dfc5c_m.js
-      -File Widgets___AvatarImage___4bad94bdfd6d049f8b24e3bd86d91c8f_m.js
-      -File Widgets___PlaceImage___aff9d78b82154eb90cb9f3b6f22c65f9_m.js
-    -Folder /Microsoft/
-      -File MicrosoftAjax.js
-      -File MicrosoftAjaxWebForms.js
-    -Folder /MobileApp/
-      -File GameSearch.js
-      -File MainGames.js
-    -Folder /Modules/
-      -Folder /Pagelets/
-        -File BestFriends.js
-      -Folder /Pages/
-        -File Catalog.js
-        -File Messages.js
-      -Folder /Resources/
-        -File Messages.js
-      -Folder /Widgets/
-        -File AvatarImage.js
-        -File DropdownMenu.js
-        -File GroupImage.js
-        -File HierarchicalDropdown.js
-        -File ItemImage.js
-        -File PlaceImage.js
-        -File Suggestions.js
-        -File SurveyModal.js
-      -File jQuery.js
-    -Folder /My/
-      -File Account.js
-      -File MyItem.js
-    -Folder /Places/
-      -File Access.js
-      -File Create.js
-      -File PersonalServerAccess.js
-      -File PersonalServerGroupAccess.js
-      -File Templates.js
-    -Folder /Sets/
-      -File Sets.js
-      -File SetsPane.js
-    -Folder /SWFObject/
-      -File SWFObject.js
-    -Folder /Upgrades/
-    -Folder /YouTube/
-      -File RobloxYouTube.js
-    -File ABPlaceLauncher.js
-    -File AjaxAvatarThumbnail.js
-    -File Accordion.js
-    -File AddEmail.js
-    -File AdsHelper.js
-    -File AjaxAvatarThumbnail.js
-    -File AssetImage.js
-    -File BlockUI.js
-    -File BuildPage.js
-    -File ChangePassword.js
-    -File CharacterSelect.js
-    -File Chat_V1.js
-    -File ClickTracker.js
-    -File ClientInstaller.js
-    -File ClientToolbox.js
-    -File CommentsPane.js
-    -File Contests.js
-    -File CountdownTimer.js
-    -File CreateSetPanel.js
-    -File DataPager.js
-    -File Default.js
-    -File DropDownNav.js
-    -File FileUploadUnsupported.js
-    -File Friends.js
-    -File Functions.js
-    -File Gamecard.js
-    -File GamesDisplay.js
-    -File GamePass.js
-    -File GameUpload.js
-    -File GenericConfirmation.js
-    -File GenericModal.js
-    -File GiftCard.js
-    -File GoogleEventListener.js
-    -File GPTAdScript.js
-    -File Groups.js
-    -File Groups-ExileUser.js
-    -File IEMetroInstructions.js
-    -File Image.js
-    -File InstallationInstructions.js
-    -File Item.js
-    -File ItemPurchase.js
-    -File JSErrorTracker.js
-    -File json2.min.js
-    -File jquery.ba-postmessage.min.js
-    -File jquery.bxSlider.js
-    -File jquery.cookie.js
-    -File jquery.cookies.2.2.0.1.js
-    -File jquery.dotdotdot-1.5.7-packed.js
-    -File jquery-extensions.js
-    -File jquery.filter_input.js
-    -File jquery.json-2.2.js
-    -File jquery.jsoncookie.js
-    -File jquery.tipsy.js
-    -File jquery.simplemodal-1.3.5.js
-    -File jquery.validate.js
-    -File jquery.validate.unobtrusive.js
-    -File KontagentEventListener.js
-    -File MadStatus.js
-    -File MasterPageUI.js
-    -File MicropayPanel.js
-    -File MongoEventListener.js
-    -File MyMoney.js
-    -File ParentFrameLogin.js
-    -File Party.js
-    -File PersonalSeverAccessPrivilegesRoleSet.js
-    -File PlaceLauncher.js
-    -File PlaceProductPromotion.js
-    -File PleaseUpgradeMe.js
-    -File Roblox.js
-    -File RobloxCarouselPager.js
-    -File RobloxEventListener.js
-    -File RobloxEventManager.js
-    -FIle RobloxJsonCookie.js
-    -File SignupFormValidator.js
-    -File SignupFormValidatorGeneric.js
-    -File SiteTouchEvent.js
-    -File StringTruncator.min.js
-    -File StyleguideConversions.js
-    -File TradeCurrency.js
-    -File Twitter.js
-    -File UserAssetsPane.js
-    -File UserPlacesPane.js
-    -File VideoPreRoll.js
-    -File VotingPanel.js
-    -File Webkit.js
-    -File XsrfToken.js
-  -Folder /Landing/
-    -File /Animated/
-    -File /Animated-Signup/
-    -File /Secco/
-    -File /Secco-Signup/
-  -Folder /Login/
-    -File AuthorizeAccount.aspx
-    -File BonusEmail.aspx
-    -File ChangePassword.aspx
-    -File Default.aspx
-    -File FulfillConstraint.aspx
-    -File Help.aspx
-    -File iFrameLogin.aspx
-    -File LoginWithCaptcha.aspx
+      /Base/
+        btn_blue.png
+        img-robloxlogo.png
+      /Classic/
+        ClassicBanner.png
+      /Disney/
+        DisneyBanner2.png
+        DisneyContest.png
+        zekback.jpg
+      /Outrageous/
+        carbon2.png
+        carbon3.png
+        carbon4.png
+        carbon5.png
+        carbon6.png
+        RobloxMidnight.png
+        standardboxback.png
+      /Outrageous2/
+        Bkg.jpg
+        head.png
+        head_02.jpg
+        img-robloxlogo-obc2.png
+        topNav_black.png
+      X/SpecialThemes/
+        /2012/
+          /Winter/
+            bg-holiday_banner_no_flash.jpg
+            bg-holiday_theme.png
+            holiday_banner_global_v3.swf
+            holiday_banner_home_v3.swf
+        bkg.jpg
+        header.jpg
+        logo.png
+        Roblox-Turkey-logo.png
+        Thanksgiving_BKG3.jpg
+        Thanksgiving_Header.jpg
+        Winter_bkg.jpg
+        Winter_Header2.jpg
+        winter-logo.png
+        winter-logo2.png
+    /Easter/
+      LogoRedWhiteEggSheet.png
+      LogoRedWhiteEggSheetBC.png
+    /Facebook/
+      bg-fblogin_middle.png
+      bg-fblogin_sides.png
+      btn-login_with_fb-big.png
+      fsignin.png
+    /feed-icons/
+      feed-icon-14x14.png
+    /FriendsBar/
+      friend_dropdownBtn20h.jpg
+      tab_blue19h_l.gif
+      tab_blue19h_r.gif
+      tab_white19h_l.gif
+      tab_white19h_l2.gif
+      tab_white19h_r.gif
+      tab_white19h_r2.gif
+    /Gamecards/
+      660x168_cards.png
+    /GameCarousel/
+      img1.jpg
+      img1_thumb.jpg
+      img2.jpg
+      img2_thumb.jpg
+      img3.jpg
+      img3_thumb.jpg
+      img4.jpg
+      img4_thumb.jpg
+      img5.jpg
+      img5_thumb.jpg
+      Carousel_navButton-off.jpg
+      Carousel_navButton-on.jpg
+      Carousel_navButton-over.jpg
+      carousel_tooltip_tail.png
+    /Games/
+      /CuratedGames/
+        btn_25px_red.png
+        btn_25px_white.png
+        CuratedGames-playBtn.png
+        img-robloxlogo.png
+        navButton-off.jpg
+        navButton-on.jpg
+        navButton-over.jpg
+      buildBtn_off.png
+      buildBtn_on.png
+      gamesPage_bcHelmet.png
+      playBtn_off.png
+      playBtn_on.png
+      slow.png
+    /GamesPage/
+      arrow_left.png
+      arrow_right.png
+    /GenreIcons/
+               Adventure.png
+      Castle.png
+      City.png
+      Classic.png
+      Cthulu.png
+      FPS.png
+      Funny.png
+      GenreIconsSprite.png
+      ModernMilitary.png
+      Ninja.png
+      Pirate.png
+      RPG.png
+      Scary.png
+      Sci-Fi.png
+      SciFi.png
+      Skatepark.png
+      Sports.png
+      TownandCity.png
+      Tutorial.gif
+      Tutorial.png
+      War.png
+      WildWest.png
+    /GenreIconsInverted/
+               Adventure.png
+      Castle.png
+      City.png
+      Classic.png
+      Cthulu.png
+      LOL.png
+      ModernMilitary.png
+      Ninja.png
+      Pirate.png
+      SciFi.png
+      Skatepark.png
+      Sports.png
+      TownandCity.png
+      Tutorial.gif
+      Tutorial.png
+      War.png
+      WildWest.png
+    /Gifting/
+      /New/
+        gifting_anyAmount.jpg
+        gifting_bc.jpg
+        gifting_obc.jpg
+        gifting_tbc.jpg
+      bg-black-transparent.png
+      gifting_bc.jpg
+      gifting_obc.jpg
+      gifting_tbc.jpg
+      img-checked.png
+      img-checked-small.png
+      img-gifting160-1.jpg
+      img-gifting270_2.png
+      img-unchecked.png
+      theme-preview-christmas.png
+      theme-preview-classic.png
+      theme-preview-justforyou1.png
+      theme-preview-justforyou2.png
+      theme-thumb-christmas.png
+      theme-thumb-classic.png
+      theme-thumb-justforyou1.png
+      theme-thumb-justforyou2.png
+    /GlassHouses/
+      Large.png
+      Small1.png
+      Small2.png
+    /Groups/
+      bg-speech_bottom.png
+      bg-speech_top.png
+      blue_arrow_btns_12x12_sprite.png
+      btn-arrowsprite-up_down.png
+      groups_btn_join.png
+      groups_btn_joinpending.png
+    /HauntedMansion/
+      HauntedMansionLarge.png
+      HauntedMansionSmall1.png
+      HauntedMansionSmall2.png
+    /Home/
+    /Icons/
+      CategorySprite.png
+      exclamation.png
+      img-robux.png
+      ipadonly_ribbon.png
+      MyMoney_fakeborderbg2.png
+      overlay_bc_small.png
+      overlay_bcOnly.png
+      overlay_mega.png
+      overlay_mega_big.png
+      overlay_mega_small.png
+      overlay_obc_small.png
+      overlay_obcOnly.png
+      overlay_personal_big.png
+      overlay_personal_small.png
+      overlay_tbc_small.png
+      overlay_tbcOnly.png
+      personal_server.png
+      place-access-sprite.png
+      roblox_16x15.png
+      roblox-icon-round-tiny.jpg
+      thumbs_up.png
+      thumbsup.png
+      tradeicon.png
+    /IDE/
+      bg-header.png
+      bg-tab-active.png
+      bg-tab-inactive.png
+      bg-upload_progress.png
+      btn-search_glass.png
+      img-dropdown_arrow.png
+      img-studio_title.png
+    /Install/
+      ConfirmPrompt.PNG
+      DownloadPrompt.png
+      firefoxInstall_preview.png
+      noobFalling.jpg
+      warnLarge.gif
+    /IPadApp/
+      099.png
+      199.png
+      299.png
+      399.png
+      499.png
+      599.png
+      699.png
+      799.png
+      899.png
+      999.png
+      free.png
+    /Landing/
+      background_city.jpg
+      bluepixel.png
+      forground_city.png
+    /LandingGames/
+      crossroads.gif
+      loginArrow.png
+      login_btn.png
+      seeMoreGames.gif
+      swordfight.gif
+      video_bg.png
+    /LevelUp/
+      CTA.png
+      CTA_hover.png
+      Enter.png
+      Enter_hover.png
+      Leaders.png
+      Leaders_hover.png
+      LevelUp_BGc.png
+      Prizes.png
+      Prizes_hover.png
+      Stuff.png
+      Stuff_hover.png
+      Vote.png
+      Vote_hover.png
+    /Parents/
+      BuildersClub.png
+      BuildersClub-110x110.png
+      collapse_bg.jpg
+      FAQs.png
+      FAQs-110x110.png
+      KeepingKidsSafe.png
+      KeepingKidsSafe-110x112.png
+      RobloxAndLearning.png
+      RobloxAndLearning-110x110.png
+      XRobloxGuide.png
+      RobloxGuide-110x115.png
+      WhatParentsAreSaying.png
+      WhatParentsAreSaying-110x110.png
+    /PaymentMethods/
+      img-itunes_logo.png
+    /Promotions/
+      one-cent-BC.png
+    /RandomFactsIcons/
+               Admin.png
+      Bux.png
+      House.png
+      Pants.png
+      Shield.png
+      Shirt.png
+      ShoppingBag.png
+    /RevisedHeader/
+      bg-alerts-v2.png
+      bg-icon_sprites.png
+      bg-main_menu_hover.png
+      bg-obc_header.png
+      bg-rbx_header.png
+      bg-silver_bar.png
+      bg-sub_menu_hover.png
+      btn-obc_logo.png
+      btn-rbx_logo.png
+    /RobloxUI/
+      bg-silver_bar.png
+      ui-bg_flat_100_d6d6d6_40x100.png
+      ui-bg_flat_100_ffffff_40x100.png
+      ui-bg_gloss-wave_0_ffffff_500x100.png
+      ui-icons_222222_256x240.png
+      ui-icons_363636_256x240.png
+    /RocketArena/
+      Large.png
+      Small1.png
+      Small2.png
+    /SalesPitcher/
+      PlayNow.png
+      PlayNow2.png
+      PlayNow3.png
+    /SantasWinterStronghold/
+      SantasWinterStrongholdLarge.png
+      SantasWinterStrongholdSmall1.png
+      SantasWinterStrongholdSmall2.png
+    /Sets/
+      bg-drop_down_btn.png
+      blue_arrow_btns_sprite.png
+      btn-gear_sprite.png
+      img-update_available-left.png
+      sets_btn_create.png
+      sets_btn_find.png
+      setspop_footer.png
+      setspop_header.png
+      update_available.png
+      x_icon_red.png
+    /Signup/
+      bkg1.jpg
+      bkg2.jpg
+      bkg3.jpg
+      playNow.gif
+      progress1.gif
+      progress2.gif
+      progress3.gif
+      WoodBanner.png
+    /Spinners/
+      ajax_loader_blue_300.gif
+      Spinner16x16.gif
+      spinner100x100.gif
+    /StyleGuide/
+      bg-btn-blue.png
+      bg-btn-blue-arrow-md.png
+      bg-btn-gray.png
+      bg-btn-gray-arrow-md.png
+      bg-btn-green.png
+      bg-lg-green-play.png
+      bg-sub_menu_hover.png
+      btn-control-large-tile.png
+      btn-control-medium-tile.png
+      btn-control-small-tile.png
+      I18N_play_now.png
+    /UI/
+      /Catalog/
+        bg-27px_silver_btn.png
+        btn-browse_categories.png
+        dropdown.png
+        img-right_arrow.png
+        sprite-arrow.png
+      /Error/
+        btn-go_to_previous.png
+        btn-return_home.png
+      bg-bubble.png
+      bg-comments-compose.png
+      bg-comments-compose-v2.png
+      bg-comments-extra-long.png
+      bg-form_btn_lg-tile.png
+      btn-big_silver_tile.png
+      btn-login-gray-small.png
+      btn-login_with_fb.png
+      btn-play_this.png
+      btn-sign_up.png
+      btn-sign_up-mainpage.png
+      btn-submit.png
+      img-check.png
+      img-free_building_banner.jpg
+      img-or_divider.png
+      subMenuBackground.jpg
+    /Upgrades/
+    /VideoPreRoll/
+      btn-buildersclub.png
+    accept.png
+             AccountFlow.png
+             AdSuppressionBullet.png
+             AdventureAwaits.png
+             AllowanceBullet.png
+             AllowanceBullet2.png
+    arrow_36px_left.png
+    arrow_36px_right.png
+    arrow_skinny55h_left.png
+    arrow_skinny55h_right.png
+    arrow36px_leftOn.png
+    arrow36px_rightOn.png
+    BadgeBullet.png
+    banner.jpg
+    XBanner2.png
+    BannerPlay.png
+    BattleIcon.png
+    bbbseal1US.gif
+    bbbsealh1US.gif
+    bc_page_icon_sprites.png
+    bg-character.png
+    bg_clouds.jpg
+    bg-gutter.png
+    bg_gradient.jpg
+    bg-notifications.png
+    boku_logo.png
+    bskp.png
+    btn-download.png
+    btn_green_30h_t1.png
+    btn_green_30h_t2.png
+    btn_red_30h_t1.png
+    btn_red_30h_t2.png
+    btn-login.png
+    btn-login_dropdown.png
+    btn-logo.png
+    btn-play.png
+    btn_red_30h_t1.png
+    btn_red_30h_t2.png
+    btn_red_40h_t1.png
+    btn_red_40h_t2.png
+    btn-submit.png
+    BuildersClub-110x110.png
+    buildersclubad728x90.jpg
+    buildersClubPage_711Logo.png
+    buildersClubPage_bestBuyLogo.png
+    buildersClubPage_buyRobux_44px.png
+    buildersClubPage_gameStopLogo.png
+    buildersClubPage_paymoLogo.png
+    buildersClubPage_rixtyLogo.png
+    buildersClubPage_robloxCard.png
+    buildersClubPage_toysRUsLogo.png
+    buildersClubPage_wallieLogo.png
+    BuildIcon.png
+    BuildSolo2.png
+    bullet1.png
+    bullet2.png
+    bullet3.png
+    BulletPointArrow.png
+    BuyBC.png
+    BuyBC2.png
+    BuyBC3.png
+    Buyobcmonthly.png
+    BuyROBUX.png
+    BuyROBUX2.png
+    BuyROBUX3.png
+    catalog_options_back.png
+    ClickRun.png
+    comment-arrow.png
+    connecttofacebook.gif
+    COPPASeal-150x150.png
+    CopyLocked.png
+    ConstructionToolkitBullet.png
+    cross.png
+    DarkGradientW150.png
+    deleted_user_asset.png
+    dialog_avatar.png
+    disneyprizes.png
+    disneyskateboards.png
+    DownloadAndPlay.png
+    EditMode.png
+    EditMode2.png
+    Empty.png
+    errorPage.jpg
+    figure.png
+    FriendsIcon.png
+    FrontPage.png
+    FrontPage_Halloween.png
+    games_bullet.png
+    gamesPage_filterArrow.png
+    GenreSuitcase16x16.png
+    greenCheck2.png
+    GroupsBullet.png
+    GroupsSearchLogo.png
+    HardHatBullet.png
+    HardHatBullet2.png
+    HeaderGradientW800.png
+    help_gradient.png
+    Holiday_banner2.png
+    holiday_Logo_267_70.png
+    Holiday3Button.png
+    icon_success_50px.png
+    img-check.png
+    JoinBuildersClubNow.png
+    JoinBulletBadges.png
+    JoinBulletCreative.png
+    JoinBulletFriends.png
+    JoinBulletHappy.png
+    JoinBulletHouse.png
+    JoinBulletPencil.png
+    JoinBulletScript.png
+    JoinBulletShoppingBag.png
+    JoinBulletStar.png
+    JoinBulletStats.png
+    JoinBulletTreasure.png
+    JoinBulletWizardHat.png
+    LanguageChangeInstructions.jpg
+    loading.gif
+    locked.png
+    Logo_267_70.png
+    magnifying.png
+    master_page_image_sprites.png
+    MiniclipHeader_BG.PNG
+    missing_user_asset.png
+    Model.jpg
+    MultiplePlacesBullet.png
+    MultiplePlacesBullet2.png
+    NewFrontPageGuy.png
+    newmessage.png
+    NoSuitcase16x16.png
+    obcbadge32x32.png
+    obctip.png
+    offline.png
+    online.png
+    PantsTemplate.png
+    ParentAccount.png
+    PaymentUnavailable_Error.jpg
+    Play.png
+    PlayButton_Green.png
+    PlayButton_Orange.png
+    PlayButton_Red.png
+    PlayNowGreenFader.gif
+    PlayNowRedBlinker.gif
+    PlaySolo.png
+    PlaySolo2.png
+    PlayThis.png
+    ProgressIndicator2.gif
+    ProgressIndicator3.gif
+    ProgressIndicator4.gif
+    public.png
+    Ranger.png
+    roblox_logo.png
+    Roblox%20Logo%20Election%2008.png
+    roblox_R_logo.gif
+    RobloxCentralBank.png
+    RobloxViaStartMenu.png
+    SearchIcon.png
+    SellBullet.png
+    SellBullet2.png
+    ShadowAlpha.png
+    Shared.png
+    ShirtTemplate.png
+    SignupBanner.png
+    SmallMetallicButton.png
+    Speech Bubble 225.gif
+    star.png
+    step1.png
+    step2.png
+    step3.png
+    Suitcase16x16.png
+    SuperSafe32.png
+    SuperSafe128.png
+    tab.gif
+    tab-active.gif
+    tab-active-left.gif
+    tab-active-right.gif
+    tab-hover.gif
+    tab-hover-left.gif
+    tab-hover-right.gif
+    tab-left.gif
+    tab-line.gif
+    tabmiddle.png
+    tabmiddleselected.png
+    tab-right.gif
+    Tickets.png
+    titlepng.png
+    topNav_arrow_white.png
+    topNav_black.png
+    truste_seal_kids.gif
+    truste_seal_kids-110x37.gif
+    TrusteVertical.png
+    twitter.png
+    unlocked.png
+    waiting.gif
+    WoodBanner.png
+    zeklutherpic.png
+    zekeluthertransparent.png
+  /Info/
+             About.aspx
+    ContactUs.aspx
+    EULA.htm
+    Privacy.aspx
+    PrivacyMode.aspx
+    RelatedResources.aspx
+    /Terms-Of-Service/
+    TermsOfService.aspx
+  /Install/
+    Download.aspx
+    Service.asmx
+    Setup.ashx
+    VisitButtonHandler.ashx
+    Unsupported.aspx
+  /Js/
+    /Common/
+      Forms.js
+    /Extensions/
+      String.js
+      Thumbnails.js
+    /Facebook/
+      connect.js
+    /Flot/
+      excanvas.js
+      excanvas.min.js
+      jquery.flot.js
+    /Gamecards/
+      Index.js
+    /Games/
+      GamesDisplay.js
+      GamesDisplayShared.js
+      GamesList.js
+      GamesLists.js
+    /GoogleAnalytics/
+      GoogleAnalyticsEvents.js
+    /Groups/
+    /Home/
+      Home.js
+    /IDE/
+               AddOnsAndPromotions.js
+      BuildTemplates.js
+      Login.js
+      Publish.js
+      PublishAs.js
+      Update.js
+      Upload.js
+      Welcome.js
+    /jPlayer/
+      /1.2.0/
+        Jplayer.swf
+        jquery.jplayer.min.js
+    /jQuery/
+      jquery.address-1.4.min.js
+      jquery-ui-1.8.18.min.js
+      jquery-ui-1.9.2.min.js
+      jquery-1.7.2.min.js
+    /Landing/
+               AnimatedSignupFormValidator.js
+               Animation.js
+    /Login/
+      Login.js
+    /M/
+      base___4bd4fe3216951f92cf66cecab189f7ed_m.js
+      chat___0dae654cf69fb7f2d63be663ce2f6eac_m.js
+      clientinstaller___ba4eec0c4d283ec86ac515f6795cff2f_m.js
+      idenewgamepage___b5292a1510d483ddb267c22c15aac0e8_m.js
+      idewelcomepage___7c56eca68f1fb2f8e40da40fffb35bfb_m.js
+      jQuery___f96d183221b7e5fc88ce682603a50c3a_m.js
+      master___ebf9cccfb142b3fca6eced6616904287_m.js
+      page___01981ea3c68bf1cf0d499ce0a82ca745_m.js
+      page___0f837756dd94bc03cfe70dd8286c09ed_m.js
+      page___36c37de57eb38de265bc4855802c6778_m.js
+      page___4971a929aaadfd7bd43aa5be00b77267_m.js
+      page___58533f7e6857519e93b4c36d01d9e561_m.js
+      page___73f93984f11e7201f4e7566f297a79e8_m.js
+      page___75ca9573fc92f62cdfa5ac4265f83ef6_m.js
+      page___7795518d4e58f9abae75e8cb74218bf9_m.js
+      page___7c9bd4c32c1ce687eb9f8ccc00b5d909_m.js
+      page___7f2afc92bb4a1363cbdcb9e0c45bc76f_m.js
+      page___82eadb1fe4eeb8b7bba73057f7364edf_m.js
+      page___8cae821f0c1931679f04477366eef6e2_m.js
+      page___d3b69de975cd5b2f326678fe24b78489_m.js
+      page___f8da944d7214fffffc1b2d04b568531c_m.js
+      Pagelets___BestFriends___b5520cc9d4705238e8405c93a383ffa0_m.js
+      placelauncher___daf7800f88f7b1ade6de9ec024a39a65_m.js
+      nonLoggedIn___3b6c5c0583dff5fa7201f664ebf09b81_m.js
+      videopreroll___c85c870cc52e48db96f4bdac1a6dfc5c_m.js
+      Widgets___AvatarImage___4bad94bdfd6d049f8b24e3bd86d91c8f_m.js
+      Widgets___PlaceImage___aff9d78b82154eb90cb9f3b6f22c65f9_m.js
+    /Microsoft/
+      MicrosoftAjax.js
+      MicrosoftAjaxWebForms.js
+    /MobileApp/
+      GameSearch.js
+      MainGames.js
+    /Modules/
+      /Pagelets/
+        BestFriends.js
+      /Pages/
+        Catalog.js
+        Messages.js
+      /Resources/
+        Messages.js
+      /Widgets/
+                 AvatarImage.js
+        DropdownMenu.js
+        GroupImage.js
+        HierarchicalDropdown.js
+        ItemImage.js
+        PlaceImage.js
+        Suggestions.js
+        SurveyModal.js
+      jQuery.js
+    /My/
+               Account.js
+      MyItem.js
+    /Places/
+               Access.js
+      Create.js
+      PersonalServerAccess.js
+      PersonalServerGroupAccess.js
+      Templates.js
+    /Sets/
+      Sets.js
+      SetsPane.js
+    /SWFObject/
+      SWFObject.js
+    /Upgrades/
+    /YouTube/
+      RobloxYouTube.js
+             ABPlaceLauncher.js
+             AjaxAvatarThumbnail.js
+             Accordion.js
+             AddEmail.js
+             AdsHelper.js
+             AjaxAvatarThumbnail.js
+             AssetImage.js
+    BlockUI.js
+    BuildPage.js
+    ChangePassword.js
+    CharacterSelect.js
+    Chat_V1.js
+    ClickTracker.js
+    ClientInstaller.js
+    ClientToolbox.js
+    CommentsPane.js
+    Contests.js
+    CountdownTimer.js
+    CreateSetPanel.js
+    DataPager.js
+    Default.js
+    DropDownNav.js
+    FileUploadUnsupported.js
+    Friends.js
+    Functions.js
+    Gamecard.js
+    GamesDisplay.js
+    GamePass.js
+    GameUpload.js
+    GenericConfirmation.js
+    GenericModal.js
+    GiftCard.js
+    GoogleEventListener.js
+    GPTAdScript.js
+    Groups.js
+    Groups-ExileUser.js
+    IEMetroInstructions.js
+    Image.js
+    InstallationInstructions.js
+    Item.js
+    ItemPurchase.js
+    JSErrorTracker.js
+    json2.min.js
+    jquery.ba-postmessage.min.js
+    jquery.bxSlider.js
+    jquery.cookie.js
+    jquery.cookies.2.2.0.1.js
+    jquery.dotdotdot-1.5.7-packed.js
+    jquery-extensions.js
+    jquery.filter_input.js
+    jquery.json-2.2.js
+    jquery.jsoncookie.js
+    jquery.tipsy.js
+    jquery.simplemodal-1.3.5.js
+    jquery.validate.js
+    jquery.validate.unobtrusive.js
+    KontagentEventListener.js
+    MadStatus.js
+    MasterPageUI.js
+    MicropayPanel.js
+    MongoEventListener.js
+    MyMoney.js
+    ParentFrameLogin.js
+    Party.js
+    PersonalSeverAccessPrivilegesRoleSet.js
+    PlaceLauncher.js
+    PlaceProductPromotion.js
+    PleaseUpgradeMe.js
+    Roblox.js
+    RobloxCarouselPager.js
+    RobloxEventListener.js
+    RobloxEventManager.js
+    RobloxJsonCookie.js
+    SignupFormValidator.js
+    SignupFormValidatorGeneric.js
+    SiteTouchEvent.js
+    StringTruncator.min.js
+    StyleguideConversions.js
+    TradeCurrency.js
+    Twitter.js
+    UserAssetsPane.js
+    UserPlacesPane.js
+    VideoPreRoll.js
+    VotingPanel.js
+    Webkit.js
+    XsrfToken.js
+  /Landing/
+    /Animated/
+    /Animated-Signup/
+    /Secco/
+    /Secco-Signup/
+  /Login/
+             AuthorizeAccount.aspx
+    BonusEmail.aspx
+    ChangePassword.aspx
+    Default.aspx
+    FulfillConstraint.aspx
+    Help.aspx
+    iFrameLogin.aspx
+    LoginWithCaptcha.aspx
     -POST File Logout.ashx
-    -File Negotiate.ashx
-    -File NewAge.aspx
-    -File NewEmailPlz.aspx?
-    -File NewNameAndPassword.aspx
-    X-File Old.aspx
-    -File ReferralCodeCheck.ashx?name=SomeUsername
-    -File ResetPassword.aspx
-    -File ResetPasswordRequest.aspx
-    -File RevertEmail.aspx
-    -File RevertPassword.aspx
-    -File RequestAuth.ashx
-    -File Signup.aspx
-    -File ThankYou.aspx
-    -File TwoFactorAuth
-    -File VerifyEmail.aspx
-    -File YoutubeAuth.aspx
-  -Folder /Marketplace/
-    -File TradeCurrency.aspx
-    -File EconomyServices.asmx
-  -Folder /Membership/
-    -File CreationDisabled.aspx
-    -File LegacyClosedAccount.aspx
-    -File NeedParentVerification.aspx
-    -File NotApproved.aspx
-  -Folder /Messages/
-  -Folder /MobileApi/
-    -File Check-App-Version
-    -File UserInfo
-  -Folder /MP/
-  -Folder /My/
-    -Folder /AccountUpgrades/
-      -File CancelNew.aspx
-      -File Confirmation.aspx
-      -File Manage.aspx
-      -File UpdateCreditCard.aspx
-      -File UpdateCreditCardConfirmation.aspx
-    -Folder /Share/
-      -File PleaseUpgradeMe.aspx
-      -FIle PrintUpgradeMe.aspx
-      -File ReferralCards.aspx
-      -File ReferralLeaderboards.aspx
-    -File Account.aspx
-    -File AccountBalance.aspx
-    -File AdBuy.aspx
-    -File Badges.aspx
-    -File Character.aspx
-    -File ContentBuilder.aspx
-    -File CreateGroup.aspx
-    -File EditFriends.aspx
-    -File GroupAdmin.aspx
-    -File Groups.aspx
-    -File Home.aspx
-    -File Inbox.aspx
-    -File InviteAFriend.aspx
-    -File Item.aspx
-    -File LinkInventory.aspx
-    -File LinkRegistration.aspx
-    -File Messages.aspx
-    -File Money.aspx
-    -File NewBadge.aspx
-    -File NewMessage.aspx
-    -File NewPlace.aspx
-    -File NewUserAd.aspx
-    -File Places.aspx
-    -File PrivateMessage.aspx
-    -File Profile.aspx
-    -File Sets.aspx
-    -File Showcase.aspx
-    -File Stuff.aspx
-  -Folder /Newsletter/
-    -File Unsubscribe.aspx
-  -Folder /Ostara/
-    -File /boon
-  -Folder /Parents/
-    -File BuildersClub.aspx
-    -File FAQ.aspx
-    -File KeepingKidsSafe.aspx
-    -File RobloxAndLearning.aspx
-    -File WhatParentsAreSaying.aspx
-  X-Folder /Parents/
-    -Folder /ControlPanel/
-      -File AddUser.aspx
-      -File ChangePassword.aspx
-      -File Default.aspx
-      -File Email.aspx
-      -File ManageUser.aspx
-    -File Login.aspx
-    -File Register.aspx
-    -File ResetPassword.aspx
-    -File ResetPasswordRequest.aspx
-    -File RobloxGuide.aspx
-  -Folder /Persistence/
-  -Folder /PlaceItem/
-  -Folder /Places/
-    -File /Access/
-    -File /AdvancedSettings/
-    -File /BasicSettings/
-    -Folder /Thumbnail/
-      -File /Add-Image/
-      -File /Add-Video/
-  -Folder /Reports/
-  -Folder /Rixty/
-    -File Default.aspx
-    -File Rixty.aspx
-  -Folder /RixtyPIN/
-    -File Default.aspx
-    -File RixtyPinHandler.ashx
-  -Folder /Scripts/
-    -File jquery.validate.unobtrusive.js
-    -File jquery.validate.unobtrusive.min.js
-  -Folder /Services/
-    -File UserCheck.asmx
-    -File GroupService.asmx
-    -Folder /Secure/
-      -File LoginService.asmx
-  -Folder /Sets/
-    -File SetHandler.ashx
-    -File EditImage.aspx
-    -File Help.aspx
-  -Folder /SponsoredPage/
-    -File /BLOXcon/
-    -File /DescpicableMe2/
-    -File /HeroFactory/
-    -File /NERF/
-    -File /NewChatSystem/
-    -File /SpinShotz/
-  -Folder /TempMobileGames/
-    -File GetGames
-  X-Folder /Test/
-    -File Default.aspx
-  -Folder /Thumbs/
-    -File Asset.ashx
-    -File Asset.asmx
-    -File Avatar.ashx
-    -File Avatar.asmx
-    -File BCOverlay.ashx
-    -File ItemImage.ashx
-    -File PlaceImage.ashx
-    -File ProgressIndicator.gif
-    -File RawAsset.ashx
-    -File Unavailable.jpg
-  -Folder /Tracker/
-    -Folder /Conversion/
-      -File BingConversion.aspx
-      -File GoogleConversion.aspx
-  -Folder /Trade/
-    -File TradeHandler.ashx
-    -File TradeWindow.aspx
-  -Folder /UI/
-    -File Save.aspx
-  -Folder /Upgrades/
-    -File Boku.aspx
-    -File BuildersClub.aspx
-    -File BuildersClubMemberships
-    -File BuildersClubMemberships.aspx
-    -File Complete.aspx
-    -File GiftCard.ashx
-    -File GiftCards.aspx
-    -File Payment.aspx
-    -File PaymentMethods.aspx
-    -File PayPal.aspx
-    -File Rixty.aspx
-    -File RixtyCancel.aspx
-    -File Robux.aspx
-    -File SignupPlz.aspx
-    -File UseCredit.aspx
-  -Folder /UploadMedia/
-    -File PostImage.aspx
-    -File UploadVideo.aspx
-  -Folder /UserAds/
-    -File /1/
-    -File /2/
-    -File /3/
-    -File /redirect/
-  -Folder /UserCheck/
-    -File /CheckIfInvalidUserNameForSignup/
-  -Folder /UserControls/
-  -Folder /UserLanguage/
-    -File /LanguageRedirect/
-  -Folder /UserScreens/
-    -File /Suppress-BC-Expiration-Screen/
-  -Folder /WebHandlers/
-    -File SocialNetworkPusher.ashx
-  -Folder /XDSkatepark/
-    -Folder /flvplayer/
-      -File player.swf
-      -File swfobject.js
+    Negotiate.ashx
+    NewAge.aspx
+    NewEmailPlz.aspx?
+    NewNameAndPassword.aspx
+    XOld.aspx
+    ReferralCodeCheck.ashx?name=SomeUsername
+    ResetPassword.aspx
+    ResetPasswordRequest.aspx
+    RevertEmail.aspx
+    RevertPassword.aspx
+    RequestAuth.ashx
+    Signup.aspx
+    ThankYou.aspx
+    TwoFactorAuth
+    VerifyEmail.aspx
+    YoutubeAuth.aspx
+  /Marketplace/
+    TradeCurrency.aspx
+    EconomyServices.asmx
+  /Membership/
+    CreationDisabled.aspx
+    LegacyClosedAccount.aspx
+    NeedParentVerification.aspx
+    NotApproved.aspx
+  /Messages/
+  /MobileApi/
+    Check-App-Version
+    UserInfo
+  /MP/
+  /My/
+    /AccountUpgrades/
+      CancelNew.aspx
+      Confirmation.aspx
+      Manage.aspx
+      UpdateCreditCard.aspx
+      UpdateCreditCardConfirmation.aspx
+    /Share/
+      PleaseUpgradeMe.aspx
+      PrintUpgradeMe.aspx
+      ReferralCards.aspx
+      ReferralLeaderboards.aspx
+             Account.aspx
+             AccountBalance.aspx
+             AdBuy.aspx
+    Badges.aspx
+    Character.aspx
+    ContentBuilder.aspx
+    CreateGroup.aspx
+    EditFriends.aspx
+    GroupAdmin.aspx
+    Groups.aspx
+    Home.aspx
+    Inbox.aspx
+    InviteAFriend.aspx
+    Item.aspx
+    LinkInventory.aspx
+    LinkRegistration.aspx
+    Messages.aspx
+    Money.aspx
+    NewBadge.aspx
+    NewMessage.aspx
+    NewPlace.aspx
+    NewUserAd.aspx
+    Places.aspx
+    PrivateMessage.aspx
+    Profile.aspx
+    Sets.aspx
+    Showcase.aspx
+    Stuff.aspx
+  /Newsletter/
+    Unsubscribe.aspx
+  /Ostara/
+    /boon
+  /Parents/
+    BuildersClub.aspx
+    FAQ.aspx
+    KeepingKidsSafe.aspx
+    RobloxAndLearning.aspx
+    WhatParentsAreSaying.aspx
+  X/Parents/
+    /ControlPanel/
+               AddUser.aspx
+      ChangePassword.aspx
+      Default.aspx
+      Email.aspx
+      ManageUser.aspx
+    Login.aspx
+    Register.aspx
+    ResetPassword.aspx
+    ResetPasswordRequest.aspx
+    RobloxGuide.aspx
+  /Persistence/
+	/PlaceItem.aspx
+  /PlaceItem/
+		/GetGamePassesPaged?placeId=&startIndex=&maxRows=
+  /Places/
+    /Access/
+    /AdvancedSettings/
+    /BasicSettings/
+    /Thumbnail/
+      /Add-Image/
+      /Add-Video/
+  /Reports/
+  /Rixty/
+    Default.aspx
+    Rixty.aspx
+  /RixtyPIN/
+    Default.aspx
+    RixtyPinHandler.ashx
+  /Scripts/
+    jquery.validate.unobtrusive.js
+    jquery.validate.unobtrusive.min.js
+  /Services/
+    UserCheck.asmx
+    GroupService.asmx
+    /Secure/
+      LoginService.asmx
+  /Sets/
+    SetHandler.ashx
+    EditImage.aspx
+    Help.aspx
+  /SponsoredPage/
+    /BLOXcon/
+    /DescpicableMe2/
+    /HeroFactory/
+    /NERF/
+    /NewChatSystem/
+    /SpinShotz/
+  /TempMobileGames/
+    GetGames
+  X/Test/
+    Default.aspx
+  /Thumbs/
+             Asset.ashx
+             Asset.asmx
+             Avatar.ashx
+             Avatar.asmx
+    BCOverlay.ashx
+    ItemImage.ashx
+    PlaceImage.ashx
+    ProgressIndicator.gif
+    RawAsset.ashx
+    Unavailable.jpg
+		AvatarImage.ashx
+  /Tracker/
+    /Conversion/
+      BingConversion.aspx
+      GoogleConversion.aspx
+  /Trade/
+    TradeHandler.ashx
+    TradeWindow.aspx
+  /UI/
+    Save.aspx
+  /Upgrades/
+    Boku.aspx
+    BuildersClub.aspx
+    BuildersClubMemberships
+    BuildersClubMemberships.aspx
+    Complete.aspx
+    GiftCard.ashx
+    GiftCards.aspx
+    Payment.aspx
+    PaymentMethods.aspx
+    PayPal.aspx
+    Rixty.aspx
+    RixtyCancel.aspx
+    Robux.aspx
+    SignupPlz.aspx
+    UseCredit.aspx
+  /UploadMedia/
+    PostImage.aspx
+    UploadVideo.aspx
+  /UserAds/
+    /1/
+    /2/
+    /3/
+    /redirect/
+  /UserCheck/
+    /CheckIfInvalidUserNameForSignup/
+  /UserControls/
+  /UserLanguage/
+    /LanguageRedirect/
+  /UserScreens/
+    /Suppress-BC-Expiration-Screen/
+	/Voting/CanVote?assetId={AssetId}
+  /WebHandlers/
+    SocialNetworkPusher.ashx
+  /XDSkatepark/
+    /flvplayer/
+      player.swf
+      swfobject.js
 
+t[0-7].rbxcdn.com
+	/Maintenance_Page
+	/Maintenance_Page/
+  /Maintenance.png
+  /Roblox.png
 
-http://m.roblox.com
-  -Folder /Account/
-    -File /FullfillConstraint/
-    -File /LogOff/
-    -File /SetStatus/
-    -File /SignUp/
-  -Folder /Catalog/
-    -File /CatalogSearch/
-    -File /VerifyTransfer/
-    -File /WearOrRemoveItem/
-  -Folder /CSS/
-    -Folder /Base/
-      -Folder /CSS/
-        -File /FetchCSS/
-    -File /Images/
-      -File Ajax-Loader.gif
-      -File icons-18-white.png
-    -File 2x.css
-    -File BuyBuildersClubPage.css
-    -File Catalog.css
-    -File GamesPage.css
-    -File Header.css
-    -File jquery.mobile.structure-1.1.1.min.css
-    -File Menu.css
-    -File Overlay.css
-    -File roblox.theme.css
-    -File Site.css
-    -File Validation.css
-    -File Wall.css
-  -Folder /Friends/
-    -File /FriendList/
-    -File /FriendRequests/
-    -Folder /RemoveFriend/
-      -File /{UserId}/
-    -File /RemoveFriendWork/
-    -File /SendFriendRequestWork/
-    -File /SetBestFriend/
-  -Folder /Games/
-    -File /List/
-    -File /Start/
-  -Folder /Group/
-    -File /DoSearch/
-    -Folder /GroupWallList/
-      -File {GroupId}/
-    -Folder /LeaveGroupModal/
-      -File /{GroupId}/
-    -Folder /LeaveGroupWork/
-      -File /{GroupId}/
-    -Folder /PostOnWall/
-      -File /{GroupId}/
-  -Folder /Groups/
-    -File /{GroupId}/
-  -Folder /Home/
-    -File /PageNotFound/
-  -Folder /Images/
-    -Folder /Icons/
-      -File currency-robux.png
-      -File currency-robux-white.png
-      -File currency-ticket.png
-      -File currency-ticket-white.png
-      -File friendreqs-white.png
-      -File inbox-white.png
-      -File menu-white.png
-      -File offline18.png
-      -File online18.png
-    -Folder /Overlays/
-      -File catalog_new_54.png
-      -File overlay_bcOnly_big.png
-      -File overlay_tbcOnly_big.png
-      -File overlay_obcOnly_big.png
-      -File overlay_limitedUnique_big.png
-      -File overlay_new_200x200.png
-    -Folder /Upgrades/
-      -File img-bc.png
-      -File img-check.png
-      -File img-obc.png
-      -File img-tbc.png
-      -File Robux.png
-    -File Icon114x114v3.png
-    -File RobloxLogo.png
-  -Folder /Inventory/
-    -File /ListInventory/
-  -Folder /Items/
-    -File /{ItemId}/
-      -File /PrivateSales/
-      -File /PrivateSalesList/
-  -Folder /Js/
-    -Folder /JQuery/
-      -File jquery.jcountdown-1.4.2.js
-      -File jquery.validate-1.9.0-modified.js
-      -File jquery.validate.unobtrusive.js
-      -File jquery.waypoints-1.1.7.js
-    -Folder /Pages/
-      -File BasicListPages.js
-      -File CatalogSearch.js
-      -File GroupProfile.js
-      -File GroupSearch.js
-      -File Home.js
-      -File Inventory.js
-      -File ItemPage.js
-      -File Profile.js
-      -File PurchaseConfirmationModal.js
-      -File RemoveFriendModal.js
-      -File UserSearch.js
-    -File GoogleAnalytics.js
-    -File ListPage.js
-    -File Menu.js
-    -File Setup.js
-    -File Thumbnails.js
-  -Folder /Login/
-  -Folder /Messages/
-    -Folder /SendMessage/
-      -File /{MessageId}
-    -File /{MessageId}/
-  -Folder /MobileApi/
-    -File Check-App-Version
-    -File UserInfo
-  -Folder /People/
-  -Folder /Report/
-    -File /ReportMessageWork/
-  -Folder /Report-Message/
-  -Folder /User/
-    -File /DoSearch/
-    -Folder /Profile/
-      -File /{UserId}/
-    -Folder /Search/
-  -Folder /Users/
-    -File /{UserId}/
-  -File /Avatar-Thumbnail/
-  -File favicon.ico
-  -File /Group-Search/
-  -File /Inbox/
-  -File /My-Groups/
+bloxcon.roblox.com
+  /Bloxcon/
+    /About-Bloxcon/
+    /Bloxcon-Emails/
+    /Chicago/
+      /Bloxcon-Chicago-FAQ/
+    /FilmFest2013/
+    /London/
+      /Bloxcon-London-FAQ/
+    /New-York-City/
+      /bloxcon-new-york-city-FAQ/
+    /Past-Events/
+    /Press/
+    /VirtualBloxcon/
+  /Comments/
+    /Feed/
+  /Feed/
+  /Makerfaire/
+    /3d-printer-backpack/
+    /Autumn-Town/
+    /ben-dynamic-lighting-demo/
+    /block-town-dynamic-lighting-screenshot/
+    /Builder-Building/
+    /Builder-Discussion/
+    /dynamic-lighting-demo-sign/
+    /Maker-Faire-Logo/
+    /roblox-at-maker-faire-bay-area-2013/
+    /Roblox-Builder/
+    /Roblox-Fedora-Model/
+    /roblox-maker-faire-booth/
+  /wp-admin/
+  /wp-content/
+    /Uploads/
+      /2013/
+        /03/
+          071313_Chicago.jpg
+          072713_London.jpg
+          081013_NYC.jpg
+          Block-Town.jpg
+          bloxcon_315x100.png
+          BLOXcon-Logo-with-Samurai.jpg
+          Intrepid-Museum-with-Skyline.jpg
+          London-Fedoras.png
+          NYC-Fedoras.png
+          paypalpay.png
+          paypalpay3.png
+          Pinewood-Space-Shuttle-Advantage.jpg
+          RGC-2012-David-Signature.jpg
+          RGC-2012-Entrance.jpg
+          RGC-2012-Hackathon-Challenge.jpg
+          RGC-2012-High-Fives.jpg
+          RGC-2012-Ideas-and-Feedback.jpg
+          RGC-2012-Luke-RD.jpg
+          RGC-2012-Main-Stage.jpg
+          RGC-2012-Registration.jpg
+          RGC-2012-This-Is-Jeopardy-2.jpg
+          ROBLOX-Rally-Discussion.jpg
+          ROBLOX-Rally-Lab.jpg
+          ROBLOX-Rally-Stage.jpg
+          Royal-Air-Force-Museum-Photo.jpg
+          Subscribe-to-BLOXcon-Emails.jpg
+        /04/
+          051813_MakerFaire.jpg
+          3D-Printer-Backpack.jpg
+                   About-BLOXcon.jpg
+                   Autumn-Town.jpg
+          Ben-Dynamic-Lighting-Demo.jpg
+          Builder-Building.jpg
+          Builder-Discussion.jpg
+          Dynamic-Lighting-Demo-Sign.jpg
+          Maker-Faire-Logo.png
+          ROBLOX-at-Maker-Faire-Bay-Area-2013.png
+          ROBLOX-Builder.jpg
+          ROBLOX-Fedora-Model.jpg
+          ROBLOX-Maker-Faire-Booth.jpg
+        /05/
+          BLOXY-2013.jpg
+          Virtual-BLOXcon.jpg
+          Virtual-BLOXcon-Home.jpg
+        /07/
+          BLOXcon-Chicago-Logo.jpg
+          BLOXcon-Chicago-Poster-and-Package.jpg
+          BLOXcon-London-Logo.jpg
+          BLOXcon-London-FAQ.png
+          London-Poster-and-Package.jpg
+    /Plugins/
+      /ditty-news-ticker/
+        /assets/
+          /css/
+            style.css
+          /images/
+            button.png
+      /picatcha/
+        picatchaWP.css
+      /social-media-widget/
+        social_widget.css
+      /subpage-navigation/
+        subpages-navigation.js
+      /thethe-image-slider/
+        timthumb.php
+        /style/
+          /css/
+            thethe-image-slider.css
+          /images/
+            loading.gif
+          /js/
+            thethe-image-slider.js?ver=3.5.1
+    /Themes/
+      /RobloxCorp2012/
+        /_images/
+          main_bg.png
+        /_js/
+          roblox-global.js?ver=3.5.1
+          waypoints.min.js?ver=3.5.1
+        subpage-navigation.css
+        style.css
+  /wp-includes/
+    wlwmanifest.xml
 
+blog.roblox.com
+  /2012/
+    /03/
+      /bestandworstofgdc/
+    /04/
+      /buoyancy
+  /2009/
+  /category/
+    /News/
+      /Contests/
+  /fanart/
+  /roblox-conference-2012/
+    /rgc-2012-agenda/
+    /rgc-2012-faq/
+    /rgc-2012-hotels/
+  /rgc13/
+  /wallpapers/
+  /wp-content/
+    /Uploads/
+      /2012/
+        /02/
+          items.png
+          rgcLogo_small-300x300.jpg
 
-http://blog.roblox.com/
-  -Folder /2012/
-    -Folder /03/
-      -File /bestandworstofgdc/
-    -Folder /04/
-      -File /buoyancy
-  -Folder /2009/
-  -Folder /category/
-    -Folder /News/
-      -Folder /Contests/
-  -Folder /fanart/
-  -Folder /roblox-conference-2012/
-    -File /rgc-2012-agenda/
-    -File /rgc-2012-faq/
-    -File /rgc-2012-hotels/
-  -Folder /rgc13/
-  -Folder /wallpapers/
-  -Folder /wp-content/
-    -Folder /Uploads/
-      -Folder /2012/
-        -Folder /02/
-          -File items.png
-          -File rgcLogo_small-300x300.jpg
+setup.roblox.com
+  * [/Roblox.exe](http://setup.roblox.com/Roblox.exe)
+  * [/RobloxStudioLauncher.exe](http://setup.roblox.com/RobloxStudioLauncher.exe)
+  * [/RobloxStudioLauncherBeta.exe](http://setup.roblox.com/RobloxStudioLauncherBeta.exe)
+  * [/cdn.txt](http://setup.roblox.com/cdn.txt)
+  *	[/version(.txt)](http://setup.roblox.com/version)
+  *	[/versionStudio(.txt)](http://setup.roblox.com/versionStudio)
+  *	[/versionQTStudio](http://setup.roblox.com/versionQTStudio)
+  *	[/mac/version](http://setup.roblox.com/mac/version)
+  *	[/mac/versionStudio](http://setup.roblox.com/mac/versionStudio)
+  *	[/mac/RobloxStudio.dmg](http://setup.roblox.com/mac/RobloxStudio.dmg)
+  /{Version}-RobloxVersion.txt/
+  /{Version}-BootstrapperQTStudioVersion.txt/
+  /{Version}-RobloxStudioVersion.txt/
 
+api.roblox.com
+ /Docs
+ /Users/261/Friends?(page=1)
+ /Users/{userId}
+ /My/Balance
+ /Assets/{int}/Versions
+ /Auth/Invalidate
+ /Auth/Negotiate?suggest=
+ /Auth/Renew
+ /My/BestFriends
+ /My/FriendsOnline
+ /Marketplace/ProductInfo?assetId={assetId}
+ /Marketplace/ProductDetails?productId={productId}
+ /Game/GetAllowedExperimentalFeatures?placeId={placeId}
+	/Ownership/HasAsset?userId={userId}&assetId={assetId}
 
-http://bloxcon.roblox.com
-  -Folder /Bloxcon/
-    -File /About-Bloxcon/
-    -File /Bloxcon-Emails/
-    -Folder /Chicago/
-      -File /Bloxcon-Chicago-FAQ/
-    -File /FilmFest2013/
-    -Folder /London/
-      -File /Bloxcon-London-FAQ/
-    -Folder /New-York-City/
-      -File /bloxcon-new-york-city-FAQ/
-    -File /Past-Events/
-    -File /Press/
-    -File /VirtualBloxcon/
-  -Folder /Comments/
-    -File /Feed/
-  -Folder /Feed/
-  -Folder /Makerfaire/
-    -File /3d-printer-backpack/
-    -File /Autumn-Town/
-    -File /ben-dynamic-lighting-demo/
-    -File /block-town-dynamic-lighting-screenshot/
-    -File /Builder-Building/
-    -File /Builder-Discussion/
-    -File /dynamic-lighting-demo-sign/
-    -File /Maker-Faire-Logo/
-    -File /roblox-at-maker-faire-bay-area-2013/
-    -File /Roblox-Builder/
-    -File /Roblox-Fedora-Model/
-    -File /roblox-maker-faire-booth/
-  -Folder /wp-admin/
-  -Folder /wp-content/
-    -Folder /Uploads/
-      -Folder /2013/
-        -Folder /03/
-          -File 071313_Chicago.jpg
-          -File 072713_London.jpg
-          -File 081013_NYC.jpg
-          -File Block-Town.jpg
-          -File bloxcon_315x100.png
-          -File BLOXcon-Logo-with-Samurai.jpg
-          -File Intrepid-Museum-with-Skyline.jpg
-          -File London-Fedoras.png
-          -File NYC-Fedoras.png
-          -File paypalpay.png
-          -File paypalpay3.png
-          -File Pinewood-Space-Shuttle-Advantage.jpg
-          -File RGC-2012-David-Signature.jpg
-          -File RGC-2012-Entrance.jpg
-          -File RGC-2012-Hackathon-Challenge.jpg
-          -File RGC-2012-High-Fives.jpg
-          -File RGC-2012-Ideas-and-Feedback.jpg
-          -File RGC-2012-Luke-RD.jpg
-          -File RGC-2012-Main-Stage.jpg
-          -File RGC-2012-Registration.jpg
-          -File RGC-2012-This-Is-Jeopardy-2.jpg
-          -File ROBLOX-Rally-Discussion.jpg
-          -File ROBLOX-Rally-Lab.jpg
-          -File ROBLOX-Rally-Stage.jpg
-          -File Royal-Air-Force-Museum-Photo.jpg
-          -File Subscribe-to-BLOXcon-Emails.jpg
-        -Folder /04/
-          -File 051813_MakerFaire.jpg
-          -File 3D-Printer-Backpack.jpg
-          -File About-BLOXcon.jpg
-          -File Autumn-Town.jpg
-          -File Ben-Dynamic-Lighting-Demo.jpg
-          -File Builder-Building.jpg
-          -File Builder-Discussion.jpg
-          -File Dynamic-Lighting-Demo-Sign.jpg
-          -File Maker-Faire-Logo.png
-          -File ROBLOX-at-Maker-Faire-Bay-Area-2013.png
-          -File ROBLOX-Builder.jpg
-          -File ROBLOX-Fedora-Model.jpg
-          -File ROBLOX-Maker-Faire-Booth.jpg
-        -Folder /05/
-          -File BLOXY-2013.jpg
-          -File Virtual-BLOXcon.jpg
-          -File Virtual-BLOXcon-Home.jpg
-        -Folder /07/
-          -File BLOXcon-Chicago-Logo.jpg
-          -File BLOXcon-Chicago-Poster-and-Package.jpg
-          -File BLOXcon-London-Logo.jpg
-          -File BLOXcon-London-FAQ.png
-          -File London-Poster-and-Package.jpg
-    -Folder /Plugins/
-      -Folder /ditty-news-ticker/
-        -Folder /assets/
-          -Folder /css/
-            -File style.css
-          -Folder /images/
-            -File button.png
-      -Folder /picatcha/
-        -File picatchaWP.css
-      -Folder /social-media-widget/
-        -File social_widget.css
-      -Folder /subpage-navigation/
-        -File subpages-navigation.js
-      -Folder /thethe-image-slider/
-        -File timthumb.php
-        -Folder /style/
-          -Folder /css/
-            -File thethe-image-slider.css
-          -Folder /images/
-            -File loading.gif
-          -Folder /js/
-            -File thethe-image-slider.js?ver=3.5.1
-    -Folder /Themes/
-      -Folder /RobloxCorp2012/
-        -Folder /_images/
-          -File main_bg.png
-        -Folder /_js/
-          -File roblox-global.js?ver=3.5.1
-          -File waypoints.min.js?ver=3.5.1
-        -File subpage-navigation.css
-        -File style.css
-  -Folder /wp-includes/
-    -File wlwmanifest.xml
+ephemeralcounters.api.roblox.com
+  POST /v1.0/MultiIncrement/?apiKey=76E5A40C-3AE1-4028-9F10-7C62520BD94F
+	counterNamesCsv=BootstrapperPlayStarted,BootstrapperStarted
 
+clientsettings.api.roblox.com
+  /Setting/QuietGet/ClientAppSettings?apiKey=D6925E56-BFB9-4908-AAA2-A5B1EC4B2D79
+  /Setting/QuietGet/ClientSharedSettings?apiKey=D6925E56-BFB9-4908-AAA2-A5B1EC4B2D79
+  /Setting/QuietGet/iOSAppSettings?apiKey=D6925E56-BFB9-4908-AAA2-A5B1EC4B2D79
+  /Setting/QuietGet/WindowsAppSettings?apiKey=D6925E56-BFB9-4908-AAA2-A5B1EC4B2D79
+  /Setting/QuietGet/WindowsBootstrapperSettings?apiKey=76E5A40C-3AE1-4028-9F10-7C62520BD94F
+  /Setting/QuietGet/WindowsStudioBootstrapperSettings?apiKey=76E5A40C-3AE1-4028-9F10-7C62520BD94F
 
-http://setup.roblox.com
-  -File Cdn.txt
-  -File Roblox.exe
-  -File RobloxStudioLauncher.exe
-  -File RobloxStudioLauncherBeta.exe
-  -File Version.txt
-  -File /Version/
-  -File /VersionStudio/
-  -File /VersionQTStudio/
-  -File/{Version}-RobloxVersion.txt/
-  -File/{Version}-BootstrapperQTStudioVersion.txt/
-  -File/{Version}-RobloxStudioVersion.txt/
+logging.service.roblox.com
+	/GameScript
+  /Account/
+	  /LogOn/
+	/Content/
+	  /Site.css
+  /Error/
+    /NotFound/
+  /GameScript/
+    /Manage/
+  /Gatherer/
+    /LogEntry/
+  /MongoDb/
+    /Shards/
+  /MongoDbMapReduce/
+  /Scripts/
+    jquery-1.7.1.min.js
+    modernizr-2.0.6.js
 
+content.roblox.com
+  /Welcome.png
 
-http://content.roblox.com
-  -File Welcome.png
+polls.roblox.com
+  /Features/
+  /iOS/
+  /Pricing/
+  /Privacy/
+  /Terms/
+  200k-Likes-Survey
+  2012-Player-Survey
+  2972839AEB9276CB
+  6D5A36FF00B2B937
+  8BC0B9CA7EA884AD
+  Become-a-Roblox-Exhibitor-at-Maker-Faire-Bay-Area-2013
+  BehindTheBlox
+  Black-Friday-2012
+  Black-Friday-Hat-Sale-Part-1
+  Builders-Club-Motivations
+  D060815CF47C6B25
+  Egg-Retexture
+  Fansites
+  Game-Trailer-Video-Finals
+  Hall-of-Fame-Users-Choice-Survey
+  Local-Play-Testers
+  Market-Research
+  Market-Research-2
+  Market-Research-3
+  Market-Research-4
+  Market-Research-5
+  Market-Research-6
+  Market-Research-7
+  Market-Research-8
+  Market-Research-9
+  Missing-Chat-Leaderboard
+  Music-Survey
+  New-Survey
+  New-Survey-2
+  New-Survey-3
+  New-Survey-4
+  New-Survey-5
+  New-Survey-6
+  New-Survey-7
+  New-Survey-8
+  Pitch-Your-Roblox-Tech-Article
+  Roblox-Blog-Survey
+  Roblox-Game-Conference-2013
+  Roblox-Memorial-Day
+  Roblox-Sponsorship-Survey
+  Roblox-Sponsorship-Survey-April-2013
+  Roblox-User-Feedback
+  Roblox-User-Survey-Summer-2013
+  Roblox-Wiki-Writer-Application
+  Roblox-Wiki-Writer-Application-2
+  Roblox-Wiki-Writer-Application-3
+  RobloxPresidentSale
+  So-you-want-to-be-a-Roblox-Wiki-Writer
+  Studio-2-0-Beta-Survey
+  Trading-System-Survey
+  TV-and-Movies-Summer-Survey-1
+  UsersChoiceAwards
 
-
-http://polls.roblox.com
-  -Folder /Features/
-  -Folder /iOS/
-  -Folder /Pricing/
-  -Folder /Privacy/
-  -Folder /Terms/
-  -File 200k-Likes-Survey
-  -File 2012-Player-Survey
-  -File 2972839AEB9276CB
-  -File 6D5A36FF00B2B937
-  -File 8BC0B9CA7EA884AD
-  -File Become-a-Roblox-Exhibitor-at-Maker-Faire-Bay-Area-2013
-  -File BehindTheBlox
-  -File Black-Friday-2012
-  -File Black-Friday-Hat-Sale-Part-1
-  -File Builders-Club-Motivations
-  -File D060815CF47C6B25
-  -File Egg-Retexture
-  -File Fansites
-  -File Game-Trailer-Video-Finals
-  -File Hall-of-Fame-Users-Choice-Survey
-  -File Local-Play-Testers
-  -File Market-Research
-  -File Market-Research-2
-  -File Market-Research-3
-  -File Market-Research-4
-  -File Market-Research-5
-  -File Market-Research-6
-  -File Market-Research-7
-  -File Market-Research-8
-  -File Market-Research-9
-  -File Missing-Chat-Leaderboard
-  -File Music-Survey
-  -File New-Survey
-  -File New-Survey-2
-  -File New-Survey-3
-  -File New-Survey-4
-  -File New-Survey-5
-  -File New-Survey-6
-  -File New-Survey-7
-  -File New-Survey-8
-  -File Pitch-Your-Roblox-Tech-Article
-  -File Roblox-Blog-Survey
-  -File Roblox-Game-Conference-2013
-  -File Roblox-Memorial-Day
-  -File Roblox-Sponsorship-Survey
-  -File Roblox-Sponsorship-Survey-April-2013
-  -File Roblox-User-Feedback
-  -File Roblox-User-Survey-Summer-2013
-  -File Roblox-Wiki-Writer-Application
-  -File Roblox-Wiki-Writer-Application-2
-  -File Roblox-Wiki-Writer-Application-3
-  -File RobloxPresidentSale
-  -File So-you-want-to-be-a-Roblox-Wiki-Writer
-  -File Studio-2-0-Beta-Survey
-  -File Trading-System-Survey
-  -File TV-and-Movies-Summer-Survey-1
-  -File UsersChoiceAwards
-
-
-mail.roblox.com
-docs.roblox.com
-calendar.roblox.com
-office.roblox.com
-start.roblox.com
-
-services.roblox.com
-
-
-http://logging.service.roblox.com/
-  -Folder /Account/
-    -File /LogOn/
-  -Folder /Content/
-    -File Site.css
-  -Folder /Error/
-    -File /NotFound/
-  -Folder /GameScript/
-    -File /Manage/
-  -Folder /Gatherer/
-    -File /LogEntry/
-  -Folder /MongoDb/
-    -File /Shards/
-  -Folder /MongoDbMapReduce/
-  -Folder /Scripts/
-    -File jquery-1.7.1.min.js
-    -File modernizr-2.0.6.js
-
-
-http://t0.roblox.com
-  -File /Maintenance_Page/
-  -File Maintenance.png
-  -File Roblox.png
-
-]===]
+Contributors: levi998234
