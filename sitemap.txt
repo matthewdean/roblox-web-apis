@@ -193,6 +193,9 @@ roblox.co.kr
 roblox.biz
 roblox
 
+c[0-7].rbxcdn.com
+  /robloxteamsitedownimage1
+
 # mobile site
 m.roblox.com
 	/Account/
