@@ -5,6 +5,8 @@ test sites
 
 ##### Test Sites
 
+NAME                                TYPE  VALUE
+------------------------------------------------------------------------------------------
 sitetest1.robloxlabs.com            CNAME web105.p1t.roblox.com
 sitetest2.robloxlabs.com            CNAME web108.p1t.roblox.com
 sitetest3.robloxlabs.com            CNAME web111.p1t.roblox.com
