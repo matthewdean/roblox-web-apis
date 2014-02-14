@@ -1822,7 +1822,6 @@ www.roblox.com
     RequestAuth.ashx
     Signup.aspx
     ThankYou.aspx
-    TwoFactorAuth
     VerifyEmail.aspx
     YoutubeAuth.aspx
   /Marketplace/
