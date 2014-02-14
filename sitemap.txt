@@ -1,3 +1,27 @@
+Thanks to levi998234 for a lot of this data.
+
+web100.p1t.roblox.com - ??
+web101.p1t.roblox.com - ??
+web102.p1t.roblox.com - GT5
+web105.p1t.roblox.com - ST1
+web106.p1t.roblox.com - ST1 ??
+web107.p1t.roblox.com - ST2
+web108.p1t.roblox.com - ST2
+web109.p1t.roblox.com - ST2 ??
+web110.p1t.roblox.com - ST2 API
+web111.p1t.roblox.com - ST3
+web112.p1t.roblox.com - ST3 ??
+web113.p1t.roblox.com - ST3 API
+web114.p1t.roblox.com - GT1
+web116.p1t.roblox.com - GT1 API
+web117.p1t.roblox.com - GT2
+web119.p1t.roblox.com - GT2 API
+web120.p1t.roblox.com - GT3
+web122.p1t.roblox.com - GT3 API
+web123.p1t.roblox.com - GT4
+web125.p1t.roblox.com - GT4 API
+web126.p1t.roblox.com - ??
+
 ###DNS Records
 
 test sites
@@ -7,6 +31,8 @@ test sites
 
 NAME                                TYPE  VALUE
 ------------------------------------------------------------------------------------------
+analytics.roblox.com                CNAME db79.p1t.roblox.com
+
 sitetest1.robloxlabs.com            CNAME web105.p1t.roblox.com
 sitetest2.robloxlabs.com            CNAME web108.p1t.roblox.com
 sitetest3.robloxlabs.com            CNAME web111.p1t.roblox.com
@@ -46,6 +72,11 @@ de.sitetest3.robloxlabs.com         CNAME roblox.sl.smartling.com
 sandbox.corp.roblox.com             A     209.15.11.133
 sandbox.wiki.roblox.com             A     209.15.11.133
 sandbox.blog.roblox.com             A     209.15.11.133
+sandbox.bloxcon.roblox.com          A     209.15.11.133
+sandbox.community.roblox.com        A     209.15.11.133
+
+rbx-build.roblox.com                A     72.32.99.180
+build.roblox.com                    CNAME build.roblox.com
 
 ##### Main Site
 
@@ -73,19 +104,20 @@ m.roblox.com                        A     209.15.196.7
 
 ##### Content Delivery Sites
 images.roblox.com                   CNAME s3.amazonaws.com
-images.rbxcdn.com                   CNAME images.roblox.com.edgesuite.net -> a259.g.akamai.net
-imagesak.roblox.com                 CNAME images.roblox.com.edgesuite.net -> a259.g.akamai.net
+images.rbxcdn.com                   CNAME images.roblox.com.edgesuite.net
+imagesak.roblox.com                 CNAME images.roblox.com.edgesuite.net
 
 css.roblox.com                      CNAME s3.amazonaws.com
-css.rbxcdn.com                      CNAME css.roblox.com.edgesuite.net -> a1859.g.akamai.net
+cssak.roblox.com                    CNAME css.roblox.com.edgesuite.net
+css.rbxcdn.com                      CNAME css.roblox.com.edgesuite.net
 
 js.roblox.com                       CNAME s3.amazonaws.com
-js.rbxcdn.com                       CNAME js.roblox.com.edgesuite.net -> a1856.g.akamai.net
-jsak.roblox.com                     CNAME js.roblox.com.edgesuite.net -> a1856.g.akamai.net
+js.rbxcdn.com                       CNAME js.roblox.com.edgesuite.net
+jsak.roblox.com                     CNAME js.roblox.com.edgesuite.net
 
-t[0-7].rbxcdn.com                   CNAME thumbs.roblox.com.edgesuite.net -> a1448.g.akamai.net
+t[0-7].rbxcdn.com                   CNAME thumbs.roblox.com.edgesuite.net
 t[0-7].roblox.com                   CNAME s3.amazonaws.com
-t[0-7]ak.roblox.com                 CNAME thumbs.roblox.com.edgesuite.net -> a1448.g.akamai.net
+t[0-7]ak.roblox.com                 CNAME thumbs.roblox.com.edgesuite.net
 t[0-7]bg.roblox.com                 CNAME roblox.vo.llnwd.net
 
 dmp.roblox.com                      CNAME s3.amazonaws.com
@@ -120,11 +152,24 @@ blogs.roblox.com                    CNAME blog.roblox.com
 sales.roblox.com                    CNAME wikiblog.roblox.com
 job.roblox.com                      CNAME jobs.roblox.com
 careers.roblox.com                  CNAME jobs.roblox.com
+career.roblox.com                   CNAME jobs.roblox.com
 
+sites.roblox.com                    CNAME ghs.google.com
 docs.roblox.com                     CNAME ghs.google.com
 calendar.roblox.com                 CNAME ghs.google.com
 start.roblox.com                    CNAME ghs.google.com
 mail.roblox.com                     CNAME ghs.googlehosted.com
+
+opsmail.roblox.com                  CNAME app23.p1.roblox.com
+opsmail.gg.roblox.com               CNAME db6.gg.roblox.com
+opsmail.p1t.roblox.com              CNAME db1.p1t.roblox.com
+
+app{1-36}.p1.roblox.com
+app{9-24}.p1t.roblox.com
+
+db{1-8}.gg.roblox.com
+db1.p1t.roblox.com
+db1.sp.roblox.com
 
 #### bad records
 gg.roblox.com                       A
@@ -144,7 +189,16 @@ web[1-266].p1.roblox.com            A     209.15.244.100 - 209.15.198.23
 appmail.gg.roblox.com               A     173.1.50.251
 appmail.roblox.com                  CNAME appmail.p1.roblox.com
 
+fr.roblox.com                       CNAME roblox.sl.smartling.com
+es.roblox.com                       CNAME roblox.sl.smartling.com
+pt.roblox.com                       CNAME roblox.sl.smartling.com
+
 #### Presumably outdated
+
+setup-cf.roblox.com                 d27qknr4rwc572.cloudfront.net
+setup-dev.roblox.com                CNAME s3.amazonaws.com
+setup-test.roblox.com               CNAME s3.amazonaws.com
+setup-sitetest.roblox.com           CNAME s3.amazonaws.com
 setup-gametest.roblox.com           CNAME s3.amazonaws.com
 setup-staging.roblox.com            CNAME s3.amazonaws.com
 content.roblox.com                  A     209.15.215.174
@@ -155,6 +209,8 @@ logging.service.gametest.roblox.com A     23.21.192.244
 help.roblox.com                     CNAME roblox.zendesk.com
 en.help.roblox.com                  CNAME roblox.ssl.zendesk.com
 de.help.roblox.com                  CNAME help.roblox.sl.smartling.com
+es.help.roblox.com                  CNAME help.roblox.sl.smartling.com
+fr.help.roblox.com                  CNAME help.roblox.sl.smartling.com
 
 #### setup
 setup.roblox.com                    CNAME s3.amazonaws.com
