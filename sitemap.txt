@@ -35,7 +35,7 @@ api.sitetest2.robloxlabs.com        CNAME web110.p1t.roblox.com
 api.sitetest3.robloxlabs.com        CNAME web113.p1t.roblox.com
 api.gametest1.robloxlabs.com        CNAME web116.p1t.roblox.com
 api.gametest2.robloxlabs.com        CNAME web119.p1t.robloxlabs.com
-api.gamtetest3.robloxlabs.com       CNAME web112.p1t.roblox.com
+api.gametest3.robloxlabs.com       CNAME web112.p1t.roblox.com
 api.gametest4.robloxlabs.com        CNAME web125.p1t.roblox.com
 api.gametest5.robloxlabs.com        CNAME web104.p1t.roblox.com
 
