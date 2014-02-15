@@ -163,11 +163,11 @@
 | t6-cf.roblox.com                    | CNAME | d1mcrq0wjirdd.cloudfront.net    |
 | t7-cf.roblox.com                    | CNAME | d3j1jp7bfflqzx.cloudfront.net   |
 | test.roblox.com                     | A     | 173.1.50.250                    |
-| test[1-4].roblox.com                | CNAME | test.roblox.com                 |
-| t[0-7].rbxcdn.com                   | CNAME | thumbs.roblox.com.edgesuite.net |
-| t[0-7].roblox.com                   | CNAME | s3.amazonaws.com                |
-| t[0-7]ak.roblox.com                 | CNAME | thumbs.roblox.com.edgesuite.net |
-| t[0-7]bg.roblox.com                 | CNAME | roblox.vo.llnwd.net             |
+| test{1-4}.roblox.com                | CNAME | test.roblox.com                 |
+| t{0-7}.rbxcdn.com                   | CNAME | thumbs.roblox.com.edgesuite.net |
+| t{0-7}.roblox.com                   | CNAME | s3.amazonaws.com                |
+| t{0-7}ak.roblox.com                 | CNAME | thumbs.roblox.com.edgesuite.net |
+| t{0-7}bg.roblox.com                 | CNAME | roblox.vo.llnwd.net             |
 | web.roblox.com                      | CNAME | www.roblox.com                  |
 | web100.p1t.roblox.com               | A     | 209.15.11.43                    |
 | web101.p1t.roblox.com               | A     | 209.15.11.46                    |
