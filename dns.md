@@ -1,5 +1,5 @@
 | Name                                | Type  | Value                           |
-| ----------------------------------- | ----- | ------------------------------- |
+| :---------------------------------- | :---- | :------------------------------ |
 | analytics.roblox.com                | CNAME | db79.p1t.roblox.com             |
 | api.gametest1.robloxlabs.com        | CNAME | web116.p1t.roblox.com           |
 | api.gametest2.robloxlabs.com        | CNAME | web119.p1t.robloxlabs.com       |
