@@ -68,7 +68,7 @@
 | opsmail.gg.roblox.com               | CNAME | db6.gg.roblox.com               |
 | opsmail.p1t.roblox.com              | CNAME | db1.p1t.roblox.com              |
 | opsmail.roblox.com                  | CNAME | app23.p1.roblox.com             |
-| p1.roblox.com                       | A     | [no value]                      |    
+| p1.roblox.com                       | A     | none                            |    
 | polls.roblox.com                    | CNAME | polldaddy.com                   |
 | pt.roblox.com                       | CNAME | roblox.sl.smartling.com         |
 | rbx-build.roblox.com                | A     | 72.32.99.180                    |
