@@ -27,7 +27,7 @@
 | c{0-7}ak.roblox.com                 | CNAME | assets.roblox.com.edgesuite.net |
 | c{0-7}bg.roblox.com                 | CNAME | roblox.vo.llnwd.net             |
 | db1.p1t.roblox.com                  | A     | 209.15.11.5                     |
-| db1.sp.roblox.com                   | A     | *                               |
+| db1.sp.roblox.com                   | A     | 208.113.72.98                   |
 | db{1-8}.gg.roblox.com               | CNAME | db1.sp.roblox.com               |
 | de.help.roblox.com                  | CNAME | help.roblox.sl.smartling.com    |
 | de.roblox.com                       | CNAME | roblox.sl.smartling.com         |
