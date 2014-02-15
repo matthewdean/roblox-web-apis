@@ -45,7 +45,7 @@
 | fr.roblox.com                       | CNAME | roblox.sl.smartling.com         |
 | gametest.roblox.com                 | A     | 72.32.205.251                   |
 | gametest{1-5}.robloxlabs.com        | CNAME | web{digits}.p1t.roblox.com      |
-| gg.roblox.com                       | A     | [empty]                         |
+| gg.roblox.com                       | A     | none                            |
 | goblocks.com                        | A     | 184.168.221.49                  |
 | goblox.com                          | A     | 50.63.202.28                    |
 | gooblox.com                         | A     | 50.63.202.6                     |
@@ -101,7 +101,7 @@
 | sandbox.community.roblox.com        | A     | 209.15.11.133                   |
 | sandbox.corp.roblox.com             | A     | 209.15.11.133                   |
 | sandbox.wiki.roblox.com             | A     | 209.15.11.133                   |
-| service.roblox.com                  | A     | nil                             |
+| service.roblox.com                  | A     | none                            |
 | setup-cf.roblox.com                 | CNAME | d27qknr4rwc572.cloudfront.net   |
 | setup-dev.roblox.com                | CNAME | s3.amazonaws.com                |
 | setup-gametest.roblox.com           | CNAME | s3.amazonaws.com                |
@@ -132,7 +132,7 @@
 | t{0-7}ak.roblox.com                 | CNAME | thumbs.roblox.com.edgesuite.net |
 | t{0-7}bg.roblox.com                 | CNAME | roblox.vo.llnwd.net             |
 | web.roblox.com                      | CNAME | www.roblox.com                  |
-| web{90-126}.p1t.roblox.com             | A     | 209.15.*                     |
+| web{90-126}.p1t.roblox.com           | A    | *                               |
 | web{1-266}.p1.roblox.com            | A     | 209.15.244.100 - 209.15.198.23  |
 | wiki.roblox.com                     | CNAME | wikiblog.roblox.com             |
 | wikiblog.roblox.com                 | A     | 69.172.200.194                  |
