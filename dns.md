@@ -46,9 +46,6 @@
 | gametest.roblox.com                 | A     | 72.32.205.251                   |
 | gametest{1-5}.robloxlabs.com        | CNAME | web{digits}.p1t.roblox.com      |
 | gg.roblox.com                       | A     | none                            |
-| goblocks.com                        | A     | 184.168.221.49                  |
-| goblox.com                          | A     | 50.63.202.28                    |
-| gooblox.com                         | A     | 50.63.202.6                     |
 | help.roblox.com                     | CNAME | roblox.zendesk.com              |
 | images.rbxcdn.com                   | CNAME | images.roblox.com.edgesuite.net |
 | images.roblox.com                   | CNAME | s3.amazonaws.com                |
@@ -76,25 +73,6 @@
 | pt.roblox.com                       | CNAME | roblox.sl.smartling.com         |
 | rbx-build.roblox.com                | A     | 72.32.99.180                    |
 | rbxdev.com                          | A     | 66.151.138.61                   |
-| roblocks.com                        | A     | 50.63.202.10                    |
-| roblox.biz                          | A     | 50.63.202.23                    |
-| roblox.co.kr                        | A     | 209.126.255.163                 |
-| roblox.com                          | A     | 209.15.211.168                  |
-| roblox.eu                           | A     | 209.126.255.163                 |
-| roblox.in                           | A     | 50.63.202.31                    |
-| roblox.jp                           | A     | 216.21.224.199                  |
-| roblox.me                           | A     | 50.63.202.32                    |
-| roblox.mobi                         | A     | 184.168.221.1                   |
-| roblox.name                         | A     | 66.240.194.139                  |
-| roblox.net                          | A     | 50.63.202.21                    |
-| roblox.org                          | A     | 50.63.202.5                     |
-| roblox.tv                           | A     | 50.63.202.17                    |
-| roblox.tw                           | A     | 50.63.202.32                    |
-| roblox.us                           | A     | 50.63.202.19                    |
-| roblox.ws                           | A     | 50.63.202.26                    |
-| roeblocks.com                       | A     | 184.168.221.13                  |
-| rowblocks.com                       | A     | 50.63.202.26                    |
-| rowblox.com                         | A     | 50.63.202.20                    |
 | sales.roblox.com                    | CNAME | wikiblog.roblox.com             |
 | sandbox.blog.roblox.com             | A     | 209.15.11.133                   |
 | sandbox.bloxcon.roblox.com          | A     | 209.15.11.133                   |
@@ -132,10 +110,37 @@
 | t{0-7}ak.roblox.com                 | CNAME | thumbs.roblox.com.edgesuite.net |
 | t{0-7}bg.roblox.com                 | CNAME | roblox.vo.llnwd.net             |
 | web.roblox.com                      | CNAME | www.roblox.com                  |
-| web{90-126}.p1t.roblox.com           | A    | *                               |
+| web{90-126}.p1t.roblox.com          | A     | *                               |
 | web{1-266}.p1.roblox.com            | A     | 209.15.244.100 - 209.15.198.23  |
 | wiki.roblox.com                     | CNAME | wikiblog.roblox.com             |
 | wikiblog.roblox.com                 | A     | 69.172.200.194                  |
 | www.roblox.com                      | A     | 209.15.211.170                  |
+
+Other domains:
+
+| Name                                | Type  | Value                           |
+| :---------------------------------- | :---- | :------------------------------ |
 | www.roblox.net                      | CNAME | roblox.net                      |
 | roblox.net                          | A     | 50.63.202.21                    |
+| roblocks.com                        | A     | 50.63.202.10                    |
+| roblox.biz                          | A     | 50.63.202.23                    |
+| roblox.co.kr                        | A     | 209.126.255.163                 |
+| roblox.com                          | A     | 209.15.211.168                  |
+| roblox.eu                           | A     | 209.126.255.163                 |
+| roblox.in                           | A     | 50.63.202.31                    |
+| roblox.jp                           | A     | 216.21.224.199                  |
+| roblox.me                           | A     | 50.63.202.32                    |
+| roblox.mobi                         | A     | 184.168.221.1                   |
+| roblox.name                         | A     | 66.240.194.139                  |
+| roblox.net                          | A     | 50.63.202.21                    |
+| roblox.org                          | A     | 50.63.202.5                     |
+| roblox.tv                           | A     | 50.63.202.17                    |
+| roblox.tw                           | A     | 50.63.202.32                    |
+| roblox.us                           | A     | 50.63.202.19                    |
+| roblox.ws                           | A     | 50.63.202.26                    |
+| roeblocks.com                       | A     | 184.168.221.13                  |
+| rowblocks.com                       | A     | 50.63.202.26                    |
+| rowblox.com                         | A     | 50.63.202.20                    |
+| goblocks.com                        | A     | 184.168.221.49                  |
+| goblox.com                          | A     | 50.63.202.28                    |
+| gooblox.com                         | A     | 50.63.202.6                     |
