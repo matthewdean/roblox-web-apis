@@ -7,8 +7,8 @@
 | appmail.gg.roblox.com               | A     | 173.1.50.251                    |
 | appmail.roblox.com                  | CNAME | appmail.p1.roblox.com           |
 | app{1-6}.gg.roblox.com              | A     | 173.1.50.251                    |
-| app{1-36}.p1.roblox.com             |       |                                 |
-| app{9-24}.p1t.roblox.com            |       |                                 |
+| app{1-36}.p1.roblox.com             | A     | *                               |
+| app{9-24}.p1t.roblox.com            | A     | *                               |
 | blog.roblox.com                     | CNAME | wikiblog.roblox.com             |
 | blogs.roblox.com                    | CNAME | blog.roblox.com                 |
 | bloxcon.roblox.com                  | CNAME | wikiblog.roblox.com             |
