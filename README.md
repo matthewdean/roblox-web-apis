@@ -303,7 +303,7 @@ Asset APIs
     
 #####Get the assetId of an assetVersionId:
 ```bat
-curl http://www.roblox.com/redirect-item?avid=1 --head
+curl http://www.roblox.com/_-item?avid=1 --head
 ```
 
 #####Download the latest version of an asset
