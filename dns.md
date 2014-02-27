@@ -73,6 +73,7 @@
 | pt.roblox.com                       | CNAME | roblox.sl.smartling.com         |
 | rbx-build.roblox.com                | A     | 72.32.99.180                    |
 | rbxdev.com                          | A     | 66.151.138.61                   |
+| roblox.com                          | A     | 209.15.211.168                  |
 | sales.roblox.com                    | CNAME | wikiblog.roblox.com             |
 | sandbox.blog.roblox.com             | A     | 209.15.11.133                   |
 | sandbox.bloxcon.roblox.com          | A     | 209.15.11.133                   |
@@ -108,5 +109,5 @@
 | web{1-266}.p1.roblox.com            | A     | 209.15.244.100 - 209.15.198.23  |
 | wiki.roblox.com                     | CNAME | wikiblog.roblox.com             |
 | wikiblog.roblox.com                 | A     | 69.172.200.194                  |
+| www.roblox.com                      | A     | 209.15.15.253                   |
 | www.roblox.com                      | A     | 209.15.211.170                  |
-| www.roblox.com                      | A     | 209.15.211.168                  |
