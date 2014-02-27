@@ -109,3 +109,4 @@
 | wiki.roblox.com                     | CNAME | wikiblog.roblox.com             |
 | wikiblog.roblox.com                 | A     | 69.172.200.194                  |
 | www.roblox.com                      | A     | 209.15.211.170                  |
+| www.roblox.com                      | A     | 209.15.211.168                  |
