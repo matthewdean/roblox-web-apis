@@ -1,3 +1,35 @@
+
+
+####Non-API URLs
+ * [/Games/List](http://www.roblox.com/games/list)
+ * [/Info/Terms-Of-Service](http://www.roblox.com/Info/Terms-Of-Service)
+ * [/PaymentSystemUnavailable.aspx](http://www.roblox.com/PaymentSystemUnavailable.aspx)
+ * [/Bloxmas-card.pdf](http://c0.rbxcdn.com/Bloxmas-card.pdf)
+ * [/My/Share/PleaseUpgradeMe.aspx](http://www.roblox.com/My/Share/PleaseUpgradeMe.aspx)
+ * [/My/Share/ReferralLeaderboards.aspx](http://www.roblox.com/My/Share/ReferralLeaderboards.aspx)
+ * [/Micropay/Default.aspx](http://www.roblox.com/Micropay/Default.aspx)
+ * [/Contests/Default.aspx?id=(1-51)](http://www.roblox.com/Contests/Default.aspx?id=1)
+ * [/Contests/History.aspx?p=(1-2)](http://www.roblox.com/Contests/History.aspx?p=1)
+ * [/Contests/Leaders.aspx?id=(1-51)](http://www.roblox.com/Contests/Leaders.aspx?id=1)
+ * [/Contests/Prizes.aspx?id=(1-51)](http://www.roblox.com/Contests/Prizes.aspx?id=1)
+ * [/Empty.ashx](http://www.roblox.com/Empty.aspx)
+ * [/Ads/Default.aspx](http://www.roblox.com/Ads/Default.aspx)
+ * [/Game/Help.aspx](http://www.roblox.com/Game/Help.aspx)
+ * [/Item.aspx?id=1818](http://www.roblox.com/Item.aspx?id=1818)
+ * [/Item.aspx?avid=1](http://www.roblox.com/Item.aspx?avid=1)
+ * [/IDE/ClientToolbox.aspx](http://www.roblox.com/IDE/ClientToolbox.aspx)
+ * [/Login/ResetPasswordRequest.aspx](http://www.roblox.com/Login/ResetPasswordRequest.aspx)
+ * [/Game/MachineConfiguration.ashx](http://www.roblox.com/Game/MachineConfiguration.ashx)
+ * [/Install/Setup.ashx](http://www.roblox.com/Install/Setup.ashx)
+ * [/Login/FufillConstraint.aspx](http://www.roblox.com/Login/FulfillConstraint.aspx)
+ * [/Game/Upload.aspx](http://www.roblox.com/Game/Upload.aspx)
+ * [/userads/(1-4)](http://www.roblox.com/userads/1)
+ * [/AbuseReport/InGameChatHandler.ashx](http://www.roblox.com/AbuseReport/InGameChatHandler.ashx)
+ * [/Analytics/GamePerfMonitor.ashx](http://www.roblox.com/Analytics/GamePerfMonitor.ashx)
+ * [/Browse.aspx?name=Shedletsky](http://www.roblox.com/Browse.aspx?name=Shedletsky)
+ * http://t0.roblox.com/Maintenance_Page
+ * 
+
 c[0-7].rbxcdn.com
   /robloxteamsitedownimage1
 
