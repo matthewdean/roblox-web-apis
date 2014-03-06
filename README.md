@@ -369,14 +369,6 @@ Tips
 * Append `?WSDL`, `/js`, or `/jsdebug` to .asmx pages
 * Most sites have a `/robots.txt`
 
-Domains
--
-* roblox.com
-* rbxcdn.com
-* rbxdev.com
-* robloxlabs.com
-* goblox.com
-
 ####CoreScripts
 * [/GameScript](http://logging.service.roblox.com/GameScript)
 * [/Game/GameServer.ashx](http://www.roblox.com/Game/GameServer.ashx)
