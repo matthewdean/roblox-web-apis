@@ -487,26 +487,6 @@ Content-Length: 36
 username=Shedletsky&password=hunter2
 ```
 
-* [web.roblox.com](http://web.roblox.com)
-* [de.roblox.com](http://de.roblox.com) - for german users
-####Mobile Site
-* [m.roblox.com](http://m.roblox.com) - for mobile devices
-
-####Test Sites
-tip: prepend `m.` or `setup.`
-* [sitetest(1-3).robloxlabs.com](http://sitetest1.robloxlabs.com)
-* [gametest(1-5).robloxlabs.com](http://gametest1.robloxlabs.com)
-
-####Content Delivery Sites
-* [jsak.roblox.com](http://jsak.roblox.com) - stands for "JavaScript akamai"
-* [imagesak.roblox.com](http://imagesak.roblox.com) - stands for "images akamai"
-* [images.rbxcdn.com](http://images.rbxcdn.com)
-* [css.rbxcdn.com](http://css.rbxcdn.com)
-* [js.rbxcdn.com](http://js.rbxcdn.com)
-* [t(0-7)(-cf).rbxcdn.com](http://t0.rbxcdn.com) - for textures
-* [c(0-7)(-cf).rbxcdn.com](http://c0.rbxcdn.com) - for content (sounds)
-
-####Game Client
 * [setup.roblox.com](http://setup.roblox.com)
   * [/Roblox.exe](http://setup.roblox.com/Roblox.exe)
   * [/RobloxStudioLauncher.exe](http://setup.roblox.com/RobloxStudioLauncher.exe)
@@ -518,30 +498,7 @@ tip: prepend `m.` or `setup.`
   *	[/mac/version](http://setup.roblox.com/mac/version)
   *	[/mac/versionStudio](http://setup.roblox.com/mac/versionStudio)
   *	[/mac/RobloxStudio.dmg](http://setup.roblox.com/mac/RobloxStudio.dmg)
-* [setup-gametest.roblox.com](http://setup-gametest.roblox.com)
 
-####Promotional Sites
-* [bloxcon.roblox.com](http://bloxcon.roblox.com)
-* [shop.roblox.com](http://shop.roblox.com)
-* [jobs.roblox.com](http://jobs.roblox.com)
-* [corp.roblox.com](http://corp.roblox.com)
-* [sandbox.corp.roblox.com](http://sandbox.corp.roblox.com)
-* [blog.roblox.com](http://blog.roblox.com)
-* [sandbox.blog.roblox.com](http://sandbox.blog.roblox.com)
-* [techblog.roblox.com](http://techblog.roblox.com)
-* [developer.roblox.com](http://developer.roblox.com)
-* [rbxdev.com](http://rbxdev.com)
-
-####Documentation
-* [wikiblog.roblox.com](http://wikiblog.roblox.com)
-* [wiki.roblox.com](http://wiki.roblox.com)
-* [sandbox.wiki.roblox.com](http://sandbox.wiki.roblox.com)
-* [en.help.roblox.com](http://en.help.roblox.com)
-* [de.help.roblox.com](http://de.help.roblox.com)
-
-####Miscellaneous
-* [polls.roblox.com](http://polls.roblox.com)
-* [dmp.roblox.com](http://dmp.roblox.com)
 * [api.roblox.com](http://api.roblox.com/docs)
  * [/Auth/Invalidate](http://api.roblox.com/Auth/Invalidate)
  * [/Auth/Negotiate?suggest=](http://api.roblox.com/Auth/Negotiate?suggest=)
@@ -558,14 +515,6 @@ tip: prepend `m.` or `setup.`
 * [logging.service.roblox.com](http://logging.service.roblox.com) - for StatsService
 * [/Game/ClientVersion.ashx](http://www.roblox.com/Game/ClientVersion.ashx)
 
-####Unused
-* [logging.sitetest.roblox.com](http://logging.sitetest.roblox.com)
-* [setup-staging.roblox.com](http://setup-staging.roblox.com/version.txt)
-* [content.roblox.com](http://content.roblox.com)
-* [blogs.roblox.com](http://blogs.roblox.com)
-* [job.roblox.com](http://job.roblox.com)
-* [community.roblox.com](http://community.roblox.com)
-
 ```http
 
 POST http://www.roblox.com/Services/GroupService.asmx/GetRoleSetsForGroup HTTP/1.1
@@ -574,35 +523,5 @@ Content-Type: application/json
 { "groupId": 1 }
 ```
 
-
-####Non-API URLs
- * [/Games/List](http://www.roblox.com/games/list)
- * [/Info/Terms-Of-Service](http://www.roblox.com/Info/Terms-Of-Service)
- * [/PaymentSystemUnavailable.aspx](http://www.roblox.com/PaymentSystemUnavailable.aspx)
- * [/Bloxmas-card.pdf](http://c0.rbxcdn.com/Bloxmas-card.pdf)
- * [/My/Share/PleaseUpgradeMe.aspx](http://www.roblox.com/My/Share/PleaseUpgradeMe.aspx)
- * [/My/Share/ReferralLeaderboards.aspx](http://www.roblox.com/My/Share/ReferralLeaderboards.aspx)
- * [/Micropay/Default.aspx](http://www.roblox.com/Micropay/Default.aspx)
- * [/Contests/Default.aspx?id=(1-51)](http://www.roblox.com/Contests/Default.aspx?id=1)
- * [/Contests/History.aspx?p=(1-2)](http://www.roblox.com/Contests/History.aspx?p=1)
- * [/Contests/Leaders.aspx?id=(1-51)](http://www.roblox.com/Contests/Leaders.aspx?id=1)
- * [/Contests/Prizes.aspx?id=(1-51)](http://www.roblox.com/Contests/Prizes.aspx?id=1)
- * [/Empty.ashx](http://www.roblox.com/Empty.aspx)
- * [/Ads/Default.aspx](http://www.roblox.com/Ads/Default.aspx)
- * [/Game/Help.aspx](http://www.roblox.com/Game/Help.aspx)
- * [/Item.aspx?id=1818](http://www.roblox.com/Item.aspx?id=1818)
- * [/Item.aspx?avid=1](http://www.roblox.com/Item.aspx?avid=1)
- * [/IDE/ClientToolbox.aspx](http://www.roblox.com/IDE/ClientToolbox.aspx)
- * [/Login/ResetPasswordRequest.aspx](http://www.roblox.com/Login/ResetPasswordRequest.aspx)
- * [/Game/MachineConfiguration.ashx](http://www.roblox.com/Game/MachineConfiguration.ashx)
- * [/Install/Setup.ashx](http://www.roblox.com/Install/Setup.ashx)
- * [/Login/FufillConstraint.aspx](http://www.roblox.com/Login/FulfillConstraint.aspx)
- * [/Game/Upload.aspx](http://www.roblox.com/Game/Upload.aspx)
- * [/userads/(1-4)](http://www.roblox.com/userads/1)
- * [/AbuseReport/InGameChatHandler.ashx](http://www.roblox.com/AbuseReport/InGameChatHandler.ashx)
- * [/Analytics/GamePerfMonitor.ashx](http://www.roblox.com/Analytics/GamePerfMonitor.ashx)
- * [/Browse.aspx?name=Shedletsky](http://www.roblox.com/Browse.aspx?name=Shedletsky)
- * http://t0.roblox.com/Maintenance_Page
- * 
 
 #####Contributors: Mark Otaris, ArceusInator, oxcool1, Seranok
