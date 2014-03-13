@@ -303,27 +303,14 @@ Asset APIs
     
 #####Get the assetId of an assetVersionId:
 ```bat
-curl http://www.roblox.com/_-item?avid=1 --head
+curl http://www.roblox.com/--item?avid=1 --head
 ```
 
-#####Download the latest version of an asset
-```bat
-curl http://www.roblox.com/Asset/?id=1818 --user-agent Roblox
-```
-
-#####Download a specific version of an asset
-
-```bat
-curl http://www.roblox.com/Asset/?id=1818&version=1 --user-agent Roblox
-```
-
-```bat
-curl http://www.roblox.com/Asset/?versionId=1 --user-agent Roblox
-```
-
-```bat
-curl http://www.roblox.com/Asset/?hash=b3c6b23ff18f48557b823ef5b72a0508 --user-agent Roblox
-```
+#####Download various versions of an asset
+* http://www.roblox.com/Asset/?id=1818
+* http://www.roblox.com/Asset/?id=1818&version=1
+* http://www.roblox.com/Asset/?versionId=1
+* http://www.roblox.com/Asset/?hash=b3c6b23ff18f48557b823ef5b72a0508
 
 #####Upload an asset
 ```http
