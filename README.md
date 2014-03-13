@@ -1,5 +1,3 @@
-Disclaimer: all information has been gathered using purely Google and levi's sitemap. No insider information has been used.
-
 Economy APIs
 ----
 
