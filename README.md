@@ -1,3 +1,9 @@
+### Get userId from username
+```bat
+curl -i http://www.roblox.com/user.aspx?username=Shedletsky
+```
+(Parse the "Location: /User.aspx?ID=261" response header to get userId)
+
 Economy APIs
 ----
 
