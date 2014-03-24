@@ -8,9 +8,9 @@
 
 | Dimensions           | 48x48 | 60x62 | 75x75 | 100x100 | 110x110 | 160x100 | 250x250 | 352x352 | 420x230 | 420x420 |
 | -------------------- | ----- | ----- | ----- | ------- | ------- | ------- | ------- | ------- | ------- | ------- |
-| ThumbnailAsset.ashx  |       |       |       |         |         |         |         |         |         |         |
-| Asset-Thumbnail/Json | ✔     | ✔    |       |         |         |         |         |         |         |         |
-| Pixelated.ashx       |       |       |       |         |         |         |         |         |         |         |
+| ThumbnailAsset.ashx  | ✓     |       |       |         | ✓     |          |  ✓     |        |         | ✓     |
+| Asset-Thumbnail/Json | ✓     | ✓     | ✓     | ✓       | ✓       | ✓       | ✓       | ✓       | ✓       | ✓       |
+| Pixelated.ashx       |       |       |       |         |         |         | ✓     |         |         |         |
 
 Thumbnail APIs
 ----
