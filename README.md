@@ -1,8 +1,57 @@
-### Get userId from username
-```bat
-curl -i http://www.roblox.com/user.aspx?username=Shedletsky
+#####Get an asset thumbnail
+ * http://www.roblox.com/Game/Tools/ThumbnailAsset.ashx?fmt=png&wd=420&ht=420&aid=1818
+ * 420 x 420
+ * 75 x 75
+
+
+#####Valid thumbnail sizes
+
+| Dimensions           | 48x48 | 60x62 | 75x75 | 100x100 | 110x110 | 160x100 | 250x250 | 352x352 | 420x230 | 420x420 |
+| -------------------- | ----- | ----- | ----- | ------- | ------- | ------- | ------- | ------- | ------- | ------- |
+| ThumbnailAsset.ashx  |       |       |       |         |         |         |         |         |         |         |
+| Asset-Thumbnail/Json | ✔     | ✔    |       |         |         |         |         |         |         |         |
+| Pixelated.ashx       |       |       |       |         |         |         |         |         |         |         |
+
+Thumbnail APIs
+----
+
+#####Get a pixelated asset thumbnail
+ * http://www.roblox.com/Thumbs/Pixelated.ashx?id=1818&x=250&y=250&format=Png&tfid=114
+
+#####Get an asset thumbnail URL
+ * http://www.roblox.com/Asset-Thumbnail/Json?assetId=1818&width=160&height=100&format=jpeg
+
+    ```json
+    {
+        "Url": "http://t2.rbxcdn.com/622729f930283b57f6172be41b8fe2fa",
+        "Final": true
+    }
+    ```
+
+#####Get an outfit's thumbnail URL
+ * http://www.roblox.com/Outfit-Thumbnail/Json?userOutfitId=2&width=352&height=352&format=png
+    
+    ```json
+    {
+        "Url": "http://t7.rbxcdn.com/56abbdd66ad9847c7d801fa57dd7a249",
+        "Final": true
+    }
+   ```
+
+#####Get a user's thumbnail
+ * http://www.roblox.com/Thumbs/Avatar.ashx?x=64&y=64&format=png&username=Shedletsky
+
+#####Get a user's BC thumbnail
+ * http://www.roblox.com/Thumbs/BCOverlay.ashx?username=Shedletsky
+
+
+### Get user ID from username
 ```
-(Parse the "Location: /User.aspx?ID=261" response header to get userId)
+$ curl -i http://www.roblox.com/user.aspx?username=Shedletsky
+
+HTTP/1.1 302 Found
+Location: /User.aspx?ID=261
+```
 
 Economy APIs
 ----
@@ -53,56 +102,6 @@ Content-Length: 11
     "d": 15858
 }
 ```
-
-Thumbnail APIs
-----
-
-#####Valid thumbnail sizes
-
-| Width | Height |
-| -----:|:------ |
-| 48    | 48     |
-| 60    | 62     |
-| 75    | 75     |
-| 100   | 100    |
-| 110   | 110    |
-| 160   | 100    |
-| 250   | 250    |
-| 352   | 352    |
-| 420   | 230    |
-| 420   | 420    |
-
-#####Get an asset thumbnail
- * http://www.roblox.com/Game/Tools/ThumbnailAsset.ashx?fmt=png&wd=420&ht=420&aid=1818
-
-#####Get a pixelated asset thumbnail
- * http://www.roblox.com/Thumbs/Pixelated.ashx?id=1818&x=250&y=250&format=Png&tfid=114
-
-#####Get an asset thumbnail URL
- * http://www.roblox.com/Asset-Thumbnail/Json?assetId=1818&width=160&height=100&format=jpeg
-
-    ```json
-    {
-        "Url": "http://t2.rbxcdn.com/622729f930283b57f6172be41b8fe2fa",
-        "Final": true
-    }
-    ```
-
-#####Get an outfit's thumbnail URL
- * http://www.roblox.com/Outfit-Thumbnail/Json?userOutfitId=2&width=352&height=352&format=png
-    
-    ```json
-    {
-        "Url": "http://t7.rbxcdn.com/56abbdd66ad9847c7d801fa57dd7a249",
-        "Final": true
-    }
-   ```
-
-#####Get a user's thumbnail
- * http://www.roblox.com/Thumbs/Avatar.ashx?x=64&y=64&format=png&username=Shedletsky
-
-#####Get a user's BC thumbnail
- * http://www.roblox.com/Thumbs/BCOverlay.ashx?username=Shedletsky
 
 #####Get multiple user thumbnail URLs
  * [/Thumbs/AvatarImage.ashx?params=\[{"userId":"261"}\]&jsoncallback=jsonp](http://www.roblox.com/Thumbs/AvatarImage.ashx?params=%5B%7B%22userId%22:%22261%22%7D%5D&jsoncallback=jsonp)
