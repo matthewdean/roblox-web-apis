@@ -1,16 +1,17 @@
 #####Get an asset thumbnail
  * http://www.roblox.com/Game/Tools/ThumbnailAsset.ashx?fmt=png&wd=420&ht=420&aid=1818
- * 420 x 420
- * 75 x 75
-
 
 #####Valid thumbnail sizes
 
-| Dimensions           | 48x48 | 60x62 | 75x75 | 100x100 | 110x110 | 160x100 | 250x250 | 352x352 | 420x230 | 420x420 |
-| -------------------- | ----- | ----- | ----- | ------- | ------- | ------- | ------- | ------- | ------- | ------- |
-| ThumbnailAsset.ashx  | ✓     |       |       |         | ✓     |          |  ✓     |        |         | ✓     |
-| Asset-Thumbnail/Json | ✓     | ✓     | ✓     | ✓       | ✓       | ✓       | ✓       | ✓       | ✓       | ✓       |
-| Pixelated.ashx       |       |       |       |         |         |         | ✓     |         |         |         |
+| Dimensions                      | 48x48 | 60x62 | 75x75 | 100x100 | 110x110 | 160x100 | 250x250 | 352x352 | 420x230 | 420x420 |
+| ------------------------------- | ----- | ----- | ----- | ------- | ------- | ------- | ------- | ------- | ------- | ------- |
+| /Game/Tools/ThumbnailAsset.ashx |       |       | x     |         | x       |         | x       |         |         | x       |
+| /Thumbs/Pixelated.ashx          |       |       |       |         |         |         | x       |         |         |         |
+| /Asset-Thumbnail/Json           | x     | x     | x     | x       | x       | x       | x       | x       | x       | x       |
+| /Outfit-Thumbnail/Json          | x     | x     | x     | x       | x       | x       | x       | x       | x       | x       |
+| /Thumbs/Asset.ashx              | x     | x     | x     | x       | x       | x       | x       | x       | x       | x       |
+| /Thumbs/Avatar.ashx             | x     | x     | x     | x       | x       | x       | x       | x       | x       | x       |
+
 
 Thumbnail APIs
 ----
