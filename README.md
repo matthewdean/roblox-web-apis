@@ -1,8 +1,114 @@
-#####Get an asset thumbnail
- * http://www.roblox.com/Game/Tools/ThumbnailAsset.ashx?fmt=png&wd=420&ht=420&aid=1818
+Economy APIs
+------------
 
-#####Valid thumbnail sizes
+####Get the currency exchange rates
+ * http://www.roblox.com/Marketplace/EconomyServices.asmx
 
+  ```php
+  // PHP 5+
+  $client = new SoapClient("http://www.roblox.com/Marketplace/EconomyServices.asmx?WSDL");
+  $response = $client->GetEstimatedTradeReturnForTickets(array("ticketsToTrade" => 1000));
+  echo $response->GetEstimatedTradeReturnForTicketsResult;
+  ```
+
+  ```javascript
+  // node.js
+  var request = require('request');
+  
+  var options = {
+      method: 'POST',
+         url: 'http://www.roblox.com/Marketplace/EconomyServices.asmx/GetEstimatedTradeReturnForRobux',
+        json: { robuxToTrade: 1000 }
+  };
+  
+  request(options, function(err, res, json) {
+      var tixAmount = json.d;
+      console.log(tixAmount);
+  });
+  ```
+
+Thumbnail APIs
+--------------
+
+####Asset Thumbnails
+* http://www.roblox.com/Thumbs/RawAsset.ashx?assetId=1818&imageFormat=png&width=60&height=62
+  * Returns either `PENDING` or the URL. Also accepts `assetVersionId`
+
+* http://www.roblox.com/Thumbs/Pixelated.ashx?id=1818&x=250&y=250&format=png&tfid=114
+  * Returns the image, but with the Content-Type: text/html so it won't render in browser
+* http://www.roblox.com/Game/Tools/ThumbnailAsset.ashx?aid=1818&fmt=png&wd=420&ht=420
+  * Redirects to the URL
+
+* http://www.roblox.com/Thumbs/ItemImage.ashx?params=[{assetId:1818}]
+  ```javascript
+  [{
+    id: 1818,
+    name: "Crossroads",
+    url: "/Crossroads-place?id=1818",
+    thumbnailFinal true,
+    thumbnailUrl: "http://t3.rbxcdn.com/1e2476473494bfb202592501a5f86655",
+    bcOverlayUrl: null,
+    limitedOverlayUrl: null,
+    deadlineOverlayUrl: null,
+    limitedAltText: null,
+    newOverlayUrl: null,
+    imageSize: "large",
+    saleOverlayUrl: null,
+    iosOverlayUrl: null,
+    transparentBackground: false
+  }]
+  ```
+
+  You can specify the small image size (110x110) with params=[{assetId:1818,imageSize:small}]. Otherwise it will default to `large` (420x420)
+
+  Both of these APIs support JSONP, so this code can be embedded in any web page:
+  ```javascript
+  $.getJSON('http://www.roblox.com/Thumbs/ItemImage.ashx?params=[{assetId:1818}]&jsoncallback=?', function(json) {
+      alert(json[0].name);
+  });
+  ```
+
+* http://www.roblox.com/Asset-Thumbnail/Json?assetId=1818&width=160&height=100&format=jpeg
+  ```json
+  {
+    "Url": "http://t2.rbxcdn.com/622729f930283b57f6172be41b8fe2fa",
+    "Final": true
+  }
+  ```
+
+####Outfit Thumbnails
+
+* http://www.roblox.com/Outfit-Thumbnail/Json?userOutfitId=2&width=352&height=352&format=png
+
+  ```json
+  {
+      "Url": "http://t7.rbxcdn.com/56abbdd66ad9847c7d801fa57dd7a249",
+      "Final": true
+  }
+  ```
+
+####Avatar Thumbnails
+* http://www.roblox.com/Thumbs/Avatar.ashx?username=Shedletsky
+  * Redirects to the URL. Also accepts `userId`, and all other parameters can be omitted. If `userId` and `username` are both omitted, will return a ?
+
+* http://www.roblox.com/Thumbs/AvatarImage.ashx?params=[{userId:261}]
+  * Returns JSON
+  ```javascript
+  [{
+    id: 261,
+    name: "Shedletsky",
+    url: "/user.aspx?id=261",
+    thumbnailFinal: true, // if false, thumbnailUrl will be a placeholder
+    thumbnailUrl: "http://t2.rbxcdn.com/cb86449444fd9f79bb4785fe778310f5",
+    bcOverlayUrl: "http://images.rbxcdn.com/57ede1145c87db28cf51e2355909ee49.png" // null if NBC
+  }]
+  ```
+
+
+####Builders Club Overlay
+* http://www.roblox.com/Thumbs/BCOverlay.ashx?username=Shedletsky
+
+####Valid Thumbnail Sizes
 |                                 | 48x48 | 60x62 | 75x75 | 100x100 | 110x110 | 160x100 | 250x250 | 352x352 | 420x230 | 420x420 |
 | ------------------------------- | :---: | :---: | :---: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: |
 | /Game/Tools/ThumbnailAsset.ashx |       |       | x     |         | x       |         | x       |         |         | x       |
@@ -12,118 +118,6 @@
 | /Thumbs/Asset.ashx              | x     | x     | x     | x       | x       | x       | x       | x       | x       | x       |
 | /Thumbs/Avatar.ashx             | x     | x     | x     | x       | x       | x       | x       | x       | x       | x       |
 | /Thumbs/RawAsset.ashx           | x     | x     | x     | x       | x       | x       | x       | x       | x       | x       |
-
-Thumbnail APIs
-----
-
-#####Get a pixelated asset thumbnail
- * http://www.roblox.com/Thumbs/Pixelated.ashx?id=1818&x=250&y=250&format=Png&tfid=114
-
-#####Get an asset thumbnail URL
- * http://www.roblox.com/Asset-Thumbnail/Json?assetId=1818&width=160&height=100&format=jpeg
-
-    ```json
-    {
-        "Url": "http://t2.rbxcdn.com/622729f930283b57f6172be41b8fe2fa",
-        "Final": true
-    }
-    ```
-
-#####Get an outfit's thumbnail URL
- * http://www.roblox.com/Outfit-Thumbnail/Json?userOutfitId=2&width=352&height=352&format=png
-    
-    ```json
-    {
-        "Url": "http://t7.rbxcdn.com/56abbdd66ad9847c7d801fa57dd7a249",
-        "Final": true
-    }
-   ```
-
-#####Get a user's thumbnail
- * http://www.roblox.com/Thumbs/Avatar.ashx?x=64&y=64&format=png&username=Shedletsky
-
-#####Get a user's BC thumbnail
- * http://www.roblox.com/Thumbs/BCOverlay.ashx?username=Shedletsky
-
-
-### Get user ID from username
-```
-$ curl -i http://www.roblox.com/user.aspx?username=Shedletsky
-
-HTTP/1.1 302 Found
-Location: /User.aspx?ID=261
-```
-
-Economy APIs
-----
-
-#####Get the currency exchange rates
- * [/Marketplace/EconomyServices.asmx](http://www.roblox.com/Marketplace/EconomyServices.asmx)
-
-```php
-// PHP 5+
-$client = new SoapClient("http://www.roblox.com/Marketplace/EconomyServices.asmx?WSDL");
-$response = $client->GetEstimatedTradeReturnForTickets(array("ticketsToTrade" => 1000));
-echo $response->GetEstimatedTradeReturnForTicketsResult;
-```
-
-```javascript
-// node.js
-var request = require('request');
-
-var options = {
-    method: 'POST',
-       url: 'http://www.roblox.com/Marketplace/EconomyServices.asmx/GetEstimatedTradeReturnForRobux',
-      json: { robuxToTrade: 1000 }
-};
-
-request(options, function(err, res, json) {
-    var tixAmount = json.d
-    console.log(tixAmount)
-});
-```
-
-```http
-POST /Marketplace/EconomyServices.asmx/GetEstimatedTradeReturnForRobux HTTP/1.1
-Host: www.roblox.com
-Content-Type: application/json
-Content-Length: 26
-
-{
-    "robuxToTrade": 1000
-}
-```
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 11
-
-{
-    "d": 15858
-}
-```
-
-#####Get multiple user thumbnail URLs
- * [/Thumbs/AvatarImage.ashx?params=\[{"userId":"261"}\]&jsoncallback=jsonp](http://www.roblox.com/Thumbs/AvatarImage.ashx?params=%5B%7B%22userId%22:%22261%22%7D%5D&jsoncallback=jsonp)
-
-#####Get multiple asset thumbnail URLs
- * [/Thumbs/ItemImage.ashx?params=\[{"assetId":"1818"}\]&jsoncallback=jsonp](http://www.roblox.com/Thumbs/ItemImage.ashx?params=%5B%7B%22assetId%22:%221818%22%7D%5D&jsoncallback=jsonp)
-
-    ```javascript
-    var params = [{ assetId: 1818 }];
-    $.ajax({
-    url: 'http://www.roblox.com/Thumbs/ItemImage.ashx',
-       data: { params: JSON.stringify(params) },
-       dataType: 'jsonp',
-       jsonp: 'jsoncallback',
-       success: function(json) {
-       $.each(json, function(i, asset) {
-          console.log(asset.id, asset.name);
-       });
-       }
-    });
-    ```
 
 Group APIs
 ----
@@ -149,10 +143,34 @@ Group APIs
     Guest
     ```
 
-#####Get a group's rolesets
-http://www.roblox.com/api/groups/1/RoleSets/
+####Get a group's rolesets
+* http://www.roblox.com/api/groups/1/RoleSets/
 
-#####Get the primary groups of multiple users
+  ```json
+  [{
+      "ID": 169,
+      "Name": "Member",
+      "Rank": 1
+  }, {
+      "ID": 143227,
+      "Name": "Dude",
+      "Rank": 180
+  }, {
+      "ID": 143226,
+      "Name": "Hunk",
+      "Rank": 200
+  }, {
+      "ID": 94,
+      "Name": "Admin",
+      "Rank": 254
+  }, {
+      "ID": 28,
+      "Name": "Owner",
+      "Rank": 255
+  }]
+  ```
+
+####Get a user's primary group
  * http://www.roblox.com/Groups/GetPrimaryGroupInfo.ashx?users=Shedletsky,builderman
 
     ```json
@@ -168,21 +186,21 @@ http://www.roblox.com/api/groups/1/RoleSets/
 
 Friend APIs
 ----
-#####Check if two users are friends
+####Check if two users are friends
  * http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=IsFriendsWith&playerId=261&userId=156
 
     ```xml
     <Value Type="boolean">true</Value>
     ```
 
-#####Check if a user is best friends with another user
+####Check if a user is best friends with another user
  * http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=IsBestFriendsWith&playerId=261&userId=156
 
     ```xml
     <Value Type="boolean">false</Value>
     ```
 
-#####Get information about a developer product
+####Get information about a developer product
  * http://api.roblox.com/Marketplace/ProductDetails?productId=18026036
 
     ```json
@@ -216,14 +234,14 @@ Friend APIs
 User APIs
 ----
 #####Get username from ID
- * http://api.roblox.com/Users/261
+* http://api.roblox.com/Users/261
 
-    ```json
-    {
-        "Id": 261,
-        "Username": "Shedletsky"
-    }
-    ```
+  ```json
+  {
+      "Id": 261,
+      "Username": "Shedletsky"
+  }
+  ```
 
 #####Get a user's body part colors
  * http://www.roblox.com/Asset/BodyColors.ashx?userId=261
@@ -248,10 +266,17 @@ User APIs
     </roblox>
     ```
 
-#####Get assets worn by a user
+####Get asset IDs worn by a user
+ * http://www.roblox.com/Asset/AvatarAccoutrements.ashx?userId=261
+
+   ```
+   http://www.roblox.com/Asset/BodyColors.ashx?userId=261;http://www.roblox.com/Asset/?id=42070576;http://www.roblox.com/Asset/?id=1078076;http://www.roblox.com/Asset/?id=1882759
+   ```
+
+####Get asset version IDs worn by a user
  * http://www.roblox.com/Asset/CharacterFetch.ashx?userId=261&placeId=1818
 
-    ```html
+    ```
     http://www.roblox.com/Asset/BodyColors.ashx?userId=261;http://www.roblox.com/Asset/?versionid=25379590;http://www.roblox.com/Asset/?versionid=77449723;http://www.roblox.com/Asset/?versionid=100748238;http://www.roblox.com/Asset/?versionid=197094072
     ```
 
@@ -305,11 +330,6 @@ Asset APIs
     }
     ```
     
-#####Get the assetId of an assetVersionId:
-```bat
-curl http://www.roblox.com/--item?avid=1 --head
-```
-
 #####Download various versions of an asset
 * http://www.roblox.com/Asset/?id=1818
 * http://www.roblox.com/Asset/?id=1818&version=1
@@ -369,6 +389,25 @@ Tips
 * [/Game/PlaySolo.ashx](http://www.roblox.com/Game/PlaySolo.ashx)
 * [/Game/Studio.ashx](http://www.roblox.com/Game/Studio.ashx)
 * [/Game/Visit.ashx](http://www.roblox.com/Game/Visit.ashx?placeId=1818)
+
+Useful Hacks
+------------
+
+#### Get the assetId of an assetVersionId:
+```
+$ curl -i http://www.roblox.com/--item?avid=1
+
+HTTP/1.1 302 Found
+Location: /ArrowCursor-png-item?id=1000000
+```
+
+#### Get user ID from username
+```
+$ curl -i http://www.roblox.com/user.aspx?username=Shedletsky
+
+HTTP/1.1 302 Found
+Location: /User.aspx?ID=261
+```
 
 ####Game Server APIs
  * [/Game/AreFriends?userId=261&access](http://www.roblox.com/Game/AreFriends?userId=1)
