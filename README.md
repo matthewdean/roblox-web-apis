@@ -3,6 +3,10 @@ ROBLOX Web APIs
 * [Thumbnail APIs](#thumbnail-apis)
 * [Set APIs](#set-apis)
 * [Group APIs](#group-apis)
+* [Economy APIs](#economy-apis)
+* [Friend APIs](#friend-apis)
+* [User APIs](#user-apis)
+* [Asset APIs](#user-apis)
 
 Set APIs
 --------
@@ -39,7 +43,6 @@ Set APIs
               </Entry>
           </Table>
       </Value>
-      ...
   </List>
   ```
 
@@ -131,6 +134,8 @@ Thumbnail APIs
       "Final": true
   }
   ```
+  
+* http://www.roblox.com/Outfits/Fetch?displayedUserId=261&pageNum=1
 
 ####Avatar Thumbnails
 * http://www.roblox.com/Thumbs/Avatar.ashx?username=Shedletsky
@@ -167,21 +172,21 @@ Thumbnail APIs
 Group APIs
 ----
 
-#####Check if a player is in a group
+####Check if a player is in a group
  * http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=IsInGroup&playerid=261&groupid=57
 
     ```xml
     <Value Type="boolean">false</Value>
     ```
 
-#####Get a player's rank number
+####Get a player's rank number
  * http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRank&playerid=261&groupid=57
 
     ```xml
     <Value Type="integer">0</Value>
     ```
 
-#####Get a player's rank name
+####Get a player's rank name
  * http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRole&playerid=261&groupid=57
 
     ```xml
@@ -278,7 +283,7 @@ Friend APIs
 
 User APIs
 ----
-#####Get username from ID
+#### Get username from ID
 * http://api.roblox.com/Users/261
 
   ```json
@@ -288,7 +293,15 @@ User APIs
   }
   ```
 
-#####Get a user's body part colors
+#### Get ID from username
+```
+$ curl -i http://www.roblox.com/user.aspx?username=Shedletsky
+
+HTTP/1.1 302 Found
+Location: /User.aspx?ID=261
+```
+
+####Get a user's body part colors
  * http://www.roblox.com/Asset/BodyColors.ashx?userId=261
 
     ```xml
@@ -325,7 +338,7 @@ User APIs
     http://www.roblox.com/Asset/BodyColors.ashx?userId=261;http://www.roblox.com/Asset/?versionid=25379590;http://www.roblox.com/Asset/?versionid=77449723;http://www.roblox.com/Asset/?versionid=100748238;http://www.roblox.com/Asset/?versionid=197094072
     ```
 
-#####Check if a username has been taken
+####Check if a username has been taken
  * http://www.roblox.com/UserCheck/DoesUsernameExist?username=Shedletsky
     
     ```json
@@ -335,9 +348,9 @@ User APIs
     ```
 
 Asset APIs
-----
+----------
 
-#####Check if a user owns an asset
+####Check if a user owns an asset
  * http://api.roblox.com/Ownership/HasAsset?userId=261&assetId=1818
 
     ```json
@@ -391,13 +404,8 @@ Content-Length: 17
 
 <roblox></roblox>
 ```
-```http
-HTTP/1.1 200 OK
-Content-Type: text/html
-Content-Length: 9
 
-ASSETVERSIONID_GOES_HERE
-```
+Returns an assetVersionId
 
 #####Log in
 ```http
@@ -409,31 +417,7 @@ Content-Type: application/json
 {"username":"Shedletsky","password":"hunter2"}
 ```
 
-#####Create an account
-
-
-#####ROBLOX Client/Studio APIs
-
-
-Rules
-* Use 261 for userIds, 1818 for placeIds, Shedletsky for username, hunter2 for password, etc.
 * User-Agent: ROBLOX iOS
-
-Tips
--
-* Google `site:api.roblox.com` to find pages for that subdomain
-* Append `?WSDL`, `/js`, or `/jsdebug` to .asmx pages
-* Most sites have a `/robots.txt`
-
-####CoreScripts
-* [/GameScript](http://logging.service.roblox.com/GameScript)
-* [/Game/GameServer.ashx](http://www.roblox.com/Game/GameServer.ashx)
-* [/Game/Join.ashx](http://www.roblox.com/Game/Join.ashx?placeId=1818)
-* [/Game/LoadPlaceInfo.ashx?placeId=1818](http://www.roblox.com/Game/LoadPlaceInfo.ashx?placeId=1818)
-* [/Game/PlaceSpecificScript.ashx?placeId=1818](http://www.roblox.com/Game/PlaceSpecificScript.ashx?placeId=1818)
-* [/Game/PlaySolo.ashx](http://www.roblox.com/Game/PlaySolo.ashx)
-* [/Game/Studio.ashx](http://www.roblox.com/Game/Studio.ashx)
-* [/Game/Visit.ashx](http://www.roblox.com/Game/Visit.ashx?placeId=1818)
 
 Useful Hacks
 ------------
@@ -446,23 +430,10 @@ HTTP/1.1 302 Found
 Location: /ArrowCursor-png-item?id=1000000
 ```
 
-#### Get user ID from username
-```
-$ curl -i http://www.roblox.com/user.aspx?username=Shedletsky
-
-HTTP/1.1 302 Found
-Location: /User.aspx?ID=261
-```
+#### Get the creator of an assetId, or see how many assetVersions it has
+* http://www.roblox.com/Game/LoadPlaceInfo.ashx?placeId=150381051
 
 ####Game Server APIs
- * [/Game/AreFriends?userId=261&access](http://www.roblox.com/Game/AreFriends?userId=1)
- * [/Game/Badge/HasBadge.ashx?userId=261&badgeId=%d&access](http://www.roblox.com/Game/Badge/HasBadge.ashx?userId=%d&badgeId=%d&access)
- * [/Game/Badge/IsBadgeDisabled.ashx?badgeId=%d&placeId=1818&access](http://www.roblox.com/Game/Badge/IsBadgeDisabled.ashx?badgeId=%d&placeId=%d&access)
- * [/Game/Knockouts.ashx?userId=261&(access)](http://www.roblox.com/Game/Knockouts.ashx?userId=261&access) 
- * [/Game/PlaceVisit.ashx?userId=261&associatedPlaceId=1818&access](http://www.roblox.com/Game/PlaceVisit.ashx?userId=261&associatedPlaceId=1818&access)
- * [/Game/Badge/AwardBadge.ashx?userId=261&badgeId=%d&placeId=1818&access](http://www.roblox.com/Game/Badge/AwardBadge.ashx?userId=1&badgeId=83094935&PlaceID=%d&access)
- * [/Game/Wipeouts.ashx?userId=261&access](http://www.roblox.com/Game/Wipeouts.ashx?userId=261&access)
- * [/Game/TreasureHunt.ashx?userId=261&eggnum=1&key=themusessing](http://www.roblox.com/Game/TreasureHunt.ashx?userId=261&eggnum=7&key=themusessing)
  * [/Game/ChatFilter.ashx](http://www.roblox.com/Game/ChatFilter.ashx)
 
 ####Current User APIs
@@ -470,9 +441,10 @@ Location: /User.aspx?ID=261
  * [/Game/GetCurrentUser.ashx](http://www.roblox.com/Game/GetCurrentUser.ashx)
  * [/MobileAPI/UserInfo](http://www.roblox.com/mobileapi/userinfo)
 
-####Login APIs
+Login APIs
+----------
 
- ```http
+```http
 POST https://www.roblox.com/MobileAPI/Signup HTTP/1.1
 Host: www.roblox.com
 Content-Type: application/json
@@ -535,9 +507,7 @@ There's another parameter, serverPlaceId, which will deny the request if the own
  * [/Game/Logout.aspx](http://www.roblox.com/Game/Logout.aspx)
  * [/Game/PlaceLauncher.ashx?request=RequestGame&placeId=1818](http://www.roblox.com/Game/PlaceLauncher.ashx?request=RequestGame&placeId=1818)
  * [/Game/Tools/InsertAsset.ashx?nsets=10&type=base](http://www.roblox.com/Game/Tools/InsertAsset.ashx?nsets=10&type=base)
- * [/Game/Tools/InsertAsset.ashx?sid=%d](http://www.roblox.com/Game/Tools/InsertAsset.ashx?sid=2)
  * [/Game/Tools/InsertAsset.ashx?type=user&userId=261&nsets=20](http://www.roblox.com/Game/Tools/InsertAsset.ashx?nsets=20&type=user&userid=1)
- * [/Outfits/Fetch?displayedUserId=261&pageNum=1](http://www.roblox.com/Outfits/Fetch?displayedUserId=261&pageNum=1)
  * [/Install/Service.asmx](http://www.roblox.com/Install/Service.asmx)
  * [/Login/Negotiate.ashx?suggest=%s](http://www.roblox.com/Login/Negotiate.ashx?suggest=)
  * [/MobileAPI/Check-App-Version?appVersion=AppiOSV2.112.35972](http://www.roblox.com/mobileapi/check-app-version?appVersion=AppiOSV2.112.35972)
