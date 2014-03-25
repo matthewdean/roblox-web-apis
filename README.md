@@ -1,3 +1,48 @@
+ROBLOX Web APIs
+===============
+* [Thumbnail APIs](#thumbnail-apis)
+* [Set APIs](#set-apis)
+* [Group APIs](#group-apis)
+
+Set APIs
+--------
+#### Get assets in a set
+* http://www.roblox.com/Game/Tools/InsertAsset.ashx?sid=2
+
+  ```xml
+  <List>
+      <Value>
+          <Table>
+              <Entry>
+                  <Key>Name</Key>
+                  <Value>Universal Connector</Value>
+              </Entry>
+              <Entry>
+                  <Key>AssetId</Key>
+                  <Value>10100443</Value>
+              </Entry>
+              <Entry>
+                  <Key>AssetSetId</Key>
+                  <Value>2</Value>
+              </Entry>
+              <Entry>
+                  <Key>AssetVersionId</Key>
+                  <Value>25509660</Value>
+              </Entry>
+              <Entry>
+                  <Key>CreatorName</Key>
+                  <Value>ROBLOX</Value>
+              </Entry>
+              <Entry>
+                  <Key>IsTrusted</Key>
+                  <Value>True</Value>
+              </Entry>
+          </Table>
+      </Value>
+      ...
+  </List>
+  ```
+
 Economy APIs
 ------------
 
