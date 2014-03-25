@@ -11,7 +11,7 @@
 | /Outfit-Thumbnail/Json          | x     | x     | x     | x       | x       | x       | x       | x       | x       | x       |
 | /Thumbs/Asset.ashx              | x     | x     | x     | x       | x       | x       | x       | x       | x       | x       |
 | /Thumbs/Avatar.ashx             | x     | x     | x     | x       | x       | x       | x       | x       | x       | x       |
-
+| /Thumbs/RawAsset.ashx           | x     | x     | x     | x       | x       | x       | x       | x       | x       | x       |
 
 Thumbnail APIs
 ----
