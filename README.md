@@ -8,6 +8,15 @@ ROBLOX Web APIs
 * [User APIs](#user-apis)
 * [Asset APIs](#user-apis)
 
+Search APIs
+-----------
+http://www.roblox.com/games/list-json?sortFilter=1&MaxRows=5
+
+Place APIs
+----------
+####Get game passes for a place
+* http://www.roblox.com/PlaceItem/GetGamePassesPaged?placeId=21916786&startIndex=1&maxRows=3
+
 Set APIs
 --------
 #### Get assets in a set
