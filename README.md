@@ -82,6 +82,9 @@ Thumbnail APIs
 * http://www.roblox.com/Thumbs/RawAsset.ashx?assetId=1818&imageFormat=png&width=60&height=62
   * Returns either `PENDING` or the URL. Also accepts `assetVersionId`
 
+* http://www.roblox.com/Thumbs/Asset.ashx?Width=110&Height=110&UserAssetID=86043285
+  * Redirects to the URL. Also accepts `assetId`
+
 * http://www.roblox.com/Thumbs/Pixelated.ashx?id=1818&x=250&y=250&format=png&tfid=114
   * Returns the image, but with the Content-Type: text/html so it won't render in browser
 * http://www.roblox.com/Game/Tools/ThumbnailAsset.ashx?aid=1818&fmt=png&wd=420&ht=420
