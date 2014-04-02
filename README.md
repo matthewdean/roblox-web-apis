@@ -94,6 +94,9 @@ Thumbnail APIs
 * http://www.roblox.com/Thumbs/Asset.ashx?Width=110&Height=110&UserAssetID=86043285
   * Redirects to the URL. Also accepts `assetId`
 
+* http://www.roblox.com/Thumbs/Asset.asmx/RequestThumbnail_v2?assetId=1818&assetVersionId=0&width=null&height=null&imageFormat=%22Png%22&thumbnailFormatId=296&overrideModeration=false
+  * Returns `{"d":{"final":true,"url":"http://t2.rbxcdn.com/e55dc80c4015e7dd5f4373dc85d50195"}}`
+
 * http://www.roblox.com/Thumbs/Pixelated.ashx?id=1818&x=250&y=250&format=png&tfid=114
   * Returns the image, but with the Content-Type: text/html so it won't render in browser
 * http://www.roblox.com/Game/Tools/ThumbnailAsset.ashx?aid=1818&fmt=png&wd=420&ht=420
@@ -165,7 +168,6 @@ Thumbnail APIs
     bcOverlayUrl: "http://images.rbxcdn.com/57ede1145c87db28cf51e2355909ee49.png" // null if NBC
   }]
   ```
-
 
 ####Builders Club Overlay
 * http://www.roblox.com/Thumbs/BCOverlay.ashx?username=Shedletsky
