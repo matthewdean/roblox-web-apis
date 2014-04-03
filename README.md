@@ -186,28 +186,28 @@ Thumbnail APIs
 Group APIs
 ----
 
-####Check if a player is in a group
+####Check if a user is in a group
  * http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=IsInGroup&playerid=261&groupid=57
 
     ```xml
     <Value Type="boolean">false</Value>
     ```
 
-####Get a player's rank number
+####Get a user's rank number
  * http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRank&playerid=261&groupid=57
 
     ```xml
     <Value Type="integer">0</Value>
     ```
 
-####Get a player's rank name
+####Get a user's rank name
  * http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRole&playerid=261&groupid=57
 
     ```xml
     Guest
     ```
 
-####Get a group's rolesets
+####Get a group's ranks
 * http://www.roblox.com/api/groups/1/RoleSets/
 
   ```json
@@ -315,6 +315,9 @@ HTTP/1.1 302 Found
 Location: /User.aspx?ID=261
 ```
 
+#### Get a list of places created by a user
+* http://www.roblox.com/Contests/Handlers/Showcases.ashx?userId=261
+
 ####Get a user's body part colors
  * http://www.roblox.com/Asset/BodyColors.ashx?userId=261
 
@@ -363,6 +366,9 @@ Location: /User.aspx?ID=261
 
 Asset APIs
 ----------
+
+#### Get parts of a package
+ * http://www.roblox.com/Game/GetAssetIdsForPackageId?packageId=27133145
 
 ####Check if a user owns an asset
  * http://api.roblox.com/Ownership/HasAsset?userId=261&assetId=1818
