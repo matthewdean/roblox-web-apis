@@ -407,7 +407,10 @@ Asset APIs
         "ContentRatingTypeId": 0
     }
     ```
-    
+
+#### Get an asset's latest VersionId
+* http://www.roblox.com/studio/plugins/info?assetId=1818
+
 #####Download various versions of an asset
 * http://www.roblox.com/Asset/?id=1818
 * http://www.roblox.com/Asset/?id=1818&version=1
