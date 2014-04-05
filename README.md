@@ -102,6 +102,20 @@ Thumbnail APIs
 * http://www.roblox.com/Game/Tools/ThumbnailAsset.ashx?aid=1818&fmt=png&wd=420&ht=420
   * Redirects to the URL
 
+* http://www.roblox.com/Thumbs/PlaceImage.ashx?params=[{placeId:1818}]
+  ```javascript
+  [{
+    id: 1818,
+    name: "Crossroads",
+    url: "/Crossroads-place?id=1818",
+    thumbnailFinal: true,
+    thumbnailUrl: "http://t6.rbxcdn.com/5ae19af22b91ff36949a296d20b67aea",
+    bcOverlayUrl: null,
+    megaOverlayUrl: null,
+    personalServerOverlayUrl: null
+  }]
+  ```
+
 * http://www.roblox.com/Thumbs/ItemImage.ashx?params=[{assetId:1818}]
   ```javascript
   [{
