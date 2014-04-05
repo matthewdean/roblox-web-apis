@@ -200,6 +200,9 @@ Thumbnail APIs
 Group APIs
 ----
 
+#### Get a thumbnail for a group
+ * http://www.roblox.com/Thumbs/GroupImage.ashx?params=[{groupId:1}]
+
 ####Check if a user is in a group
  * http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=IsInGroup&playerid=261&groupid=57
 
