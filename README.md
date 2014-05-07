@@ -100,6 +100,7 @@ Thumbnail APIs
 * http://www.roblox.com/Thumbs/Pixelated.ashx?id=1818&x=250&y=250&format=png&tfid=114
   * Returns the image, but with the Content-Type: text/html so it won't render in browser
 * http://www.roblox.com/Game/Tools/ThumbnailAsset.ashx?aid=1818&fmt=png&wd=420&ht=420
+* http://www.roblox.com/Game/Tools/ThumbnailAsset.ashx?assetVersionId=1&fmt=png&wd=420&ht=420
   * Redirects to the URL
 
 * http://www.roblox.com/Thumbs/PlaceImage.ashx?params=[{placeId:1818}]
