@@ -282,6 +282,7 @@ www.roblox.com
   /Asset/
 		/Default.ashx?id=125750544&serverplaceid=26838733&hash=&versionId=&assetVersionId=
 		/GetScriptState.ashx?ScriptHash=&AccurateResults=false
+    AvatarAccoutrements.ashx?userId=
     CharacterFetch.ashx
   /Asset-Thumbnail/
     /json/
