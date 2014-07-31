@@ -201,6 +201,9 @@ Thumbnail APIs
 Group APIs
 ----
 
+#### Get a group's emblem asset id
+ * http://api.roblox.com/clans/get-by-user?userId=261
+
 #### Get a thumbnail for a group
  * http://www.roblox.com/Thumbs/GroupImage.ashx?params=[{groupId:1}]
 
