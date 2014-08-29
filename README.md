@@ -550,6 +550,7 @@ There's another parameter, serverPlaceId, which will deny the request if the own
  * [/Game/KeepAlivePinger.ashx](http://www.roblox.com/Game/KeepAlivePinger.ashx)
  * [/Game/Logout.aspx](http://www.roblox.com/Game/Logout.aspx)
  * [/Game/PlaceLauncher.ashx?request=RequestGame&placeId=1818](http://www.roblox.com/Game/PlaceLauncher.ashx?request=RequestGame&placeId=1818)
+ * http://www.roblox.com/Game/GetUserBuildToolSet.ashx?assetId=1818&userId=261&isSolo=true
  * [/Game/Tools/InsertAsset.ashx?nsets=10&type=base](http://www.roblox.com/Game/Tools/InsertAsset.ashx?nsets=10&type=base)
  * [/Game/Tools/InsertAsset.ashx?type=user&userId=261&nsets=20](http://www.roblox.com/Game/Tools/InsertAsset.ashx?nsets=20&type=user&userid=1)
  * [/Install/Service.asmx](http://www.roblox.com/Install/Service.asmx)
