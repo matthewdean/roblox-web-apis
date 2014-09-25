@@ -11,6 +11,7 @@ ROBLOX Web APIs
 Search APIs
 -----------
 http://www.roblox.com/games/list-json?sortFilter=1&MaxRows=5
+http://www.roblox.com/catalog/json?Category=9&Keyword=pendulum%20fasten
 
 Place APIs
 ----------
