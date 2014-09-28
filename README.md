@@ -332,12 +332,14 @@ User APIs
   ```
 
 #### Get ID from username
-```
-$ curl -i http://www.roblox.com/user.aspx?username=Shedletsky
+* http://api.roblox.com/users/get-by-username?username=ROBLOX
 
-HTTP/1.1 302 Found
-Location: /User.aspx?ID=261
-```
+  ```json
+  {
+      "Id": 1,
+      "Username": "ROBLOX"
+  }
+  ```
 
 #### Get a list of places created by a user
 * http://www.roblox.com/Contests/Handlers/Showcases.ashx?userId=261
