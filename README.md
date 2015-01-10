@@ -94,8 +94,8 @@ Thumbnail APIs
 * http://www.roblox.com/Thumbs/RawAsset.ashx?assetId=1818&imageFormat=png&width=60&height=62
   * Returns either `PENDING` or the URL. Also accepts `assetVersionId`
 
-* http://www.roblox.com/Thumbs/Asset.ashx?Width=110&Height=110&UserAssetID=86043285
-  * Redirects to the URL. Also accepts `assetId`
+* http://www.roblox.com/Thumbs/Asset.ashx?width=110&height=110&assetId=1818
+  * Redirects to the URL. Also accepts `userAssetId`
 
 * http://www.roblox.com/Thumbs/Asset.asmx/RequestThumbnail_v2?assetId=1818&assetVersionId=0&width=null&height=null&imageFormat=%22Png%22&thumbnailFormatId=296&overrideModeration=false
   * Returns `{"d":{"final":true,"url":"http://t2.rbxcdn.com/e55dc80c4015e7dd5f4373dc85d50195"}}`
