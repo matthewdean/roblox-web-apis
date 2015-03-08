@@ -20,6 +20,10 @@ Place APIs
 ####Get game passes for a place
 * http://www.roblox.com/PlaceItem/GetGamePassesPaged?placeId=21916786&startIndex=1&maxRows=3
 
+####Get a place's game instances
+startIndex must be a multiple of 10
+* http://www.roblox.com/games/getgameinstancesjson?placeId=1818&startindex=0
+
 Set APIs
 --------
 #### Get assets in a set
