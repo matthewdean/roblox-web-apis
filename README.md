@@ -346,7 +346,7 @@ User APIs
   ```
 
 #### Get a list of places created by a user
-* http://www.roblox.com/users/profile/playergames-json?userId=?userId=261
+* http://www.roblox.com/users/profile/playergames-json?userId=261
 
     ```json
     {
