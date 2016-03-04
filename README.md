@@ -13,7 +13,7 @@ Search APIs
 http://www.roblox.com/games/list-json?sortFilter=1&MaxRows=5
 
 ####Search for an audio asset with the search term "pendulum fasten"
-http://www.roblox.com/catalog/json?Category=9&Keyword=pendulum%20fasten
+http://search.roblox.com/catalog/json?Category=9&Keyword=pendulum%20fasten
 
 Place APIs
 ----------
@@ -27,7 +27,7 @@ startIndex must be a multiple of 10
 Set APIs
 --------
 #### Get assets in a set
-* http://www.roblox.com/Game/Tools/InsertAsset.ashx?sid=2
+* http://assetgame.roblox.com/Game/Tools/InsertAsset.ashx?sid=2
 
   ```xml
   <List>
@@ -98,16 +98,16 @@ Thumbnail APIs
 * http://www.roblox.com/Thumbs/RawAsset.ashx?assetId=1818&imageFormat=png&width=60&height=62
   * Returns either `PENDING` or the URL. Also accepts `assetVersionId`
 
-* http://www.roblox.com/Thumbs/Asset.ashx?width=110&height=110&assetId=1818
+* http://assetgame.roblox.com/Thumbs/Asset.ashx?width=110&height=110&assetId=1818
   * Redirects to the URL. Also accepts `userAssetId`
 
-* http://www.roblox.com/Thumbs/Asset.asmx/RequestThumbnail_v2?assetId=1818&assetVersionId=0&width=null&height=null&imageFormat=%22Png%22&thumbnailFormatId=296&overrideModeration=false
+* http://assetgame.roblox.com/Thumbs/Asset.asmx/RequestThumbnail_v2?assetId=1818&assetVersionId=0&width=null&height=null&imageFormat=%22Png%22&thumbnailFormatId=296&overrideModeration=false
   * Returns `{"d":{"final":true,"url":"http://t2.rbxcdn.com/e55dc80c4015e7dd5f4373dc85d50195"}}`
 
 * http://www.roblox.com/Thumbs/Pixelated.ashx?id=1818&x=250&y=250&format=png&tfid=114
   * Returns the image, but with the Content-Type: text/html so it won't render in browser
-* http://www.roblox.com/Game/Tools/ThumbnailAsset.ashx?aid=1818&fmt=png&wd=420&ht=420
-* http://www.roblox.com/Game/Tools/ThumbnailAsset.ashx?assetVersionId=1&fmt=png&wd=420&ht=420
+* http://assetgame.roblox.com/Game/Tools/ThumbnailAsset.ashx?aid=1818&fmt=png&wd=420&ht=420
+* http://assetgame.roblox.com/Game/Tools/ThumbnailAsset.ashx?assetVersionId=1&fmt=png&wd=420&ht=420
   * Redirects to the URL
 
 * http://www.roblox.com/Thumbs/PlaceImage.ashx?params=[{placeId:1818}]
@@ -153,7 +153,7 @@ Thumbnail APIs
   });
   ```
 
-* http://www.roblox.com/Asset-Thumbnail/Json?assetId=1818&width=160&height=100&format=jpeg
+* http://assetgame.roblox.com/Asset-Thumbnail/Json?assetId=1818&width=160&height=100&format=jpeg
   ```json
   {
     "Url": "http://t2.rbxcdn.com/622729f930283b57f6172be41b8fe2fa",
@@ -175,7 +175,7 @@ Thumbnail APIs
 * http://www.roblox.com/Outfits/Fetch?displayedUserId=261&pageNum=1
 
 ####Avatar Thumbnails
-* http://www.roblox.com/Thumbs/Avatar.ashx?username=Shedletsky
+* http://assetgame.roblox.com/Thumbs/Avatar.ashx?username=Shedletsky
   * Redirects to the URL. Also accepts `userId`, and all other parameters can be omitted. If `userId` and `username` are both omitted, will return a ?
 
 * http://www.roblox.com/Thumbs/AvatarImage.ashx?params=[{userId:261}]
@@ -215,21 +215,21 @@ Group APIs
  * http://www.roblox.com/Thumbs/GroupImage.ashx?params=[{groupId:1}]
 
 ####Check if a user is in a group
- * http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=IsInGroup&playerid=261&groupid=57
+ * http://assetgame.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=IsInGroup&playerid=261&groupid=57
 
     ```xml
     <Value Type="boolean">false</Value>
     ```
 
 ####Get a user's rank number
- * http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRank&playerid=261&groupid=57
+ * http://assetgame.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRank&playerid=261&groupid=57
 
     ```xml
     <Value Type="integer">0</Value>
     ```
 
 ####Get a user's rank name
- * http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRole&playerid=261&groupid=57
+ * http://assetgame.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRole&playerid=261&groupid=57
 
     ```xml
     Guest
@@ -279,14 +279,14 @@ Group APIs
 Friend APIs
 ----
 ####Check if two users are friends
- * http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=IsFriendsWith&playerId=261&userId=156
+ * http://assetgame.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=IsFriendsWith&playerId=261&userId=156
 
     ```xml
     <Value Type="boolean">true</Value>
     ```
 
 ####Check if a user is best friends with another user
- * http://www.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=IsBestFriendsWith&playerId=261&userId=156
+ * http://assetgame.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=IsBestFriendsWith&playerId=261&userId=156
 
     ```xml
     <Value Type="boolean">false</Value>
@@ -383,7 +383,7 @@ User APIs
     ```
 
 ####Get a user's body part colors
- * http://www.roblox.com/Asset/BodyColors.ashx?userId=261
+ * http://assetgame.roblox.com/Asset/BodyColors.ashx?userId=261
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -406,17 +406,17 @@ User APIs
     ```
 
 ####Get asset IDs worn by a user
- * http://www.roblox.com/Asset/AvatarAccoutrements.ashx?userId=261
+ * http://assetgame.roblox.com/Asset/AvatarAccoutrements.ashx?userId=261
 
    ```
-   http://www.roblox.com/Asset/BodyColors.ashx?userId=261;http://www.roblox.com/Asset/?id=42070576;http://www.roblox.com/Asset/?id=1078076;http://www.roblox.com/Asset/?id=1882759
+   http://assetgame.roblox.com/Asset/BodyColors.ashx?userId=261;http://assetgame.roblox.com/Asset/?id=42070576;http://assetgame.roblox.com/Asset/?id=1078076;http://assetgame.roblox.com/Asset/?id=1882759
    ```
 
 ####Get asset version IDs worn by a user
- * http://www.roblox.com/Asset/CharacterFetch.ashx?userId=261&placeId=1818
+ * http://assetgame.roblox.com/Asset/CharacterFetch.ashx?userId=261&placeId=1818
 
     ```
-    http://www.roblox.com/Asset/BodyColors.ashx?userId=261;http://www.roblox.com/Asset/?versionid=25379590;http://www.roblox.com/Asset/?versionid=77449723;http://www.roblox.com/Asset/?versionid=100748238;http://www.roblox.com/Asset/?versionid=197094072
+    http://assetgame.roblox.com/Asset/BodyColors.ashx?userId=261;http://assetgame.roblox.com/Asset/?versionid=25379590;http://assetgame.roblox.com/Asset/?versionid=77449723;http://assetgame.roblox.com/Asset/?versionid=100748238;http://assetgame.roblox.com/Asset/?versionid=197094072
     ```
 
 ####Check if a username has been taken
@@ -432,7 +432,7 @@ Asset APIs
 ----------
 
 #### Get parts of a package
- * http://www.roblox.com/Game/GetAssetIdsForPackageId?packageId=27133145
+ * http://assetgame.roblox.com/Game/GetAssetIdsForPackageId?packageId=27133145
 
 ####Check if a user owns an asset
  * http://api.roblox.com/Ownership/HasAsset?userId=261&assetId=1818
@@ -476,15 +476,15 @@ Asset APIs
 * http://www.roblox.com/studio/plugins/info?assetId=1818
 
 #####Download various versions of an asset
-* http://www.roblox.com/Asset/?id=1818
-* http://www.roblox.com/Asset/?id=1818&version=1
-* http://www.roblox.com/Asset/?versionId=1
-* http://www.roblox.com/Asset/?hash=b3c6b23ff18f48557b823ef5b72a0508
+* http://assetgame.roblox.com/Asset/?id=1818
+* http://assetgame.roblox.com/Asset/?id=1818&version=1
+* http://assetgame.roblox.com/Asset/?versionId=1
+* http://assetgame.roblox.com/Asset/?hash=b3c6b23ff18f48557b823ef5b72a0508
 
 #####Upload an asset
 ```http
 POST /Data/Upload.ashx?assetid=1818 HTTP/1.1
-Host: www.roblox.com
+Host: data.roblox.com
 Cookie: .ROBLOSECURITY=*
 Content-Type: application/xml; charset=utf-8
 Content-Length: 17
@@ -518,14 +518,14 @@ Location: /ArrowCursor-png-item?id=1000000
 ```
 
 #### Get the creator of an assetId, or see how many assetVersions it has
-* http://www.roblox.com/Game/LoadPlaceInfo.ashx?placeId=150381051
+* http://assetgame.roblox.com/Game/LoadPlaceInfo.ashx?placeId=150381051
 
 ####Game Server APIs
- * [/Game/ChatFilter.ashx](http://www.roblox.com/Game/ChatFilter.ashx)
+ * [/Game/ChatFilter.ashx](http://assetgame.roblox.com/Game/ChatFilter.ashx)
 
 ####Current User APIs
- * [/Game/GetAuthTicket](http://www.roblox.com/Game/GetAuthTicket)
- * [/Game/GetCurrentUser.ashx](http://www.roblox.com/Game/GetCurrentUser.ashx)
+ * [/Game/GetAuthTicket](http://assetgame.roblox.com/Game/GetAuthTicket)
+ * [/Game/GetCurrentUser.ashx](http://assetgame.roblox.com/Game/GetCurrentUser.ashx)
  * [/MobileAPI/UserInfo](http://www.roblox.com/mobileapi/userinfo)
 
 Login APIs
@@ -588,14 +588,14 @@ There's another parameter, serverPlaceId, which will deny the request if the own
 
 ####Main Site
 * [www.roblox.com](http://www.roblox.com)
- * [/Asset/GetScriptState.ashx?scriptHash=%s&accurateResults=true](http://www.roblox.com/Asset/GetScriptState.ashx?ScriptHash=53356c47685f350134c7e30efb66bf0&AccurateResults=true)
- * [/Game/BuildActionPermissionCheck.ashx?assetId=1818&userId=261&isSolo=true](http://www.roblox.com/Game/BuildActionPermissionCheck.ashx?assetId=1818&userId=261&isSolo=true)
- * [/Game/KeepAlivePinger.ashx](http://www.roblox.com/Game/KeepAlivePinger.ashx)
- * [/Game/Logout.aspx](http://www.roblox.com/Game/Logout.aspx)
- * [/Game/PlaceLauncher.ashx?request=RequestGame&placeId=1818](http://www.roblox.com/Game/PlaceLauncher.ashx?request=RequestGame&placeId=1818)
- * http://www.roblox.com/Game/GetUserBuildToolSet.ashx?assetId=1818&userId=261&isSolo=true
- * [/Game/Tools/InsertAsset.ashx?nsets=10&type=base](http://www.roblox.com/Game/Tools/InsertAsset.ashx?nsets=10&type=base)
- * [/Game/Tools/InsertAsset.ashx?type=user&userId=261&nsets=20](http://www.roblox.com/Game/Tools/InsertAsset.ashx?nsets=20&type=user&userid=1)
+ * [/Asset/GetScriptState.ashx?scriptHash=%s&accurateResults=true](http://assetgame.roblox.com/Asset/GetScriptState.ashx?ScriptHash=53356c47685f350134c7e30efb66bf0&AccurateResults=true)
+ * [/Game/BuildActionPermissionCheck.ashx?assetId=1818&userId=261&isSolo=true](http://assetgame.roblox.com/Game/BuildActionPermissionCheck.ashx?assetId=1818&userId=261&isSolo=true)
+ * [/Game/KeepAlivePinger.ashx](http://assetgame.roblox.com/Game/KeepAlivePinger.ashx)
+ * [/Game/Logout.aspx](http://assetgame.roblox.com/Game/Logout.aspx)
+ * [/Game/PlaceLauncher.ashx?request=RequestGame&placeId=1818](http://assetgame.roblox.com/Game/PlaceLauncher.ashx?request=RequestGame&placeId=1818)
+ * http://assetgame.roblox.com/Game/GetUserBuildToolSet.ashx?assetId=1818&userId=261&isSolo=true
+ * [/Game/Tools/InsertAsset.ashx?nsets=10&type=base](http://assetgame.roblox.com/Game/Tools/InsertAsset.ashx?nsets=10&type=base)
+ * [/Game/Tools/InsertAsset.ashx?type=user&userId=261&nsets=20](http://assetgame.roblox.com/Game/Tools/InsertAsset.ashx?nsets=20&type=user&userid=1)
  * [/Install/Service.asmx](http://www.roblox.com/Install/Service.asmx)
  * [/Login/Negotiate.ashx?suggest=%s](http://www.roblox.com/Login/Negotiate.ashx?suggest=)
  * [/MobileAPI/Check-App-Version?appVersion=AppiOSV2.112.35972](http://www.roblox.com/mobileapi/check-app-version?appVersion=AppiOSV2.112.35972)
@@ -638,7 +638,7 @@ username=Shedletsky&password=hunter2
  * [/Setting/QuietGet/WindowsBootstrapperSettings](http://clientsettings.api.roblox.com/Setting/QuietGet/WindowsBootstrapperSettings?apiKey=76E5A40C-3AE1-4028-9F10-7C62520BD94F)
  * [/Setting/QuietGet/WindowsStudioBootstrapperSettings](http://clientsettings.api.roblox.com/Setting/QuietGet/WindowsStudioBootstrapperSettings?apiKey=76E5A40C-3AE1-4028-9F10-7C62520BD94F)
 * [logging.service.roblox.com](http://logging.service.roblox.com) - for StatsService
-* [/Game/ClientVersion.ashx](http://www.roblox.com/Game/ClientVersion.ashx)
+* [/Game/ClientVersion.ashx](http://assetgame.roblox.com/Game/ClientVersion.ashx)
 
 ```http
 
