@@ -346,7 +346,41 @@ User APIs
   ```
 
 #### Get a list of places created by a user
-* http://www.roblox.com/Contests/Handlers/Showcases.ashx?userId=261
+* http://www.roblox.com/users/profile/playergames-json?userId=?userId=261
+
+    ```json
+    {
+        "Title": "Games",
+        "Games": [{
+            "CreatorID": 0,
+            "CreatorName": "Shedletsky",
+            "CreatorAbsoluteUrl": "https://www.roblox.com/users/261/profile",
+            "Plays": 65437,
+            "Price": 0,
+            "ProductID": 0,
+            "IsOwned": false,
+            "IsVotingEnabled": true,
+            "TotalUpVotes": 79,
+            "TotalDownVotes": 34,
+            "TotalBought": 0,
+            "UniverseID": 150387,
+            "HasErrorOcurred": false,
+            "Favorites": 1728,
+            "Description": "In a dystopian future, Robloxia is overrun by killbots.",
+            "GameDetailReferralUrl": "http://www.roblox.com/games/48891/Timmy-and-the-Killbots",
+            "Thumbnail": {
+                "Final": true,
+                "Url": "http://t7.rbxcdn.com/db35c88f3bfe3e45898cf9a65b370dd9",
+                "RetryUrl": null
+            },
+            "UseDataSrc": false,
+            "Name": "Timmy and the Killbots",
+            "PlaceID": 48891,
+            "PlayerCount": 0,
+            "ImageId": 0
+        }]
+    }
+    ```
 
 ####Get a user's body part colors
  * http://www.roblox.com/Asset/BodyColors.ashx?userId=261
