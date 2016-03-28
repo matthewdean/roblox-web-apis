@@ -208,6 +208,9 @@ Thumbnail APIs
 Group APIs
 ----
 
+#### Get a group's games
+ * http://www.roblox.com/groups/2/games/1
+
 #### Get a group's emblem asset id
  * http://api.roblox.com/clans/get-by-user?userId=261
 
