@@ -502,9 +502,9 @@ Returns an assetVersionId
 POST https://www.roblox.com/NewLogin HTTP/1.1
 Host: www.roblox.com
 Content-Length: 29
-Content-Type: application/json
+Content-Type: application/x-www-form-urlencoded
 
-{"username":"Shedletsky","password":"hunter2"}
+username=Shedletsky&password=DaMrNelson
 ```
 
 * User-Agent: ROBLOX iOS
