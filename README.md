@@ -98,6 +98,9 @@ Thumbnail APIs
 * http://www.roblox.com/Thumbs/RawAsset.ashx?assetId=1818&imageFormat=png&width=60&height=62
   * Returns either `PENDING` or the URL. Also accepts `assetVersionId`
 
+* http://www.roblox.com/headshot-thumbnail/json?userId=1&width=180&height=180
+  * Returns `{"Url":"http://t4.rbxcdn.com/61b0fbd421e702bcd04781ce867abef1","Final":true}`
+
 * http://assetgame.roblox.com/Thumbs/Asset.ashx?width=110&height=110&assetId=1818
   * Redirects to the URL. Also accepts `userAssetId`
 
