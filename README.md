@@ -500,7 +500,7 @@ Asset APIs
 				"SerialNumberTotal":"5000",
 				"AveragePrice":"312",
 				"OriginalPrice":"75",
-				"UserAssetID":"6574465985",
+				"UserAssetID":"646564564",
 				"MembershipLevel":null
 			}]
 		}
