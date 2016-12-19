@@ -483,9 +483,7 @@ Asset APIs
 
 #### Get serial number of a collectible asset
 * https://www.roblox.com/Trade/InventoryHandler.ashx?userId=%d&assetTypeId=%d&ItemsPerPage=25&page=%d"
-   ** userId
-   ** assetTypeId
-   ** page
+   
    ```json
    {"sl_translate":"message",
     "success":true,
