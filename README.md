@@ -481,6 +481,32 @@ Asset APIs
 #### Get an asset's latest VersionId
 * http://www.roblox.com/studio/plugins/info?assetId=1818
 
+#### Get serial number of a collectible asset
+* https://www.roblox.com/Trade/InventoryHandler.ashx?userId=%d&assetTypeId=%d&ItemsPerPage=25&page=%d"
+   
+    ```json
+	{
+		"sl_translate":"message",
+		"success":true,
+		"msg":"Inventory retreived!",
+		"data":{
+			"agentID":90115385,
+			"totalNumber":3,
+			"InventoryItems":[{
+				"Name":"Noob Attack: Artemis Annhilation",
+				"ImageLink":"https://t2.rbxcdn.com/b8807e8da2b996cff306a3da3c5b2f7c",
+				"ItemLink":"https://www.roblox.com/Noob-Attack-Artemis-Annhilation-item?id=553718984",
+				"SerialNumber":"1742",
+				"SerialNumberTotal":"5000",
+				"AveragePrice":"312",
+				"OriginalPrice":"75",
+				"UserAssetID":"646564564",
+				"MembershipLevel":null
+			}]
+		}
+	}
+   ```
+
 #####Download various versions of an asset
 * http://assetgame.roblox.com/Asset/?id=1818
 * http://assetgame.roblox.com/Asset/?id=1818&version=1
