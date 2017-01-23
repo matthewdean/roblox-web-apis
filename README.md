@@ -22,9 +22,6 @@ https://search.roblox.com/catalog/json?Category=9&Keyword=pendulum%20fasten
 
 Place APIs
 ----------
-####Get game passes for a place
-* https://www.roblox.com/PlaceItem/GetGamePassesPaged?placeId=21916786&startIndex=1&maxRows=3
-
 ####Get a place's game instances
 startIndex must be a multiple of 10
 * https://www.roblox.com/games/getgameinstancesjson?placeId=1818&startindex=0
