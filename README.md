@@ -20,11 +20,6 @@ http://www.roblox.com/games/list-json?sortFilter=1&MaxRows=5
 ####Search for an audio asset with the search term "pendulum fasten"
 https://search.roblox.com/catalog/json?Category=9&Keyword=pendulum%20fasten
 
-Place APIs
-----------
-####Get a place's game instances
-startIndex must be a multiple of 10
-* https://www.roblox.com/games/getgameinstancesjson?placeId=1818&startindex=0
 
 Set APIs
 --------
