@@ -1,4 +1,4 @@
-ROBLOX Web APIs
+Roblox Web APIs
 ===============
 * [Avatar APIs](#avatar-apis)
 * [Thumbnail APIs](#thumbnail-apis)
@@ -17,12 +17,12 @@ Search APIs
 -----------
 http://www.roblox.com/games/list-json?sortFilter=1&MaxRows=5
 
-####Search for an audio asset with the search term "pendulum fasten"
+#### Search for an audio asset with the search term "pendulum fasten"
 https://search.roblox.com/catalog/json?Category=9&Keyword=pendulum%20fasten
 
 Place APIs
 ----------
-####Get a place's game instances
+#### Get a place's game instances
 startIndex must be a multiple of 10
 * https://www.roblox.com/games/getgameinstancesjson?placeId=1818&startindex=0
 
@@ -89,7 +89,7 @@ Set APIs
 Thumbnail APIs
 --------------
 
-####Asset Thumbnails
+#### Asset Thumbnails
 * https://www.roblox.com/Thumbs/RawAsset.ashx?assetId=1818&imageFormat=png&width=60&height=62
   * Returns either `PENDING` or the URL. Also accepts `assetVersionId`
 
@@ -159,7 +159,7 @@ Thumbnail APIs
   }
   ```
 
-####Outfit Thumbnails
+#### Outfit Thumbnails
 
 * https://www.roblox.com/outfit-thumbnail/json?userOutfitId=2&width=352&height=352&format=png
 
@@ -172,7 +172,7 @@ Thumbnail APIs
   
 * http://www.roblox.com/Outfits/Fetch?displayedUserId=261&pageNum=1
 
-####Avatar Thumbnails
+#### Avatar Thumbnails
 * https://assetgame.roblox.com/Thumbs/Avatar.ashx?username=Shedletsky
   * Redirects to the URL. Also accepts `userId`, and all other parameters can be omitted. If `userId` and `username` are both omitted, will return a ?
 
@@ -190,10 +190,10 @@ Thumbnail APIs
   }]
   ```
 
-####Builders Club Overlay
+#### Builders Club Overlay
 * https://www.roblox.com/Thumbs/BCOverlay.ashx?username=Shedletsky
 
-####Valid Thumbnail Sizes
+#### Valid Thumbnail Sizes
 |                                 | 48x48 | 60x62 | 75x75 | 100x100 | 110x110 | 160x100 | 250x250 | 352x352 | 420x230 | 420x420 |
 | ------------------------------- | :---: | :---: | :---: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: |
 | /Game/Tools/ThumbnailAsset.ashx |       |       | x     |         | x       |         | x       |         |         | x       |
@@ -223,21 +223,21 @@ Group APIs
     <Value Type="boolean">false</Value>
     ```
 
-####Get a user's rank number
+#### Get a user's rank number
  * https://assetgame.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRank&playerid=261&groupid=57
 
     ```xml
     <Value Type="integer">0</Value>
     ```
 
-####Get a user's rank name
+#### Get a user's rank name
  * https://assetgame.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRole&playerid=261&groupid=57
 
     ```xml
     Guest
     ```
 
-####Get a group's ranks
+#### Get a group's ranks
 * https://api.roblox.com/groups/1
   ```json
   {
@@ -294,7 +294,7 @@ Group APIs
   }]
   ```
 
-####Get a user's primary group
+#### Get a user's primary group
  * https://www.roblox.com/Groups/GetPrimaryGroupInfo.ashx?users=Shedletsky,builderman
 
     ```json
@@ -310,21 +310,14 @@ Group APIs
 
 Friend APIs
 ----
-####Check if two users are friends
+#### Check if two users are friends
  * https://assetgame.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=IsFriendsWith&playerId=261&userId=156
 
     ```xml
     <Value Type="boolean">true</Value>
     ```
 
-####Check if a user is best friends with another user
- * https://assetgame.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=IsBestFriendsWith&playerId=261&userId=156
-
-    ```xml
-    <Value Type="boolean">false</Value>
-    ```
-
-####Get information about a developer product
+#### Get information about a developer product
  * https://api.roblox.com/Marketplace/ProductDetails?productId=18026036
 
     ```json
@@ -414,7 +407,7 @@ User APIs
     }
     ```
 
-####Check if a username has been taken
+#### Check if a username has been taken
  * http://www.roblox.com/UserCheck/DoesUsernameExist?username=Shedletsky
     
     ```json
@@ -427,7 +420,7 @@ Asset APIs
 ----------
 
 #### Get parts of a package
- * http://assetgame.roblox.com/Game/GetAssetIdsForPackageId?packageId=27133145
+ * https://inventory.roblox.com/v1/packages/27133145/assets
 
 ####Check if a user owns an asset
  * http://api.roblox.com/Ownership/HasAsset?userId=261&assetId=1818
@@ -496,13 +489,13 @@ Asset APIs
 	}
    ```
 
-#####Download various versions of an asset
+##### Download various versions of an asset
 * https://assetgame.roblox.com/Asset/?id=1818
 * https://assetgame.roblox.com/Asset/?id=1818&version=1
 * https://assetgame.roblox.com/Asset/?versionId=1
 * https://assetgame.roblox.com/Asset/?hash=b3c6b23ff18f48557b823ef5b72a0508
 
-#####Upload an asset
+##### Upload an asset
 ```http
 POST /Data/Upload.ashx?assetid=1818 HTTP/1.1
 Host: data.roblox.com
@@ -515,7 +508,7 @@ Content-Length: 17
 
 Returns an assetVersionId
 
-#####Log in
+##### Log in
 ```http
 POST https://www.roblox.com/NewLogin HTTP/1.1
 Host: www.roblox.com
@@ -568,15 +561,7 @@ Content-Type: application/json
 
 {"Status":"OK","UserInfo":{"UserID":261,"UserName":"Shedletsky","RobuxBalance":0,"TicketsBalance":0,"ThumbnailUrl":"http://t3.rbxcdn.com/1768c4f3c0d7c30d978c9dce68aa786c","IsAnyBuildersClubMember":false}}
  ```
-
- ```http
-POST https://m.roblox.com/Login HTTP/1.1
-Host: m.roblox.com
-Content-Length: 29
-Content-Type: application/json
-
-{"username":"","password":""}
- ```
+ 
  ```http
 POST https://www.roblox.com/MobileAPI/Login HTTP/1.1
 Host: www.roblox.com
@@ -609,7 +594,6 @@ There's another parameter, serverPlaceId, which will deny the request if the own
 
 ####Main Site
 * [www.roblox.com](http://www.roblox.com)
- * [/Asset/GetScriptState.ashx?scriptHash=%s&accurateResults=true](http://assetgame.roblox.com/Asset/GetScriptState.ashx?ScriptHash=53356c47685f350134c7e30efb66bf0&AccurateResults=true)
  * [/Game/BuildActionPermissionCheck.ashx?assetId=1818&userId=261&isSolo=true](http://assetgame.roblox.com/Game/BuildActionPermissionCheck.ashx?assetId=1818&userId=261&isSolo=true)
  * [/Game/KeepAlivePinger.ashx](http://assetgame.roblox.com/Game/KeepAlivePinger.ashx)
  * [/Game/Logout.aspx](http://assetgame.roblox.com/Game/Logout.aspx)
@@ -658,7 +642,6 @@ username=Shedletsky&password=hunter2
  * [/Setting/QuietGet/WindowsAppSettings](http://clientsettings.api.roblox.com/Setting/QuietGet/WindowsAppSettings?apiKey=D6925E56-BFB9-4908-AAA2-A5B1EC4B2D79)
  * [/Setting/QuietGet/WindowsBootstrapperSettings](http://clientsettings.api.roblox.com/Setting/QuietGet/WindowsBootstrapperSettings?apiKey=76E5A40C-3AE1-4028-9F10-7C62520BD94F)
  * [/Setting/QuietGet/WindowsStudioBootstrapperSettings](http://clientsettings.api.roblox.com/Setting/QuietGet/WindowsStudioBootstrapperSettings?apiKey=76E5A40C-3AE1-4028-9F10-7C62520BD94F)
-* [logging.service.roblox.com](http://logging.service.roblox.com) - for StatsService
 * [/Game/ClientVersion.ashx](http://assetgame.roblox.com/Game/ClientVersion.ashx)
 
 ```http
