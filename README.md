@@ -608,15 +608,6 @@ There's another parameter, serverPlaceId, which will deny the request if the own
  * [/UserCheck/CheckIfInvalidUsernameForSignup?username=Shedletsky](http://www.roblox.com/UserCheck/CheckIfInvalidUsernameForSignup?username=Shedletsky)
  * [/UserCheck/GetRecommendedUsername?usernameToTry=Shedletsky](http://www.roblox.com/UserCheck/GetRecommendedUsername?usernameToTry=Shedletsky)
 
-```http
-POST https://www.roblox.com/UserCheck/validatepasswordforsignup HTTP/1.1
-Host: www.roblox.com
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 36
-
-username=Shedletsky&password=hunter2
-```
-
 * [setup.roblox.com](http://setup.roblox.com)
   * [/Roblox.exe](http://setup.roblox.com/Roblox.exe)
   * [/RobloxStudioLauncher.exe](http://setup.roblox.com/RobloxStudioLauncher.exe)
