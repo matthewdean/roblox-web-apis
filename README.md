@@ -4,6 +4,7 @@ Roblox API Sites
 | -: | :- |
 | [abuse.roblox.com](https://abuse.roblox.com/docs) | None |
 | [accountsettings.roblox.com](https://accountsettings.roblox.com/docs) | All endpoints for account/user settings |
+| [ads.roblox.com](https://ads.roblox.com/docs) | Ads configuration endpoints |
 | [api.roblox.com](https://api.roblox.com/docs) | Miscellaneous endpoints |
 | [assetdelivery.roblox.com](https://assetdelivery.roblox.com/docs) | Serves asset content |
 | [auth.roblox.com](https://auth.roblox.com/docs) | All endpoints that tamper with authentication sessions |
@@ -12,9 +13,12 @@ Roblox API Sites
 | [billing.roblox.com](https://billing.roblox.com/docs) | Real money transactions and interaction |
 | [catalog.roblox.com](https://catalog.roblox.com/docs) | Catalog items browsing and searching. Content and user based catalog items recommendations |
 | [chat.roblox.com](https://chat.roblox.com/docs) | All chat and party related endpoints |
+| [clientsettings.roblox.com](https://clientsettings.roblox.com/docs) | Used by various Roblox clients to retrieve configuration information |
 | [develop.roblox.com](https://develop.roblox.com/docs) | Game development configuration endpoints |
 | [followings.roblox.com](https://followings.roblox.com/docs) | Establishes follow relationship between subscriber entities (users, groups, etc) and source entities (games, groups, assets, etc.) |
 | [friends.roblox.com](https://friends.roblox.com/docs) | Friends, followers, and contacts management |
+| [gameinternationalization.roblox.com](https://gameinternationalization.roblox.com/docs) | None |
+| [gamejoin.roblox.com](https://gamejoin.roblox.com/docs) | All endpoints around launching a game |
 | [games.roblox.com](https://games.roblox.com/docs) | All endpoints for game discovery, and details |
 | [gamepersistence.roblox.com](https://gamepersistence.roblox.com/docs) | Endpoints for the in-game datastore system for storing data for games |
 | [groups.roblox.com](https://groups.roblox.com/docs) | Groups and clans management |
@@ -26,14 +30,13 @@ Roblox API Sites
 | [publish.roblox.com](https://publish.roblox.com/docs) | All endpoints handling file uploads |
 | [textfilter.roblox.com](https://textfilter.roblox.com/docs) | High volume text filtering |
 | [thumbnails.roblox.com](https://thumbnails.roblox.com/docs) | Endpoints for requesting thumbnails |
+| [translations.roblox.com](https://translations.roblox.com/docs) | None |
 
 Deprecated APIs
 ===============
-* [Avatar APIs](#avatar-apis)
 * [Thumbnail APIs](#thumbnail-apis)
 * [Set APIs](#set-apis)
 * [Group APIs](#group-apis)
-* [Economy APIs](#economy-apis)
 * [Friend APIs](#friend-apis)
 * [User APIs](#user-apis)
 * [Asset APIs](#user-apis)
