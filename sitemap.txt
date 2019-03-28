@@ -2029,6 +2029,7 @@ clientsettings.api.roblox.com
   /Setting/QuietGet/WindowsAppSettings?apiKey=D6925E56-BFB9-4908-AAA2-A5B1EC4B2D79
   /Setting/QuietGet/WindowsBootstrapperSettings?apiKey=76E5A40C-3AE1-4028-9F10-7C62520BD94F
   /Setting/QuietGet/WindowsStudioBootstrapperSettings?apiKey=76E5A40C-3AE1-4028-9F10-7C62520BD94F
+  /Setting/QuietGet/RccThumbnailers?apiKey=D6925E56-BFB9-4908-AAA2-A5B1EC4B2D79&sessionID=0
 
 logging.service.roblox.com
 	/GameScript
