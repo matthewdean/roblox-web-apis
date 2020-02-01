@@ -2,7 +2,6 @@ Roblox API Sites
 ================
 | Site | Description |
 | -: | :- |
-| [abuse.roblox.com](https://abuse.roblox.com/docs) | None |
 | [accountsettings.roblox.com](https://accountsettings.roblox.com/docs) | All endpoints for account/user settings |
 | [ads.roblox.com](https://ads.roblox.com/docs) | Ads configuration endpoints |
 | [api.roblox.com](https://api.roblox.com/docs) | Miscellaneous endpoints |
@@ -17,7 +16,7 @@ Roblox API Sites
 | [develop.roblox.com](https://develop.roblox.com/docs) | Game development configuration endpoints |
 | [followings.roblox.com](https://followings.roblox.com/docs) | Establishes follow relationship between subscriber entities (users, groups, etc) and source entities (games, groups, assets, etc.) |
 | [friends.roblox.com](https://friends.roblox.com/docs) | Friends, followers, and contacts management |
-| [gameinternationalization.roblox.com](https://gameinternationalization.roblox.com/docs) | None |
+| [gameinternationalization.roblox.com](https://gameinternationalization.roblox.com/docs) | Manages internationalization of games such as translating in game content. |
 | [gamejoin.roblox.com](https://gamejoin.roblox.com/docs) | All endpoints around launching a game |
 | [games.roblox.com](https://games.roblox.com/docs) | All endpoints for game discovery, and details |
 | [gamepersistence.roblox.com](https://gamepersistence.roblox.com/docs) | Endpoints for the in-game datastore system for storing data for games |
@@ -30,7 +29,6 @@ Roblox API Sites
 | [publish.roblox.com](https://publish.roblox.com/docs) | All endpoints handling file uploads |
 | [textfilter.roblox.com](https://textfilter.roblox.com/docs) | High volume text filtering |
 | [thumbnails.roblox.com](https://thumbnails.roblox.com/docs) | Endpoints for requesting thumbnails |
-| [translations.roblox.com](https://translations.roblox.com/docs) | None |
 
 Deprecated APIs
 ===============
@@ -53,66 +51,6 @@ Place APIs
 #### Get a place's game instances
 startIndex must be a multiple of 10
 * https://www.roblox.com/games/getgameinstancesjson?placeId=1818&startindex=0
-
-Set APIs
---------
-
-#### Get a user's sets
-* https://www.roblox.com/sets/get-by-creator?userid=5600283
-  ```json
-    [{
-      "Id": 1490504,
-      "Name": "\u003c"
-  }]
-  ```
-
-#### Get a user's subscribed sets
-* https://www.roblox.com/sets/get-subscribed?userid=5600283
-  ```json
-  [{
-      "Id": 532783,
-      "Name": "Skyboxes"
-  }, {
-      "Id": 1428257,
-      "Name": "Endorsed Assets"
-  }]
-  ```
-  
-#### Get assets in a set
-* https://www.roblox.com/sets/1428257/items?num=30&page=2
-
-  ```json
-    {
-        "TotalResults": 270,
-        "Results": [{
-            "Asset": {
-                "Id": 125459331,
-                "Name": "Tree House",
-                "TypeId": 10,
-                "IsEndorsed": true
-            },
-            "Creator": {
-                "Id": 1826533,
-                "Name": "Aurarus",
-                "Type": 1
-            },
-            "Thumbnail": {
-                "Final": true,
-                "Url": "http://t1.rbxcdn.com/eb126a19da53c8587857ae2c83755c6a",
-                "RetryUrl": null
-            },
-            "Voting": {
-                "ShowVotes": true,
-                "UpVotes": 2739,
-                "DownVotes": 219,
-                "CanVote": true,
-                "UserVote": null,
-                "ReasonForNotVoteable": "",
-                "HasVoted": false
-            }
-        }
-    }
-  ```
 
 Thumbnail APIs
 --------------
@@ -218,9 +156,6 @@ Thumbnail APIs
   }]
   ```
 
-#### Builders Club Overlay
-* https://www.roblox.com/Thumbs/BCOverlay.ashx?username=Shedletsky
-
 #### Valid Thumbnail Sizes
 |                                 | 48x48 | 60x62 | 75x75 | 100x100 | 110x110 | 160x100 | 250x250 | 352x352 | 420x230 | 420x420 |
 | ------------------------------- | :---: | :---: | :---: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: |
@@ -244,97 +179,14 @@ Group APIs
 #### Get a thumbnail for a group
  * https://www.roblox.com/group-thumbnails?params=[{groupId:1}]
 
-####Check if a user is in a group
- * https://assetgame.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=IsInGroup&playerid=261&groupid=57
-
-    ```xml
-    <Value Type="boolean">false</Value>
-    ```
-
-#### Get a user's rank number
- * https://assetgame.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRank&playerid=261&groupid=57
-
-    ```xml
-    <Value Type="integer">0</Value>
-    ```
-
-#### Get a user's rank name
- * https://assetgame.roblox.com/Game/LuaWebService/HandleSocialRequest.ashx?method=GetGroupRole&playerid=261&groupid=57
-
-    ```xml
-    Guest
-    ```
+#### Check a user's role in a group
+ * https://groups.roblox.com/v1/users/261/groups/roles
 
 #### Get a group's ranks
-* https://api.roblox.com/groups/1
-  ```json
-  {
-      "Name": "RobloHunks",
-      "Id": 1,
-      "Owner": {
-          "Name": "RobloTim",
-          "Id": 1179762
-      },
-      "EmblemUrl": "http://www.roblox.com/asset/?id=585817495",
-      "Description": "",
-      "Roles": [{
-          "Name": "--",
-          "Rank": 1
-      }, {
-          "Name": "-",
-          "Rank": 180
-      }, {
-          "Name": "DOOM",
-          "Rank": 200
-      }, {
-          "Name": "&",
-          "Rank": 254
-      }, {
-          "Name": "TREX",
-          "Rank": 255
-      }]
-  }
-  ```
-
-* http://www.roblox.com/api/groups/1/RoleSets/
-
-  ```json
-  [{
-      "ID": 169,
-      "Name": "Member",
-      "Rank": 1
-  }, {
-      "ID": 143227,
-      "Name": "Dude",
-      "Rank": 180
-  }, {
-      "ID": 143226,
-      "Name": "Hunk",
-      "Rank": 200
-  }, {
-      "ID": 94,
-      "Name": "Admin",
-      "Rank": 254
-  }, {
-      "ID": 28,
-      "Name": "Owner",
-      "Rank": 255
-  }]
-  ```
+* https://groups.roblox.com/docs#!/Membership/get_v1_groups_groupId_roles'
 
 #### Get a user's primary group
- * https://www.roblox.com/Groups/GetPrimaryGroupInfo.ashx?users=Shedletsky,builderman
-
-    ```json
-    {
-        "Shedletsky": {
-            "GroupId": 685397,
-            "GroupName": "The IronNoob Forums",
-            "RoleSetName": "Forum Owner",
-            "RoleSetRank": 254
-        }
-    }
-    ```
+ * https://groups.roblox.com/docs#!/PrimaryGroup/get_v1_users_userId_groups_primary_role
 
 Friend APIs
 ----
@@ -561,9 +413,6 @@ Location: /ArrowCursor-png-item?id=1000000
 
 #### Get the creator of an assetId, or see how many assetVersions it has
 * https://assetgame.roblox.com/Game/LoadPlaceInfo.ashx?placeId=150381051
-
-####Game Server APIs
- * [/Game/ChatFilter.ashx](http://assetgame.roblox.com/Game/ChatFilter.ashx)
 
 ####Current User APIs
  * [/Game/GetAuthTicket](https://assetgame.roblox.com/Game/GetAuthTicket)
