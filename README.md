@@ -75,6 +75,12 @@ Thumbnail APIs
 * https://assetgame.roblox.com/Game/Tools/ThumbnailAsset.ashx?aid=1818&fmt=png&wd=420&ht=420
 * https://assetgame.roblox.com/Game/Tools/ThumbnailAsset.ashx?assetVersionId=1&fmt=png&wd=420&ht=420
   * Redirects to the URL
+  
+* http://www.roblox.com/bust-thumbnail/json?userId=2025110&height=180&width=180
+  * Returns `{"Url":"https://tr.rbxcdn.com/054944f31d79876fa7aa2f2026c5cded/180/180/AvatarBust/Png","Final":true}`
+
+* https://www.roblox.com/headshot-thumbnail/json?userId=1390724&width=420&height=420
+  * Returns `{"Url":"https://tr.rbxcdn.com/170f106b72ec9e3aba781c795ed4a476/420/420/AvatarHeadshot/Png","Final":true}`
 
 * https://www.roblox.com/place-thumbnails?params=[{placeId:1818}]
   ```javascript
@@ -198,6 +204,9 @@ Friend APIs
     ```xml
     <Value Type="boolean">true</Value>
     ```
+    
+Product APIs
+----
 
 #### Get information about a developer product
  * https://api.roblox.com/Marketplace/ProductDetails?productId=18026036
@@ -289,29 +298,20 @@ User APIs
     }
     ```
 
-#### Check if a username has been taken
- * http://www.roblox.com/UserCheck/DoesUsernameExist?username=Shedletsky
-    
-    ```json
-    {
-        "success" :true
-    }
-    ```
-
 Asset APIs
 ----------
 
 #### Get parts of a package
  * https://inventory.roblox.com/v1/packages/27133145/assets
 
-####Check if a user owns an asset
+#### Check if a user owns an asset
  * http://api.roblox.com/Ownership/HasAsset?userId=261&assetId=1818
 
     ```json
     false
     ```
 
-#####Get information about an asset
+##### Get information about an asset
  * http://api.roblox.com/Marketplace/ProductInfo?assetId=1818
 
     ```json
