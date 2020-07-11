@@ -29,6 +29,8 @@ Roblox API Sites
 | [publish.roblox.com](https://publish.roblox.com/docs) | All endpoints handling file uploads |
 | [textfilter.roblox.com](https://textfilter.roblox.com/docs) | High volume text filtering |
 | [thumbnails.roblox.com](https://thumbnails.roblox.com/docs) | Endpoints for requesting thumbnails |
+| [translations.roblox.com](https://translations.roblox.com/docs) | None |
+| [voice.roblox.com](https://voice.roblox.com/docs) | APIs for Voice calls |
 
 Deprecated APIs
 ===============
