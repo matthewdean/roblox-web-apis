@@ -27,6 +27,7 @@ Roblox API Sites
 | [gamepersistence.roblox.com](https://gamepersistence.roblox.com/docs) | Endpoints for the in-game datastore system for storing data for games |
 | [groups.roblox.com](https://groups.roblox.com/docs) | Groups and clans management |
 | [inventory.roblox.com](https://inventory.roblox.com/docs) | All endpoints for viewing (but not granting) ownership of items |
+| [itemconfiguration.roblox.com](https://itemconfiguration.roblox.com/docs) | Configure Items (bundles amd avatar assets) |
 | [locale.roblox.com](https://locale.roblox.com/docs) | User locale management |
 | [metrics.roblox.com](https://metrics.roblox.com/docs) | Record metrics across Roblox |
 | [midas.roblox.com](https://midas.roblox.com/docs) | Handle requests around making purchases using Midas |
