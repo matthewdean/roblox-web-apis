@@ -4,6 +4,7 @@ Roblox API Sites
 | -: | :- |
 | [abtesting.roblox.com](https://abtesting.roblox.com/docs) | Endpoints for the A/B Testing framework |
 | [accountsettings.roblox.com](https://accountsettings.roblox.com/docs) | All endpoints for account/user settings |
+| [accountinformation.roblox.com](https://accountinformation.roblox.com/docs) | All endpoints for acessing/modifying account information |
 | [api.roblox.com](https://api.roblox.com/docs) | Miscellaneous endpoints |
 | [assetdelivery.roblox.com](https://assetdelivery.roblox.com/docs) | Serves asset content |
 | [auth.roblox.com](https://auth.roblox.com/docs) | All endpoints that tamper with authentication sessions |
