@@ -40,6 +40,7 @@ Roblox API Sites
 | [textfilter.roblox.com](https://textfilter.roblox.com/docs) | High volume text filtering |
 | [thumbnails.roblox.com](https://thumbnails.roblox.com/docs) | Endpoints for requesting thumbnails |
 | [translations.roblox.com](https://translations.roblox.com/docs) | None |
+| [users.roblox.com](https://users.roblox.com/docs) | APIs for direct Roblox user information.
 | [voice.roblox.com](https://voice.roblox.com/docs) | APIs for Voice calls |
 
 Deprecated APIs
