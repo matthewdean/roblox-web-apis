@@ -6,7 +6,7 @@ Roblox API Sites
 | [accountinformation.roblox.com](https://accountinformation.roblox.com/docs) | All endpoints for acessing/modifying account information |
 | [accountsettings.roblox.com](https://accountsettings.roblox.com/docs) | All endpoints for account/user settings |
 | [adconfiguration.roblox.com](https://adconfiguration.roblox.com/docs) | Roblox Ad Configuration related endpoints |
-| [adconfiguration.roblox.com](https://adconfiguration.roblox.com/docs) | Ads configuration endpoints |
+| [ads.roblox.com](https://ads.roblox.com/docs) | Ads configuration endpoints |
 | [api.roblox.com](https://api.roblox.com/docs) | Roblox Legacy Api Endpoints |
 | [assetdelivery.roblox.com](https://assetdelivery.roblox.com/docs) | Serves asset content |
 | [auth.roblox.com](https://auth.roblox.com/docs) | All endpoints that tamper with authentication sessions |
