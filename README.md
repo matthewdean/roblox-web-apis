@@ -32,7 +32,7 @@ Roblox API Sites
 | [gamepersistence.roblox.com](https://gamepersistence.roblox.com/docs) | Endpoints for the in-game datastore system for storing data for games |
 | [games.roblox.com](https://games.roblox.com/docs) | All endpoints for game discovery, and details |
 | [groups.roblox.com](https://groups.roblox.com/docs) | Groups management |
-| [groupsmoderation.roblox.com](https://groups.roblox.com/docs) | Group Moderation |
+| [groupsmoderation.roblox.com](https://groupsmoderation.roblox.com/docs) | Group Moderation |
 | [inventory.roblox.com](https://inventory.roblox.com/docs) | All endpoints for viewing (but not granting) ownership of items |
 | [itemconfiguration.roblox.com](https://itemconfiguration.roblox.com/docs) | Configure Items (bundles amd avatar assets) |
 | [locale.roblox.com](https://locale.roblox.com/docs) | User locale management |
