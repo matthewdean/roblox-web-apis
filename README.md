@@ -367,7 +367,6 @@ Useful Hacks
 ------------
 
 #### Current User APIs
- * [/Game/GetCurrentUser.ashx](https://assetgame.roblox.com/Game/GetCurrentUser.ashx)
  * [/MobileAPI/UserInfo](https://www.roblox.com/mobileapi/userinfo)
 
 Login APIs
