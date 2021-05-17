@@ -285,7 +285,7 @@ Asset APIs
 #### Get an asset's AssetVersioNId
 * http://www.roblox.com/studio/plugins/info?assetId=1818
 
-##### Upload an asset
+#### Upload an asset
 ```http
 POST /Data/Upload.ashx?assetid=1818 HTTP/1.1
 Host: data.roblox.com
@@ -296,7 +296,7 @@ Content-Length: 17
 <roblox></roblox>
 ```
 Returns an assetVersionId
-##### Insert asset APIs
+#### Insert asset APIs
 * [www.roblox.com/Game/Tools/InsertAsset.ashx?nsets=10&type=base](http://www.roblox.com/Game/Tools/InsertAsset.ashx?nsets=10&type=base)
 * [www.roblox.com/Game/Tools/InsertAsset.ashx?type=user&userId=261&nsets=20](http://www.roblox.com/Game/Tools/InsertAsset.ashx?nsets=20&type=user&userid=1)
 * [www.roblox.com/Game/Tools/InsertAsset.ashx?sid=-7](http://www.roblox.com/Game/Tools/InsertAsset.ashx?sid=-7)
@@ -308,17 +308,17 @@ Game APIs
 User APIs
 ------------
 #### Current User APIs
- * [/MobileAPI/UserInfo](https://www.roblox.com/mobileapi/userinfo)
+* [https://www.roblox.com/MobileAPI/UserInfo](https://www.roblox.com/mobileapi/userinfo)
 
 Login APIs
 ----------
 #### Negotiation API
- * [https://www.roblox.com/Login/Negotiate.ashx?suggest=](http://www.roblox.com/Login/Negotiate.ashx?suggest=)
+* [https://www.roblox.com/Login/Negotiate.ashx?suggest=](http://www.roblox.com/Login/Negotiate.ashx?suggest=)
 Setup APIs
 ----------
 #### Mobile APIs
  * [https://www.roblox.com/MobileAPI/Check-App-Version?appVersion=AppiOSV2.112.35972](http://www.roblox.com/mobileapi/check-app-version?appVersion=AppiOSV2.112.35972)
-#### Version/Download Endpoints
+#### Downloads and version endpoints
 * [setup.roblox.com](http://setup.roblox.com)
   * [/Roblox.exe](http://setup.roblox.com/Roblox.exe)
   * [/RobloxStudioLauncher.exe](http://setup.roblox.com/RobloxStudioLauncher.exe)
