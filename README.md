@@ -59,9 +59,14 @@ Roblox API Sites
 Deprecated or poorly documented APIs
 ===============
 * [Thumbnail APIs](#thumbnail-apis)
+* [Search APIs](#search-apis)
 * [Set APIs](#set-apis)
+* [Place APIs](#place-apis)
+* [Product APIs](#product-apis)
 * [User APIs](#user-apis)
 * [Asset APIs](#user-apis)
+* [Login APIs](#login-apis)
+* [Setup APIs](#setup-apis)
 
 Search APIs
 -----------
@@ -76,6 +81,9 @@ Place APIs
 #### Get a place's game instances
 startIndex must be a multiple of 10
 * https://www.roblox.com/games/getgameinstancesjson?placeId=1818&startindex=0
+
+#### Get a list of allowed experimental features
+* https://api.roblox.com/Game/GetAllowedExperimentalFeatures?placeId=1818
 
 Thumbnail APIs
 --------------
@@ -279,6 +287,8 @@ User APIs
         }]
     }
     ```
+#### Get information about the current user
+* [https://www.roblox.com/MobileAPI/UserInfo](https://www.roblox.com/mobileapi/userinfo)
 
 Asset APIs
 ----------
@@ -301,16 +311,6 @@ Returns an assetVersionId
 * [www.roblox.com/Game/Tools/InsertAsset.ashx?type=user&userId=261&nsets=20](http://www.roblox.com/Game/Tools/InsertAsset.ashx?nsets=20&type=user&userid=1)
 * [www.roblox.com/Game/Tools/InsertAsset.ashx?sid=-7](http://www.roblox.com/Game/Tools/InsertAsset.ashx?sid=-7)
 
-Game APIs
----------
-#### Experimental features API
-* https://api.roblox.com/Game/GetAllowedExperimentalFeatures?placeId=1818
-
-User APIs
----------
-#### Get information about the current user
-* [https://www.roblox.com/MobileAPI/UserInfo](https://www.roblox.com/mobileapi/userinfo)
-
 Login APIs
 ----------
 #### Negotiation API
@@ -318,7 +318,7 @@ Login APIs
 
 Setup APIs
 ----------
-#### Mobile version check APIs
+#### Mobile version check
  * https://www.roblox.com/MobileAPI/Check-App-Version?appVersion=AppiOSV2.112.35972
 #### Downloads and version endpoints
 * [setup.roblox.com](http://setup.roblox.com)
