@@ -21,7 +21,7 @@ Roblox API Sites
 | [contentstore.roblox.com](https://contentstore.roblox.com/docs) | ApiSite to front the TemporaryStore for files before uploading to S3 |
 | [contacts.roblox.com](https://contacts.roblox.com/docs) | Contacts and userTag management |
 | [develop.roblox.com](https://develop.roblox.com/docs) | Game development configuration endpoints |
-| [discussions.roblox.com](https://discussions.roblox.com/docs) |  |
+| [discussions.roblox.com](https://discussions.roblox.com/docs) | Discussions Api |
 | [economy.roblox.com](https://economy.roblox.com/docs) | Endpoints related to transactions and currency |
 | [economycreatorstats.roblox.com](https://economycreatorstats.roblox.com/docs) | Roblox.EconomyCreatorStats.Api endpoints. |
 | [engagementpayouts.roblox.com](https://engagementpayouts.roblox.com/docs) | For engagement-based payout information |
@@ -362,8 +362,6 @@ Content-Type: application/json
  ```
 Miscellaneous APIs
 ------------------
-
-#### Main Site
 * [www.roblox.com](http://www.roblox.com)
  * [/Game/Tools/InsertAsset.ashx?nsets=10&type=base](http://www.roblox.com/Game/Tools/InsertAsset.ashx?nsets=10&type=base)
  * [/Game/Tools/InsertAsset.ashx?type=user&userId=261&nsets=20](http://www.roblox.com/Game/Tools/InsertAsset.ashx?nsets=20&type=user&userid=1)
