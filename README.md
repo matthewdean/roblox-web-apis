@@ -56,7 +56,7 @@ Roblox API Sites
 | [users.roblox.com](https://users.roblox.com/docs) | APIs for direct Roblox user information.
 | [voice.roblox.com](https://voice.roblox.com/docs) | APIs for Voice calls |
 
-Deprecated APIs
+Deprecated or poorly documented APIs
 ===============
 * [Thumbnail APIs](#thumbnail-apis)
 * [Set APIs](#set-apis)
@@ -239,26 +239,6 @@ Product APIs
 
 User APIs
 ----
-#### Get username from ID
-* https://api.roblox.com/users/261
-
-  ```json
-  {
-      "Id": 261,
-      "Username": "Shedletsky"
-  }
-  ```
-
-#### Get ID from username
-* https://api.roblox.com/users/get-by-username?username=ROBLOX
-
-  ```json
-  {
-      "Id": 1,
-      "Username": "ROBLOX"
-  }
-  ```
-
 #### Get a user's profile games
 * https://www.roblox.com/users/profile/playergames-json?userId=261
 
@@ -315,35 +295,30 @@ Content-Length: 17
 
 <roblox></roblox>
 ```
-
 Returns an assetVersionId
+##### Insert asset APIs
+* [www.roblox.com/Game/Tools/InsertAsset.ashx?nsets=10&type=base](http://www.roblox.com/Game/Tools/InsertAsset.ashx?nsets=10&type=base)
+* [www.roblox.com/Game/Tools/InsertAsset.ashx?type=user&userId=261&nsets=20](http://www.roblox.com/Game/Tools/InsertAsset.ashx?nsets=20&type=user&userid=1)
+* [www.roblox.com/Game/Tools/InsertAsset.ashx?sid=-7](http://www.roblox.com/Game/Tools/InsertAsset.ashx?sid=-7)
 
+Game APIs
+---------
+#### Experimental features API
+* [[api.roblox.com/Game/GetAllowedExperimentalFeatures?placeId=1818](https://api.roblox.com/Game/GetAllowedExperimentalFeatures?placeId=1818)
 User APIs
 ------------
-
 #### Current User APIs
  * [/MobileAPI/UserInfo](https://www.roblox.com/mobileapi/userinfo)
 
 Login APIs
 ----------
-
- ```http
-POST https://www.roblox.com/Services/Secure/LoginService.asmx/ValidateLogin HTTP/1.1
-Host: www.roblox.com
-Content-Length: 85
-Content-Type: application/json
-
-{"userName":"","password":"","isCaptchaOn":false,"challenge":"","captchaResponse":""}
- ```
-Miscellaneous APIs
-------------------
-* [www.roblox.com](http://www.roblox.com)
- * [/Game/Tools/InsertAsset.ashx?nsets=10&type=base](http://www.roblox.com/Game/Tools/InsertAsset.ashx?nsets=10&type=base)
- * [/Game/Tools/InsertAsset.ashx?type=user&userId=261&nsets=20](http://www.roblox.com/Game/Tools/InsertAsset.ashx?nsets=20&type=user&userid=1)
- * [/Game/Tools/InsertAsset.ashx?sid=-7](http://www.roblox.com/Game/Tools/InsertAsset.ashx?sid=-7)
- * [/Login/Negotiate.ashx?suggest=](http://www.roblox.com/Login/Negotiate.ashx?suggest=)
- * [/MobileAPI/Check-App-Version?appVersion=AppiOSV2.112.35972](http://www.roblox.com/mobileapi/check-app-version?appVersion=AppiOSV2.112.35972)
-
+#### Negotiation API
+ * [https://www.roblox.com/Login/Negotiate.ashx?suggest=](http://www.roblox.com/Login/Negotiate.ashx?suggest=)
+Setup APIs
+----------
+#### Mobile APIs
+ * [https://www.roblox.com/MobileAPI/Check-App-Version?appVersion=AppiOSV2.112.35972](http://www.roblox.com/mobileapi/check-app-version?appVersion=AppiOSV2.112.35972)
+#### Version/Download Endpoints
 * [setup.roblox.com](http://setup.roblox.com)
   * [/Roblox.exe](http://setup.roblox.com/Roblox.exe)
   * [/RobloxStudioLauncher.exe](http://setup.roblox.com/RobloxStudioLauncher.exe)
@@ -355,13 +330,3 @@ Miscellaneous APIs
   *	[/mac/version](http://setup.roblox.com/mac/version)
   *	[/mac/versionStudio](http://setup.roblox.com/mac/versionStudio)
   *	[/mac/RobloxStudio.dmg](http://setup.roblox.com/mac/RobloxStudio.dmg)
-
-* [api.roblox.com](https://api.roblox.com/docs)
-  * [/Game/GetAllowedExperimentalFeatures?placeId=1818](https://api.roblox.com/Game/GetAllowedExperimentalFeatures?placeId=1818)
-* [clientsettings.api.roblox.com](http://clientsettings.api.roblox.com)
-  * [/Setting/QuietGet/ClientAppSettings](http://clientsettings.api.roblox.com/Setting/QuietGet/ClientAppSettings?apiKey=D6925E56-BFB9-4908-AAA2-A5B1EC4B2D79)
-  * [/Setting/QuietGet/ClientSharedSettings](http://clientsettings.api.roblox.com/Setting/QuietGet/ClientSharedSettings?apiKey=D6925E56-BFB9-4908-AAA2-A5B1EC4B2D79)
-  * [/Setting/QuietGet/iOSAppSettings](http://clientsettings.api.roblox.com/Setting/QuietGet/iOSAppSettings?apiKey=D6925E56-BFB9-4908-AAA2-A5B1EC4B2D79)
-  * [/Setting/QuietGet/WindowsAppSettings](http://clientsettings.api.roblox.com/Setting/QuietGet/WindowsAppSettings?apiKey=D6925E56-BFB9-4908-AAA2-A5B1EC4B2D79)
-  * [/Setting/QuietGet/WindowsBootstrapperSettings](http://clientsettings.api.roblox.com/Setting/QuietGet/WindowsBootstrapperSettings?apiKey=76E5A40C-3AE1-4028-9F10-7C62520BD94F)
-  * [/Setting/QuietGet/WindowsStudioBootstrapperSettings](http://clientsettings.api.roblox.com/Setting/QuietGet/WindowsStudioBootstrapperSettings?apiKey=76E5A40C-3AE1-4028-9F10-7C62520BD94F)
