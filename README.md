@@ -65,6 +65,7 @@ Deprecated APIs
 
 Search APIs
 -----------
+#### Returns a list of games.
 http://www.roblox.com/games/list-json?sortFilter=1&MaxRows=5
 
 #### Search for an audio asset with the search term "pendulum fasten"
