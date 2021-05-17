@@ -61,7 +61,6 @@ Deprecated APIs
 * [Thumbnail APIs](#thumbnail-apis)
 * [Set APIs](#set-apis)
 * [Group APIs](#group-apis)
-* [Friend APIs](#friend-apis)
 * [User APIs](#user-apis)
 * [Asset APIs](#user-apis)
 
@@ -168,6 +167,44 @@ Thumbnail APIs
 | /Thumbs/Asset.ashx              | x     | x     | x     | x       | x       | x       | x       | x       | x       | x       |
 | /Thumbs/Avatar.ashx             | x     | x     | x     | x       | x       | x       | x       | x       | x       | x       |
 | /Thumbs/RawAsset.ashx           | x     | x     | x     | x       | x       | x       | x       | x       | x       | x       |
+
+Set APIs
+--------
+#### Get assets in a set
+* http://assetgame.roblox.com/Game/Tools/InsertAsset.ashx?sid=2
+
+  ```xml
+  <List>
+      <Value>
+          <Table>
+              <Entry>
+                  <Key>Name</Key>
+                  <Value>Universal Connector</Value>
+              </Entry>
+              <Entry>
+                  <Key>AssetId</Key>
+                  <Value>10100443</Value>
+              </Entry>
+              <Entry>
+                  <Key>AssetSetId</Key>
+                  <Value>2</Value>
+              </Entry>
+              <Entry>
+                  <Key>AssetVersionId</Key>
+                  <Value>25509660</Value>
+              </Entry>
+              <Entry>
+                  <Key>CreatorName</Key>
+                  <Value>ROBLOX</Value>
+              </Entry>
+              <Entry>
+                  <Key>IsTrusted</Key>
+                  <Value>True</Value>
+              </Entry>
+          </Table>
+      </Value>
+  </List>
+  ```
 
 Group APIs
 ----
