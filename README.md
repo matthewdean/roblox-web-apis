@@ -302,54 +302,8 @@ User APIs
 
 Asset APIs
 ----------
-
-#### Get parts of a package
- * https://inventory.roblox.com/v1/packages/27133145/assets
-
-#### Check if a user owns an asset
- * http://api.roblox.com/Ownership/HasAsset?userId=261&assetId=1818
-
-    ```json
-    false
-    ```
-
-##### Get information about an asset
- * http://api.roblox.com/Marketplace/ProductInfo?assetId=1818
-
-    ```json
-    {
-        "AssetId": 1818,
-        "ProductId": 1305046,
-        "Name": "Crossroads",
-        "Description": "The classic ROBLOX level is back!",
-        "AssetTypeId": 9,
-        "Creator": {
-            "Id": 1,
-            "Name": "ROBLOX"
-        },
-        "IconImageAssetId": 0,
-        "Created": "2007-05-01T01:07:04.78Z",
-        "Updated": "2017-09-26T22:43:21.667Z",
-        "PriceInRobux": null,
-        "Sales": 0,
-        "IsNew": false,
-        "IsForSale": false,
-        "IsPublicDomain": false,
-        "IsLimited": false,
-        "IsLimitedUnique": false,
-        "Remaining": null,
-        "MinimumMembershipLevel": 0,
-	"ContentRatingTypeId": 0
-    }
-    ```
-
 #### Get an asset's AssetVersioNId
 * http://www.roblox.com/studio/plugins/info?assetId=1818
-
-##### Download various versions of an asset
-* https://assetdelivery.roblox.com/v1/asset?id=1818
-* https://assetdelivery.roblox.com/v1/asset?id=1818&version=1
-* https://assetdelivery.roblox.com/v1/assetHash/b3c6b23ff18f48557b823ef5b72a0508
 
 ##### Upload an asset
 ```http
@@ -364,7 +318,7 @@ Content-Length: 17
 
 Returns an assetVersionId
 
-Useful Hacks
+User APIs
 ------------
 
 #### Current User APIs
