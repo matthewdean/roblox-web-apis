@@ -283,7 +283,7 @@ User APIs
 Asset APIs
 ----------
 #### Get an asset's AssetVersioNId
-* http://www.roblox.com/studio/plugins/info?assetId=1818
+* https://www.roblox.com/studio/plugins/info?assetId=1818
 
 #### Upload an asset
 ```http
@@ -304,7 +304,7 @@ Returns an assetVersionId
 Game APIs
 ---------
 #### Experimental features API
-* api.roblox.com/Game/GetAllowedExperimentalFeatures?placeId=1818
+* https://api.roblox.com/Game/GetAllowedExperimentalFeatures?placeId=1818
 User APIs
 ---------
 #### Get information about the current user
@@ -313,6 +313,7 @@ Login APIs
 ----------
 #### Negotiation API
 * [https://www.roblox.com/Login/Negotiate.ashx?suggest=](http://www.roblox.com/Login/Negotiate.ashx?suggest=)
+
 Setup APIs
 ----------
 #### Mobile version check APIs
