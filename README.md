@@ -304,20 +304,19 @@ Returns an assetVersionId
 Game APIs
 ---------
 #### Experimental features API
-* [[api.roblox.com/Game/GetAllowedExperimentalFeatures?placeId=1818](https://api.roblox.com/Game/GetAllowedExperimentalFeatures?placeId=1818)
+* api.roblox.com/Game/GetAllowedExperimentalFeatures?placeId=1818
 User APIs
-------------
-#### Current User APIs
+---------
+#### Get information about the current user
 * [https://www.roblox.com/MobileAPI/UserInfo](https://www.roblox.com/mobileapi/userinfo)
-
 Login APIs
 ----------
 #### Negotiation API
 * [https://www.roblox.com/Login/Negotiate.ashx?suggest=](http://www.roblox.com/Login/Negotiate.ashx?suggest=)
 Setup APIs
 ----------
-#### Mobile APIs
- * [https://www.roblox.com/MobileAPI/Check-App-Version?appVersion=AppiOSV2.112.35972](http://www.roblox.com/mobileapi/check-app-version?appVersion=AppiOSV2.112.35972)
+#### Mobile version check APIs
+ * https://www.roblox.com/MobileAPI/Check-App-Version?appVersion=AppiOSV2.112.35972
 #### Downloads and version endpoints
 * [setup.roblox.com](http://setup.roblox.com)
   * [/Roblox.exe](http://setup.roblox.com/Roblox.exe)
