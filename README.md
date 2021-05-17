@@ -62,7 +62,6 @@ Deprecated or poorly documented APIs
 * [Search APIs](#search-apis)
 * [Set APIs](#set-apis)
 * [Place APIs](#place-apis)
-* [Product APIs](#product-apis)
 * [User APIs](#user-apis)
 * [Asset APIs](#user-apis)
 * [Login APIs](#login-apis)
@@ -214,36 +213,6 @@ Set APIs
   </List>
   ```
 
-Product APIs
-----
-
-#### Get information about a product
- * https://api.roblox.com/Marketplace/ProductDetails?productId=18026036
-
-    ```json
-    {
-        "AssetId": 0,
-        "ProductId": 18026036,
-        "Name": "85 Candies Pack",
-        "Description": null,
-        "AssetTypeId": 0,
-        "Creator": {
-            "Id": 0,
-            "Name": null
-        },
-        "IconImageAssetId": 0,
-        "Created": "2013-10-16T00:37:38.517Z",
-        "Updated": "2013-10-16T00:37:38.517Z",
-        "PriceInRobux": 50,
-        "IsNew": false,
-        "IsForSale": true,
-        "IsPublicDomain": false,
-        "IsLimited": false,
-        "IsLimitedUnique": false,
-        "Remaining": null,
-        "MinimumMembershipLevel": 0
-    }
-    ```
 
 User APIs
 ----
@@ -292,6 +261,34 @@ User APIs
 
 Asset APIs
 ----------
+#### Get information about a product
+ * https://api.roblox.com/Marketplace/ProductDetails?productId=18026036
+
+    ```json
+    {
+        "AssetId": 0,
+        "ProductId": 18026036,
+        "Name": "85 Candies Pack",
+        "Description": null,
+        "AssetTypeId": 0,
+        "Creator": {
+            "Id": 0,
+            "Name": null
+        },
+        "IconImageAssetId": 0,
+        "Created": "2013-10-16T00:37:38.517Z",
+        "Updated": "2013-10-16T00:37:38.517Z",
+        "PriceInRobux": 50,
+        "IsNew": false,
+        "IsForSale": true,
+        "IsPublicDomain": false,
+        "IsLimited": false,
+        "IsLimitedUnique": false,
+        "Remaining": null,
+        "MinimumMembershipLevel": 0
+    }
+    ```
+
 #### Get an asset's AssetVersioNId
 * https://www.roblox.com/studio/plugins/info?assetId=1818
 
