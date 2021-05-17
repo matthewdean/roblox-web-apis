@@ -60,7 +60,6 @@ Deprecated APIs
 ===============
 * [Thumbnail APIs](#thumbnail-apis)
 * [Set APIs](#set-apis)
-* [Group APIs](#group-apis)
 * [User APIs](#user-apis)
 * [Asset APIs](#user-apis)
 
@@ -205,21 +204,6 @@ Set APIs
       </Value>
   </List>
   ```
-
-Group APIs
-----
-
-#### Get a thumbnail for a group
- * https://www.roblox.com/group-thumbnails?params=[{groupId:1}]
-
-#### Get a user's role in all their groups
- * https://groups.roblox.com/v1/users/261/groups/roles
-
-#### Get a group's ranks
-* https://groups.roblox.com/docs#!/Membership/get_v1_groups_groupId_roles'
-
-#### Get a user's primary group
- * https://groups.roblox.com/docs#!/PrimaryGroup/get_v1_users_userId_groups_primary_role
 
 Product APIs
 ----
