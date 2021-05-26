@@ -60,7 +60,6 @@ Deprecated or poorly documented APIs
 ===============
 * [Thumbnail APIs](#thumbnail-apis)
 * [Search APIs](#search-apis)
-* [Set APIs](#set-apis)
 * [Place APIs](#place-apis)
 * [User APIs](#user-apis)
 * [Asset APIs](#user-apis)
