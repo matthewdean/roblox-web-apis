@@ -14,7 +14,7 @@ Roblox API Sites
 | [badges.roblox.com](https://badges.roblox.com/docs) | Endpoints for badges and badge awards management |
 | [billing.roblox.com](https://billing.roblox.com/docs) | Real money transactions and interaction |
 | [catalog.roblox.com](https://catalog.roblox.com/docs) | Catalog items browsing and searching. Content and user based catalog items recommendations |
-| [cdnproviders.roblox.com](https://cdnproviders.roblox.com/docs) | Purpose of Api here |
+| [cdnproviders.roblox.com](https://cdnproviders.roblox.com/docs) | Content delivery network providers API |
 | [chat.roblox.com](https://chat.roblox.com/docs) | All chat and party related endpoints |
 | [clientsettings.roblox.com](https://clientsettings.roblox.com/docs) | Used by various Roblox clients to retrieve configuration information |
 | [clientsettingscdn.roblox.com](https://clientsettings.roblox.com/docs) | Used by various Roblox clients to retrieve configuration information |
