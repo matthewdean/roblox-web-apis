@@ -61,7 +61,7 @@ Deprecated or poorly documented APIs
 * [Thumbnail APIs](#thumbnail-apis)
 * [Search APIs](#search-apis)
 * [Place APIs](#place-apis)
-* [Games/Universe APIs](#game-(universe)-apis)
+* [Games/Universe APIs](#game(universe)-apis)
 * [User APIs](#user-apis)
 * [Asset APIs](#user-apis)
 * [Login APIs](#login-apis)
