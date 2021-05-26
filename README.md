@@ -61,7 +61,7 @@ Deprecated or poorly documented APIs
 * [Thumbnail APIs](#thumbnail-apis)
 * [Search APIs](#search-apis)
 * [Place APIs](#place-apis)
-* [Games/Universe APIs](#game(universe)-apis)
+* [Universe APIs](#universe-apis)
 * [User APIs](#user-apis)
 * [Asset APIs](#user-apis)
 * [Login APIs](#login-apis)
@@ -84,8 +84,8 @@ startIndex must be a multiple of 10
 #### Get a list of allowed experimental features
 * https://api.roblox.com/Game/GetAllowedExperimentalFeatures?placeId=1818
 
-Games (Universe) APIs
--------------------
+Universe APIs
+-------------
 #### Get the universe of place
 * https://api.roblox.com/universes/get-universe-containing-place?placeid=1818
 
