@@ -21,7 +21,7 @@ Roblox API Sites
 | [contentstore.roblox.com](https://contentstore.roblox.com/docs) | ApiSite to front the TemporaryStore for files before uploading to S3 |
 | [contacts.roblox.com](https://contacts.roblox.com/docs) | Contacts and userTag management |
 | [develop.roblox.com](https://develop.roblox.com/docs) | Game development configuration endpoints |
-| [discussions.roblox.com](https://discussions.roblox.com/docs) |  |
+| [discussions.roblox.com](https://discussions.roblox.com/docs) | Discussions API (temporarily offline) |
 | [economy.roblox.com](https://economy.roblox.com/docs) | Endpoints related to transactions and currency |
 | [economycreatorstats.roblox.com](https://economycreatorstats.roblox.com/docs) | Roblox.EconomyCreatorStats.Api endpoints. |
 | [engagementpayouts.roblox.com](https://engagementpayouts.roblox.com/docs) | For engagement-based payout information |
@@ -56,17 +56,20 @@ Roblox API Sites
 | [users.roblox.com](https://users.roblox.com/docs) | APIs for direct Roblox user information.
 | [voice.roblox.com](https://voice.roblox.com/docs) | APIs for Voice calls |
 
-Deprecated APIs
+Deprecated or poorly documented APIs
 ===============
 * [Thumbnail APIs](#thumbnail-apis)
+* [Search APIs](#search-apis)
 * [Set APIs](#set-apis)
-* [Group APIs](#group-apis)
-* [Friend APIs](#friend-apis)
+* [Place APIs](#place-apis)
 * [User APIs](#user-apis)
 * [Asset APIs](#user-apis)
+* [Login APIs](#login-apis)
+* [Setup APIs](#setup-apis)
 
 Search APIs
 -----------
+#### Returns a list of games.
 http://www.roblox.com/games/list-json?sortFilter=1&MaxRows=5
 
 #### Search for an audio asset with the search term "pendulum fasten"
@@ -77,6 +80,9 @@ Place APIs
 #### Get a place's game instances
 startIndex must be a multiple of 10
 * https://www.roblox.com/games/getgameinstancesjson?placeId=1818&startindex=0
+
+#### Get a list of allowed experimental features
+* https://api.roblox.com/Game/GetAllowedExperimentalFeatures?placeId=1818
 
 Thumbnail APIs
 --------------
@@ -169,74 +175,47 @@ Thumbnail APIs
 | /Thumbs/Avatar.ashx             | x     | x     | x     | x       | x       | x       | x       | x       | x       | x       |
 | /Thumbs/RawAsset.ashx           | x     | x     | x     | x       | x       | x       | x       | x       | x       | x       |
 
-Group APIs
-----
+Set APIs
+--------
+#### Get assets in a set
+* http://assetgame.roblox.com/Game/Tools/InsertAsset.ashx?sid=2
 
-#### Get a thumbnail for a group
- * https://www.roblox.com/group-thumbnails?params=[{groupId:1}]
+  ```xml
+  <List>
+      <Value>
+          <Table>
+              <Entry>
+                  <Key>Name</Key>
+                  <Value>Universal Connector</Value>
+              </Entry>
+              <Entry>
+                  <Key>AssetId</Key>
+                  <Value>10100443</Value>
+              </Entry>
+              <Entry>
+                  <Key>AssetSetId</Key>
+                  <Value>2</Value>
+              </Entry>
+              <Entry>
+                  <Key>AssetVersionId</Key>
+                  <Value>25509660</Value>
+              </Entry>
+              <Entry>
+                  <Key>CreatorName</Key>
+                  <Value>ROBLOX</Value>
+              </Entry>
+              <Entry>
+                  <Key>IsTrusted</Key>
+                  <Value>True</Value>
+              </Entry>
+          </Table>
+      </Value>
+  </List>
+  ```
 
-#### Get a user's role in all their groups
- * https://groups.roblox.com/v1/users/261/groups/roles
-
-#### Get a group's ranks
-* https://groups.roblox.com/docs#!/Membership/get_v1_groups_groupId_roles'
-
-#### Get a user's primary group
- * https://groups.roblox.com/docs#!/PrimaryGroup/get_v1_users_userId_groups_primary_role
-
-Product APIs
-----
-
-#### Get information about a product
- * https://api.roblox.com/Marketplace/ProductDetails?productId=18026036
-
-    ```json
-    {
-        "AssetId": 0,
-        "ProductId": 18026036,
-        "Name": "85 Candies Pack",
-        "Description": null,
-        "AssetTypeId": 0,
-        "Creator": {
-            "Id": 0,
-            "Name": null
-        },
-        "IconImageAssetId": 0,
-        "Created": "2013-10-16T00:37:38.517Z",
-        "Updated": "2013-10-16T00:37:38.517Z",
-        "PriceInRobux": 50,
-        "IsNew": false,
-        "IsForSale": true,
-        "IsPublicDomain": false,
-        "IsLimited": false,
-        "IsLimitedUnique": false,
-        "Remaining": null,
-        "MinimumMembershipLevel": 0
-    }
-    ```
 
 User APIs
 ----
-#### Get username from ID
-* https://api.roblox.com/users/261
-
-  ```json
-  {
-      "Id": 261,
-      "Username": "Shedletsky"
-  }
-  ```
-
-#### Get ID from username
-* https://api.roblox.com/users/get-by-username?username=ROBLOX
-
-  ```json
-  {
-      "Id": 1,
-      "Username": "ROBLOX"
-  }
-  ```
-
 #### Get a user's profile games
 * https://www.roblox.com/users/profile/playergames-json?userId=261
 
@@ -277,59 +256,43 @@ User APIs
         }]
     }
     ```
+#### Get information about the current user
+* [https://www.roblox.com/MobileAPI/UserInfo](https://www.roblox.com/mobileapi/userinfo)
 
 Asset APIs
 ----------
-
-#### Get parts of a package
- * https://inventory.roblox.com/v1/packages/27133145/assets
-
-#### Check if a user owns an asset
- * http://api.roblox.com/Ownership/HasAsset?userId=261&assetId=1818
-
-    ```json
-    false
-    ```
-
-##### Get information about an asset
- * http://api.roblox.com/Marketplace/ProductInfo?assetId=1818
+#### Get information about a product
+ * https://api.roblox.com/Marketplace/ProductDetails?productId=18026036
 
     ```json
     {
-        "AssetId": 1818,
-        "ProductId": 1305046,
-        "Name": "Crossroads",
-        "Description": "The classic ROBLOX level is back!",
-        "AssetTypeId": 9,
+        "AssetId": 0,
+        "ProductId": 18026036,
+        "Name": "85 Candies Pack",
+        "Description": null,
+        "AssetTypeId": 0,
         "Creator": {
-            "Id": 1,
-            "Name": "ROBLOX"
+            "Id": 0,
+            "Name": null
         },
         "IconImageAssetId": 0,
-        "Created": "2007-05-01T01:07:04.78Z",
-        "Updated": "2017-09-26T22:43:21.667Z",
-        "PriceInRobux": null,
-        "Sales": 0,
+        "Created": "2013-10-16T00:37:38.517Z",
+        "Updated": "2013-10-16T00:37:38.517Z",
+        "PriceInRobux": 50,
         "IsNew": false,
-        "IsForSale": false,
+        "IsForSale": true,
         "IsPublicDomain": false,
         "IsLimited": false,
         "IsLimitedUnique": false,
         "Remaining": null,
-        "MinimumMembershipLevel": 0,
-	"ContentRatingTypeId": 0
+        "MinimumMembershipLevel": 0
     }
     ```
 
 #### Get an asset's AssetVersioNId
-* http://www.roblox.com/studio/plugins/info?assetId=1818
+* https://www.roblox.com/studio/plugins/info?assetId=1818
 
-##### Download various versions of an asset
-* https://assetdelivery.roblox.com/v1/asset?id=1818
-* https://assetdelivery.roblox.com/v1/asset?id=1818&version=1
-* https://assetdelivery.roblox.com/v1/assetHash/b3c6b23ff18f48557b823ef5b72a0508
-
-##### Upload an asset
+#### Upload an asset
 ```http
 POST /Data/Upload.ashx?assetid=1818 HTTP/1.1
 Host: data.roblox.com
@@ -339,36 +302,22 @@ Content-Length: 17
 
 <roblox></roblox>
 ```
-
 Returns an assetVersionId
-
-Useful Hacks
-------------
-
-####Current User APIs
- * [/Game/GetCurrentUser.ashx](https://assetgame.roblox.com/Game/GetCurrentUser.ashx)
- * [/MobileAPI/UserInfo](https://www.roblox.com/mobileapi/userinfo)
+#### Insert asset APIs
+* [www.roblox.com/Game/Tools/InsertAsset.ashx?nsets=10&type=base](http://www.roblox.com/Game/Tools/InsertAsset.ashx?nsets=10&type=base)
+* [www.roblox.com/Game/Tools/InsertAsset.ashx?type=user&userId=261&nsets=20](http://www.roblox.com/Game/Tools/InsertAsset.ashx?nsets=20&type=user&userid=1)
+* [www.roblox.com/Game/Tools/InsertAsset.ashx?sid=-7](http://www.roblox.com/Game/Tools/InsertAsset.ashx?sid=-7)
 
 Login APIs
 ----------
+#### Negotiation API
+* [https://www.roblox.com/Login/Negotiate.ashx?suggest=](http://www.roblox.com/Login/Negotiate.ashx?suggest=)
 
- ```http
-POST https://www.roblox.com/Services/Secure/LoginService.asmx/ValidateLogin HTTP/1.1
-Host: www.roblox.com
-Content-Length: 85
-Content-Type: application/json
-
-{"userName":"","password":"","isCaptchaOn":false,"challenge":"","captchaResponse":""}
- ```
-
-####Main Site
-* [www.roblox.com](http://www.roblox.com)
- * [/Game/Tools/InsertAsset.ashx?nsets=10&type=base](http://www.roblox.com/Game/Tools/InsertAsset.ashx?nsets=10&type=base)
- * [/Game/Tools/InsertAsset.ashx?type=user&userId=261&nsets=20](http://www.roblox.com/Game/Tools/InsertAsset.ashx?nsets=20&type=user&userid=1)
- * [/Game/Tools/InsertAsset.ashx?sid=-7](http://www.roblox.com/Game/Tools/InsertAsset.ashx?sid=-7)
- * [/Login/Negotiate.ashx?suggest=](http://www.roblox.com/Login/Negotiate.ashx?suggest=)
- * [/MobileAPI/Check-App-Version?appVersion=AppiOSV2.112.35972](http://www.roblox.com/mobileapi/check-app-version?appVersion=AppiOSV2.112.35972)
-
+Setup APIs
+----------
+#### Mobile version check
+ * https://www.roblox.com/MobileAPI/Check-App-Version?appVersion=AppiOSV2.112.35972
+#### Downloads and version endpoints
 * [setup.roblox.com](http://setup.roblox.com)
   * [/Roblox.exe](http://setup.roblox.com/Roblox.exe)
   * [/RobloxStudioLauncher.exe](http://setup.roblox.com/RobloxStudioLauncher.exe)
@@ -380,13 +329,3 @@ Content-Type: application/json
   *	[/mac/version](http://setup.roblox.com/mac/version)
   *	[/mac/versionStudio](http://setup.roblox.com/mac/versionStudio)
   *	[/mac/RobloxStudio.dmg](http://setup.roblox.com/mac/RobloxStudio.dmg)
-
-* [api.roblox.com](https://api.roblox.com/docs)
- * [/Game/GetAllowedExperimentalFeatures?placeId=1818](https://api.roblox.com/Game/GetAllowedExperimentalFeatures?placeId=1818)
-* [clientsettings.api.roblox.com](http://clientsettings.api.roblox.com)
- * [/Setting/QuietGet/ClientAppSettings](http://clientsettings.api.roblox.com/Setting/QuietGet/ClientAppSettings?apiKey=D6925E56-BFB9-4908-AAA2-A5B1EC4B2D79)
- * [/Setting/QuietGet/ClientSharedSettings](http://clientsettings.api.roblox.com/Setting/QuietGet/ClientSharedSettings?apiKey=D6925E56-BFB9-4908-AAA2-A5B1EC4B2D79)
- * [/Setting/QuietGet/iOSAppSettings](http://clientsettings.api.roblox.com/Setting/QuietGet/iOSAppSettings?apiKey=D6925E56-BFB9-4908-AAA2-A5B1EC4B2D79)
- * [/Setting/QuietGet/WindowsAppSettings](http://clientsettings.api.roblox.com/Setting/QuietGet/WindowsAppSettings?apiKey=D6925E56-BFB9-4908-AAA2-A5B1EC4B2D79)
- * [/Setting/QuietGet/WindowsBootstrapperSettings](http://clientsettings.api.roblox.com/Setting/QuietGet/WindowsBootstrapperSettings?apiKey=76E5A40C-3AE1-4028-9F10-7C62520BD94F)
- * [/Setting/QuietGet/WindowsStudioBootstrapperSettings](http://clientsettings.api.roblox.com/Setting/QuietGet/WindowsStudioBootstrapperSettings?apiKey=76E5A40C-3AE1-4028-9F10-7C62520BD94F)
