@@ -86,7 +86,7 @@ startIndex must be a multiple of 10
 
 Universe APIs
 -------------
-#### Get the universe of place
+#### Get the parent universe of place
 * https://api.roblox.com/universes/get-universe-containing-place?placeid=1818
 
 Thumbnail APIs
