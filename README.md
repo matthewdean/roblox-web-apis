@@ -93,11 +93,11 @@ Thumbnail APIs
 --------------
 
 #### Asset Thumbnails
+* https://www.roblox.com/asset-thumbnail/image?assetId=1818&width=420&height=420&format=png
+  * Redirects to the URL.
+
 * https://www.roblox.com/Thumbs/RawAsset.ashx?assetId=1818&imageFormat=png&width=60&height=62
   * Returns either `PENDING` or the URL. Also accepts `assetVersionId`
-
-* https://www.roblox.com/headshot-thumbnail/json?userId=1&width=180&height=180
-  * Returns `{"Url":"https://tr.rbxcdn.com/c3ee609e91804ee2f15c6375355a381a/180/180/AvatarHeadshot/Png","Final":true}`
 
 * https://assetgame.roblox.com/Thumbs/Asset.ashx?width=110&height=110&assetId=1818
   * Redirects to the URL. Also accepts `userAssetId`
@@ -109,12 +109,6 @@ Thumbnail APIs
 * https://assetgame.roblox.com/Game/Tools/ThumbnailAsset.ashx?assetVersionId=1&fmt=png&wd=420&ht=420
   * Redirects to the URL
   
-* http://www.roblox.com/bust-thumbnail/json?userId=2025110&height=180&width=180
-  * Returns `{"Url":"https://tr.rbxcdn.com/6402a6d488e255d00967c2c021d29fb0/180/180/AvatarBust/Png","Final":true}`
-
-* https://www.roblox.com/headshot-thumbnail/json?userId=1390724&width=420&height=420
-  * Returns `{"Url":"https://tr.rbxcdn.com/cc62e75ca1f869e91fcc2ec1821a3b6e/420/420/AvatarHeadshot/Png","Final":true}`
-
 * https://www.roblox.com/item-thumbnails?params=[{assetId:1818}]
   ```javascript
   [{
@@ -154,8 +148,20 @@ Thumbnail APIs
   ```
 
 #### Avatar Thumbnails
+
+* http://www.roblox.com/bust-thumbnail/json?userId=2025110&height=180&width=180
+  * Returns `{"Url":"https://tr.rbxcdn.com/6402a6d488e255d00967c2c021d29fb0/180/180/AvatarBust/Png","Final":true}`
+
+* https://www.roblox.com/headshot-thumbnail/json?userId=1390724&width=420&height=420
+  * Returns `{"Url":"https://tr.rbxcdn.com/cc62e75ca1f869e91fcc2ec1821a3b6e/420/420/AvatarHeadshot/Png","Final":true}`
+
 * https://www.roblox.com/Thumbs/Avatar.ashx?username=Shedletsky
   * Redirects to the URL. Also accepts `userId`, and all other parameters can be omitted. If `userId` and `username` are both omitted, will return a ?
+
+* https://www.roblox.com/bust-thumbnail/image?userId=48103520&width=420&height=420&format=png
+  * Redirects to the URL.
+* https://www.roblox.com/headshot-thumbnail/image?userId=48103520&width=420&height=420&format=png
+  * Redirects to the URL. 
 
 * https://www.roblox.com/avatar-thumbnails?params=[{userId:261}]
   * Returns JSON
@@ -170,7 +176,10 @@ Thumbnail APIs
       "substitutionType": 0
   }]
   ```
-
+#### Outfit Thumbnails
+* https://www.roblox.com/outfit-thumbnail/image?userOutfitId=26415539&width=420&height=420&format=png
+  * Redirects to the URL. 
+  
 #### Valid Thumbnail Sizes
 |                                 | 48x48 | 60x62 | 75x75 | 100x100 | 110x110 | 160x100 | 250x250 | 352x352 | 420x230 | 420x420 |
 | ------------------------------- | :---: | :---: | :---: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: |
