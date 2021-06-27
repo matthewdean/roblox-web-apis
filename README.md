@@ -14,10 +14,10 @@ Roblox API Sites
 | [badges.roblox.com](https://badges.roblox.com/docs) | Endpoints for badges and badge awards management |
 | [billing.roblox.com](https://billing.roblox.com/docs) | Real money transactions and interaction |
 | [catalog.roblox.com](https://catalog.roblox.com/docs) | Catalog items browsing and searching. Content and user based catalog items recommendations |
-| [cdnproviders.roblox.com](https://cdnproviders.roblox.com/docs) | Purpose of Api here |
+| [cdnproviders.roblox.com](https://cdnproviders.roblox.com/docs) | Content delivery network providers API |
 | [chat.roblox.com](https://chat.roblox.com/docs) | All chat and party related endpoints |
 | [clientsettings.roblox.com](https://clientsettings.roblox.com/docs) | Used by various Roblox clients to retrieve configuration information |
-| [clientsettingscdn.roblox.com](https://clientsettings.roblox.com/docs) | Used by various Roblox clients to retrieve configuration information |
+| [clientsettingscdn.roblox.com](https://clientsettingscdn.roblox.com/docs) | Used by various Roblox clients to retrieve configuration information |
 | [contentstore.roblox.com](https://contentstore.roblox.com/docs) | ApiSite to front the TemporaryStore for files before uploading to S3 |
 | [contacts.roblox.com](https://contacts.roblox.com/docs) | Contacts and userTag management |
 | [develop.roblox.com](https://develop.roblox.com/docs) | Game development configuration endpoints |
@@ -60,8 +60,8 @@ Deprecated or poorly documented APIs
 ===============
 * [Thumbnail APIs](#thumbnail-apis)
 * [Search APIs](#search-apis)
-* [Set APIs](#set-apis)
 * [Place APIs](#place-apis)
+* [Universe APIs](#universe-apis)
 * [User APIs](#user-apis)
 * [Asset APIs](#user-apis)
 * [Login APIs](#login-apis)
@@ -84,15 +84,20 @@ startIndex must be a multiple of 10
 #### Get a list of allowed experimental features
 * https://api.roblox.com/Game/GetAllowedExperimentalFeatures?placeId=1818
 
+Universe APIs
+-------------
+#### Get the parent universe of place
+* https://api.roblox.com/universes/get-universe-containing-place?placeid=1818
+
 Thumbnail APIs
 --------------
 
 #### Asset Thumbnails
+* https://www.roblox.com/asset-thumbnail/image?assetId=1818&width=420&height=420&format=png
+  * Redirects to the URL.
+
 * https://www.roblox.com/Thumbs/RawAsset.ashx?assetId=1818&imageFormat=png&width=60&height=62
   * Returns either `PENDING` or the URL. Also accepts `assetVersionId`
-
-* https://www.roblox.com/headshot-thumbnail/json?userId=1&width=180&height=180
-  * Returns `{"Url":"https://tr.rbxcdn.com/c3ee609e91804ee2f15c6375355a381a/180/180/AvatarHeadshot/Png","Final":true}`
 
 * https://assetgame.roblox.com/Thumbs/Asset.ashx?width=110&height=110&assetId=1818
   * Redirects to the URL. Also accepts `userAssetId`
@@ -104,12 +109,6 @@ Thumbnail APIs
 * https://assetgame.roblox.com/Game/Tools/ThumbnailAsset.ashx?assetVersionId=1&fmt=png&wd=420&ht=420
   * Redirects to the URL
   
-* http://www.roblox.com/bust-thumbnail/json?userId=2025110&height=180&width=180
-  * Returns `{"Url":"https://tr.rbxcdn.com/6402a6d488e255d00967c2c021d29fb0/180/180/AvatarBust/Png","Final":true}`
-
-* https://www.roblox.com/headshot-thumbnail/json?userId=1390724&width=420&height=420
-  * Returns `{"Url":"https://tr.rbxcdn.com/cc62e75ca1f869e91fcc2ec1821a3b6e/420/420/AvatarHeadshot/Png","Final":true}`
-
 * https://www.roblox.com/item-thumbnails?params=[{assetId:1818}]
   ```javascript
   [{
@@ -149,8 +148,20 @@ Thumbnail APIs
   ```
 
 #### Avatar Thumbnails
+
+* http://www.roblox.com/bust-thumbnail/json?userId=2025110&height=180&width=180
+  * Returns `{"Url":"https://tr.rbxcdn.com/6402a6d488e255d00967c2c021d29fb0/180/180/AvatarBust/Png","Final":true}`
+
+* https://www.roblox.com/headshot-thumbnail/json?userId=1390724&width=420&height=420
+  * Returns `{"Url":"https://tr.rbxcdn.com/cc62e75ca1f869e91fcc2ec1821a3b6e/420/420/AvatarHeadshot/Png","Final":true}`
+
 * https://www.roblox.com/Thumbs/Avatar.ashx?username=Shedletsky
   * Redirects to the URL. Also accepts `userId`, and all other parameters can be omitted. If `userId` and `username` are both omitted, will return a ?
+
+* https://www.roblox.com/bust-thumbnail/image?userId=48103520&width=420&height=420&format=png
+  * Redirects to the URL.
+* https://www.roblox.com/headshot-thumbnail/image?userId=48103520&width=420&height=420&format=png
+  * Redirects to the URL. 
 
 * https://www.roblox.com/avatar-thumbnails?params=[{userId:261}]
   * Returns JSON
@@ -165,7 +176,10 @@ Thumbnail APIs
       "substitutionType": 0
   }]
   ```
-
+#### Outfit Thumbnails
+* https://www.roblox.com/outfit-thumbnail/image?userOutfitId=26415539&width=420&height=420&format=png
+  * Redirects to the URL. 
+  
 #### Valid Thumbnail Sizes
 |                                 | 48x48 | 60x62 | 75x75 | 100x100 | 110x110 | 160x100 | 250x250 | 352x352 | 420x230 | 420x420 |
 | ------------------------------- | :---: | :---: | :---: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: |
@@ -222,34 +236,6 @@ User APIs
 
 Asset APIs
 ----------
-#### Get information about a product
- * https://api.roblox.com/Marketplace/ProductDetails?productId=18026036
-
-    ```json
-    {
-        "AssetId": 0,
-        "ProductId": 18026036,
-        "Name": "85 Candies Pack",
-        "Description": null,
-        "AssetTypeId": 0,
-        "Creator": {
-            "Id": 0,
-            "Name": null
-        },
-        "IconImageAssetId": 0,
-        "Created": "2013-10-16T00:37:38.517Z",
-        "Updated": "2013-10-16T00:37:38.517Z",
-        "PriceInRobux": 50,
-        "IsNew": false,
-        "IsForSale": true,
-        "IsPublicDomain": false,
-        "IsLimited": false,
-        "IsLimitedUnique": false,
-        "Remaining": null,
-        "MinimumMembershipLevel": 0
-    }
-    ```
-
 #### Get an asset's AssetVersioNId
 * https://www.roblox.com/studio/plugins/info?assetId=1818
 
