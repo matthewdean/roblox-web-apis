@@ -177,8 +177,8 @@ Thumbnail APIs
   }]
   ```
 #### Outfit Thumbnails
-* https://www.roblox.com/outfit-thumbnail/image?userOutfitId=26415539&width=420&height=420&format=png
-  * Redirects to the URL. 
+* https://thumbnails.roblox.com/v1/users/outfits?userOutfitIds=26415539&size=420x420&format=Png&isCircular=false
+  * Returns JSON containing thumbnail URL. 
   
 #### Valid Thumbnail Sizes
 |                                 | 48x48 | 60x62 | 75x75 | 100x100 | 110x110 | 160x100 | 250x250 | 352x352 | 420x230 | 420x420 |
