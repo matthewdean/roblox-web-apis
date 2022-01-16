@@ -273,7 +273,7 @@ Setup APIs
   *	[/version(.txt)](http://setup.roblox.com/version)
   *	[/versionStudio(.txt)](http://setup.roblox.com/versionStudio)
   *	[/versionQTStudio](http://setup.roblox.com/versionQTStudio)
-  * [DeployHistory.txt](http://setup.roblox.com/mac/DeployHistory.txt)
+  * [/DeployHistory.txt](http://setup.roblox.com/mac/DeployHistory.txt)
   *	[/mac/version](http://setup.roblox.com/mac/version)
   *	[/mac/versionStudio](http://setup.roblox.com/mac/versionStudio)
   *	[/mac/RobloxStudio.dmg](http://setup.roblox.com/mac/RobloxStudio.dmg)
