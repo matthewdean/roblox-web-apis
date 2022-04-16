@@ -46,6 +46,7 @@ Roblox API Sites
 | [privatemessages.roblox.com](https://privatemessages.roblox.com/docs) | All messages page endpoints |
 | [publish.roblox.com](https://publish.roblox.com/docs) | All endpoints handling file uploads |
 | [share.roblox.com](https://share.roblox.com/docs) | Purpose of Api here |
+| [search.roblox.com](https://developer.roblox.com/en-us/articles/Catalog-API) | Legacy item search endpoints. |
 | [textfilter.roblox.com](https://textfilter.roblox.com/docs) | High volume text filtering |
 | [thumbnails.roblox.com](https://thumbnails.roblox.com/docs) | Endpoints for requesting thumbnails |
 | [thumbnailsresizer.roblox.com](https://thumbnailsresizer.roblox.com/docs) | Validate and resize thumbnails to requested dimensions |
@@ -71,9 +72,6 @@ Search APIs
 -----------
 #### Returns a list of games.
 http://www.roblox.com/games/list-json?sortFilter=1&MaxRows=5
-
-#### Search for an audio asset with the search term "pendulum fasten"
-https://search.roblox.com/catalog/json?Category=9&Keyword=pendulum%20fasten
 
 Place APIs
 ----------
