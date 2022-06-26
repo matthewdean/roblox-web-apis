@@ -64,7 +64,7 @@ Deprecated or poorly documented APIs
 * [Place APIs](#place-apis)
 * [Universe APIs](#universe-apis)
 * [User APIs](#user-apis)
-* [Asset APIs](#user-apis)
+* [Asset APIs](#asset-apis)
 * [Login APIs](#login-apis)
 * [Setup APIs](#setup-apis)
 
