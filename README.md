@@ -56,6 +56,11 @@ Roblox API Sites
 | [twostepverification.roblox.com](https://twostepverification.roblox.com/docs) | Platform interface for the two step verification system |
 | [users.roblox.com](https://users.roblox.com/docs) | APIs for direct Roblox user information.
 | [voice.roblox.com](https://voice.roblox.com/docs) | APIs for Voice calls |
+| [realtime.roblox.com](https://realtime.roblox.com/) | Purpose of API here |
+| [lms.roblox.com](https://lms.roblox.com/) | Status of the Latency Management Service |
+| [versioncompatability.api.roblox.com](https://versioncompatability.api.roblox.com) | Handles version compatability |
+| [ephemeralcounters.api.roblox.com](https://ephemeralcounters.api.roblox.com) | Handles ephemeral counters (Likely AWS ECS container related) |
+| [client-telemetry.roblox.com](https://client-telemetry.roblox.com) | Handles client telemtry |
 
 Deprecated or poorly documented APIs
 ===============
