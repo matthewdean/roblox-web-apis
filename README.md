@@ -18,6 +18,7 @@ Roblox API Sites
 | [chat.roblox.com](https://chat.roblox.com/docs) | All chat and party related endpoints |
 | [clientsettings.roblox.com](https://clientsettings.roblox.com/docs) | Used by various Roblox clients to retrieve configuration information |
 | [clientsettingscdn.roblox.com](https://clientsettingscdn.roblox.com/docs) | Used by various Roblox clients to retrieve configuration information |
+| [client-telemetry.roblox.com](https://client-telemetry.roblox.com) | Handles client telemtry |
 | [contentstore.roblox.com](https://contentstore.roblox.com/docs) | ApiSite to front the TemporaryStore for files before uploading to S3 |
 | [contacts.roblox.com](https://contacts.roblox.com/docs) | Contacts and userTag management |
 | [develop.roblox.com](https://develop.roblox.com/docs) | Game development configuration endpoints |
@@ -25,6 +26,7 @@ Roblox API Sites
 | [economy.roblox.com](https://economy.roblox.com/docs) | Endpoints related to transactions and currency |
 | [economycreatorstats.roblox.com](https://economycreatorstats.roblox.com/docs) | Roblox.EconomyCreatorStats.Api endpoints. |
 | [engagementpayouts.roblox.com](https://engagementpayouts.roblox.com/docs) | For engagement-based payout information |
+| [ephemeralcounters.api.roblox.com](https://ephemeralcounters.api.roblox.com) | Handles ephemeral counters |
 | [followings.roblox.com](https://followings.roblox.com/docs) | Establishes follow relationship between subscriber entities (users, groups, etc) and source entities (games, groups, assets, etc.) |
 | [friends.roblox.com](https://friends.roblox.com/docs) | Friends, followers, and contacts management |
 | [gameinternationalization.roblox.com](https://gameinternationalization.roblox.com/docs) | Manages internationalization of games such as translating in game content. |
@@ -35,6 +37,7 @@ Roblox API Sites
 | [groupsmoderation.roblox.com](https://groupsmoderation.roblox.com/docs) | Group Moderation |
 | [inventory.roblox.com](https://inventory.roblox.com/docs) | All endpoints for viewing (but not granting) ownership of items |
 | [itemconfiguration.roblox.com](https://itemconfiguration.roblox.com/docs) | Configure Items (bundles amd avatar assets) |
+| [lms.roblox.com](https://lms.roblox.com/) | Status of the Latency Management Service |
 | [locale.roblox.com](https://locale.roblox.com/docs) | User locale management |
 | [localizationtables.roblox.com](https://localizationtables.roblox.com/docs) | Handles managing of localization tables |
 | [metrics.roblox.com](https://metrics.roblox.com/docs) | Record metrics across Roblox |
@@ -45,6 +48,7 @@ Roblox API Sites
 | [presence.roblox.com](https://presence.roblox.com/docs) | All endpoints for managing presence |
 | [privatemessages.roblox.com](https://privatemessages.roblox.com/docs) | All messages page endpoints |
 | [publish.roblox.com](https://publish.roblox.com/docs) | All endpoints handling file uploads |
+| [realtime.roblox.com](https://realtime.roblox.com/) | Purpose of API here |
 | [share.roblox.com](https://share.roblox.com/docs) | Purpose of Api here |
 | [search.roblox.com](https://developer.roblox.com/en-us/articles/Catalog-API) | Legacy item search endpoints. |
 | [textfilter.roblox.com](https://textfilter.roblox.com/docs) | High volume text filtering |
@@ -55,12 +59,8 @@ Roblox API Sites
 | [translations.roblox.com](https://translations.roblox.com/docs) | Endpoints for requesting translations |
 | [twostepverification.roblox.com](https://twostepverification.roblox.com/docs) | Platform interface for the two step verification system |
 | [users.roblox.com](https://users.roblox.com/docs) | APIs for direct Roblox user information.
-| [voice.roblox.com](https://voice.roblox.com/docs) | APIs for Voice calls |
-| [realtime.roblox.com](https://realtime.roblox.com/) | Purpose of API here |
-| [lms.roblox.com](https://lms.roblox.com/) | Status of the Latency Management Service |
 | [versioncompatability.api.roblox.com](https://versioncompatability.api.roblox.com) | Handles version compatability |
-| [ephemeralcounters.api.roblox.com](https://ephemeralcounters.api.roblox.com) | Handles ephemeral counters (Likely AWS ECS container related) |
-| [client-telemetry.roblox.com](https://client-telemetry.roblox.com) | Handles client telemtry |
+| [voice.roblox.com](https://voice.roblox.com/docs) | APIs for Voice calls |
 
 Deprecated or poorly documented APIs
 ===============
