@@ -55,35 +55,36 @@ Roblox API Sites
 | [translationroles.roblox.com](https://translationroles.roblox.com/docs) | Manages translation roles of developers in game localization |
 | [translations.roblox.com](https://translations.roblox.com/docs) | Endpoints for requesting translations |
 | [twostepverification.roblox.com](https://twostepverification.roblox.com/docs) | Platform interface for the two step verification system |
+| [usermoderation.roblox.com](https://usermoderation.roblox.com/docs) | Endpoints for performing actions/operations related to User Moderation
 | [users.roblox.com](https://users.roblox.com/docs) | APIs for direct Roblox user information.
 | [voice.roblox.com](https://voice.roblox.com/docs) | APIs for Voice calls |
 
 Deprecated or poorly documented APIs
 ===============
 * [Thumbnail APIs](#thumbnail-apis)
-* [Search APIs](#search-apis)
 * [Universe APIs](#universe-apis)
 * [User APIs](#user-apis)
 * [Asset APIs](#asset-apis)
 * [Login APIs](#login-apis)
 * [Setup APIs](#setup-apis)
 
-Search APIs
------------
-#### Returns a list of games.
-http://www.roblox.com/games/list-json?sortFilter=1&MaxRows=5
-
 Universe APIs
 -------------
 #### Get the parent universe of place
 * https://api.roblox.com/universes/get-universe-containing-place?placeid=1818
 
+#### Get the parent universe info of place
+* https://api.roblox.com/universes/get-info?placeId=1818
+
+#### Gets every place in a universe
+* https://api.roblox.com/universes/get-universe-places?universeId=162580928&page=1
+
 Thumbnail APIs
 --------------
 
 #### Asset Thumbnails
-* https://assetgame.roblox.com/Thumbs/Asset.asmx/RequestThumbnail_v2?assetId=1818&assetVersionId=0&width=null&height=null&imageFormat=%22Png%22&thumbnailFormatId=296&overrideModeration=false
-  * Returns `{"d":{"final":true,"url":"https://t3.rbxcdn.com/5d84cad6c2dda6a98ec94341bd418076"}}`
+* https://assetgame.roblox.com/Thumbs/Asset.asmx/RequestThumbnail_v2?assetId=1818&assetVersionId=0&width=420&height=420&imageFormat=Png&thumbnailFormatId=0&overrideModeration=false
+  * Returns `{"d":{"final":true,"url":"https://tr.rbxcdn.com/139602eb7c640c43833470e07caada4a/420/420/Image/Png"}}`
   
 * https://www.roblox.com/item-thumbnails?params=[{assetId:1818}]
   ```javascript
@@ -91,7 +92,7 @@ Thumbnail APIs
     id: 1818,
     name: "Crossroads",
     url: "/Crossroads-place?id=1818",
-    thumbnailFinal true,
+    thumbnailFinal: true,
     thumbnailUrl: "https://t7.rbxcdn.com/134692bb990302f51fb8f52cfcdd8083",
     bcOverlayUrl: null,
     limitedOverlayUrl: null,
@@ -115,6 +116,8 @@ Thumbnail APIs
   ```
 
 #### Avatar Thumbnails
+* https://www.roblox.com/avatar/request-thumbnail-fix?userId=261&width=420&height=420&imageFormat=Png&thumbnailFormatId=0&dummy=false
+  * Returns `{"d":{"final":true,"url":"https://tr.rbxcdn.com/faf7edbe4e0ff5da291e41ef60acd66d/420/420/Avatar/Png"}}`
 
 * https://www.roblox.com/headshot-thumbnail/image?userId=48103520&width=420&height=420&format=png
   * Redirects to the URL. 
@@ -144,6 +147,7 @@ Thumbnail APIs
 | /Thumbs/Asset.ashx              | x     | x     | x     | x       | x       | x       | x       | x       | x       | x       |
 | /Thumbs/Avatar.ashx             | x     | x     | x     | x       | x       | x       | x       | x       | x       | x       |
 | /Thumbs/RawAsset.ashx           | x     | x     | x     | x       | x       | x       | x       | x       | x       | x       |
+| thumbnailFormatId               | 2     | 24    | 280   | 41      | 47      | 163     | 114     | 124     | 8       | 254     |
 
 User APIs
 ----
