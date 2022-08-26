@@ -14,7 +14,6 @@ Roblox API Sites
 | [badges.roblox.com](https://badges.roblox.com/docs) | Endpoints for badges and badge awards management |
 | [billing.roblox.com](https://billing.roblox.com/docs) | Real money transactions and interaction |
 | [catalog.roblox.com](https://catalog.roblox.com/docs) | Catalog items browsing and searching. Content and user based catalog items recommendations |
-| [cdnproviders.roblox.com](https://cdnproviders.roblox.com/docs) | Content delivery network providers API |
 | [chat.roblox.com](https://chat.roblox.com/docs) | All chat and party related endpoints |
 | [clientsettings.roblox.com](https://clientsettings.roblox.com/docs) | Used by various Roblox clients to retrieve configuration information |
 | [clientsettingscdn.roblox.com](https://clientsettingscdn.roblox.com/docs) | Used by various Roblox clients to retrieve configuration information |
@@ -22,7 +21,6 @@ Roblox API Sites
 | [contentstore.roblox.com](https://contentstore.roblox.com/docs) | ApiSite to front the TemporaryStore for files before uploading to S3 |
 | [contacts.roblox.com](https://contacts.roblox.com/docs) | Contacts and userTag management |
 | [develop.roblox.com](https://develop.roblox.com/docs) | Game development configuration endpoints |
-| [discussions.roblox.com](https://discussions.roblox.com/docs) | Discussions API (temporarily offline) |
 | [economy.roblox.com](https://economy.roblox.com/docs) | Endpoints related to transactions and currency |
 | [economycreatorstats.roblox.com](https://economycreatorstats.roblox.com/docs) | Roblox.EconomyCreatorStats.Api endpoints. |
 | [engagementpayouts.roblox.com](https://engagementpayouts.roblox.com/docs) | For engagement-based payout information |
@@ -41,7 +39,6 @@ Roblox API Sites
 | [locale.roblox.com](https://locale.roblox.com/docs) | User locale management |
 | [localizationtables.roblox.com](https://localizationtables.roblox.com/docs) | Handles managing of localization tables |
 | [metrics.roblox.com](https://metrics.roblox.com/docs) | Record metrics across Roblox |
-| [midas.roblox.com](https://midas.roblox.com/docs) | Handle requests around making purchases using Midas |
 | [notifications.roblox.com](https://notifications.roblox.com/docs) | All notification stream endpoints |
 | [points.roblox.com](https://points.roblox.com/docs) | The web Api for the in-game PointsService |
 | [premiumfeatures.roblox.com](https://premiumfeatures.roblox.com/docs) | This API is for premium features and anything pertaining to account add ons |
@@ -59,14 +56,12 @@ Roblox API Sites
 | [translations.roblox.com](https://translations.roblox.com/docs) | Endpoints for requesting translations |
 | [twostepverification.roblox.com](https://twostepverification.roblox.com/docs) | Platform interface for the two step verification system |
 | [users.roblox.com](https://users.roblox.com/docs) | APIs for direct Roblox user information.
-| [versioncompatability.api.roblox.com](https://versioncompatability.api.roblox.com) | Handles version compatability |
 | [voice.roblox.com](https://voice.roblox.com/docs) | APIs for Voice calls |
 
 Deprecated or poorly documented APIs
 ===============
 * [Thumbnail APIs](#thumbnail-apis)
 * [Search APIs](#search-apis)
-* [Place APIs](#place-apis)
 * [Universe APIs](#universe-apis)
 * [User APIs](#user-apis)
 * [Asset APIs](#asset-apis)
@@ -78,15 +73,6 @@ Search APIs
 #### Returns a list of games.
 http://www.roblox.com/games/list-json?sortFilter=1&MaxRows=5
 
-Place APIs
-----------
-#### Get a place's game instances
-startIndex must be a multiple of 10
-* https://www.roblox.com/games/getgameinstancesjson?placeId=1818&startindex=0
-
-#### Get a list of allowed experimental features
-* https://api.roblox.com/Game/GetAllowedExperimentalFeatures?placeId=1818
-
 Universe APIs
 -------------
 #### Get the parent universe of place
@@ -96,21 +82,8 @@ Thumbnail APIs
 --------------
 
 #### Asset Thumbnails
-* https://www.roblox.com/asset-thumbnail/image?assetId=1818&width=420&height=420&format=png
-  * Redirects to the URL.
-
-* https://www.roblox.com/Thumbs/RawAsset.ashx?assetId=1818&imageFormat=png&width=60&height=62
-  * Returns either `PENDING` or the URL. Also accepts `assetVersionId`
-
-* https://assetgame.roblox.com/Thumbs/Asset.ashx?width=110&height=110&assetId=1818
-  * Redirects to the URL. Also accepts `userAssetId`
-
 * https://assetgame.roblox.com/Thumbs/Asset.asmx/RequestThumbnail_v2?assetId=1818&assetVersionId=0&width=null&height=null&imageFormat=%22Png%22&thumbnailFormatId=296&overrideModeration=false
   * Returns `{"d":{"final":true,"url":"https://t3.rbxcdn.com/5d84cad6c2dda6a98ec94341bd418076"}}`
-
-* https://assetgame.roblox.com/Game/Tools/ThumbnailAsset.ashx?aid=1818&fmt=png&wd=420&ht=420
-* https://assetgame.roblox.com/Game/Tools/ThumbnailAsset.ashx?assetVersionId=1&fmt=png&wd=420&ht=420
-  * Redirects to the URL
   
 * https://www.roblox.com/item-thumbnails?params=[{assetId:1818}]
   ```javascript
@@ -141,28 +114,8 @@ Thumbnail APIs
   });
   ```
 
-* https://www.roblox.com/asset-thumbnail/json?assetId=1818&width=160&height=100&format=jpeg
-  ```json
-  {
-    "Url": "https://t3.rbxcdn.com/c51dd4f8a509b20061a065117450e4c5",
-    "Final": true,
-    "SubstitutionType": 0
-  }
-  ```
-
 #### Avatar Thumbnails
 
-* http://www.roblox.com/bust-thumbnail/json?userId=2025110&height=180&width=180
-  * Returns `{"Url":"https://tr.rbxcdn.com/6402a6d488e255d00967c2c021d29fb0/180/180/AvatarBust/Png","Final":true}`
-
-* https://www.roblox.com/headshot-thumbnail/json?userId=1390724&width=420&height=420
-  * Returns `{"Url":"https://tr.rbxcdn.com/cc62e75ca1f869e91fcc2ec1821a3b6e/420/420/AvatarHeadshot/Png","Final":true}`
-
-* https://www.roblox.com/Thumbs/Avatar.ashx?username=Shedletsky
-  * Redirects to the URL. Also accepts `userId`, and all other parameters can be omitted. If `userId` and `username` are both omitted, will return a ?
-
-* https://www.roblox.com/bust-thumbnail/image?userId=48103520&width=420&height=420&format=png
-  * Redirects to the URL.
 * https://www.roblox.com/headshot-thumbnail/image?userId=48103520&width=420&height=420&format=png
   * Redirects to the URL. 
 
@@ -239,9 +192,6 @@ User APIs
 
 Asset APIs
 ----------
-#### Get an asset's AssetVersioNId
-* https://www.roblox.com/studio/plugins/info?assetId=1818
-
 #### Upload an asset
 ```http
 POST /Data/Upload.ashx?assetid=1818 HTTP/1.1
@@ -253,10 +203,6 @@ Content-Length: 17
 <roblox></roblox>
 ```
 Returns an assetVersionId
-#### Insert asset APIs
-* [www.roblox.com/Game/Tools/InsertAsset.ashx?nsets=10&type=base](http://www.roblox.com/Game/Tools/InsertAsset.ashx?nsets=10&type=base)
-* [www.roblox.com/Game/Tools/InsertAsset.ashx?type=user&userId=261&nsets=20](http://www.roblox.com/Game/Tools/InsertAsset.ashx?nsets=20&type=user&userid=1)
-* [www.roblox.com/Game/Tools/InsertAsset.ashx?sid=-7](http://www.roblox.com/Game/Tools/InsertAsset.ashx?sid=-7)
 
 Login APIs
 ----------
