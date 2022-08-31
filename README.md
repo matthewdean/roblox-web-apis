@@ -78,6 +78,9 @@ Search APIs
 #### Returns a list of games.
 http://www.roblox.com/games/list-json?sortFilter=1&MaxRows=5
 
+#### Returns a list of suggested content based on autocomplete.
+https://apis.roblox.com/games-autocomplete/v1/get-suggestion/(partial name)
+
 Place APIs
 ----------
 #### Get a place's game instances
