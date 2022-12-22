@@ -66,7 +66,13 @@ Deprecated or poorly documented APIs
 * [User APIs](#user-apis)
 * [Asset APIs](#asset-apis)
 * [Login APIs](#login-apis)
+* [Search APIs](#search-apis)
 * [Setup APIs](#setup-apis)
+
+Search APIs
+-----------
+#### Returns a list of suggested content based on autocomplete.
+https://apis.roblox.com/games-autocomplete/v1/get-suggestion/(partial name)
 
 Universe APIs
 -------------
@@ -226,7 +232,7 @@ Setup APIs
   *	[/version(.txt)](http://setup.roblox.com/version)
   *	[/versionStudio(.txt)](http://setup.roblox.com/versionStudio)
   *	[/versionQTStudio](http://setup.roblox.com/versionQTStudio)
-  * [/DeployHistory.txt](http://setup.roblox.com/mac/DeployHistory.txt)
+  * [/DeployHistory.txt](http://setup.roblox.com/DeployHistory.txt)
   *	[/mac/version](http://setup.roblox.com/mac/version)
   *	[/mac/versionStudio](http://setup.roblox.com/mac/versionStudio)
   *	[/mac/RobloxStudio.dmg](http://setup.roblox.com/mac/RobloxStudio.dmg)

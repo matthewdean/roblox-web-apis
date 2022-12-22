@@ -1217,6 +1217,17 @@ www.roblox.com
       img-or_divider.png
       subMenuBackground.jpg
     /Upgrades/
+      /BuildersClubBenefitsGrid/
+        paid-access.png
+    /UserIndicator/
+      AccountStateType.Ban1Day.png
+      AccountStateType.Ban3Days.png
+      AccountStateType.Ban7Days.png
+      AccountStateType.Ban14Days.png
+      AccountStateType.Deleted.png
+      AccountStateType.Poisoned.png
+      AccountStateType.Reminder.png
+      AccountStateType.Warning.png
     /VideoPreRoll/
       btn-buildersclub.png
     accept.png
