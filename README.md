@@ -8,6 +8,7 @@ Roblox API Sites
 | [adconfiguration.roblox.com](https://adconfiguration.roblox.com/docs) | Roblox Ad Configuration related endpoints |
 | [ads.roblox.com](https://ads.roblox.com/docs) | Ads configuration endpoints |
 | [api.roblox.com](https://api.roblox.com/docs) | Roblox Legacy Api Endpoints |
+| [versioncompatibility.api.roblox.com](https://versioncompatibility.api.roblox.com) | Legacy Endpoint to Verify Client is Up-to-date |
 | [assetdelivery.roblox.com](https://assetdelivery.roblox.com/docs) | Serves asset content |
 | [auth.roblox.com](https://auth.roblox.com/docs) | All endpoints that tamper with authentication sessions |
 | [avatar.roblox.com](https://avatar.roblox.com/docs) | Endpoints relating to the customization of player avatars |
