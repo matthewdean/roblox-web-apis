@@ -35,7 +35,7 @@ Roblox API Sites
 | [groupsmoderation.roblox.com](https://groupsmoderation.roblox.com/docs) | Group Moderation |
 | [inventory.roblox.com](https://inventory.roblox.com/docs) | All endpoints for viewing (but not granting) ownership of items |
 | [itemconfiguration.roblox.com](https://itemconfiguration.roblox.com/docs) | Configure Items (bundles and avatar assets) |
-| [lms.roblox.com](https://lms.roblox.com/) | Status of the Latency Management Service |
+| [lms.roblox.com](https://lms.roblox.com/) | Status of the Latency Measurement Service |
 | [locale.roblox.com](https://locale.roblox.com/docs) | User locale management |
 | [localizationtables.roblox.com](https://localizationtables.roblox.com/docs) | Handles managing of localization tables |
 | [metrics.roblox.com](https://metrics.roblox.com/docs) | Record metrics across Roblox |
