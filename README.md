@@ -39,7 +39,6 @@ Roblox API Sites
 | [localizationtables.roblox.com](https://localizationtables.roblox.com/docs) | Handles managing of localization tables |
 | [metrics.roblox.com](https://metrics.roblox.com/docs) | Record metrics across Roblox |
 | [notifications.roblox.com](https://notifications.roblox.com/docs) | All notification stream endpoints |
-| [points.roblox.com](https://points.roblox.com/docs) | The web Api for the in-game PointsService |
 | [premiumfeatures.roblox.com](https://premiumfeatures.roblox.com/docs) | This API is for premium features and anything pertaining to account add ons |
 | [presence.roblox.com](https://presence.roblox.com/docs) | All endpoints for managing presence |
 | [privatemessages.roblox.com](https://privatemessages.roblox.com/docs) | All messages page endpoints |
