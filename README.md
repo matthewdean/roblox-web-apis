@@ -60,10 +60,8 @@ Roblox API Sites
 Deprecated or poorly documented APIs
 ===============
 * [Thumbnail APIs](#thumbnail-apis)
-* [Universe APIs](#universe-apis)
 * [User APIs](#user-apis)
 * [Asset APIs](#asset-apis)
-* [Login APIs](#login-apis)
 * [Search APIs](#search-apis)
 * [Setup APIs](#setup-apis)
 
@@ -72,24 +70,10 @@ Search APIs
 #### Returns a list of suggested content based on autocomplete.
 https://apis.roblox.com/games-autocomplete/v1/get-suggestion/(partial name)
 
-Universe APIs
--------------
-#### Get the parent universe of place
-* https://api.roblox.com/universes/get-universe-containing-place?placeid=1818
-
-#### Get the parent universe info of place
-* https://api.roblox.com/universes/get-info?placeId=1818
-
-#### Gets every place in a universe
-* https://api.roblox.com/universes/get-universe-places?universeId=162580928&page=1
-
 Thumbnail APIs
 --------------
 
 #### Asset Thumbnails
-* https://assetgame.roblox.com/Thumbs/Asset.asmx/RequestThumbnail_v2?assetId=1818&assetVersionId=0&width=420&height=420&imageFormat=Png&thumbnailFormatId=0&overrideModeration=false
-  * Returns `{"d":{"final":true,"url":"https://tr.rbxcdn.com/139602eb7c640c43833470e07caada4a/420/420/Image/Png"}}`
-  
 * https://www.roblox.com/item-thumbnails?params=[{assetId:1818}]
   ```javascript
   [{
@@ -120,12 +104,6 @@ Thumbnail APIs
   ```
 
 #### Avatar Thumbnails
-* https://www.roblox.com/avatar/request-thumbnail-fix?userId=261&width=420&height=420&imageFormat=Png&thumbnailFormatId=0&dummy=false
-  * Returns `{"d":{"final":true,"url":"https://tr.rbxcdn.com/faf7edbe4e0ff5da291e41ef60acd66d/420/420/Avatar/Png"}}`
-
-* https://www.roblox.com/headshot-thumbnail/image?userId=48103520&width=420&height=420&format=png
-  * Redirects to the URL. 
-
 * https://www.roblox.com/avatar-thumbnails?params=[{userId:261}]
   * Returns JSON
   ```javascript
@@ -140,9 +118,6 @@ Thumbnail APIs
   }]
   ```
 #### Outfit Thumbnails
-* https://www.roblox.com/outfit-thumbnail/image?userOutfitId=26415539&width=420&height=420&format=png
-  * Redirects to the URL. 
-  
 #### Valid Thumbnail Sizes
 |                                 | 48x48 | 60x62 | 75x75 | 100x100 | 110x110 | 160x100 | 250x250 | 352x352 | 420x230 | 420x420 |
 | ------------------------------- | :---: | :---: | :---: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: |
@@ -195,8 +170,6 @@ User APIs
         }]
     }
     ```
-#### Get information about the current user
-* [https://www.roblox.com/MobileAPI/UserInfo](https://www.roblox.com/mobileapi/userinfo)
 
 Asset APIs
 ----------
@@ -211,11 +184,6 @@ Content-Length: 17
 <roblox></roblox>
 ```
 Returns an assetVersionId
-
-Login APIs
-----------
-#### Negotiation API
-* [https://www.roblox.com/Login/Negotiate.ashx?suggest=](http://www.roblox.com/Login/Negotiate.ashx?suggest=)
 
 Setup APIs
 ----------
