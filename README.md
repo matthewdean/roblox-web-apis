@@ -16,7 +16,7 @@ Roblox API Sites
 | [chat.roblox.com](https://chat.roblox.com/docs) | All chat and party related endpoints |
 | [clientsettings.roblox.com](https://clientsettings.roblox.com/docs) | Used by various Roblox clients to retrieve configuration information |
 | [clientsettingscdn.roblox.com](https://clientsettingscdn.roblox.com/docs) | Used by various Roblox clients to retrieve configuration information |
-| [client-telemetry.roblox.com](https://client-telemetry.roblox.com) | Handles client telemtry |
+| [client-telemetry.roblox.com](https://client-telemetry.roblox.com) | Handles client telemetry |
 | [contentstore.roblox.com](https://contentstore.roblox.com/docs) | ApiSite to front the TemporaryStore for files before uploading to S3 |
 | [contacts.roblox.com](https://contacts.roblox.com/docs) | Contacts and userTag management |
 | [develop.roblox.com](https://develop.roblox.com/docs) | Game development configuration endpoints |
