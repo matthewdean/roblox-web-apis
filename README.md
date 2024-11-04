@@ -55,8 +55,8 @@ Roblox API Sites
 | [translationroles.roblox.com](https://translationroles.roblox.com//docs) | Manages translation roles of developers in game localization |
 | [translations.roblox.com](https://translations.roblox.com//docs) | Endpoints for requesting translations |
 | [twostepverification.roblox.com](https://twostepverification.roblox.com//docs) | Platform interface for the two step verification system |
-| [usermoderation.roblox.com](https://usermoderation.roblox.com//docs) | Endpoints for performing actions/operations related to User Moderation
-| [users.roblox.com](https://users.roblox.com//docs) | APIs for direct Roblox user information.
+| [usermoderation.roblox.com](https://usermoderation.roblox.com//docs) | Endpoints for performing actions/operations related to User Moderation |
+| [users.roblox.com](https://users.roblox.com//docs) | APIs for direct Roblox user information. |
 | [voice.roblox.com](https://voice.roblox.com//docs) | APIs for Voice calls |
 
 Deprecated or poorly documented APIs
