@@ -72,6 +72,7 @@ Deprecated or poorly documented APIs
 * [Thumbnail APIs](#thumbnail-apis)
 * [User APIs](#user-apis)
 * [Asset APIs](#asset-apis)
+* [Game Pass APIs](#game-pass-apis)
 * [Search APIs](#search-apis)
 * [Setup APIs](#setup-apis)
 
@@ -195,6 +196,13 @@ Content-Length: 17
 ```
 Returns an assetVersionId
 
+Game Pass APIs
+--------------
+#### Game pass product info
+https://apis.roblox.com/game-passes/v1/game-passes/9209231/product-info
+
+Returns name, creator, `PriceInRobux`, `UserBasePriceInRobux`, and `PriceDiscountDetails`.
+
 Setup APIs
 ----------
 #### Mobile version check
@@ -213,3 +221,8 @@ Setup APIs
   *	[/mac/versionStudio](http://setup.rbxcdn.com/mac/versionStudio)
   *	[/mac/RobloxStudio.dmg](http://setup.rbxcdn.com/mac/RobloxStudio.dmg)
   * [/mac/DeployHistory.txt](http://setup.rbxcdn.com/mac/DeployHistory.txt)
+#### API dump
+Lists every class, property, and enum in a given Studio build.
+
+* Get the current Studio version hash from https://clientsettingscdn.roblox.com/v2/client-version/WindowsStudio64, which returns a `clientVersionUpload` value like `version-55808de4b1914919`
+* https://setup.rbxcdn.com/{clientVersionUpload}-API-Dump.json
