@@ -65,6 +65,13 @@ Roblox API Sites
 | [users.roblox.com](https://users.roblox.com//docs) | APIs for direct Roblox user information. |
 | [voice.roblox.com](https://voice.roblox.com//docs) | APIs for Voice calls |
 
+Open Cloud
+==========
+Open Cloud (`apis.roblox.com/cloud/v2`) is the modern, supported replacement for most of the legacy sites above. It uses API keys or OAuth 2.0 rather than `.ROBLOSECURITY` cookies, and carries stability guarantees the legacy APIs do not.
+
+* [Cloud API reference](https://create.roblox.com/docs/cloud)
+* [Assets API](https://create.roblox.com/docs/cloud/reference/features/assets) — replaces the deprecated `develop.roblox.com/v1|v2/assets/*` endpoints (shut down 2025-07-01)
+
 Deprecated or poorly documented APIs
 ===============
 * [Thumbnail APIs](#thumbnail-apis)
@@ -77,13 +84,6 @@ Search APIs
 -----------
 #### Returns a list of suggested content based on autocomplete.
 https://apis.roblox.com/games-autocomplete/v1/get-suggestion/(partial name)
-
-Open Cloud
-==========
-Open Cloud (`apis.roblox.com/cloud/v2`) is the modern, supported replacement for most of the legacy sites above. It uses API keys or OAuth 2.0 rather than `.ROBLOSECURITY` cookies, and carries stability guarantees the legacy APIs do not.
-
-* [Cloud API reference](https://create.roblox.com/docs/cloud)
-* [Assets API](https://create.roblox.com/docs/cloud/reference/features/assets) — replaces the deprecated `develop.roblox.com/v1|v2/assets/*` endpoints (shut down 2025-07-01)
 
 Thumbnail APIs
 --------------
