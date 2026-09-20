@@ -1,8 +1,14 @@
 > [!NOTE]
-> In Oct 2024, Roblox released a [Legacy API Overview](https://create.roblox.com/docs/cloud/legacy) page which documents nearly all of the API sites detailed below. We recommend you start there.
+> Roblox documents most of the API sites below at [Cloud API reference → domains](https://create.roblox.com/docs/cloud/reference/domains/users). We recommend you start there.
+>
+> The old per-site Swagger UI at `https://<site>.roblox.com/docs` has been retired. Surviving sites redirect to `https://create.roblox.com/docs/cloud/reference/domains/<site>`; the rest return 404. The former `create.roblox.com/docs/cloud/legacy` overview now redirects to the general [Cloud API reference](https://create.roblox.com/docs/cloud).
 
 Roblox API Sites
 ================
+
+> [!WARNING]
+> Verified 2026-08-17: 21 of the 53 `/docs` links below now return 404, because Roblox retired the per-site Swagger UI. Sites still documented are reachable at `https://create.roblox.com/docs/cloud/reference/domains/<site>`. A 404 on `/docs` does not mean the service is gone — for example `auth.roblox.com` and `voice.roblox.com` are still live but no longer publicly documented.
+
 | Site | Description |
 | -: | :- |
 | [accountinformation.roblox.com](https://accountinformation.roblox.com//docs) | All endpoints for acessing/modifying account information |
@@ -47,7 +53,7 @@ Roblox API Sites
 | [publish.roblox.com](https://publish.roblox.com//docs) | All endpoints handling file uploads |
 | [realtime.roblox.com](https://realtime.roblox.com//docs) | Purpose of API here |
 | [share.roblox.com](https://share.roblox.com//docs) | Purpose of Api here |
-| [search.roblox.com](https://developer.roblox.com/en-us/articles/Catalog-API) | Legacy item search endpoints. |
+| search.roblox.com | **Removed 2020-11-04.** `/catalog/json` now redirects to an error page. Use [catalog.roblox.com](https://create.roblox.com/docs/cloud/reference/domains/catalog). |
 | [textfilter.roblox.com](https://textfilter.roblox.com//docs) | High volume text filtering |
 | [thumbnails.roblox.com](https://thumbnails.roblox.com//docs) | Endpoints for requesting thumbnails |
 | [thumbnailsresizer.roblox.com](https://thumbnailsresizer.roblox.com//docs) | Validate and resize thumbnails to requested dimensions |
@@ -72,8 +78,18 @@ Search APIs
 #### Returns a list of suggested content based on autocomplete.
 https://apis.roblox.com/games-autocomplete/v1/get-suggestion/(partial name)
 
+Open Cloud
+==========
+Open Cloud (`apis.roblox.com/cloud/v2`) is the modern, supported replacement for most of the legacy sites above. It uses API keys or OAuth 2.0 rather than `.ROBLOSECURITY` cookies, and carries stability guarantees the legacy APIs do not.
+
+* [Cloud API reference](https://create.roblox.com/docs/cloud)
+* [Assets API](https://create.roblox.com/docs/cloud/reference/features/assets) — replaces the deprecated `develop.roblox.com/v1|v2/assets/*` endpoints (shut down 2025-07-01)
+
 Thumbnail APIs
 --------------
+
+> [!CAUTION]
+> The endpoints in this section were deprecated on 2021-10-26 and now return 404: `/item-thumbnails`, `/avatar-thumbnails`, `/Thumbs/Asset.ashx`, `/Asset-Thumbnail/Json`, and `/Game/Tools/ThumbnailAsset.ashx`. Use [thumbnails.roblox.com](https://create.roblox.com/docs/cloud/reference/domains/thumbnails) instead. See [Official List of Deprecated Web Endpoints](https://devforum.roblox.com/t/official-list-of-deprecated-web-endpoints/62889).
 
 #### Asset Thumbnails
 * https://www.roblox.com/item-thumbnails?params=[{assetId:1818}]
@@ -175,6 +191,9 @@ User APIs
 
 Asset APIs
 ----------
+
+> [!CAUTION]
+> `data.roblox.com/Data/Upload.ashx` no longer exists — it redirects to an error page. Use the Open Cloud [Assets API](https://create.roblox.com/docs/cloud/reference/features/assets) (`apis.roblox.com/assets/v1`) instead.
 #### Upload an asset
 ```http
 POST /Data/Upload.ashx?assetid=1818 HTTP/1.1
